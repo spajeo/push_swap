@@ -6,13 +6,11 @@
 /*   By: Scarlett <Scarlett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/07 20:46:13 by spajeo            #+#    #+#             */
-/*   Updated: 2018/03/15 14:58:39 by spajeo           ###   ########.fr       */
+/*   Updated: 2018/03/16 16:43:53 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/includes/libft.h"
-#include "../libft/includes/liblst.h"
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 
 /*
 ** Check the instruction given by the push_swap program
@@ -39,7 +37,7 @@ int			main(int ac, char **av)
 	--ac;
 	ft_exec_parse(&ac, av, &ft_convert_argv);
 	ft_check_instruct();
-	if (ft_t_data_issorted(HEAD_LA) && JUST_HEAD(HEAD_LB))
+	if (ft_next_t_data_issorted(&HEAD_LA, &HEAD_LB) && JUST_HEAD(HEAD_LB))
 		ft_printf("\x1B[32mOK\n");
 	else
 		ft_printf("\x1B[31mKO\x1B[0m\n");

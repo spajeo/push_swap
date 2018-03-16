@@ -6,12 +6,12 @@
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 14:26:38 by spajeo            #+#    #+#             */
-/*   Updated: 2018/03/15 15:14:36 by spajeo           ###   ########.fr       */
+/*   Updated: 2018/03/16 18:00:44 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft/includes/libft.h"
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 #include <stdlib.h>
 
 int inline	ft_exec_s(t_lst *head)
