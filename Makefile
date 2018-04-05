@@ -6,7 +6,7 @@
 #    By: fbabin <fbabin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/05 22:43:45 by fbabin            #+#    #+#              #
-#    Updated: 2018/03/16 18:08:50 by spajeo           ###   ########.fr        #
+#    Updated: 2018/03/16 18:21:48 by spajeo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,7 +71,7 @@ PS_OBJ		:= $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PS_NAME)))
 CC_FLAGS    := -Wall -Wextra -Werror -g -Og -O3 -Ofast
 
 all:	$(LIB) $(CHECKER) $(PUSH_SWAP)
-libft :#	$(LIB_DIR) 
+libft :	$(LIB_DIR) 
 	make re -C $(LIB_DIR)
 ch :	$(CHECKER)
 ps :	$(PUSH_SWAP)
@@ -94,7 +94,8 @@ $(PUSH_SWAP):.ne  #$(PS_OBJ)
 
 $(LIB):
 		make -C $(LIB_DIR)
-
+$(LIB_DIR) :
+	git clone https://github.com/spajeo/libft.git
 
 #******************************************************************************#
 #                                PATH                                          #
