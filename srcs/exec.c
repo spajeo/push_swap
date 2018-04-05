@@ -6,13 +6,12 @@
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 14:26:38 by spajeo            #+#    #+#             */
-/*   Updated: 2018/03/16 18:00:44 by spajeo           ###   ########.fr       */
+/*   Updated: 2018/04/05 15:18:55 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/includes/libft.h"
-#include "push_swap.h"
-#include <stdlib.h>
+
+#include "libft.h"
 
 int inline	ft_exec_s(t_lst *head)
 {
@@ -33,7 +32,6 @@ int			ft_exec_p(t_lst *lst_a, t_lst *lst_b)
 	if (JUST_HEAD_P(lst_a))
 {
 		TESTINT("EXIST OUT OF SCOPE", 0);
-		//exit(0);
 		return (0);
 }
 	else

@@ -1,14 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: fbabin <fbabin@student.42.fr>              +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/01/05 22:43:45 by fbabin            #+#    #+#              #
-#    Updated: 2018/03/16 18:21:48 by spajeo           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
 
 
 #******************************************************************************#
@@ -45,13 +34,15 @@ SRC			= exec ft_get_int_position ft_lst_count \
 					ft_pushswap_operation ft_get_int_order\
 					ft_is_there_inf_ref ft_t_data_free
 SRC_DIR		:= ./srcs/
-OBJ_DIR		:= ./objs/
+OBJ_DIR	:= ./objs
+PS_OBJ_DIR	:= ./objs/ps/
+CH_OBJ_DIR	:= ./objs/ch/
 INC_DIR		:=	./includes/
-INC			:=	$(HEADER_DIR)/push_swap.h
+PS_INC		:=	./includes/push_swap.h
 
-LIB_DIR		:= ./libft/
-LIBFT_A		:=	libft.a
-LIB       := $(addsuffix Makefile, $(LIB_DIR))
+LIB_DIR		:= ./libft#/includes
+LIBFT_A		:=	./libft/libft.a
+LIB       := $(addsuffix Makefile, $(LIB_DIR)/includes)
 
 
 CH_NAME		:= $(SRC) checker 
@@ -68,38 +59,32 @@ PS_OBJ		:= $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PS_NAME)))
 
 .PHONY: all clean fclean re libft
 
+# Create objs directory and all subdirectories
+$(shell mkdir -p $(OBJS_DIR))
+$(shell mkdir -p $(CH_OBJS_DIR))
+$(shell mkdir -p $(PS_OBJS_DIR))
+
+
 CC_FLAGS    := -Wall -Wextra -Werror -g -Og -O3 -Ofast
 
-all:	$(LIB) $(CHECKER) $(PUSH_SWAP)
+all:	$(PS_DIR) #libft  #$(CHECKER) 
+
 libft :	$(LIB_DIR) 
-	make re -C $(LIB_DIR)
-ch :	$(CHECKER)
-ps :	$(PUSH_SWAP)
+	make  -C $(LIB_DIR)
 
 #******************************************************************************#
 #                          CHECKER & PUSH_SWAP                                 #
 #******************************************************************************#
 
-$(CHECKER): .ch_done # $(CH_OBJ) 
-		ar rc $(CH_SRC) $(CH_OBJ)
-		echo "\033[0;34m""created   : $(CH_SRC)""\033[m"
-		ranlib $(CH_SRC)
-		echo "\033[1;34m""sorted    : $(CH_SRC)""\033[m"
-
-$(PUSH_SWAP):.ne  #$(PS_OBJ)
-		ar rc $(PS_SRC) $(PS_OBJ)
-		echo "\033[0;34m""created   : $(PS_SRC)""\033[m"
-		ranlib $(PS_SRC)
-		echo "\033[1;34m""sorted    : $(PS_SRC)""\033[m"
-
-$(LIB):
-		make -C $(LIB_DIR)
-$(LIB_DIR) :
-	git clone https://github.com/spajeo/libft.git
+#$(LIB):
+#		make -C $(LIB_DIR)
+#$(LIB_DIR) :
+#	git clone https://github.com/spajeo/libft.git
 
 #******************************************************************************#
-#                                PATH                                          #
+#                                DONE                                          #
 #******************************************************************************#
+
 .ps_done: $(PS_OBJ)
 	 @echo "au" > $@
 	 @echo ""
@@ -110,27 +95,26 @@ $(LIB_DIR) :
 	 @echo ""
 	 @echo "\033[0;33m""created   : checker objet(s)""\033[m"
 
-
-
 #******************************************************************************#
 #                              OBJ_DIR                                         #
 #******************************************************************************#
 
-$(CH_OBJ)%.o: $(SRC_DIR)$(CH_NAME)%.c $(INC) $(LIB)
-	mkdir -p $(OBJ_DIR) 2> /tmp/a.del
-	gcc $(CC_FLAGS) -o $@ -c $< -I$(INC_DIR) -I$(LIB_DIR)
+#$(CH_OBJ_DIR)%.o: $(SRC_DIR)#$(CH_NAME)%.c $(INC) $(LIB)
+#	$(CC) $(CC_FLAGS) -o $@ -c $< -I$(INC_DIR) -I$(LIB_DIR)
+#	echo "\033[1;36m✔ \033[m\c"
+
+all :
+		make $(PUSH_SWAP)
+
+$(PUSH_SWAP) : $(PS_OBJ)
+		#$(foreach i,$(shell echo "$(LIB)"),make -C "$(LIBS)/$(i)";)
+		$(CC) $(CC_FLAGS) -o $@ $(PS_INC) $(PS_OBJ) $(LIBFT_A)
+		printf $(CLEAR) && $(PRINT_OK) $(NAME)
+
+
+$(PS_OBJ_DIR)%.o: $(SRC_DIR)%.c
+	$(CC) $(CC_FLAGS) -o $@ -c $< -I$(INC_DIR) -I$(LIB_DIR)
 	echo "\033[1;36m✔ \033[m\c"
-
-#$(OBJ_DIR)%.o: $(NBR_DIR)%.c $(INC)
-#	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
-#	@gcc $(CC_FLAGS) -o $@ -c $< -I./includes/
-#	@echo "\033[1;36m✔ \033[m\c"
-
-#$(OBJ_DIR)%.o: $(STR_DIR)%.c $(INC)
-#	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
-#	@gcc $(CC_FLAGS) -o $@ -c $< -I./includes/
-#	@echo "\033[1;36m✔ \033[m\c"
-
 
 #******************************************************************************#
 #                            CLEAN & NORM                                      #
@@ -141,8 +125,6 @@ clean:
 		@echo "push_swap clean : $(_GREEN)Done$(_END)"
 
 fclean: clean
-		@/bin/rm -f $(CHECKER) $(PUSH_SWAP)
-		@echo "push_swap fclean : $(_GREEN)Done$(_END)"
 
 re:
 		@make fclean
