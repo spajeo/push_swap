@@ -11,28 +11,6 @@ PUSH_SWAP		= push_swap
 #                                PATH                                          #
 #******************************************************************************#
 
-SRC			= exec ft_get_int_position ft_lst_count \
-				  	ft_t_data_is_max_min_sorted ft_add_t_data_next \
-					ft_get_lst_from_int ft_lst_count_lim\
-					ft_t_data_is_min_max_sorted ft_add_t_pile_next \
-					ft_get_pile_data ft_lst_is_max_min_sorted \
-					ps_arg ft_add_t_str_next \
-					ft_get_pile_position \
-					ft_lst_is_min_max_sorted \
-					ps_free ft_atoi_exit \
-					ft_get_str_str ft_mv_inf_half ps_print \
-					ft_check_ps_flags\
-					ft_get_t_data_position\
-					ft_next_t_data_issorted ps_refill ft_exec_ac_parse\
-					ft_init_ps_head ft_print_next_data push_swap\
-					ft_exec_parse ft_init_t_data_head ft_print_next_int\
-					singletons ft_free_next_data\
-					ft_is_data_in ft_print_next_str\
-					ft_get_data_data ft_is_there_inf ft_push_swap\
-					ft_get_int_abspos\
-					ft_is_there_inf_int\
-					ft_pushswap_operation ft_get_int_order\
-					ft_is_there_inf_ref ft_t_data_free
 SRC_DIR		:= ./srcs/
 OBJ_DIR	:= ./objs
 PS_OBJ_DIR	:= ./objs/ps/
@@ -44,12 +22,11 @@ LIB_DIR		:= ./libft#/includes
 LIBFT_A		:=	./libft/libft.a
 LIB       := $(addsuffix Makefile, $(LIB_DIR)/includes)
 
-
-CH_NAME		:= $(SRC) checker 
+CH_NAME		:= checker
 CH_SRC		:= $(addsuffix .c, $(addprefix $(SRC_DIR), $(CH_NAME)))
 CH_OBJ		:= $(addsuffix .o, $(addprefix $(OBJ_DIR), $(CH_NAME)))
 
-PS_NAME		:=	push_swap $(SRC)
+PS_NAME		:=	push_swap
 PS_SRC		:= $(addsuffix .c, $(addprefix $(SRC_DIR), $(PS_NAME)))
 PS_OBJ		:= $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PS_NAME)))
 
@@ -67,9 +44,9 @@ $(shell mkdir -p $(PS_OBJS_DIR))
 
 CC_FLAGS    := -Wall -Wextra -Werror -g -Og -O3 -Ofast
 
-all:	$(PS_DIR) #libft  #$(CHECKER) 
+all:	$(PS_DIR) #libft  #$(CHECKER)
 
-libft :	$(LIB_DIR) 
+libft :	$(LIB_DIR)
 	make  -C $(LIB_DIR)
 
 #******************************************************************************#
