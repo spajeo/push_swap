@@ -11,3 +11,5 @@ libft/.*
 **_done
 main.c
 test*
+checker
+push_swap
