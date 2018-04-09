@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ps_refill.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/09 14:56:46 by spajeo            #+#    #+#             */
+/*   Updated: 2018/04/09 14:56:47 by spajeo           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include "../libft/includes/libft.h"
-#include "../libft/includes/liblst.h"
-#include "../includes/push_swap.h"
+
+#include "libft.h"
+#include "liblst.h"
+#include "push_swap.h"
 
 void ft_refill_a_lim(int lim, int nb)
 {

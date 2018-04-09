@@ -6,14 +6,14 @@
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/27 22:07:08 by spajeo            #+#    #+#             */
-/*   Updated: 2018/03/15 15:01:24 by spajeo           ###   ########.fr       */
+/*   Updated: 2018/04/09 14:54:19 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/includes/libft.h"
-#include "../libft/includes/ft_printf.h"
-#include "../includes/push_swap.h"
-#include "../libft/includes/liblst.h"
+#include "libft.h"
+#include "ft_printf.h"
+#include "push_swap.h"
+#include "liblst.h"
 
 /*
 ** Allocate a new node and add it to the end of Stack A

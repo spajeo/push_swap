@@ -6,13 +6,13 @@
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:08:01 by spajeo            #+#    #+#             */
-/*   Updated: 2018/03/15 14:56:20 by spajeo           ###   ########.fr       */
+/*   Updated: 2018/04/09 14:54:45 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/includes/libft.h"
-#include "../libft/includes/liblst.h"
-#include "../../ex/includes/push_swap.h"
+#include "libft.h"
+#include "liblst.h"
+#include "push_swap.h"
 
 t_data	*ft_init_t_data_head(void)
 {

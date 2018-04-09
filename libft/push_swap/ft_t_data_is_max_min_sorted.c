@@ -6,13 +6,13 @@
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/28 22:12:14 by spajeo            #+#    #+#             */
-/*   Updated: 2018/03/15 15:01:24 by spajeo           ###   ########.fr       */
+/*   Updated: 2018/04/09 14:54:54 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/includes/libft.h"
-#include "../libft/includes/liblst.h"
-#include "../includes/push_swap.h"
+#include "libft.h"
+#include "liblst.h"
+#include "push_swap.h"
 
 int		ft_t_data_is_max_min_sorted(t_lst *head)
 {

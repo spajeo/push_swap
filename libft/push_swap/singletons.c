@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/includes/libft.h"
-#include "../includes/push_swap.h"
-#include "../libft/includes/liblst.h"
+#include "libft.h"
+#include "push_swap.h"
+#include "liblst.h"
 
 /*
 ** Singletons functions
 */
-/*
-t_push_swap_head		*ft_push_swap_head(void)
+/
+ft_push_swap_head		*ft_push_swap_head(void)
 {
 	static t_push_swap_head		*ptr = 0;
 

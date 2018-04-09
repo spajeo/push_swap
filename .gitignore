@@ -1,1 +1,13 @@
 libft/.*
+./objs/
+*.swp
+*.swo
+*.o
+*.a
+**.a
+*_DONE
+*.gch
+*.pdf
+**_done
+main.c
+test*

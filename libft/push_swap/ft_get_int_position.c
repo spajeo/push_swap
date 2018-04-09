@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/includes/libft.h"
-#include "../libft/includes/liblst.h"
-#include "../includes/push_swap.h"
+#include "libft.h"
+#include "liblst.h"
+#include "push_swap.h"
 
 int	*ft_get_int_position(size_t position, t_lst *head, int*(*get_data)(t_lst *))
 {

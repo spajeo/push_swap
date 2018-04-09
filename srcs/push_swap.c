@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/includes/libft.h"
-#include "../libft/includes/liblst.h"
-#include "../includes/push_swap.h"
+#include "libft.h"
+#include "liblst.h"
+#include "push_swap.h"
 
 void ft_fix_right_place()
 {

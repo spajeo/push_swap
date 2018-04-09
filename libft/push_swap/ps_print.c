@@ -1,6 +1,18 @@
-#include "../libft/includes/libft.h"
-#include "../libft/includes/liblst.h"
-#include "../includes/push_swap.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ps_print.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/09 14:56:30 by spajeo            #+#    #+#             */
+/*   Updated: 2018/04/09 14:56:32 by spajeo           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+#include "liblst.h"
+#include "push_swap.h"
 
 void        ft_print_stack_a_and_b(void)
 {

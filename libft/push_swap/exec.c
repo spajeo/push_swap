@@ -12,6 +12,7 @@
 
 
 #include "libft.h"
+#include "push_swap.h"
 
 int inline	ft_exec_s(t_lst *head)
 {

@@ -11,24 +11,24 @@ PUSH_SWAP		= push_swap
 #                                PATH                                          #
 #******************************************************************************#
 
-SRC_DIR		:= ./srcs/
-OBJ_DIR	:= ./objs
-PS_OBJ_DIR	:= ./objs/ps/
-CH_OBJ_DIR	:= ./objs/ch/
-INC_DIR		:=	./includes/
-PS_INC		:=	./includes/push_swap.h
+SRC_DIR		:=  ./srcs/
+OBJ_DIR	    :=  ./objs
+PS_OBJ_DIR	:=  ./objs/ps/
+CH_OBJ_DIR	:=  ./objs/ch/
+INC_DIR		:=  ./includes/
+PS_INC		:=  ./includes/push_swap.h
 
-LIB_DIR		:= ./libft#/includes
-LIBFT_A		:=	./libft/libft.a
-LIB       := $(addsuffix Makefile, $(LIB_DIR)/includes)
+LIB_DIR		:=  ./libft#/includes
+LIBFT_A		:=  ./libft/libft.a
+LIB         :=  $(addsuffix Makefile, $(LIB_DIR)/includes)
 
-CH_NAME		:= checker
-CH_SRC		:= $(addsuffix .c, $(addprefix $(SRC_DIR), $(CH_NAME)))
-CH_OBJ		:= $(addsuffix .o, $(addprefix $(OBJ_DIR), $(CH_NAME)))
+CH_NAME		:=  checker
+CH_SRC		:=  $(addsuffix .c, $(addprefix $(SRC_DIR), $(CH_NAME)))
+CH_OBJ		:=  $(addsuffix .o, $(addprefix $(OBJ_DIR), $(CH_NAME)))
 
 PS_NAME		:=	push_swap
-PS_SRC		:= $(addsuffix .c, $(addprefix $(SRC_DIR), $(PS_NAME)))
-PS_OBJ		:= $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PS_NAME)))
+PS_SRC		:=  $(addsuffix .c, $(addprefix $(SRC_DIR), $(PS_NAME)))
+PS_OBJ		:=  $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PS_NAME)))
 
 #******************************************************************************#
 #                              COMMANDS                                        #
@@ -41,10 +41,10 @@ $(shell mkdir -p $(OBJS_DIR))
 $(shell mkdir -p $(CH_OBJS_DIR))
 $(shell mkdir -p $(PS_OBJS_DIR))
 
-
 CC_FLAGS    := -Wall -Wextra -Werror -g -Og -O3 -Ofast
 
-all:	$(PS_DIR) #libft  #$(CHECKER)
+all :
+#    make $(PUSH_SWAP)
 
 libft :	$(LIB_DIR)
 	make  -C $(LIB_DIR)
@@ -80,14 +80,10 @@ libft :	$(LIB_DIR)
 #	$(CC) $(CC_FLAGS) -o $@ -c $< -I$(INC_DIR) -I$(LIB_DIR)
 #	echo "\033[1;36m✔ \033[m\c"
 
-all :
-		make $(PUSH_SWAP)
-
 $(PUSH_SWAP) : $(PS_OBJ)
 		#$(foreach i,$(shell echo "$(LIB)"),make -C "$(LIBS)/$(i)";)
 		$(CC) $(CC_FLAGS) -o $@ $(PS_INC) $(PS_OBJ) $(LIBFT_A)
 		printf $(CLEAR) && $(PRINT_OK) $(NAME)
-
 
 $(PS_OBJ_DIR)%.o: $(SRC_DIR)%.c
 	$(CC) $(CC_FLAGS) -o $@ -c $< -I$(INC_DIR) -I$(LIB_DIR)
@@ -107,4 +103,3 @@ re:
 		@make fclean
 		@make
 
-.PHONY: all clean fclean re

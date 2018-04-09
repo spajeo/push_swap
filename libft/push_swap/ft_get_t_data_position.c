@@ -6,13 +6,13 @@
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/28 03:47:09 by spajeo            #+#    #+#             */
-/*   Updated: 2018/03/15 15:01:24 by spajeo           ###   ########.fr       */
+/*   Updated: 2018/04/09 14:54:45 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/includes/libft.h"
-#include "../libft/includes/liblst.h"
-#include "../includes/push_swap.h"
+#include "libft.h"
+#include "liblst.h"
+#include "push_swap.h"
 
 int	ft_lst_get_int_abs_pos(t_lst *head, int *(* get_int)(t_lst *) , size_t position)
 {

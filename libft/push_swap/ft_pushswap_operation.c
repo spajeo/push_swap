@@ -6,12 +6,12 @@
 /*   By: Scarlett <Scarlett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/09 00:12:42 by spajeo            #+#    #+#             */
-/*   Updated: 2018/03/15 14:56:26 by spajeo           ###   ########.fr       */
+/*   Updated: 2018/04/09 14:54:54 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/includes/libft.h"
-#include "../includes/push_swap.h"
+#include "libft.h"
+#include "push_swap.h"
 
 static int		ft_pushwap_ops(char *src)
 {

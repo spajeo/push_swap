@@ -23,7 +23,8 @@ INC			:= ./includes/color.h \
 				./includes/get_next_line.h \
 				./includes/libft.h \
 				./includes/liblst.h \
-				./includes/linux_compiler.h
+				./includes/linux_compiler.h \
+				./includes/push_swap.h
 
 INCLUDES := -I./includes
 
@@ -34,7 +35,6 @@ LIB_DIR := ./lib/
 IS_DIR := ./is/
 PRINTF_DIR := ./ft_printf/
 PUSH_SWAP_DIR := ./push_swap/
-
 
 STR := strcat strcat_lim strcatcount strchr strclr strcmp strcpy strdel strdup strequ striter striteri \
 		strjoin strjoin_free strlcat strlen strlen_c strlen_c_len strlen_int strmap strmapi strncat \
@@ -52,6 +52,12 @@ LST := is_double_data_next lst_add_after lst_add_before lst_disconnect lst_empty
 LST_SRC := $(addsuffix .c, $(addprefix $(LST_DIR)ft_, $(LST)))
 LST_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(LST)))
 
+PRINTF:=	buff_charstr buff_val ft_pr_buffnwstr ft_pr_buffwstr ft_pr_charcat ft_pr_itoa_ubase_gbuff \
+		ft_pr_memsetblim ft_pr_strcatcount ft_pr_strncatcount ft_printf initialisation \
+		parsing ptr_char ptr_flag ptr_nbr
+PRINTF_SRC := $(addsuffix .c, $(addprefix $(PRINTF_DIR), $(PRINTF)))
+PRINTF_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PRINTF)))
+
 LIB := buffnwstr buffwchar buffwstr bzero charcat charcat_lim charcatcount charcatcount_glim \
 		charchr charchronstr exec_parse free max memalloc memccpy memchr memcmp memcpy memdel \
 		memmove memset memsetblim min nbrlen print_array putchar putchar_fd putchardl \
@@ -61,15 +67,9 @@ LIB := buffnwstr buffwchar buffwstr bzero charcat charcat_lim charcatcount charc
 LIB_SRC := $(addsuffix .c, $(addprefix $(LIB_DIR)ft_, $(LIB)))
 LIB_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(LIB)))
 
-IS :=	is_white isalnum isalpha isascii isdigit islower isprint issign isspace isupper
+IS :=     is_white isalnum isalpha isascii isdigit islower isprint issign isspace isupper
 IS_SRC := $(addsuffix .c, $(addprefix $(IS_DIR)ft_, $(IS)))
 IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
-
-PRINTF:=	buff_charstr buff_val ft_pr_buffnwstr ft_pr_buffwstr ft_pr_charcat ft_pr_itoa_ubase_gbuff \
-		ft_pr_memsetblim ft_pr_strcatcount ft_pr_strncatcount ft_printf initialisation \
-		parsing ptr_char ptr_flag ptr_nbr
-PRINTF_SRC := $(addsuffix .c, $(addprefix $(PRINTF_DIR), $(PRINTF)))
-PRINTF_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PRINTF)))
 
 PUSH_SWAP:= exec ft_get_int_position ft_lst_count ft_t_data_is_max_min_sorted ft_add_t_data_next \
 					ft_get_lst_from_int ft_lst_count_lim ft_t_data_is_min_max_sorted ft_add_t_pile_next \
@@ -80,17 +80,16 @@ PUSH_SWAP:= exec ft_get_int_position ft_lst_count ft_t_data_is_max_min_sorted ft
 					singletons ft_free_next_data ft_is_data_in ft_print_next_str ft_get_data_data\
 					ft_is_there_inf ft_push_swap ft_get_int_abspos\
 					ft_is_there_inf_int ft_pushswap_operation ft_get_int_order ft_is_there_inf_ref ft_t_data_free
-PUSH_SWAP := $(addsuffix .c, $(addprefix $(PUSH_SWAP_DIR), $(PUSH_SWAP)))
+PUSH_SWAP_SRC := $(addsuffix .c, $(addprefix $(PUSH_SWAP_DIR), $(PUSH_SWAP)))
 PUSH_SWAP_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PUSH_SWAP)))
 
-OBJ := $(STR_OBJ) $(NBR_OBJ) $(LST_OBJ) $(LIB_OBJ) $(IS_OBJ) $(PRINTF_OBJ) $(PUSH_SWAP)
-SRC := $(STR_SRC) $(NBR_SRC) $(LST_SRC) $(LIB_SRC) $(IS_SRC) $(PRINTF_SRC) $(PUSH_SWAP)
+OBJ := $(PUSH_SWAP_OBJ) $(STR_OBJ) $(NBR_OBJ) $(LST_OBJ) $(LIB_OBJ) $(IS_OBJ) $(PRINTF_OBJ)
+SRC := $(PUSH_SWAP_SRC) $(STR_SRC) $(NBR_SRC) $(LST_SRC) $(LIB_SRC) $(IS_SRC) $(PRINTF_SRC)
 DONE := .str_done .nbr_done .lst_done .lib_done .is_done .print_done .push_swap_done
 
 #***************************************************************************************************************#
 #                                                 PATH 	                                                    	#
 #***************************************************************************************************************#
-
 
 CC_FLAGS	:= -Wall -Wextra -Werror -g -Og -O3 -Ofast
 

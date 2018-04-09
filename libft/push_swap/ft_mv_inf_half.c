@@ -6,7 +6,7 @@
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/02 13:56:19 by spajeo            #+#    #+#             */
-/*   Updated: 2018/03/15 15:01:24 by spajeo           ###   ########.fr       */
+/*   Updated: 2018/04/09 14:54:45 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 **
 */
 
-#include "../libft/includes/libft.h"
-#include "../libft/includes/ft_printf.h"
-#include "../includes/push_swap.h"
-#include "../libft/includes/liblst.h"
+#include "libft.h"
+#include "ft_printf.h"
+#include "push_swap.h"
+#include "liblst.h"
 /*
 static int	ft_mv_inf_half()
 {

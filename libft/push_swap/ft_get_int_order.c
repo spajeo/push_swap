@@ -1,8 +1,8 @@
 
 
-#include "../libft/includes/libft.h"
-#include "../libft/includes/liblst.h"
-#include "../includes/push_swap.h"
+#include "libft.h"
+#include "liblst.h"
+#include "push_swap.h"
 
 int	*ft_get_int_order(t_lst *head, int*(*get_int)(t_lst *), size_t position)
 {

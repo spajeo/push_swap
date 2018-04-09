@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="953c7fa6-a821-4336-99c8-2321b4331222" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/includes/push_swap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/push_swap.h.gch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/.Makefile.swo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/exec.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/exec.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_add_t_data_next.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_add_t_data_next.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_add_t_pile_next.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_add_t_pile_next.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_add_t_str_next.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_add_t_str_next.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_atoi_exit.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_atoi_exit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_check_ps_flags.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_check_ps_flags.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_exec_parse.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_exec_parse.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_free_next_data.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_free_next_data.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_get_data_data.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_get_data_data.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_get_int_abspos.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_get_int_abspos.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_get_int_order.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_get_int_order.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_get_int_position.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_get_int_position.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_get_lst_from_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_get_lst_from_int.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_get_pile_data.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_get_pile_data.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_get_pile_position.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_get_pile_position.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_get_str_str.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_get_str_str.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_get_t_data_position.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_get_t_data_position.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_init_ps_head.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_init_ps_head.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_init_t_data_head.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_init_t_data_head.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_is_data_in.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_is_data_in.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_is_there_inf.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_is_there_inf.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_is_there_inf_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_is_there_inf_int.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_is_there_inf_ref.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_is_there_inf_ref.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_lst_count.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_lst_count.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_lst_count_lim.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_lst_count_lim.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_lst_is_max_min_sorted.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_lst_is_max_min_sorted.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_lst_is_min_max_sorted.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_lst_is_min_max_sorted.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_mv_inf_half.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_mv_inf_half.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_next_t_data_issorted.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_next_t_data_issorted.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_print_next_data.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_print_next_data.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_print_next_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_print_next_int.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_print_next_str.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_print_next_str.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_pushswap_operation.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_pushswap_operation.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_t_data_free.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_t_data_free.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_t_data_is_max_min_sorted.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_t_data_is_max_min_sorted.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_t_data_is_min_max_sorted.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_t_data_is_min_max_sorted.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ps_arg.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ps_arg.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ps_free.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ps_free.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ps_print.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ps_print.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/ps_refill.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ps_refill.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/push_swap/singletons.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/singletons.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/push_swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/push_swap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.40212107">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="12" selection-start-line="12" selection-end-line="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ft_init_ps_head.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_init_ps_head.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="push_swap.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/srcs/push_swap.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="276">
+                  <caret line="86" column="34" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="checker.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/srcs/checker.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ft_get_int_order.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_get_int_order.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" selection-start-line="6" selection-end-line="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libft/Makefile">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1350">
+                  <caret line="90" column="58" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="exec.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libft/push_swap/exec.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Makefile">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="404">
+                  <caret line="46" selection-start-line="46" selection-end-line="46" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ft_get_int_position.c" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_get_int_position.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="690">
+                  <caret line="46" selection-start-line="46" selection-end-line="46" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="push_swap.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libft/includes/push_swap.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="571">
+                  <caret line="151" selection-start-line="151" selection-end-line="151" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="push_swap.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/libft/includes/push_swap.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="186">
+                  <caret line="53" selection-start-line="53" selection-end-line="53" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pile</find>
+      <find>ft_get_int_order(</find>
+      <find>get_int_order</find>
+      <find>VAL MAX</find>
+      <find>VAL_MAX</find>
+      <find>get_int</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/libft/push_swap/exec.c" />
+        <option value="$PROJECT_DIR$/libft/push_swap/ft_get_int_position.c" />
+        <option value="$PROJECT_DIR$/libft/push_swap/ft_pushswap_operation.c" />
+        <option value="$PROJECT_DIR$/libft/push_swap/singletons.c" />
+        <option value="$PROJECT_DIR$/libft/push_swap/ft_init_ps_head.c" />
+        <option value="$PROJECT_DIR$/srcs/push_swap.c" />
+        <option value="$PROJECT_DIR$/libft/includes/push_swap.h" />
+        <option value="$PROJECT_DIR$/libft/Makefile" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="push_swap__" type="b2602c69:ProjectViewProjectNode" />
+              <item name="push_swap__" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="push_swap__" type="b2602c69:ProjectViewProjectNode" />
+              <item name="push_swap__" type="462c0819:PsiDirectoryNode" />
+              <item name="libft" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="push_swap__" type="b2602c69:ProjectViewProjectNode" />
+              <item name="push_swap__" type="462c0819:PsiDirectoryNode" />
+              <item name="libft" type="462c0819:PsiDirectoryNode" />
+              <item name="push_swap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="push_swap__" type="b2602c69:ProjectViewProjectNode" />
+              <item name="push_swap__" type="462c0819:PsiDirectoryNode" />
+              <item name="srcs" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libft/includes" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="953c7fa6-a821-4336-99c8-2321b4331222" name="Default" comment="" />
+      <created>1523261628509</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523261628509</updated>
+      <workItem from="1523261631098" duration="3153000" />
+      <workItem from="1523276855392" duration="2945000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6098000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11601563" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3299712" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/exec.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_add_t_data_next.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_add_t_pile_next.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_add_t_str_next.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_atoi_exit.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_check_ps_flags.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_exec_ac_parse.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_exec_parse.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_free_next_data.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_get_data_data.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_get_int_abspos.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_get_lst_from_int.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_get_pile_data.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_get_pile_position.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_get_str_str.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_get_t_data_position.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_init_t_data_head.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_is_data_in.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_is_there_inf.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_is_there_inf_int.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_is_there_inf_ref.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_lst_count.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_lst_count_lim.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_lst_is_max_min_sorted.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_mv_inf_half.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_next_t_data_issorted.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_print_next_int.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_print_next_str.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_push_swap.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_t_data_free.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ps_free.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_lst_is_min_max_sorted.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_print_next_data.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ps_arg.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_t_data_is_min_max_sorted.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_t_data_is_max_min_sorted.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_pushswap_operation.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ps_print.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ps_refill.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/singletons.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/push_swap.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="86" column="34" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_init_ps_head.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/includes/push_swap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="90" column="58" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_get_int_order.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/checker.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_get_int_position.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

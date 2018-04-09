@@ -6,20 +6,20 @@
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/28 23:02:16 by spajeo            #+#    #+#             */
-/*   Updated: 2018/03/15 15:01:24 by spajeo           ###   ########.fr       */
+/*   Updated: 2018/04/09 14:54:45 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/includes/libft.h"
-#include "../libft/includes/liblst.h"
-#include "../includes/push_swap.h"
+#include "libft.h"
+#include "liblst.h"
+#include "push_swap.h"
 
 void	ft_init_ps_head()
 {
 	if ((PS__HEAD.nb_a = ft_lst_count(&HEAD_LA)) == 0)
 		EXIT_FAIL("NO ARGUMENTS");
 	PIVOT_POS = PS__HEAD.nb_a;
-VAL_MAX = *ft_get_int_order(&HEAD_LA, &ft_get_pile_data,ft_lst_count(&HEAD_LA));	
+    VAL_MAX = *ft_get_int_order(&HEAD_LA, &ft_get_pile_data,ft_lst_count(&HEAD_LA));
 // travailler les effets
 /*
 	PS__HEAD.min_val = 			*ft_get_int_order(&HEAD_LA,  &ft_get_pile_data, 0);

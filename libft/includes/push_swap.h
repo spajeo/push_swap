@@ -13,7 +13,7 @@
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-#include "../libft/includes/libft.h"
+#include "libft.h"
 
 /*
 ** TEST
@@ -133,14 +133,12 @@ int						ft_is_there_inf_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
 int						ft_is_data_in(t_lst *head, int data, int *(*get_offset)(t_lst *));
 int						*ft_get_int_position(size_t position, t_lst *head, int *(*get_int)(t_lst *));
 
-
-
 /*
 **			Librairie
 */
 
-void            ft_exec_ac_parse(int *i, char **str, void (*f)(const char *));
-void            ft_exec_parse_ps(char *str, void (*f)(const char *));
+void      		      	ft_exec_ac_parse(int *i, char **str, void (*f)(const char *));
+void            		ft_exec_parse_ps(char *str, void (*f)(const char *));
 
 /*
 ** checker
@@ -153,6 +151,7 @@ void                    ft_print_stack_a_and_b();
 void					ft_convert_argv(const char *s);
 void					ft_free_checker_and_push_swap(void);
 void					ft_check_instruct(void);
+int						*ft_get_int_order(t_lst *head, int*(*get_int)(t_lst *), size_t position);
 
 int						ft_exec_p(t_lst *lst_a, t_lst *lst_b);
 int						ft_exec_s(t_lst *head);
