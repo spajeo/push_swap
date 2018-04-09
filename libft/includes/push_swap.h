@@ -114,7 +114,28 @@ int						ft_next_t_data_issorted(t_lst *head_a, t_lst *head_b);
 void                    ft_print_next_str(t_lst *head);
 
 
+
 /*
+**			ps_refill
+*/
+
+void                    ft_refill_a_lim(int lim, int nb);
+void                    ft_refill_b(int nb);
+void                    ft_refill_a(int nb);
+void                    ft_refill_b_lim(int lim, int nb);
+
+/*
+**		    absolute position
+*/
+
+
+int                     ft_get_int_abspos(t_lst *head, int*(*get_int)(t_lst *), int val);
+
+
+
+
+
+ /*
 **			Struct Memory Access
 */
 
@@ -134,11 +155,12 @@ int						ft_is_data_in(t_lst *head, int data, int *(*get_offset)(t_lst *));
 int						*ft_get_int_position(size_t position, t_lst *head, int *(*get_int)(t_lst *));
 
 /*
-**			Librairie
+**			     LIBRAIRIE
 */
 
 void      		      	ft_exec_ac_parse(int *i, char **str, void (*f)(const char *));
 void            		ft_exec_parse_ps(char *str, void (*f)(const char *));
+
 
 /*
 ** checker

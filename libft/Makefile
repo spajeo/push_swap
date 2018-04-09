@@ -76,7 +76,7 @@ PUSH_SWAP:= exec ft_get_int_position ft_lst_count ft_t_data_is_max_min_sorted ft
 					ft_get_pile_data ft_lst_is_max_min_sorted ps_arg ft_add_t_str_next ft_get_pile_position \
 					ft_lst_is_min_max_sorted ps_free ft_atoi_exit ft_get_str_str ft_mv_inf_half ps_print \
 					ft_check_ps_flags ft_get_t_data_position ft_next_t_data_issorted ps_refill ft_exec_ac_parse\
-					ft_init_ps_head ft_print_next_data push_swap ft_exec_parse ft_init_t_data_head ft_print_next_int\
+					ft_init_ps_head ft_print_next_data ft_exec_parse_ps ft_init_t_data_head ft_print_next_int\
 					singletons ft_free_next_data ft_is_data_in ft_print_next_str ft_get_data_data\
 					ft_is_there_inf ft_push_swap ft_get_int_abspos\
 					ft_is_there_inf_int ft_pushswap_operation ft_get_int_order ft_is_there_inf_ref ft_t_data_free
@@ -85,7 +85,7 @@ PUSH_SWAP_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PUSH_SWAP)))
 
 OBJ := $(PUSH_SWAP_OBJ) $(STR_OBJ) $(NBR_OBJ) $(LST_OBJ) $(LIB_OBJ) $(IS_OBJ) $(PRINTF_OBJ)
 SRC := $(PUSH_SWAP_SRC) $(STR_SRC) $(NBR_SRC) $(LST_SRC) $(LIB_SRC) $(IS_SRC) $(PRINTF_SRC)
-DONE := .str_done .nbr_done .lst_done .lib_done .is_done .print_done .push_swap_done
+DONE := .push_swap_done .str_done .nbr_done .lst_done .lib_done .is_done .print_done
 
 #***************************************************************************************************************#
 #                                                 PATH 	                                                    	#
@@ -183,13 +183,8 @@ $(OBJ_DIR)%.o: $(PUSH_SWAP_DIR)%.c $(INC)
 #***************************************************************************************************************#
 
 clean:
-	#@echo "\033[31m""\c"
-	#@rm -fv a.out | column
-	@echo "\033[0;35m""\c"
 	@rm -fv $(OBJ) | column
-	@echo "\033[7m""\c"
 	@rm -fv $(DONE) | column
-	@echo "\033[0;35m""\c"
 ifneq ($(OBJ_DIR), ./)
 	@rm -fdv $(OBJ_DIR)
 endif
@@ -198,6 +193,7 @@ fclean: clean
 	@echo "\033[1;35m""\c"
 	@rm -fv $(NAME)
 	@echo "\033[m""\c"
+
 
 re : fclean all
 

@@ -17,8 +17,7 @@
 /*
 ** Singletons functions
 */
-/
-ft_push_swap_head		*ft_push_swap_head(void)
+t_push_swap_head		*ft_push_swap_head(void)
 {
 	static t_push_swap_head		*ptr = 0;
 
@@ -35,4 +34,4 @@ ft_push_swap_head		*ft_push_swap_head(void)
 	}
 	return (ptr);
 }
-*/
+/**/

@@ -4,102 +4,66 @@
 #                                PROG                                          #
 #******************************************************************************#
 
-CHECKER			= checker
-PUSH_SWAP		= push_swap
+CHECKER			= ./checker
+PUSH_SWAP		= ./push_swap
 
 #******************************************************************************#
 #                                PATH                                          #
 #******************************************************************************#
 
-SRC_DIR		:=  ./srcs/
-OBJ_DIR	    :=  ./objs
-PS_OBJ_DIR	:=  ./objs/ps/
-CH_OBJ_DIR	:=  ./objs/ch/
-INC_DIR		:=  ./includes/
-PS_INC		:=  ./includes/push_swap.h
+SRC_PATH	:=  ./srcs/
 
-LIB_DIR		:=  ./libft#/includes
+LIB_PATH	:=  ./libft
 LIBFT_A		:=  ./libft/libft.a
-LIB         :=  $(addsuffix Makefile, $(LIB_DIR)/includes)
 
 CH_NAME		:=  checker
-CH_SRC		:=  $(addsuffix .c, $(addprefix $(SRC_DIR), $(CH_NAME)))
-CH_OBJ		:=  $(addsuffix .o, $(addprefix $(OBJ_DIR), $(CH_NAME)))
+CH_SRC		:=  $(SRC_PATH)checker.c
+CH_OBJ  	:=  $(SRC_PATH)checker.o
 
 PS_NAME		:=	push_swap
-PS_SRC		:=  $(addsuffix .c, $(addprefix $(SRC_DIR), $(PS_NAME)))
-PS_OBJ		:=  $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PS_NAME)))
+PS_SRC		:=	$(SRC_PATH)push_swap.c
+PS_OBJ      :=	$(SRC_PATH)push_swap.o
 
 #******************************************************************************#
 #                              COMMANDS                                        #
 #******************************************************************************#
 
-.PHONY: all clean fclean re libft
+FLAGS    	:= -Wall -Wextra -Werror -g #-Og -O3 -Ofast
 
-# Create objs directory and all subdirectories
-$(shell mkdir -p $(OBJS_DIR))
-$(shell mkdir -p $(CH_OBJS_DIR))
-$(shell mkdir -p $(PS_OBJS_DIR))
+all 		: 	$(PUSH_SWAP) $(CHECKER)
 
-CC_FLAGS    := -Wall -Wextra -Werror -g -Og -O3 -Ofast
+$(PUSH_SWAP) : 	$(PS_OBJ) $(LIBFT_A)
+				$(CC) -o push_swap $(PS_OBJ) $(FLAGS) -L $(LIB_PATH) -lft
 
-all :
-#    make $(PUSH_SWAP)
+$(CHECKER) : 	$(CH_OBJ) $(LIBFT_A)
+				echo "done"
+				$(CC) -o checker $(CH_OBJ) $(FLAGS) -L $(LIB_PATH) -lft
 
-libft :	$(LIB_DIR)
-	make  -C $(LIB_DIR)
+%.o: %.c $(LIBFT_A)
+				gcc -o $@ -c $< $(FLAGS) -I $(LIB_PATH)/includes
 
-#******************************************************************************#
-#                          CHECKER & PUSH_SWAP                                 #
-#******************************************************************************#
+$(LIBFT_A) :
+	make  -C $(LIB_PATH)
 
-#$(LIB):
-#		make -C $(LIB_DIR)
-#$(LIB_DIR) :
+
+
+#$(LIB_PATH) :
 #	git clone https://github.com/spajeo/libft.git
-
-#******************************************************************************#
-#                                DONE                                          #
-#******************************************************************************#
-
-.ps_done: $(PS_OBJ)
-	 @echo "au" > $@
-	 @echo ""
-	 @echo "\033[0;33m""created   : push_swap objet(s)""\033[m"
-
-.ch_done: $(CH_OBJ)
-	 @echo "au" > $@
-	 @echo ""
-	 @echo "\033[0;33m""created   : checker objet(s)""\033[m"
-
-#******************************************************************************#
-#                              OBJ_DIR                                         #
-#******************************************************************************#
-
-#$(CH_OBJ_DIR)%.o: $(SRC_DIR)#$(CH_NAME)%.c $(INC) $(LIB)
-#	$(CC) $(CC_FLAGS) -o $@ -c $< -I$(INC_DIR) -I$(LIB_DIR)
-#	echo "\033[1;36m✔ \033[m\c"
-
-$(PUSH_SWAP) : $(PS_OBJ)
-		#$(foreach i,$(shell echo "$(LIB)"),make -C "$(LIBS)/$(i)";)
-		$(CC) $(CC_FLAGS) -o $@ $(PS_INC) $(PS_OBJ) $(LIBFT_A)
-		printf $(CLEAR) && $(PRINT_OK) $(NAME)
-
-$(PS_OBJ_DIR)%.o: $(SRC_DIR)%.c
-	$(CC) $(CC_FLAGS) -o $@ -c $< -I$(INC_DIR) -I$(LIB_DIR)
-	echo "\033[1;36m✔ \033[m\c"
 
 #******************************************************************************#
 #                            CLEAN & NORM                                      #
 #******************************************************************************#
+
+
 clean:
-		@make fclean -C $(LIB_DIR)
-		@/bin/rm -f $(C_OBJS) $(PS_OBJS)
-		@echo "push_swap clean : $(_GREEN)Done$(_END)"
+	@rm $(PS_OBJ) $(CH_OBJ)
 
 fclean: clean
+	@rm -fv $(PUSH_SWAP)
+	@rm -fv $(CHECKER)
 
-re:
-		@make fclean
-		@make
+re : fclean all
+	make re  -C $(LIB_PATH)
+
+.PHONY: all clean fclean re
 
