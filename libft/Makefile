@@ -127,7 +127,7 @@ $(OBJ_DIR)%.o: $(LST_DIR)%.c $(INC)
 $(OBJ_DIR)%.o: $(LIB_DIR)%.c $(INC)
 	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
 	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
-	@echo "\033[1;37mㅋ\033[m\c"
+	@echo "\033[1;31mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(PRINTF_DIR)%.c $(INC)
 	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
@@ -144,8 +144,8 @@ $(OBJ_DIR)%.o: $(PUSH_SWAP_DIR)%.c $(INC)
 #***************************************************************************************************************#
 
 clean:
-	@rm -fv $(OBJ) | column
-	@rm -fdv $(OBJ_DIR) | column
+	@rm -fv $(OBJ)
+	@rm -fdv $(OBJ_DIR)
 
 fclean: clean
 	@rm -fv $(NAME)

@@ -46,7 +46,7 @@ $(CHECKER) : 	$(CH_OBJ) $(LIBFT_A)
 				@gcc -o $@ -c $< $(FLAGS) -I $(LIB_PATH)/includes
 
 $(LIBFT_A) :
-	make  -C $(LIB_PATH)
+	@make  -C $(LIB_PATH)
 
 #$(LIB_PATH) :
 #	git clone https://github.com/spajeo/libft.git
@@ -56,13 +56,13 @@ $(LIBFT_A) :
 #******************************************************************************#
 
 clean:
-	@rm -f $(PS_OBJ)
-	@rm -f $(CH_OBJ)
+	@rm -rf $(PS_OBJ)
+	@rm -rf $(CH_OBJ)
 	@make -C $(LIB_PATH)/ clean
 
 fclean: clean
-	@rm -f $(PUSH_SWAP)
-	@rm -f $(CHECKER)
+	@rm -rf $(PUSH_SWAP)
+	@rm -rf $(CHECKER)
 	@make -C $(LIB_PATH)/ fclean
 
 libre :
