@@ -83,100 +83,61 @@ PUSH_SWAP:= exec ft_get_int_position ft_lst_count ft_t_data_is_max_min_sorted ft
 PUSH_SWAP_SRC := $(addsuffix .c, $(addprefix $(PUSH_SWAP_DIR), $(PUSH_SWAP)))
 PUSH_SWAP_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PUSH_SWAP)))
 
-OBJ := $(PUSH_SWAP_OBJ) $(STR_OBJ) $(NBR_OBJ) $(LST_OBJ) $(LIB_OBJ) $(IS_OBJ) $(PRINTF_OBJ)
+OBJ :=  $(PUSH_SWAP_OBJ) $(STR_OBJ) $(NBR_OBJ) $(LST_OBJ) $(LIB_OBJ) $(IS_OBJ) $(PRINTF_OBJ)
 SRC := $(PUSH_SWAP_SRC) $(STR_SRC) $(NBR_SRC) $(LST_SRC) $(LIB_SRC) $(IS_SRC) $(PRINTF_SRC)
-DONE := .push_swap_done .str_done .nbr_done .lst_done .lib_done .is_done .print_done
 
 #***************************************************************************************************************#
 #                                                 PATH 	                                                    	#
 #***************************************************************************************************************#
 
-CC_FLAGS	:= -Wall -Wextra -Werror -g -Og -O3 -Ofast
+FLAGS	:= -Wall -Wextra -Werror -g -Og -O3 -Ofast
 
 all : $(NAME)
 
-$(NAME): $(DONE)
+$(NAME): $(PUSH_SWAP_OBJ) $(STR_OBJ) $(NBR_OBJ) $(IS_OBJ) $(LIB_OBJ) $(LST_OBJ) $(PRINTF_OBJ)
 	@ar rc $(NAME) $(OBJ)
-	@echo "\033[0;34m""created   : $(NAME)""\033[m"
+	@echo "\033[0;37m""\ncreated   : $(NAME)""\033[m"
 	@ranlib $(NAME)
-	@echo "\033[1;34m""sorted    : $(NAME)""\033[m"
+	@echo "\033[1;31m""sorted    : $(NAME)""\033[m"
 
-#***************************************************************************************************************#
-#                                              AUTOMATION                                                     	#
-#***************************************************************************************************************#
-
-.str_done: $(STR_OBJ)
-	@echo "au" > $@
-	@echo ""
-	@echo "\033[0;33m""created   : str objet(s)""\033[m"
-
-.nbr_done: $(NBR_OBJ)
-	@echo "au" > $@
-	@echo ""
-	@echo "\033[0;33m""created   : nbr objet(s)""\033[m"
-
-.is_done: $(IS_OBJ)
-	@echo "au" > $@
-	@echo ""
-	@echo "\033[0;33m""created   : is objet(s)""\033[m"
-
-.lib_done: $(LIB_OBJ)
-	@echo "au" > $@
-	@echo ""
-	@echo "\033[0;33m""created   : lib objet(s)""\033[m"
-
-.lst_done: $(LST_OBJ)
-	@echo "au" > $@
-	@echo ""
-	@echo "\033[0;33m""created   : lst objet(s)""\033[m"
-
-.print_done: $(PRINTF_OBJ)
-	@echo "au" > $@
-	@echo ""
-	@echo "\033[0;33m""created   : print objet(s)""\033[m"
-
-.push_swap_done: $(PUSH_SWAP_OBJ)
-	@echo "au" > $@
-	@echo ""
-	@echo "\033[0;33m""created   : push_swap objet(s)""\033[m"
 #***************************************************************************************************************#
 #                                               OBJ_DIR                                                     	#
 #***************************************************************************************************************#
 
 $(OBJ_DIR)%.o: $(STR_DIR)%.c $(INC)
 	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
-	@gcc $(CC_FLAGS) -o $@ -c $< -I./includes/
-	@echo "\033[1;36m✔ \033[m\c"
+	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
+	@echo "\033[1;31mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(NBR_DIR)%.c $(INC)
 	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
-	@gcc $(CC_FLAGS) -o $@ -c $< -I./includes/
-	@echo "\033[1;36m✔ \033[m\c"
+	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
+	@echo "\033[1;37mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(IS_DIR)%.c $(INC)
 	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
-	@gcc $(CC_FLAGS) -o $@ -c $< -I./includes/
-	@echo "\033[1;36m✔ \033[m\c"
+	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
+	@echo "\033[1;31mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(LST_DIR)%.c $(INC)
 	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
-	@gcc $(CC_FLAGS) -o $@ -c $< -I./includes/
-	@echo "\033[1;36m✔ \033[m\c"
+	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
+	@echo "\033[1;31mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(LIB_DIR)%.c $(INC)
 	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
-	@gcc $(CC_FLAGS) -o $@ -c $< -I./includes/
-	@echo "\033[1;36m✔ \033[m\c"
+	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
+	@echo "\033[1;37mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(PRINTF_DIR)%.c $(INC)
 	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
-	@gcc $(CC_FLAGS) -o $@ -c $< -I./includes/
-	@echo "\033[1;36m✔ \033[m\c"
+	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
+	@echo "\033[1;31mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(PUSH_SWAP_DIR)%.c $(INC)
 	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
-	@gcc $(CC_FLAGS) -o $@ -c $< -I./includes/
-	@echo "\033[1;36m✔ \033[m\c"
+	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
+	@echo "\033[1;37mㅋ\033[m\c"
 
 #***************************************************************************************************************#
 #                                              CLEAN & NORM                                                    	#
@@ -184,16 +145,10 @@ $(OBJ_DIR)%.o: $(PUSH_SWAP_DIR)%.c $(INC)
 
 clean:
 	@rm -fv $(OBJ) | column
-	@rm -fv $(DONE) | column
-ifneq ($(OBJ_DIR), ./)
-	@rm -fdv $(OBJ_DIR)
-endif
+	@rm -fdv $(OBJ_DIR) | column
 
 fclean: clean
-	@echo "\033[1;35m""\c"
 	@rm -fv $(NAME)
-	@echo "\033[m""\c"
-
 
 re : fclean all
 
