@@ -48,8 +48,8 @@ $(CHECKER) : 	$(CH_OBJ) $(LIBFT_A)
 $(LIBFT_A) :
 	@make  -C $(LIB_PATH)
 
-#$(LIB_PATH) :
-#	git clone https://github.com/spajeo/libft.git
+$(LIB_PATH) :
+	git clone https://github.com/spajeo/libft.git
 
 #******************************************************************************#
 #                            CLEAN & NORM                                      #
