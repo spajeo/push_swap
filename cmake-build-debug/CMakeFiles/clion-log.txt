@@ -1,0 +1,4 @@
+/Users/spajeo/Desktop/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/spajeo/push_swap__
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/spajeo/push_swap__/cmake-build-debug
