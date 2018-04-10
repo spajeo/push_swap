@@ -50,7 +50,7 @@ NBR_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(NBR)))
 LST := is_double_data_next lst_add_after lst_add_before lst_disconnect lst_empty lst_move_node_after \
 		lst_move_node_before lstadd lstdel lstdelone lstiter lstmap lstnew
 LST_SRC := $(addsuffix .c, $(addprefix $(LST_DIR)ft_, $(LST)))
-Lt stST_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(LST)))
+LST_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(LST)))
 
 PRINTF:=	buff_charstr buff_val ft_pr_buffnwstr ft_pr_buffwstr ft_pr_charcat ft_pr_itoa_ubase_gbuff \
 		ft_pr_memsetblim ft_pr_strcatcount ft_pr_strncatcount ft_printf initialisation \
@@ -71,15 +71,16 @@ IS :=     is_white isalnum isalpha isascii isdigit islower isprint issign isspac
 IS_SRC := $(addsuffix .c, $(addprefix $(IS_DIR)ft_, $(IS)))
 IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
 
-PUSH_SWAP:= exec ft_get_int_position ft_lst_count ft_t_data_is_max_min_sorted ft_add_t_data_next \
-					ft_get_lst_from_int ft_lst_count_lim ft_t_data_is_min_max_sorted ft_add_t_pile_next \
-					ft_get_pile_data ft_lst_is_max_min_sorted ps_arg ft_add_t_str_next ft_get_pile_position \
-					ft_lst_is_min_max_sorted ps_free ft_atoi_exit ft_get_str_str ft_mv_inf_half ps_print \
-					ft_check_ps_flags ft_get_t_data_position ft_next_t_data_issorted ps_refill ft_exec_ac_parse\
-					ft_init_ps_head ft_print_next_data ft_exec_parse_ps ft_init_t_data_head ft_print_next_int\
-					singletons ft_free_next_data ft_is_data_in ft_print_next_str ft_get_data_data\
-					ft_is_there_inf ft_push_swap ft_get_int_abspos\
-					ft_is_there_inf_int ft_pushswap_operation ft_get_int_order ft_is_there_inf_ref ft_t_data_free
+PUSH_SWAP:= ft_get_int_position ft_lst_count ft_t_data_is_max_min_sorted ft_add_t_data_next \
+			ft_get_lst_from_int ft_lst_count_lim ft_t_data_is_min_max_sorted ft_add_t_pile_next \
+			ft_get_pile_data ft_lst_is_max_min_sorted ps_arg ft_add_t_str_next ft_get_pile_position \
+			ft_lst_is_min_max_sorted ps_free ft_atoi_exit ft_get_str_str ft_mv_inf_half ps_print \
+			ft_check_ps_flags ft_get_t_data_position ft_next_t_data_issorted ps_refill ft_exec_ac_parse\
+			ft_init_ps_head ft_print_next_data ft_exec_parse_ps ft_init_t_data_head ft_print_next_int\
+			singletons ft_free_next_data ft_is_data_in ft_print_next_str ft_get_data_data\
+			ft_is_there_inf ft_push_swap ft_get_int_abspos ft_ps_convert_argv\
+			ft_ps_exec_p ft_ps_exec_s ft_ps_exec_rr ft_ps_exec_r \
+			ft_is_there_inf_int ft_pushswap_operation ft_get_int_order ft_is_there_inf_ref ft_t_data_free
 PUSH_SWAP_SRC := $(addsuffix .c, $(addprefix $(PUSH_SWAP_DIR), $(PUSH_SWAP)))
 PUSH_SWAP_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PUSH_SWAP)))
 
@@ -94,7 +95,7 @@ FLAGS	:= -Wall -Wextra -Werror -g -Og -O3 -Ofast
 
 all : $(NAME)
 
-$(NAME): $(PUSH_SWAP_OBJ) $(STR_OBJ) $(NBR_OBJ) $(IS_OBJ) $(LIB_OBJ) $(LST_OBJ) $(PRINTF_OBJ)
+$(NAME): $(OBJ_DIR) $(LST_OBJ) $(PUSH_SWAP_OBJ) $(STR_OBJ) $(NBR_OBJ) $(IS_OBJ) $(LIB_OBJ) $(PRINTF_OBJ)
 	@ar rc $(NAME) $(OBJ)
 	@echo "\033[0;37m""\ncreated   : $(NAME)""\033[m"
 	@ranlib $(NAME)
@@ -104,38 +105,34 @@ $(NAME): $(PUSH_SWAP_OBJ) $(STR_OBJ) $(NBR_OBJ) $(IS_OBJ) $(LIB_OBJ) $(LST_OBJ) 
 #                                               OBJ_DIR                                                     	#
 #***************************************************************************************************************#
 
-$(OBJ_DIR)%.o: $(STR_DIR)%.c $(INC)
+$(OBJ_DIR) :
 	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
+
+$(OBJ_DIR)%.o: $(STR_DIR)%.c $(INC)
 	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
 	@echo "\033[1;31mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(NBR_DIR)%.c $(INC)
-	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
 	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
 	@echo "\033[1;37mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(IS_DIR)%.c $(INC)
-	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
 	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
 	@echo "\033[1;31mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(LST_DIR)%.c $(INC)
-	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
 	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
 	@echo "\033[1;31mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(LIB_DIR)%.c $(INC)
-	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
 	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
 	@echo "\033[1;31mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(PRINTF_DIR)%.c $(INC)
-	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
 	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
 	@echo "\033[1;31mㅋ\033[m\c"
 
 $(OBJ_DIR)%.o: $(PUSH_SWAP_DIR)%.c $(INC)
-	@mkdir -p $(OBJ_DIR) 2> /tmp/a.del
 	@$(CC) $(FLAGS) -o $@ -c $< -I./includes/
 	@echo "\033[1;37mㅋ\033[m\c"
 

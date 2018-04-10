@@ -28,9 +28,12 @@
 int ft_is_data_in(t_lst *head, int data, int *(*get_struct_el)(t_lst *))
 {
 	t_lst	*tmp;
+	data += data;
 
+ft_putstr("QQQQQQQQQQ\n");
 	tmp = head->next;
-	while (tmp != head)
+	ft_putnbr(*get_struct_el(tmp));
+/*	while (tmp != head)
 	{
 		if (*get_struct_el(tmp) == data)
 		{
@@ -38,5 +41,6 @@ int ft_is_data_in(t_lst *head, int data, int *(*get_struct_el)(t_lst *))
 		}
 		tmp = tmp->next;	
 	}
+*/
 	return (0);
 }

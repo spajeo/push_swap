@@ -20,21 +20,21 @@ static int		ft_pushwap_ops(char *src)
 	done = 0;
 	if (!ft_strcmp(src, "sa"))
 	{
-		if (ft_exec_s(&HEAD_LA))
+		if (ft_ps_exec_s(&HEAD_LA))
 			ft_add_t_str_next(&HEAD_PS_MV, src);
 		return (1);
 	}
 	else if (!ft_strcmp(src, "sb"))
 	{
-		if (ft_exec_s(&HEAD_LB))
+		if (ft_ps_exec_s(&HEAD_LB))
 			ft_add_t_str_next(&HEAD_PS_MV, src);
 		return (1);
 	}
 	else if (!ft_strcmp(src, "ss"))
 	{
-		if (ft_exec_s(&HEAD_LA))
+		if (ft_ps_exec_s(&HEAD_LA))
 			done = 1;
-		if (ft_exec_s(&HEAD_LB) || done == 1)
+		if (ft_ps_exec_s(&HEAD_LB) || done == 1)
 			ft_add_t_str_next(&HEAD_PS_MV, src);
 		return (1);
 	}
@@ -46,7 +46,7 @@ static int		ft_pushwap_opp(char *src)
 {
 	if (!ft_strcmp(src, "pa"))
 	{
-		if (ft_exec_p(&HEAD_LA, &HEAD_LB))
+		if (ft_ps_exec_p(&HEAD_LA, &HEAD_LB))
 		{
 			ft_add_t_str_next(&HEAD_PS_MV, src);
 		}
@@ -54,7 +54,7 @@ static int		ft_pushwap_opp(char *src)
 	}
 	else if (!ft_strcmp(src, "pb"))
 	{
-		if (ft_exec_p(&HEAD_LB, &HEAD_LA))
+		if (ft_ps_exec_p(&HEAD_LB, &HEAD_LA))
 			ft_add_t_str_next(&HEAD_PS_MV, src);
 		return (1);
 	}
@@ -69,21 +69,21 @@ static int		ft_pushwap_opr(char *src)
 	done = 0;
 	if (!ft_strcmp(src, "ra"))
 	{
-		if (ft_exec_r(&HEAD_LA))
+		if (ft_ps_exec_r(&HEAD_LA))
 			ft_add_t_str_next(&HEAD_PS_MV, src);
 		return (1);
 	}
 	else if (!ft_strcmp(src, "rb"))
 	{
-		if (ft_exec_r(&HEAD_LB))
+		if (ft_ps_exec_r(&HEAD_LB))
 			ft_add_t_str_next(&HEAD_PS_MV, src);
 		return (1);
 	}
 	else if (!ft_strcmp(src, "rr"))
 	{
-		if (ft_exec_r(&HEAD_LA))
+		if (ft_ps_exec_r(&HEAD_LA))
 			done = 1;
-		if (ft_exec_r(&HEAD_LB) || done == 1)
+		if (ft_ps_exec_r(&HEAD_LB) || done == 1)
 			ft_add_t_str_next(&HEAD_PS_MV, src);
 		return (1);
 	}
@@ -98,21 +98,21 @@ static int		ft_pushwap_oprr(char *src)
 	done = 0;
 	if (!ft_strcmp(src, "rra"))
 	{
-		if (ft_exec_rr(&HEAD_LA))
+		if (ft_ps_exec_rr(&HEAD_LA))
 			ft_add_t_str_next(&HEAD_PS_MV, src);
 		return (1);
 	}
 	else if (!ft_strcmp(src, "rrb"))
 	{
-		if (ft_exec_rr(&HEAD_LB))
+		if (ft_ps_exec_rr(&HEAD_LB))
 			ft_add_t_str_next(&HEAD_PS_MV, src);
 		return (1);
 	}
 	else if (!ft_strcmp(src, "rrr"))
 	{
-		if (ft_exec_rr(&HEAD_LA))
+		if (ft_ps_exec_rr(&HEAD_LA))
 			done = 1;
-		if (ft_exec_rr(&HEAD_LB) || done == 1)
+		if (ft_ps_exec_rr(&HEAD_LB) || done == 1)
 			ft_add_t_str_next(&HEAD_PS_MV, src);
 		return (1);
 	}

@@ -29,20 +29,20 @@
 /*
 **	Globales and Head Refs 
 */
+/*
 #define PS__HEAD				swap_head
 #define HEAD_LA	    			swap_head.head_a
 #define HEAD_LB	    			(swap_head.head_b)
 #define HEAD_PS_MV				(swap_head.head_mv)
 #define FLAG__PS    			(swap_head.flag)
-/*
+*/
 #define PS__HEAD				(ft_push_swap_head())
 #define HEAD_LA	    			(ft_push_swap_head()->head_a)
 #define HEAD_LB	    			(ft_push_swap_head()->head_b)
 #define HEAD_PS_MV				(ft_push_swap_head()->head_mv)
 #define FLAG__PS    			(ft_push_swap_head()->flag)
-*/
 /*
-** from ==  &new->lst 
+** from ==  &new->lst
 */
 
 #define PILE(it) CONTAINEROF(it, t_pile, lst)
@@ -170,15 +170,15 @@ size_t		 	   		*ft_flag_push_swap();
 int                     ft_pushswap_operation(char *src);
 void                    ft_print_stack_a_and_b();
 //void					ft_print_a_and_b();
-void					ft_convert_argv(const char *s);
+void					ft_ps_convert_argv(const char *s);
 void					ft_free_checker_and_push_swap(void);
 void					ft_check_instruct(void);
 int						*ft_get_int_order(t_lst *head, int*(*get_int)(t_lst *), size_t position);
 
-int						ft_exec_p(t_lst *lst_a, t_lst *lst_b);
-int						ft_exec_s(t_lst *head);
-int						ft_exec_r(t_lst *head);
-int						ft_exec_rr(t_lst *head);
+int						ft_ps_exec_p(t_lst *lst_a, t_lst *lst_b);
+int						ft_ps_exec_s(t_lst *head);
+int						ft_ps_exec_r(t_lst *head);
+int						ft_ps_exec_rr(t_lst *head);
 /*                  
 **                  
 */                  

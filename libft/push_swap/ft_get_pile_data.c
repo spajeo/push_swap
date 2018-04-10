@@ -17,11 +17,14 @@
 
 
 /*
-** Girves Acces t_pile aka struct s_pile data elemnent in the memory
+** Gives Acces {t_pile}
+**          aka {struct s_pile data} element in the memory
 */
 
 int		*ft_get_pile_data(t_lst *ptr) 
 {
+ft_putnbr(((t_pile *)((char *)(ptr)
+                       - ((char *)(&(((t_pile *)0))->lst))))->data);
 	return (&((t_pile *)((char *)(ptr)
 						- ((char *)(&(((t_pile *)0))->lst))))->data);
 }

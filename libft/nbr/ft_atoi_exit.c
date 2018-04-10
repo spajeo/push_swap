@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+
+/*
+ *      {atoi} with a security [not a digit]
+ */
+
+
 #include "libft.h"
 
 int ft_atoi_exit(const char *src)
