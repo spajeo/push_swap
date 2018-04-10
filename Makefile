@@ -30,19 +30,21 @@ PS_OBJ      :=	$(SRC_PATH)push_swap.o
 
 FLAGS    	:= -Wall -Wextra -Werror -g -Og -O3 -Ofast
 
-all 		: 	$(PUSH_SWAP) $(CHECKER)
+all 		: $(PUSH_SWAP) $(CHECKER)
 
 $(PUSH_SWAP) : 	$(PS_OBJ) $(LIBFT_A)
+				@make  -C $(LIB_PATH)
 				@$(CC) -o push_swap $(PS_OBJ) $(FLAGS) -L $(LIB_PATH) -lft
 				@rm -f $(PS_OBJ)
 				@echo "\033[1;37mdone : push_swap\033[m\c"
 
 $(CHECKER) : 	$(CH_OBJ) $(LIBFT_A)
+				@make  -C $(LIB_PATH)
 				@$(CC) -o checker $(CH_OBJ) $(FLAGS) -L $(LIB_PATH) -lft
 				@rm -f $(CH_OBJ)
 				@echo "\033[1;31m\ndone : checker\033[m\c"
 
-%.o: %.c $(LIBFT_A)
+%.o: %.c #$(LIBFT_A)
 				@gcc -o $@ -c $< $(FLAGS) -I $(LIB_PATH)/includes
 
 $(LIBFT_A) :
@@ -58,7 +60,6 @@ $(LIB_PATH) :
 clean:
 	@rm -rf $(PS_OBJ)
 	@rm -rf $(CH_OBJ)
-	@make -C $(LIB_PATH)/ clean
 
 fclean: clean
 	@rm -rf $(PUSH_SWAP)

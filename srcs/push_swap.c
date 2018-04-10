@@ -175,7 +175,7 @@ int			main(int ac, char **av)
 	++av;
 	--ac;
 	NODE_INIT(HEAD_LA); NODE_INIT(HEAD_LB); NODE_INIT(HEAD_PS_MV);
-	ft_exec_parse_ps((*av), &ft_convert_argv);
+	ft_exec_parse_ps((*av), &ft_ps_convert_argv);
 	ft_print_stack_a_and_b();
 	while (!(ft_next_t_data_issorted(&HEAD_LA, &HEAD_LB)))
 	{
