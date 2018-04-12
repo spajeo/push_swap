@@ -10,7 +10,7 @@ void		ft_check_instruct(void)
 	line = NULL;
 	while (get_next_line(0, &line) > 0 && ft_strcmp("", line))
 	{
-		ft_pushswap_operation(line);
+		ft_ps_pushswap_operation(line);
 		if ((FLAG__PS & PS__MOVE))
 			ft_printf("\x1B[31m%12s\x1B[0m\n", line);
 		if ((FLAG__PS & PS__STEP))

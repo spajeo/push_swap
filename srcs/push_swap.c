@@ -43,16 +43,16 @@ int ft_sorting()
 	if (PILE(HEAD_LB.next)->data < PILE(HEAD_LB.next->next)->data &&
 			PILE(HEAD_LB.next)->data < PILE(HEAD_LB.next->next)->data)
 	{
-		ft_pushswap_operation("sa");
-		ft_pushswap_operation("sb");
+		ft_ps_pushswap_operation("sa");
+		ft_ps_pushswap_operation("sb");
 	}
 	else if (PILE(HEAD_LB.next)->data < PILE(HEAD_LB.next->next)->data)
 	{
-		ft_pushswap_operation("sb");
+		ft_ps_pushswap_operation("sb");
 	}
 	else if (PILE(HEAD_LA.next)->data > PILE(HEAD_LA.next->next)->data)
 	{
-		ft_pushswap_operation("sa");
+		ft_ps_pushswap_operation("sa");
 	}
 	return (1);
 }
@@ -92,30 +92,30 @@ void			ft_organise_around_pivot_b()
 		{
 			while (PILE(HEAD_LB.next)->position > 0)
 			{
-				ft_pushswap_operation("pb");
+				ft_ps_pushswap_operation("pb");
 			}
 			pivot = PILE(HEAD_LB.next)->data;
 			PILE(HEAD_LB.next)->position = 1;
-			ft_pushswap_operation("pb");
-			ft_pushswap_operation("ra");
+			ft_ps_pushswap_operation("pb");
+			ft_ps_pushswap_operation("ra");
 			while ((ft_is_there_inf_int(&HEAD_LB, &ft_get_pile_data, pivot)))
 			{
 				if (PILE(HEAD_LB.next)->data < pivot)
 				{
-					ft_pushswap_operation("pb");
+					ft_ps_pushswap_operation("pb");
 				}
 				else
 				{
-					ft_pushswap_operation("rb");
+					ft_ps_pushswap_operation("rb");
 					++nb;
 				}
 			}
 				while (nb != 0)
 				{
-					ft_pushswap_operation("rrb");
+					ft_ps_pushswap_operation("rrb");
 					--nb;
 				}
-			ft_pushswap_operation("rra");
+			ft_ps_pushswap_operation("rra");
 		}
 /*
 */
@@ -134,30 +134,30 @@ int			ft_organise_around_pivot_a()
 	}
 	while (PILE(HEAD_LA.next)->position == 1)
 	{
-		ft_pushswap_operation("pa");
+		ft_ps_pushswap_operation("pa");
 	}
 	pivot = PILE(HEAD_LA.next)->data;
 	PILE(HEAD_LA.next)->position = 1;
-	ft_pushswap_operation("pa");
-	ft_pushswap_operation("rb");
+	ft_ps_pushswap_operation("pa");
+	ft_ps_pushswap_operation("rb");
 	while ((ft_is_there_inf_int(&HEAD_LA, &ft_get_pile_data, pivot)))
 	{
 		if (PILE(HEAD_LA.next)->data < pivot)
 		{
-			ft_pushswap_operation("pa");
+			ft_ps_pushswap_operation("pa");
 		}
 		else
 		{
-			ft_pushswap_operation("ra");
+			ft_ps_pushswap_operation("ra");
 			++nb;
 		}
 	}
 		while (nb != 0)
 		{
-			ft_pushswap_operation("rra");
+			ft_ps_pushswap_operation("rra");
 			--nb;
 		}
-	ft_pushswap_operation("rrb");
+	ft_ps_pushswap_operation("rrb");
 /*
 	if (!(ft_is_there_inf_int(&HEAD_LA, &ft_get_pile_position, 1)))
 	{
@@ -177,10 +177,10 @@ int			main(int ac, char **av)
 	NODE_INIT(HEAD_LA); NODE_INIT(HEAD_LB); NODE_INIT(HEAD_PS_MV);
 	ft_exec_parse_ps((*av), &ft_ps_convert_argv);
 	ft_print_stack_a_and_b();
-	while (!(ft_next_t_data_issorted(&HEAD_LA, &HEAD_LB)))
+	while (!(ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB)))
 	{
 			ft_organise_around_pivot_a();
-				if (ft_next_t_data_issorted(&HEAD_LA, &HEAD_LB))
+				if (ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB))
 					break;
 			ft_fix_right_place();
 			ft_organise_around_pivot_b();

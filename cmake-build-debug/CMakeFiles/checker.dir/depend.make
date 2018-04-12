@@ -33,6 +33,14 @@ CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_s.c.o: ../libft/includes/linux
 CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_s.c.o: ../libft/includes/push_swap.h
 CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_s.c.o: ../libft/push_swap/ft_ps_exec_s.c
 
+CMakeFiles/checker.dir/libft/push_swap/ft_ps_pushwap_operation.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/checker.dir/libft/push_swap/ft_ps_pushwap_operation.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/checker.dir/libft/push_swap/ft_ps_pushwap_operation.c.o: ../libft/includes/libft.h
+CMakeFiles/checker.dir/libft/push_swap/ft_ps_pushwap_operation.c.o: ../libft/includes/liblst.h
+CMakeFiles/checker.dir/libft/push_swap/ft_ps_pushwap_operation.c.o: ../libft/includes/linux_compiler.h
+CMakeFiles/checker.dir/libft/push_swap/ft_ps_pushwap_operation.c.o: ../libft/includes/push_swap.h
+CMakeFiles/checker.dir/libft/push_swap/ft_ps_pushwap_operation.c.o: ../libft/push_swap/ft_ps_pushwap_operation.c
+
 CMakeFiles/checker.dir/srcs/checker.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/checker.dir/srcs/checker.c.o: ../libft/includes/get_next_line.h
 CMakeFiles/checker.dir/srcs/checker.c.o: ../libft/includes/libft.h

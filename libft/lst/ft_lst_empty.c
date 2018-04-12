@@ -4,8 +4,15 @@
  * list_empty - tests whether a list is empty
  * @head: the list to test.
  * add static when in define
+ *int list_empty(t_lst *head)
+ * {
+ *     return READ_ONCE(head->next) == head;
+ *	 }
+ *	 TO FINISH
  */
-int list_empty(t_lst *head)
- {
-     return READ_ONCE(head->next) == head;
- }
+
+t_lst *ft_lst_empty(t_lst *head){
+
+	return(head);
+
+}

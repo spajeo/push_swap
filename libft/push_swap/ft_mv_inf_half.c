@@ -34,12 +34,12 @@ ft_printf("PIVOT %zu\n", PIVOT);
 	{
 		if (PILE(HEAD_LA.next)->data <= PIVOT)
 		{
-			ft_pushswap_operation("pa");
+			ft_ps_pushswap_operation("pa");
 			--nb_mv;
 		} 
 //		if (nb_mv != 0)
 		{
-			ft_pushswap_operation("rra");
+			ft_ps_pushswap_operation("rra");
 		}
 	}
 //ft_print_next_int(&HEAD_LA, &ft_get_pile_data);

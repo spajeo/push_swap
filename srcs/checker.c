@@ -37,7 +37,7 @@ int			main(int ac, char **av)
 	--ac;
 	ft_exec_parse(&ac, av, &ft_ps_convert_argv);
 	ft_check_instruct();
-	if (ft_next_t_data_issorted(&HEAD_LA, &HEAD_LB) && JUST_HEAD(HEAD_LB))
+	if (ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB) && JUST_HEAD(HEAD_LB))
 		ft_printf("\x1B[32mOK\n");
 	else
 		ft_printf("\x1B[31mKO\x1B[0m\n");

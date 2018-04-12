@@ -130,32 +130,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/spajeo/push_swap__/libft/libft.a">
-			<Option target="checker"/>
-			<Option target="push_swap"/>
-		</Unit>
-		<Unit filename="/Users/spajeo/push_swap__/libft/push_swap/ft_ps_convert_argv.c">
-			<Option target="checker"/>
-			<Option target="push_swap"/>
-		</Unit>
-		<Unit filename="/Users/spajeo/push_swap__/libft/push_swap/ft_ps_exec_p.c">
-			<Option target="checker"/>
-			<Option target="push_swap"/>
-		</Unit>
-		<Unit filename="/Users/spajeo/push_swap__/libft/push_swap/ft_ps_exec_r.c">
-			<Option target="checker"/>
-			<Option target="push_swap"/>
-		</Unit>
-		<Unit filename="/Users/spajeo/push_swap__/libft/push_swap/ft_ps_exec_s.c">
-			<Option target="checker"/>
-			<Option target="push_swap"/>
-		</Unit>
-		<Unit filename="/Users/spajeo/push_swap__/srcs/checker.c">
-			<Option target="checker"/>
-		</Unit>
-		<Unit filename="/Users/spajeo/push_swap__/srcs/push_swap.c">
-			<Option target="push_swap"/>
-		</Unit>
 		<Unit filename="/Users/spajeo/push_swap__/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

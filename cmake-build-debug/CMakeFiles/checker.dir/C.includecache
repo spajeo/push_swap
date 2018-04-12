@@ -90,6 +90,12 @@ liblst.h
 push_swap.h
 /Users/spajeo/push_swap__/libft/push_swap/push_swap.h
 
+/Users/spajeo/push_swap__/libft/push_swap/ft_ps_pushwap_operation.c
+libft.h
+/Users/spajeo/push_swap__/libft/push_swap/libft.h
+push_swap.h
+/Users/spajeo/push_swap__/libft/push_swap/push_swap.h
+
 /Users/spajeo/push_swap__/srcs/checker.c
 push_swap.h
 /Users/spajeo/push_swap__/srcs/push_swap.h

@@ -33,6 +33,14 @@ CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_s.c.o
  ../libft/includes/linux_compiler.h
  ../libft/includes/push_swap.h
  /Users/spajeo/push_swap__/libft/push_swap/ft_ps_exec_s.c
+CMakeFiles/checker.dir/libft/push_swap/ft_ps_pushwap_operation.c.o
+ ../libft/includes/ft_printf.h
+ ../libft/includes/get_next_line.h
+ ../libft/includes/libft.h
+ ../libft/includes/liblst.h
+ ../libft/includes/linux_compiler.h
+ ../libft/includes/push_swap.h
+ /Users/spajeo/push_swap__/libft/push_swap/ft_ps_pushwap_operation.c
 CMakeFiles/checker.dir/srcs/checker.c.o
  ../libft/includes/ft_printf.h
  ../libft/includes/get_next_line.h

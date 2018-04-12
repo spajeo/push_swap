@@ -71,16 +71,17 @@ IS :=     is_white isalnum isalpha isascii isdigit islower isprint issign isspac
 IS_SRC := $(addsuffix .c, $(addprefix $(IS_DIR)ft_, $(IS)))
 IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
 
-PUSH_SWAP:= ft_get_int_position ft_lst_count ft_t_data_is_max_min_sorted ft_add_t_data_next \
+PUSH_SWAP:=  ft_get_int_position ft_lst_count ft_t_data_is_max_min_sorted \
 			ft_get_lst_from_int ft_lst_count_lim ft_t_data_is_min_max_sorted ft_add_t_pile_next \
 			ft_get_pile_data ft_lst_is_max_min_sorted ps_arg ft_add_t_str_next ft_get_pile_position \
-			ft_lst_is_min_max_sorted ps_free ft_atoi_exit ft_get_str_str ft_mv_inf_half ps_print \
-			ft_check_ps_flags ft_get_t_data_position ft_next_t_data_issorted ps_refill ft_exec_ac_parse\
+			ft_lst_is_min_max_sorted ps_free ft_ps_atoi_exit ft_get_str_str ft_mv_inf_half ps_print \
+			ft_check_ps_flags ft_get_t_data_position ft_ps_next_t_data_issorted ps_refill ft_exec_ac_parse\
 			ft_init_ps_head ft_print_next_data ft_exec_parse_ps ft_init_t_data_head ft_print_next_int\
-			singletons ft_free_next_data ft_is_data_in ft_print_next_str ft_get_data_data\
-			ft_is_there_inf ft_push_swap ft_get_int_abspos ft_ps_convert_argv\
+			singletons ft_free_next_data ft_is_data_in ft_print_next_str ft_get_t_data_data\
+			ft_is_there_inf ft_get_int_abspos ft_ps_convert_argv ft_ps_pushswap_operation\
 			ft_ps_exec_p ft_ps_exec_s ft_ps_exec_rr ft_ps_exec_r \
-			ft_is_there_inf_int ft_pushswap_operation ft_get_int_order ft_is_there_inf_ref ft_t_data_free
+			ft_pushswap_opp ft_pushswap_ops ft_pushswap_oprr ft_pushswap_opr \
+			ft_is_there_inf_int ft_get_int_order ft_is_there_inf_ref ft_t_data_free
 PUSH_SWAP_SRC := $(addsuffix .c, $(addprefix $(PUSH_SWAP_DIR), $(PUSH_SWAP)))
 PUSH_SWAP_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PUSH_SWAP)))
 
@@ -141,11 +142,11 @@ $(OBJ_DIR)%.o: $(PUSH_SWAP_DIR)%.c $(INC)
 #***************************************************************************************************************#
 
 clean:
-	@rm -fv $(OBJ)
-	@rm -fdv $(OBJ_DIR)
+	@rm -rfd $(OBJ)
+	@rm -rfd $(OBJ_DIR)
 
 fclean: clean
-	@rm -fv $(NAME)
+	@rm -rfv $(NAME)
 
 re : fclean all
 

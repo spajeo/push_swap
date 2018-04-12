@@ -35,13 +35,17 @@
 #define HEAD_LB	    			(swap_head.head_b)
 #define HEAD_PS_MV				(swap_head.head_mv)
 #define FLAG__PS    			(swap_head.flag)
-*/
-#define PS__HEAD				(ft_push_swap_head())
+//*/
+//*
+#define PS__HEAD				(*ft_push_swap_head())
 #define HEAD_LA	    			(ft_push_swap_head()->head_a)
 #define HEAD_LB	    			(ft_push_swap_head()->head_b)
 #define HEAD_PS_MV				(ft_push_swap_head()->head_mv)
 #define FLAG__PS    			(ft_push_swap_head()->flag)
-/*
+//*/
+
+
+ /*
 ** from ==  &new->lst
 */
 
@@ -72,7 +76,6 @@ typedef struct s_push_swap_head
 	int			max_val;
 	size_t		bucket_values;
 
-
 	int			pivot;
 	int			pivot_pos;
 
@@ -82,6 +85,7 @@ typedef struct s_push_swap_head
 	t_lst		head_b;
 	size_t		nb_b;
 }				t_push_swap_head;
+
 t_push_swap_head		swap_head;
 // creer une fonction pour faire une te^ete
 
@@ -101,7 +105,7 @@ t_push_swap_head		*ft_push_swap_head(void);
 */
 
 void					ft_init_ps_head();
-t_data                  *ft_add_t_data_next(t_lst *head, const int nb);
+//t_data                  *ft_add_t_data_next(t_lst *head, const int nb);  --> non_generic_lst
 t_pile                  *ft_add_t_pile_next(t_lst *head, const int nb);
 void					*ft_add_t_str_next(t_lst *head, char *str);
 void                    ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *));
@@ -110,7 +114,7 @@ int     				ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
 
 int						ft_lst_is_min_max_sorted(t_lst *head, int *(*get_int)(t_lst *));
 int						ft_lst_is_max_min_sorted(t_lst *head, int *(*get_int)(t_lst *));
-int						ft_next_t_data_issorted(t_lst *head_a, t_lst *head_b);
+int						ft_ps_next_t_data_issorted(t_lst *head_a, t_lst *head_b);
 void                    ft_print_next_str(t_lst *head);
 
 
@@ -141,7 +145,7 @@ int                     ft_get_int_abspos(t_lst *head, int*(*get_int)(t_lst *), 
 
 int						*ft_get_pile_data(t_lst *ptr); 
 int						*ft_get_pile_position(t_lst *ptr); 
-int						ft_get_data_data(t_lst *ptr);
+int						ft_get_t_data_data(t_lst *ptr);
 char					*ft_get_str_str(t_lst *ptr);
 
 //int						ft_mv_inf_half();
@@ -167,7 +171,11 @@ void            		ft_exec_parse_ps(char *str, void (*f)(const char *));
 */
 int						ft_check_flag_push_swap(int *ac, char **av);
 size_t		 	   		*ft_flag_push_swap();
-int                     ft_pushswap_operation(char *src);
+int                     ft_ps_pushswap_operation(char *src);
+int		ft_pushswap_ops(char *src);
+int		ft_pushswap_oprr(char *src);
+int		ft_pushswap_opr(char *src);
+int		ft_pushswap_opp(char *src);
 void                    ft_print_stack_a_and_b();
 //void					ft_print_a_and_b();
 void					ft_ps_convert_argv(const char *s);
