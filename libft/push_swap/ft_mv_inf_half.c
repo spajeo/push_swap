@@ -18,7 +18,7 @@
 #include "ft_printf.h"
 #include "push_swap.h"
 #include "liblst.h"
-/*
+//*
 static int	ft_mv_inf_half()
 {
 	int nb_mv;
@@ -53,4 +53,4 @@ printf("{%zu}\n", PS__HEAD.bucket_values);
 	ft_refill(PS__HEAD.bucket_values);
 	return (1);
 }
-*/
+//*/
