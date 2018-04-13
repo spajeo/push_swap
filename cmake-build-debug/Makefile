@@ -48,10 +48,10 @@ RM = /Users/spajeo/Desktop/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/spajeo/push_swap__
+CMAKE_SOURCE_DIR = /Users/spajeo/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/spajeo/push_swap__/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/spajeo/push_swap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/spajeo/push_swap__/cmake-build-debug/CMakeFiles /Users/spajeo/push_swap__/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/spajeo/push_swap/cmake-build-debug/CMakeFiles /Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/spajeo/push_swap__/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/spajeo/push_swap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -136,6 +136,270 @@ push_swap/fast:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
 .PHONY : push_swap/fast
 
+libft/push_swap/ft_ps_convert_argv.o: libft/push_swap/ft_ps_convert_argv.c.o
+
+.PHONY : libft/push_swap/ft_ps_convert_argv.o
+
+# target to build an object file
+libft/push_swap/ft_ps_convert_argv.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_ps_convert_argv.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o
+.PHONY : libft/push_swap/ft_ps_convert_argv.c.o
+
+libft/push_swap/ft_ps_convert_argv.i: libft/push_swap/ft_ps_convert_argv.c.i
+
+.PHONY : libft/push_swap/ft_ps_convert_argv.i
+
+# target to preprocess a source file
+libft/push_swap/ft_ps_convert_argv.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_ps_convert_argv.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.i
+.PHONY : libft/push_swap/ft_ps_convert_argv.c.i
+
+libft/push_swap/ft_ps_convert_argv.s: libft/push_swap/ft_ps_convert_argv.c.s
+
+.PHONY : libft/push_swap/ft_ps_convert_argv.s
+
+# target to generate assembly for a file
+libft/push_swap/ft_ps_convert_argv.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_ps_convert_argv.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.s
+.PHONY : libft/push_swap/ft_ps_convert_argv.c.s
+
+libft/push_swap/ft_ps_exec_p.o: libft/push_swap/ft_ps_exec_p.c.o
+
+.PHONY : libft/push_swap/ft_ps_exec_p.o
+
+# target to build an object file
+libft/push_swap/ft_ps_exec_p.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_p.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o
+.PHONY : libft/push_swap/ft_ps_exec_p.c.o
+
+libft/push_swap/ft_ps_exec_p.i: libft/push_swap/ft_ps_exec_p.c.i
+
+.PHONY : libft/push_swap/ft_ps_exec_p.i
+
+# target to preprocess a source file
+libft/push_swap/ft_ps_exec_p.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_p.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.i
+.PHONY : libft/push_swap/ft_ps_exec_p.c.i
+
+libft/push_swap/ft_ps_exec_p.s: libft/push_swap/ft_ps_exec_p.c.s
+
+.PHONY : libft/push_swap/ft_ps_exec_p.s
+
+# target to generate assembly for a file
+libft/push_swap/ft_ps_exec_p.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_p.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.s
+.PHONY : libft/push_swap/ft_ps_exec_p.c.s
+
+libft/push_swap/ft_ps_exec_r.o: libft/push_swap/ft_ps_exec_r.c.o
+
+.PHONY : libft/push_swap/ft_ps_exec_r.o
+
+# target to build an object file
+libft/push_swap/ft_ps_exec_r.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_r.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o
+.PHONY : libft/push_swap/ft_ps_exec_r.c.o
+
+libft/push_swap/ft_ps_exec_r.i: libft/push_swap/ft_ps_exec_r.c.i
+
+.PHONY : libft/push_swap/ft_ps_exec_r.i
+
+# target to preprocess a source file
+libft/push_swap/ft_ps_exec_r.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_r.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.i
+.PHONY : libft/push_swap/ft_ps_exec_r.c.i
+
+libft/push_swap/ft_ps_exec_r.s: libft/push_swap/ft_ps_exec_r.c.s
+
+.PHONY : libft/push_swap/ft_ps_exec_r.s
+
+# target to generate assembly for a file
+libft/push_swap/ft_ps_exec_r.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_r.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.s
+.PHONY : libft/push_swap/ft_ps_exec_r.c.s
+
+libft/push_swap/ft_ps_exec_s.o: libft/push_swap/ft_ps_exec_s.c.o
+
+.PHONY : libft/push_swap/ft_ps_exec_s.o
+
+# target to build an object file
+libft/push_swap/ft_ps_exec_s.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_s.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o
+.PHONY : libft/push_swap/ft_ps_exec_s.c.o
+
+libft/push_swap/ft_ps_exec_s.i: libft/push_swap/ft_ps_exec_s.c.i
+
+.PHONY : libft/push_swap/ft_ps_exec_s.i
+
+# target to preprocess a source file
+libft/push_swap/ft_ps_exec_s.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_s.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.i
+.PHONY : libft/push_swap/ft_ps_exec_s.c.i
+
+libft/push_swap/ft_ps_exec_s.s: libft/push_swap/ft_ps_exec_s.c.s
+
+.PHONY : libft/push_swap/ft_ps_exec_s.s
+
+# target to generate assembly for a file
+libft/push_swap/ft_ps_exec_s.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_s.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.s
+.PHONY : libft/push_swap/ft_ps_exec_s.c.s
+
+libft/push_swap/ft_pushswap_opp.o: libft/push_swap/ft_pushswap_opp.c.o
+
+.PHONY : libft/push_swap/ft_pushswap_opp.o
+
+# target to build an object file
+libft/push_swap/ft_pushswap_opp.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_opp.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o
+.PHONY : libft/push_swap/ft_pushswap_opp.c.o
+
+libft/push_swap/ft_pushswap_opp.i: libft/push_swap/ft_pushswap_opp.c.i
+
+.PHONY : libft/push_swap/ft_pushswap_opp.i
+
+# target to preprocess a source file
+libft/push_swap/ft_pushswap_opp.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_opp.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.i
+.PHONY : libft/push_swap/ft_pushswap_opp.c.i
+
+libft/push_swap/ft_pushswap_opp.s: libft/push_swap/ft_pushswap_opp.c.s
+
+.PHONY : libft/push_swap/ft_pushswap_opp.s
+
+# target to generate assembly for a file
+libft/push_swap/ft_pushswap_opp.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_opp.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.s
+.PHONY : libft/push_swap/ft_pushswap_opp.c.s
+
+libft/push_swap/ft_pushswap_oprr.o: libft/push_swap/ft_pushswap_oprr.c.o
+
+.PHONY : libft/push_swap/ft_pushswap_oprr.o
+
+# target to build an object file
+libft/push_swap/ft_pushswap_oprr.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_oprr.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o
+.PHONY : libft/push_swap/ft_pushswap_oprr.c.o
+
+libft/push_swap/ft_pushswap_oprr.i: libft/push_swap/ft_pushswap_oprr.c.i
+
+.PHONY : libft/push_swap/ft_pushswap_oprr.i
+
+# target to preprocess a source file
+libft/push_swap/ft_pushswap_oprr.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_oprr.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.i
+.PHONY : libft/push_swap/ft_pushswap_oprr.c.i
+
+libft/push_swap/ft_pushswap_oprr.s: libft/push_swap/ft_pushswap_oprr.c.s
+
+.PHONY : libft/push_swap/ft_pushswap_oprr.s
+
+# target to generate assembly for a file
+libft/push_swap/ft_pushswap_oprr.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_oprr.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.s
+.PHONY : libft/push_swap/ft_pushswap_oprr.c.s
+
+libft/push_swap/ft_pushswap_ops.o: libft/push_swap/ft_pushswap_ops.c.o
+
+.PHONY : libft/push_swap/ft_pushswap_ops.o
+
+# target to build an object file
+libft/push_swap/ft_pushswap_ops.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_ops.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o
+.PHONY : libft/push_swap/ft_pushswap_ops.c.o
+
+libft/push_swap/ft_pushswap_ops.i: libft/push_swap/ft_pushswap_ops.c.i
+
+.PHONY : libft/push_swap/ft_pushswap_ops.i
+
+# target to preprocess a source file
+libft/push_swap/ft_pushswap_ops.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_ops.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.i
+.PHONY : libft/push_swap/ft_pushswap_ops.c.i
+
+libft/push_swap/ft_pushswap_ops.s: libft/push_swap/ft_pushswap_ops.c.s
+
+.PHONY : libft/push_swap/ft_pushswap_ops.s
+
+# target to generate assembly for a file
+libft/push_swap/ft_pushswap_ops.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_ops.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.s
+.PHONY : libft/push_swap/ft_pushswap_ops.c.s
+
+srcs/checker.o: srcs/checker.c.o
+
+.PHONY : srcs/checker.o
+
+# target to build an object file
+srcs/checker.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/srcs/checker.c.o
+.PHONY : srcs/checker.c.o
+
+srcs/checker.i: srcs/checker.c.i
+
+.PHONY : srcs/checker.i
+
+# target to preprocess a source file
+srcs/checker.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/srcs/checker.c.i
+.PHONY : srcs/checker.c.i
+
+srcs/checker.s: srcs/checker.c.s
+
+.PHONY : srcs/checker.s
+
+# target to generate assembly for a file
+srcs/checker.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/srcs/checker.c.s
+.PHONY : srcs/checker.c.s
+
+srcs/push_swap.o: srcs/push_swap.c.o
+
+.PHONY : srcs/push_swap.o
+
+# target to build an object file
+srcs/push_swap.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/srcs/push_swap.c.o
+.PHONY : srcs/push_swap.c.o
+
+srcs/push_swap.i: srcs/push_swap.c.i
+
+.PHONY : srcs/push_swap.i
+
+# target to preprocess a source file
+srcs/push_swap.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/srcs/push_swap.c.i
+.PHONY : srcs/push_swap.c.i
+
+srcs/push_swap.s: srcs/push_swap.c.s
+
+.PHONY : srcs/push_swap.s
+
+# target to generate assembly for a file
+srcs/push_swap.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/srcs/push_swap.c.s
+.PHONY : srcs/push_swap.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -146,6 +410,33 @@ help:
 	@echo "... edit_cache"
 	@echo "... checker"
 	@echo "... push_swap"
+	@echo "... libft/push_swap/ft_ps_convert_argv.o"
+	@echo "... libft/push_swap/ft_ps_convert_argv.i"
+	@echo "... libft/push_swap/ft_ps_convert_argv.s"
+	@echo "... libft/push_swap/ft_ps_exec_p.o"
+	@echo "... libft/push_swap/ft_ps_exec_p.i"
+	@echo "... libft/push_swap/ft_ps_exec_p.s"
+	@echo "... libft/push_swap/ft_ps_exec_r.o"
+	@echo "... libft/push_swap/ft_ps_exec_r.i"
+	@echo "... libft/push_swap/ft_ps_exec_r.s"
+	@echo "... libft/push_swap/ft_ps_exec_s.o"
+	@echo "... libft/push_swap/ft_ps_exec_s.i"
+	@echo "... libft/push_swap/ft_ps_exec_s.s"
+	@echo "... libft/push_swap/ft_pushswap_opp.o"
+	@echo "... libft/push_swap/ft_pushswap_opp.i"
+	@echo "... libft/push_swap/ft_pushswap_opp.s"
+	@echo "... libft/push_swap/ft_pushswap_oprr.o"
+	@echo "... libft/push_swap/ft_pushswap_oprr.i"
+	@echo "... libft/push_swap/ft_pushswap_oprr.s"
+	@echo "... libft/push_swap/ft_pushswap_ops.o"
+	@echo "... libft/push_swap/ft_pushswap_ops.i"
+	@echo "... libft/push_swap/ft_pushswap_ops.s"
+	@echo "... srcs/checker.o"
+	@echo "... srcs/checker.i"
+	@echo "... srcs/checker.s"
+	@echo "... srcs/push_swap.o"
+	@echo "... srcs/push_swap.i"
+	@echo "... srcs/push_swap.s"
 .PHONY : help
 
 

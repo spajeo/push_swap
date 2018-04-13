@@ -1,4 +1,4 @@
-/Users/spajeo/push_swap__/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/spajeo/push_swap__/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/spajeo/push_swap__/cmake-build-debug/CMakeFiles/checker.dir
-/Users/spajeo/push_swap__/cmake-build-debug/CMakeFiles/push_swap.dir
+/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/checker.dir
+/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir

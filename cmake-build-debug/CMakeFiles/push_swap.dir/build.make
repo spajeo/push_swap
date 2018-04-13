@@ -43,10 +43,10 @@ RM = /Users/spajeo/Desktop/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/spajeo/push_swap__
+CMAKE_SOURCE_DIR = /Users/spajeo/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/spajeo/push_swap__/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/spajeo/push_swap/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/push_swap.dir/depend.make
@@ -57,7 +57,239 @@ include CMakeFiles/push_swap.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/push_swap.dir/flags.make
 
-CMakeFiles/push_swap.dir/requires:
+CMakeFiles/push_swap.dir/srcs/push_swap.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/srcs/push_swap.c.o: ../srcs/push_swap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/push_swap.dir/srcs/push_swap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/srcs/push_swap.c.o   -c /Users/spajeo/push_swap/srcs/push_swap.c
+
+CMakeFiles/push_swap.dir/srcs/push_swap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/srcs/push_swap.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/spajeo/push_swap/srcs/push_swap.c > CMakeFiles/push_swap.dir/srcs/push_swap.c.i
+
+CMakeFiles/push_swap.dir/srcs/push_swap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/srcs/push_swap.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/spajeo/push_swap/srcs/push_swap.c -o CMakeFiles/push_swap.dir/srcs/push_swap.c.s
+
+CMakeFiles/push_swap.dir/srcs/push_swap.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap.dir/srcs/push_swap.c.o.requires
+
+CMakeFiles/push_swap.dir/srcs/push_swap.c.o.provides: CMakeFiles/push_swap.dir/srcs/push_swap.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/srcs/push_swap.c.o.provides.build
+.PHONY : CMakeFiles/push_swap.dir/srcs/push_swap.c.o.provides
+
+CMakeFiles/push_swap.dir/srcs/push_swap.c.o.provides.build: CMakeFiles/push_swap.dir/srcs/push_swap.c.o
+
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o: ../libft/push_swap/ft_ps_convert_argv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o   -c /Users/spajeo/push_swap/libft/push_swap/ft_ps_convert_argv.c
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/spajeo/push_swap/libft/push_swap/ft_ps_convert_argv.c > CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.i
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/spajeo/push_swap/libft/push_swap/ft_ps_convert_argv.c -o CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.s
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o.requires
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o.provides: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o.provides.build
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o.provides
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o.provides.build: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o
+
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o: ../libft/push_swap/ft_ps_exec_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o   -c /Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_s.c
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_s.c > CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.i
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_s.c -o CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.s
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o.requires
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o.provides: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o.provides.build
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o.provides
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o.provides.build: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o
+
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o: ../libft/push_swap/ft_ps_exec_p.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o   -c /Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_p.c
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_p.c > CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.i
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_p.c -o CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.s
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o.requires
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o.provides: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o.provides.build
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o.provides
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o.provides.build: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o
+
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o: ../libft/push_swap/ft_ps_exec_r.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o   -c /Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_r.c
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_r.c > CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.i
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_r.c -o CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.s
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o.requires
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o.provides: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o.provides.build
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o.provides
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o.provides.build: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o
+
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o: ../libft/push_swap/ft_pushswap_opp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o   -c /Users/spajeo/push_swap/libft/push_swap/ft_pushswap_opp.c
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/spajeo/push_swap/libft/push_swap/ft_pushswap_opp.c > CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.i
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/spajeo/push_swap/libft/push_swap/ft_pushswap_opp.c -o CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.s
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o.requires
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o.provides: CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o.provides.build
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o.provides
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o.provides.build: CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o
+
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o: ../libft/push_swap/ft_pushswap_ops.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o   -c /Users/spajeo/push_swap/libft/push_swap/ft_pushswap_ops.c
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/spajeo/push_swap/libft/push_swap/ft_pushswap_ops.c > CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.i
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/spajeo/push_swap/libft/push_swap/ft_pushswap_ops.c -o CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.s
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o.requires
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o.provides: CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o.provides.build
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o.provides
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o.provides.build: CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o
+
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o: ../libft/push_swap/ft_pushswap_oprr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o   -c /Users/spajeo/push_swap/libft/push_swap/ft_pushswap_oprr.c
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/spajeo/push_swap/libft/push_swap/ft_pushswap_oprr.c > CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.i
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/spajeo/push_swap/libft/push_swap/ft_pushswap_oprr.c -o CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.s
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o.requires
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o.provides: CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o.provides.build
+.PHONY : CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o.provides
+
+CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o.provides.build: CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o
+
+
+# Object files for target push_swap
+push_swap_OBJECTS = \
+"CMakeFiles/push_swap.dir/srcs/push_swap.c.o" \
+"CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o" \
+"CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o" \
+"CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o" \
+"CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o" \
+"CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o" \
+"CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o" \
+"CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o"
+
+# External object files for target push_swap
+push_swap_EXTERNAL_OBJECTS =
+
+push_swap: CMakeFiles/push_swap.dir/srcs/push_swap.c.o
+push_swap: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o
+push_swap: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o
+push_swap: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o
+push_swap: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o
+push_swap: CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o
+push_swap: CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o
+push_swap: CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o
+push_swap: CMakeFiles/push_swap.dir/build.make
+push_swap: ../libft/libft.a
+push_swap: CMakeFiles/push_swap.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable push_swap"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap.dir/link.txt --verbose=$(VERBOSE)
+
+# Rule to build all files generated by this target.
+CMakeFiles/push_swap.dir/build: push_swap
+
+.PHONY : CMakeFiles/push_swap.dir/build
+
+CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/srcs/push_swap.c.o.requires
+CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o.requires
+CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o.requires
+CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o.requires
+CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o.requires
+CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o.requires
+CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o.requires
+CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o.requires
 
 .PHONY : CMakeFiles/push_swap.dir/requires
 
@@ -66,6 +298,6 @@ CMakeFiles/push_swap.dir/clean:
 .PHONY : CMakeFiles/push_swap.dir/clean
 
 CMakeFiles/push_swap.dir/depend:
-	cd /Users/spajeo/push_swap__/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/spajeo/push_swap__ /Users/spajeo/push_swap__ /Users/spajeo/push_swap__/cmake-build-debug /Users/spajeo/push_swap__/cmake-build-debug /Users/spajeo/push_swap__/cmake-build-debug/CMakeFiles/push_swap.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/spajeo/push_swap/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/spajeo/push_swap /Users/spajeo/push_swap /Users/spajeo/push_swap/cmake-build-debug /Users/spajeo/push_swap/cmake-build-debug /Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/push_swap.dir/depend
 
