@@ -176,7 +176,7 @@ int		ft_pushswap_ops(char *src);
 int		ft_pushswap_oprr(char *src);
 int		ft_pushswap_opr(char *src);
 int		ft_pushswap_opp(char *src);
-void                    ft_print_stack_a_and_b();
+void                    ft_ps_print_stack_a_and_b();
 //void					ft_print_a_and_b();
 void					ft_ps_convert_argv(const char *s);
 void					ft_free_checker_and_push_swap(void);
@@ -189,6 +189,6 @@ int						ft_ps_exec_r(t_lst *head);
 int						ft_ps_exec_rr(t_lst *head);
 /*                  
 **                  
-*/                  
+*/
 
 #endif

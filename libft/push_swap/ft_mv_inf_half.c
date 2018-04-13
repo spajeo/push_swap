@@ -18,9 +18,10 @@
 #include "ft_printf.h"
 #include "push_swap.h"
 #include "liblst.h"
-//*
+/*
 static int	ft_mv_inf_half()
 {
+
 	int nb_mv;
 
 	PIVOT_POS = PIVOT_POS / 2 + PIVOT_POS % 2; 

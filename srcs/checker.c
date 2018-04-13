@@ -18,7 +18,7 @@
 */
 
 /*
-void		ft_print_stack_a_and_b(void)
+void		ft_ps_print_stack_a_and_b(void)
 {
 	printf(" ----------------------- \n");
 	ft_print_next_data(&HEAD_LA);
@@ -42,7 +42,7 @@ int			main(int ac, char **av)
 	else
 		ft_printf("\x1B[31mKO\x1B[0m\n");
 	if ((FLAG__PS & PS__STEP))
-		ft_print_stack_a_and_b();
+		ft_ps_print_stack_a_and_b();
 	ft_free_checker_and_push_swap();
 	return (0);
 }

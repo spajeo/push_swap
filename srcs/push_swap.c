@@ -28,7 +28,7 @@ void ft_fix_right_place()
 		{
 //			TESTINTINT("mark position", *ft_get_int_order(&HEAD_LA, &ft_get_pile_data, ft_get_int_abspos(&HEAD_LA, &ft_get_pile_data, PILE(tmp)->data)), 	ft_get_int_abspos(&HEAD_LA, &ft_get_pile_data, PILE(tmp)->data) );
 			PILE(tmp)->position = 2;
-	ft_print_stack_a_and_b();
+	ft_ps_print_stack_a_and_b();
 		}
 		tmp = tmp->next;
 	}
@@ -83,7 +83,7 @@ void			ft_organise_around_pivot_b()
 /*		while (!(JUST_HEAD(HEAD_LB)) && !(ft_is_there_inf_int(&HEAD_LB, &ft_get_pile_position, 1)))
 		{
 			TESTSTR("pivot B","REFILL");
-			ft_print_stack_a_and_b();
+			ft_ps_print_stack_a_and_b();
 			ft_refill_b(ft_get_int_abspos(&HEAD_LB, &ft_get_pile_position, 0)); //trouver la limite// autre fonction
 			TESTINT("REFILL",ft_get_int_abspos(&HEAD_LB, &ft_get_pile_position, 0));
 		}
@@ -176,7 +176,7 @@ int			main(int ac, char **av)
 	--ac;
 	NODE_INIT(HEAD_LA); NODE_INIT(HEAD_LB); NODE_INIT(HEAD_PS_MV);
 	ft_exec_parse_ps((*av), &ft_ps_convert_argv);
-	ft_print_stack_a_and_b();
+	ft_ps_print_stack_a_and_b();
 	while (!(ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB)))
 	{
 			ft_organise_around_pivot_a();
@@ -187,6 +187,6 @@ int			main(int ac, char **av)
 			//ft_refill_a(ft_lst_count(&HEAD_LB));
 	}
 	ft_refill_a(ft_lst_count(&HEAD_LB));
-	ft_print_stack_a_and_b();
+	ft_ps_print_stack_a_and_b();
 	return (0);
 }

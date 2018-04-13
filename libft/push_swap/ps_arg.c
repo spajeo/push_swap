@@ -14,7 +14,7 @@ void		ft_check_instruct(void)
 		if ((FLAG__PS & PS__MOVE))
 			ft_printf("\x1B[31m%12s\x1B[0m\n", line);
 		if ((FLAG__PS & PS__STEP))
-			ft_print_stack_a_and_b();
+			ft_ps_print_stack_a_and_b();
 		free(line);
 	}
 	if (line)
