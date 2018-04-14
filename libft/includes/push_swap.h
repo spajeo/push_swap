@@ -102,8 +102,8 @@ t_push_swap_head		*ft_push_swap_head(void);
 
 
 void					ft_init_ps_head();
-t_pile                  *ft_add_t_pile_next(t_lst *head, const int nb);
-void					*ft_add_t_str_next(t_lst *head, char *str);
+t_pile                  *ft_add_tpile_next(t_lst *head, const int nb);
+void					*ft_add_tstr_next(t_lst *head, char *str);
 
 /*
 **			ps_refill
@@ -131,7 +131,7 @@ int						ft_is_there_inf(t_lst *head, int *(*get_int)(t_lst *));
 int						ft_is_there_inf_ref(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref);
 int						ft_is_there_inf_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
 
-int						ft_is_data_in(t_lst *head, int data, int *(*get_offset)(t_lst *));
+int						ft_is_val_in(t_lst *head, int data, int *(*get_offset)(t_lst *));
 
 /*
 **			     LIBRAIRIE
@@ -153,6 +153,9 @@ size_t		 	   		*ft_flag_push_swap();
 /*
 **              OPERATIONS
 */
+
+
+int						ft_ps_next_t_data_issorted(t_lst *head_a, t_lst *head_b);
 int                     ft_ps_pushswap_operation(char *src);
 int		                ft_pushswap_ops(char *src);
 int             		ft_pushswap_oprr(char *src);

@@ -21,9 +21,9 @@
 void		ft_ps_print_stack_a_and_b(void)
 {
 	printf(" ----------------------- \n");
-	ft_print_next_data(&HEAD_LA);
+	ft_print_nextdata(&HEAD_LA);
 	printf("________________________\n");
-	ft_print_next_data(&HEAD_LB);
+	ft_print_nextdata(&HEAD_LB);
 	printf(" ----------------------- \n");
 }
 //*/

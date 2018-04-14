@@ -79,34 +79,38 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+
+
 /*
 **	            Struct Memory Access
 **              GET VALUES FROM FUNCTIONS
 */
 
-int						*ft_get_tpile_data(t_lst *ptr);
-int						*ft_get_tpile_position(t_lst *ptr);
-int						ft_get_tdata_data(t_lst *ptr);
 char					*ft_get_tstr_str(t_lst *ptr);
 
+int						*ft_get_tpile_data(t_lst *ptr);
+int						*ft_get_tpile_position(t_lst *ptr);
 
+int						ft_get_tdata_data(t_lst *ptr);
 
 /*
 **					LIST
 */
+t_lst           	*ft_lstdisconnect (t_lst *src);
 t_lst				*ft_lstmap(t_lst *lst, t_lst *(*f)(t_lst *elem));
 t_lst				*ft_lstnew(const void *content, size_t content_size);
-int					ft_bzero(void *s, size_t n);
 void				ft_lstadd(t_lst **alst, t_lst *new);
-//void				ft_listdel(t_list **alist, void (*del)(void *, size_t));
-//void				ft_listdelone(t_list **alst, void (*f)(void *, size_t));
 void				ft_lstiter(t_lst *lst, void (*f)(t_lst *elem));
+void            	ft_lstinsert_after(t_lst *new, t_lst *dst);
+void            	ft_lstinsert_before(t_lst *new, t_lst *dst);
+void	            ft_lstmv_after(t_lst *src, t_lst *dst);
+void				ft_lstmv_before(t_lst *src, t_lst *dst);
 
-t_lst	*ft_lstdisconnect (t_lst *src);
-void    ft_lstinsert_after(t_lst *new, t_lst *dst);
-void    ft_lstinsert_before(t_lst *new, t_lst *dst);
-void	ft_lstmv_after(t_lst *src, t_lst *dst);
-void	ft_lstmv_before(t_lst *src, t_lst *dst);
+/*
+**	                COUNT
+*/
+int					ft_lst_count(t_lst *head);
+int     			ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
 
 /*
 **	    CHECK ORDER COMPARE TO OTHER VALUES
@@ -116,46 +120,42 @@ void	ft_lstmv_before(t_lst *src, t_lst *dst);
 **		CHECK POSITION IN THE LST LINKED LIST
 **          next order
 */
-
 /*
-**	    LST IS
+**          	    IS LST
 */
 
-int						ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
-int						ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
+t_lst               *ft_is_lst_empty(t_lst *head);
 
+int                 ft_is_val_in(t_lst *head, int data, int *(*get_struct_el)(t_lst *));
 
+int					ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
+int					ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
 
+int                 ft_is_there_inf(t_lst *head, int *(*get_int)(t_lst *));
+int                 ft_is_there_inf_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
+int                 ft_is_there_inf_ref(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref);
 
 /*
-**		FT SORTING
+**	   CREATE/DELETE STRUCTURE
 */
 
-int list_empty(t_lst *head);
-
-void				ft_t_data_free(t_lst *lst_head);
-//void				ft_print_next_str(t_str *data_head);
-
-
+void				    ft_tdata_free(t_lst *lst_head);
 
 
 int						*ft_get_lst_from_val_position(t_lst *head, int*(*get_int)(t_lst *), size_t position);
 
-
+/*
+**	        PRINT
+*/
+void                    ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *));
+void                    ft_print_next_str(t_lst *head, char *(*get_str)(t_lst *));
 
 /*
 **
 */
 
-//t_data                  *ft_add_t_data_next(t_lst *head, const int nb);  --> non_generic_lst
-void                    ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *));
-int						ft_lst_count(t_lst *head);
-int     				ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
-int						ft_ps_next_t_data_issorted(t_lst *head_a, t_lst *head_b);
-void                    ft_print_next_str(t_lst *head);
-//void	ft_print_next_str(t_str *head_str);
-//void	ft_print_next_data(t_data *head_data);
-//t_lst	*ft_add_t_str_next(t_lst *head, char *str);
+//t_data                  *ft_add_tdata_next(t_lst *head, const int nb);  --> non_generic_lst
+//t_lst	*ft_add_tstr_next(t_lst *head, char *str);
 //t_data	*ft_add_t_data_next(t_data *head, const int nb); // ajouter tete generique
 
 #endif

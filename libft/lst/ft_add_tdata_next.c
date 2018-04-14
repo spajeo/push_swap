@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_add_t_data_next.c                               :+:      :+:    :+:   */
+/*   ft_add_tdata_next.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -21,7 +21,7 @@
 ** 1st parameter : integer to sort
 */
 
-t_data	*ft_add_t_data_next(t_lst *head, const int nb)
+t_data	*ft_add_tdata_next(t_lst *head, const int nb)
 {
 	t_data	*new;
 	if (!(new = (t_data *)malloc(sizeof(t_data))))

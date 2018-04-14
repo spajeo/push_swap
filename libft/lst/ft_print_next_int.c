@@ -34,7 +34,7 @@ void	ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *))
 	tmp = head->next;
 	while (tmp != head)
 	{
-		ft_printf("|%5d%5|", PILE(tmp)->position);
+		//ft_printf("|%5d%5|", PILE(tmp)->position);
 		ft_printf("|%12d%12|\n", *get_int(tmp));
 		tmp = tmp->next;
 	}

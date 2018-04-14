@@ -47,14 +47,15 @@ NBR := atoi atoi_exit count_words itoa itoa_base itoa_base_buff itoa_base_gbuff 
 NBR_SRC := $(addsuffix .c, $(addprefix $(NBR_DIR)ft_, $(NBR)))
 NBR_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(NBR)))
 
-LST := is_in_val lstinsert_after lstinsert_before lstdisconnect is_lst_empty lstmv_after \
+LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lstmv_after \
 		lstmv_before lstadd \
 		lstiter lstmap \
 		is_lst_asc is_lst_desc \
 		get_tpile_data  get_lst_from_int get_tpile_position \
 		lst_count lst_count_lim \
-		is_data_in get_tdata_data\
-		is_there_inf get_int_abspos  print_next_str get_lst_val_from_absposition add_t_pile_next get_tstr_str
+		is_there_inf_int get_lst_from_val_position is_there_inf_ref tdata_free \
+		is_val_in get_tdata_data add_tstr_next \
+		is_there_inf get_int_abspos  print_next_str get_lst_val_from_absposition add_tpile_next get_tstr_str
  #listdel listdelone lstnew
 LST_SRC := $(addsuffix .c, $(addprefix $(LST_DIR)ft_, $(LST)))
 LST_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(LST)))
@@ -78,15 +79,15 @@ IS :=     is_white isalnum isalpha isascii isdigit islower isprint issign isspac
 IS_SRC := $(addsuffix .c, $(addprefix $(IS_DIR)ft_, $(IS)))
 IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
 
-PUSH_SWAP:= ps_arg ft_add_t_str_next \
+PUSH_SWAP:= ps_arg \
 			ps_free ft_ps_atoi_exit ft_mv_inf_half ft_ps_print_stack_a_and_b\
 			ft_check_ps_flags ft_ps_next_t_data_issorted ps_refill ft_exec_ac_parse\
-			ft_init_ps_head ft_exec_parse_ps ft_init_t_data_head ft_print_next_int\
-			singletons ft_free_next_data \
+			ft_init_ps_head ft_exec_parse_ps  ft_print_next_int\
+			singletons \
 			ft_ps_convert_argv ft_ps_pushswap_operation\
 			ft_ps_exec_p ft_ps_exec_s ft_ps_exec_rr ft_ps_exec_r \
-			ft_pushswap_opp ft_pushswap_ops ft_pushswap_oprr ft_pushswap_opr \
-			ft_is_there_inf_int ft_get_lst_from_val_position ft_is_there_inf_ref ft_t_data_free
+			ft_pushswap_opp ft_pushswap_ops ft_pushswap_oprr ft_pushswap_opr
+
 PUSH_SWAP_SRC := $(addsuffix .c, $(addprefix $(PUSH_SWAP_DIR), $(PUSH_SWAP)))
 PUSH_SWAP_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PUSH_SWAP)))
 

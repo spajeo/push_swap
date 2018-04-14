@@ -25,14 +25,14 @@
 */
 
 
-void	ft_print_next_str(t_lst *head)
+void	ft_print_next_str(t_lst *head, char *(*get_str)(t_lst *))
 {
 	t_lst *tmp;
 
 	tmp = head->next;
 	while (tmp != head)
 	{
-		ft_printf("%s\n", T_STR(tmp)->str);
+		ft_printf("%s\n", *get_str(tmp));
 		tmp = tmp->next;
 	}
 	return ;

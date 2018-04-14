@@ -261,7 +261,7 @@ int					ft_wcharlen(wchar_t c);
 int					ft_nbrlen(long long nb, int n_base);
 
 /*
-**				
+**                  Memory Manipulation
 */
 void				*ft_memccpy(void *dest, const void *src, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -280,7 +280,8 @@ int					ft_strcatcount(char *restrict s1,
 									const char *restrict s2);
 int					ft_charcatcount(char *restrict s1, char c);
 int					ft_strncatcount(char *s1,
-					const char *restrict s2, int max_number);
+const char          *restrict s2, int max_number);
+int					ft_bzero(void *s, size_t n);
 
 /*
 **					PUT
@@ -321,4 +322,8 @@ char				*ft_strtrim_c(char const *s, char c, int *size_next);
 
 char				*ft_strcat_lim(char *restrict s1, const char *restrict s2,
 									size_t buff_size);
+
+
+
+int					ft_bzero(void *s, size_t n);
 #endif

@@ -1,14 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_next_data.c                                :+:      :+:    :+:   */
+/*   ft_tdata_free.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/19 14:55:44 by spajeo            #+#    #+#             */
-/*   Updated: 2018/04/09 14:54:45 by spajeo           ###   ########.fr       */
+/*   Created: 2017/10/19 15:07:18 by spajeo            #+#    #+#             */
+/*   Updated: 2018/04/09 14:54:54 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+#include "ft_printf.h"
+#include "push_swap.h"
+#include "liblst.h"
+
+/*
+**	Built for function with non-allocated head
+*/
+/*
+**
+**
+** //ft_IS LST INT
+**
+**  NORM
+** GENERALISER
+**
+*/
+
+
+void		ft_tdata_free(t_lst *head)
+{
+	t_lst *tmp;
+
+	tmp = head->next;
+	if (JUST_HEAD_P(head))
+	{
+		return ;
+	}
+	while (tmp != head)
+	{
+		free(PILE(ft_lstdisconnect(tmp)));
+		tmp = tmp->next;
+	}
+	return ;
+}
+
+/*
 
 #include "libft.h"
 #include "ft_printf.h"
@@ -27,3 +65,4 @@ void	ft_free_next_data(t_lst *head)
 	}
 	return ;
 }
+ /*/
