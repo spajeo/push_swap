@@ -82,19 +82,16 @@ typedef struct		s_list
 
 
 /*
-**	            Struct Memory Access
-**              GET VALUES FROM FUNCTIONS
+**	        Struct Memory Access
+**          GET VALUES FROM FUNCTIONS
 */
-
-char					*ft_get_tstr_str(t_lst *ptr);
-
-int						*ft_get_tpile_data(t_lst *ptr);
-int						*ft_get_tpile_position(t_lst *ptr);
-
-int						ft_get_tdata_data(t_lst *ptr);
+char		    	*ft_get_tstr_str(t_lst *ptr);
+int					*ft_get_tpile_data(t_lst *ptr);
+int					*ft_get_tpile_position(t_lst *ptr);
+int					ft_get_tdata_data(t_lst *ptr);
 
 /*
-**					LIST
+**		    LIST
 */
 t_lst           	*ft_lstdisconnect (t_lst *src);
 t_lst				*ft_lstmap(t_lst *lst, t_lst *(*f)(t_lst *elem));
@@ -107,27 +104,26 @@ void	            ft_lstmv_after(t_lst *src, t_lst *dst);
 void				ft_lstmv_before(t_lst *src, t_lst *dst);
 
 /*
-**	                COUNT
+**	       COUNT
 */
 int					ft_lst_count(t_lst *head);
 int     			ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
 
 /*
-**	    CHECK ORDER COMPARE TO OTHER VALUES
+**	                CHECK ORDER COMPARE TO OTHER VALUES
+*/
+int					*ft_get_lst_from_val_position(t_lst *head, int*(*get_int)(t_lst *), size_t position);
+
+/*
+**		            CHECK POSITION IN THE LST LINKED LIST
+**                      next order
 */
 
 /*
-**		CHECK POSITION IN THE LST LINKED LIST
-**          next order
+**          IS LST
 */
-/*
-**          	    IS LST
-*/
-
 t_lst               *ft_is_lst_empty(t_lst *head);
-
 int                 ft_is_val_in(t_lst *head, int data, int *(*get_struct_el)(t_lst *));
-
 int					ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
 int					ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
 
@@ -138,24 +134,14 @@ int                 ft_is_there_inf_ref(t_lst *head, int *(*get_int)(t_lst *), t
 /*
 **	   CREATE/DELETE STRUCTURE
 */
-
-void				    ft_tdata_free(t_lst *lst_head);
-
-
-int						*ft_get_lst_from_val_position(t_lst *head, int*(*get_int)(t_lst *), size_t position);
+void				ft_tdata_free(t_lst *lst_head);
+t_data              *ft_add_tdata_next(t_lst *head, const int nb);
+t_lst	            *ft_add_tstr_next(t_lst *head, char *str);
 
 /*
 **	        PRINT
 */
-void                    ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *));
-void                    ft_print_next_str(t_lst *head, char *(*get_str)(t_lst *));
-
-/*
-**
-*/
-
-//t_data                  *ft_add_tdata_next(t_lst *head, const int nb);  --> non_generic_lst
-//t_lst	*ft_add_tstr_next(t_lst *head, char *str);
-//t_data	*ft_add_t_data_next(t_data *head, const int nb); // ajouter tete generique
+void               ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *));
+void               ft_print_next_str(t_lst *head, char *(*get_str)(t_lst *));
 
 #endif

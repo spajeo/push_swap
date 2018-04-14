@@ -16,24 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="953c7fa6-a821-4336-99c8-2321b4331222" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/libft/lst/ft_add_tpile_next.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/lst/ft_is_val_in.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/includes/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/includes/libft.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/includes/liblst.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/includes/liblst.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/includes/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/includes/push_swap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lst/ft_add_t_data_next.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/lst/ft_add_tdata_next.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lst/ft_add_t_pile_next.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lst/ft_add_t_str_next.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/lst/ft_add_tstr_next.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lst/ft_init_t_data_head.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lst/ft_is_data_in.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lst/ft_is_in_val.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lst/ft_print_next_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/lst/ft_print_next_int.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lst/ft_print_next_str.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/lst/ft_print_next_str.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lst/ft_t_data_free.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/lst/ft_tdata_free.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_free_next_data.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/checker.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,11 +31,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.40245566">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="liblst.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="liblst.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/libft/includes/liblst.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="341">
-                  <caret line="150" column="23" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
+                <state relative-caret-position="315">
+                  <caret line="142" column="19" selection-start-line="142" selection-start-column="19" selection-end-line="142" selection-end-column="19" />
                   <folding>
                     <element signature="e#928#955#0" expanded="true" />
                   </folding>
@@ -60,7 +43,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ft_get_tstr_str.c" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ft_get_tstr_str.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/libft/lst/ft_get_tstr_str.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="300">
@@ -227,7 +210,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>get_lst_val_from_position</find>
       <find>get_lst_val_from_absposition</find>
       <find>get_pile_data</find>
       <find>lst_add_</find>
@@ -257,6 +239,7 @@
       <find>print_n</find>
       <find>ft_print_next_str</find>
       <find>ft_free</find>
+      <find>ft_add_tdata</find>
     </findStrings>
     <replaceStrings>
       <replace>ft_ps_convert_argv</replace>
@@ -341,12 +324,12 @@
         <option value="$PROJECT_DIR$/libft/includes/push_swap.h" />
         <option value="$PROJECT_DIR$/libft/lst/ft_print_next_int.c" />
         <option value="$PROJECT_DIR$/libft/lst/ft_print_next_str.c" />
-        <option value="$PROJECT_DIR$/libft/includes/liblst.h" />
         <option value="$PROJECT_DIR$/libft/push_swap/ft_free_next_data.c" />
         <option value="$PROJECT_DIR$/libft/lst/ft_tdata_free.c" />
         <option value="$PROJECT_DIR$/libft/lst/ft_add_tstr_next.c" />
         <option value="$PROJECT_DIR$/libft/push_swap/ft_ps_print_stack_a_and_b.c" />
         <option value="$PROJECT_DIR$/libft/Makefile" />
+        <option value="$PROJECT_DIR$/libft/includes/liblst.h" />
       </list>
     </option>
   </component>
@@ -419,7 +402,7 @@
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -482,7 +465,7 @@
       <workItem from="1523657122458" duration="1926000" />
       <workItem from="1523708621712" duration="5476000" />
       <workItem from="1523717452804" duration="4550000" />
-      <workItem from="1523723837682" duration="3003000" />
+      <workItem from="1523723837682" duration="3346000" />
     </task>
     <task id="LOCAL-00001" summary="Cmake">
       <created>1523362999301</created>
@@ -495,7 +478,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54960000" />
+    <option name="totallyTimeSpent" value="55303000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,7 +492,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.13391098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.13391098" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32983872" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32967034" />
       <window_info anchor="bottom" id="Event Log" internal_type="SLIDING" order="9" sideWeight="0.5025601" side_tool="true" type="SLIDING" weight="0.42783883" />
@@ -517,7 +500,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32983872" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49743995" visible="true" weight="0.48387095" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49743995" visible="true" weight="0.48387095" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -899,16 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libft/includes/liblst.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="150" column="23" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
-          <folding>
-            <element signature="e#928#955#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libft/lst/ft_get_tstr_str.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -934,6 +907,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/includes/liblst.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="142" column="19" selection-start-line="142" selection-start-column="19" selection-end-line="142" selection-end-column="19" />
+          <folding>
+            <element signature="e#928#955#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
