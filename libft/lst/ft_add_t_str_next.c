@@ -29,6 +29,6 @@ void            *ft_add_t_str_next(t_lst *head, char *str)
 		EXIT_FAIL("Failed memory allocation");
 	ft_lst_add_before(&new->lst, head);
 	new->str = ft_strdup(str);
-//ft_print_next_str(&HEAD_PS_MV);
+ft_print_next_str(&HEAD_PS_MV);
 	return (new);
 }

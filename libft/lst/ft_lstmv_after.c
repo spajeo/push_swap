@@ -11,7 +11,7 @@
 */
 
 
-void    ft_lst_move_node_after(t_lst *src, t_lst *dst)
+void    ft_lstmv_after(t_lst *src, t_lst *dst)
 {
     ft_lst_disconnect(src);
     ft_lst_add_after(src, dst);

@@ -14,6 +14,7 @@
 # define LIBLST_H
 
 #include "linux_compiler.h"
+# include "libft.h"
 /*
 ** Initializes the lst within a structure and sets prev and next pointers
 ** on itself. (NB : the structure needs to be allocated)
@@ -85,8 +86,8 @@ int list_empty(t_lst *head);
 t_lst	*ft_lst_disconnect (t_lst *src);
 void    ft_lst_add_after(t_lst *new, t_lst *dst);
 void    ft_lst_add_before(t_lst *new, t_lst *dst);
-void	ft_lst_move_node_after(t_lst *src, t_lst *dst);
-void	ft_lst_move_node_before(t_lst *src, t_lst *dst);
+void	ft_lstmv_after(t_lst *src, t_lst *dst);
+void	ft_lstmv_before(t_lst *src, t_lst *dst);
 
 void				ft_t_data_free(t_lst *lst_head);
 //void				ft_print_next_str(t_str *data_head);
@@ -95,6 +96,25 @@ void				ft_t_data_free(t_lst *lst_head);
 void	rot_head_next();
 void 	rot_head_prev();
 
+
+
+int						*ft_get_lst_from_val_position(t_lst *head, int*(*get_int)(t_lst *), size_t position);
+
+
+
+/*
+**
+*/
+
+//t_data                  *ft_add_t_data_next(t_lst *head, const int nb);  --> non_generic_lst
+void                    ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *));
+int						ft_lst_count(t_lst *head);
+int     				ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
+
+int						ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
+int						ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
+int						ft_ps_next_t_data_issorted(t_lst *head_a, t_lst *head_b);
+void                    ft_print_next_str(t_lst *head);
 //void	ft_print_next_str(t_str *head_str);
 //void	ft_print_next_data(t_data *head_data);
 //t_lst	*ft_add_t_str_next(t_lst *head, char *str);

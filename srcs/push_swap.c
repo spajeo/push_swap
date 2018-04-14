@@ -22,11 +22,11 @@ void ft_fix_right_place()
 	while (tmp  != &HEAD_LA)
 	{
 		if (PILE(tmp)->position == 0 &&
-			*ft_get_int_order(&HEAD_LA, &ft_get_pile_data, 
+			*ft_get_lst_from_val_position(&HEAD_LA, &ft_get_pile_data,
 				ft_get_int_abspos(&HEAD_LA, &ft_get_pile_data, PILE(tmp)->data) 
 						== PILE(tmp)->data ))
 		{
-//			TESTINTINT("mark position", *ft_get_int_order(&HEAD_LA, &ft_get_pile_data, ft_get_int_abspos(&HEAD_LA, &ft_get_pile_data, PILE(tmp)->data)), 	ft_get_int_abspos(&HEAD_LA, &ft_get_pile_data, PILE(tmp)->data) );
+//			TESTINTINT("mark position", *ft_get_lst_from_val_position(&HEAD_LA, &ft_get_pile_data, ft_get_int_abspos(&HEAD_LA, &ft_get_pile_data, PILE(tmp)->data)), 	ft_get_int_abspos(&HEAD_LA, &ft_get_pile_data, PILE(tmp)->data) );
 			PILE(tmp)->position = 2;
 	ft_ps_print_stack_a_and_b();
 		}

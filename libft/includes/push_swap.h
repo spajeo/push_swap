@@ -100,24 +100,10 @@ t_push_swap_head		*ft_push_swap_head(void);
 # define PS__STEP (size_t)0b0000000000000001
 # define PS__MOVE (size_t)0b0000000000000010
 
-/*
-** lst Fonctions
-*/
 
 void					ft_init_ps_head();
-//t_data                  *ft_add_t_data_next(t_lst *head, const int nb);  --> non_generic_lst
 t_pile                  *ft_add_t_pile_next(t_lst *head, const int nb);
 void					*ft_add_t_str_next(t_lst *head, char *str);
-void                    ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *));
-int						ft_lst_count(t_lst *head);
-int     				ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
-
-int						ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
-int						ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
-int						ft_ps_next_t_data_issorted(t_lst *head_a, t_lst *head_b);
-void                    ft_print_next_str(t_lst *head);
-
-
 
 /*
 **			ps_refill
@@ -156,7 +142,6 @@ int						ft_is_there_inf_ref(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref);
 int						ft_is_there_inf_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
 
 int						ft_is_data_in(t_lst *head, int data, int *(*get_offset)(t_lst *));
-int						*ft_get_int_position(size_t position, t_lst *head, int *(*get_int)(t_lst *));
 
 /*
 **			     LIBRAIRIE
@@ -171,6 +156,13 @@ void            		ft_exec_parse_ps(char *str, void (*f)(const char *));
 */
 int						ft_check_flag_push_swap(int *ac, char **av);
 size_t		 	   		*ft_flag_push_swap();
+
+
+
+
+/*
+**              OPERATIONS
+*/
 int                     ft_ps_pushswap_operation(char *src);
 int		                ft_pushswap_ops(char *src);
 int             		ft_pushswap_oprr(char *src);
@@ -181,7 +173,6 @@ void                    ft_ps_print_stack_a_and_b();
 void					ft_ps_convert_argv(const char *s);
 void					ft_free_checker_and_push_swap(void);
 void					ft_check_instruct(void);
-int						*ft_get_int_order(t_lst *head, int*(*get_int)(t_lst *), size_t position);
 
 int						ft_ps_exec_p(t_lst *lst_a, t_lst *lst_b);
 int						ft_ps_exec_s(t_lst *head);

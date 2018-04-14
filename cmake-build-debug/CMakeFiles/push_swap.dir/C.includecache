@@ -53,6 +53,8 @@ stdint.h
 ../libft/includes/liblst.h
 linux_compiler.h
 ../libft/includes/linux_compiler.h
+libft.h
+../libft/includes/libft.h
 
 ../libft/includes/linux_compiler.h
 

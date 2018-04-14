@@ -26,8 +26,8 @@ static int	ft_mv_inf_half()
 
 	PIVOT_POS = PIVOT_POS / 2 + PIVOT_POS % 2; 
 	nb_mv = PIVOT_POS + 1;
-	PS__HEAD.median_val = *ft_get_int_position(PIVOT_POS, &HEAD_LA,  &ft_get_pile_data);
-	PIVOT = *ft_get_int_position(PIVOT_POS, &HEAD_LA,  &ft_get_pile_data);
+	PS__HEAD.median_val = *ft_get_lst_from_val_position(PIVOT_POS, &HEAD_LA,  &ft_get_pile_data);
+	PIVOT = *ft_get_lst_from_val_position(PIVOT_POS, &HEAD_LA,  &ft_get_pile_data);
 	
 ft_printf("debut ft_mv_half_in_b %zu\n", PS__HEAD.bucket_values);
 ft_printf("PIVOT %zu\n", PIVOT);

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lst_move_node_before.c                          :+:      :+:    :+:   */
+/*   ft_lstmv_before.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -22,7 +22,7 @@
 **
 */
 
-void    ft_lst_move_node_before(t_lst *src, t_lst *dst)
+void    ft_lstmv_before(t_lst *src, t_lst *dst)
 {
     ft_lst_disconnect(src);
     ft_lst_add_before(src, dst); //changes
