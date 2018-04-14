@@ -24,7 +24,7 @@
 
 void    ft_lstmv_before(t_lst *src, t_lst *dst)
 {
-    ft_lst_disconnect(src);
-    ft_lst_add_before(src, dst); //changes
+    ft_lstdisconnect(src);
+    ft_lstinsert_before(src, dst); //changes
 }
 

@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lst_add_after.c                                 :+:      :+:    :+:   */
+/*   ft_lstinsert_before.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/05 14:57:34 by spajeo            #+#    #+#             */
-/*   Updated: 2017/10/24 19:56:14 by spajeo           ###   ########.fr       */
+/*   Created: 2017/10/21 19:12:34 by spajeo            #+#    #+#             */
+/*   Updated: 2017/10/28 00:28:56 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "liblst.h"
+#include "unistd.h"
+#include "stdio.h"
+#include "libft.h"
+#include "push_swap.h"
 
 /*
- **
- ** Adds a node AFTER the given list's node
- ** IF HEAD is 2nd parameter adds a node to the second position
- ** IF QUEUE is 2nd parameter adds a node to the begining of its list
- **
- ** 1st parameter : new node
- ** 2nd parameter : destination node
- **
- */
+**
+** Adds a node BEFORE the given list's node
+** IF HEAD is 2nd parameter adds a node to the end of its list
+**
+** 1st parameter : new node
+** 2nd parameter : destination node
+**
+*/
 
-void			ft_lst_add_after(t_lst *new, t_lst *dst)
+void			ft_lstinsert_before(t_lst *new, t_lst *dst)
 {
-	dst->next->prev = new;
-	new->next = dst->next;
-	new->prev = dst;
-	dst->next = new;
-}	
+		new->prev = dst->prev;
+		new->next = dst;
+		dst->prev->next = new;
+		dst->prev = new;
+}
+

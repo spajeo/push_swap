@@ -21,7 +21,7 @@ t_pile                  *ft_add_t_pile_next(t_lst *head, const int nb)
 	if (!(new = (t_pile *)malloc(sizeof(t_pile))))
 		EXIT_FAIL("Failed memory allocation");
 
-	ft_lst_add_before(&new->lst, head);
+	ft_lstinsert_before(&new->lst, head);
 	new->data = nb;
 	new->position = 0;
 	return (new);

@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_lstinsert_after.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/21 12:52:08 by spajeo            #+#    #+#             */
-/*   Updated: 2016/11/23 00:13:50 by spajeo           ###   ########.fr       */
+/*   Created: 2017/10/05 14:57:34 by spajeo            #+#    #+#             */
+/*   Updated: 2017/10/24 19:56:14 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "liblst.h"
 
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
-{
-	t_list	*tmp_list;
+/*
+ **
+ ** Adds a node AFTER the given list's node
+ ** IF HEAD is 2nd parameter adds a node to the second position
+ ** IF QUEUE is 2nd parameter adds a node to the begining of its list
+ **
+ ** 1st parameter : new node
+ ** 2nd parameter : destination node
+ **
+ */
 
-	while (*alst != NULL)
-	{
-		tmp_list = (*alst)->next;
-		ft_lstdelone(alst, del);
-		*alst = tmp_list;
-	}
-}
+void			ft_lstinsert_after(t_lst *new, t_lst *dst)
+{
+	dst->next->prev = new;
+	new->next = dst->next;
+	new->prev = dst;
+	dst->next = new;
+}	

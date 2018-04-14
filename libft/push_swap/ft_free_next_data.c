@@ -23,7 +23,7 @@ void	ft_free_next_data(t_lst *head)
 	}
 	while (head && !JUST_HEAD_P(head))
 	{
-		free(T_DATA(ft_lst_disconnect(head->next)));
+		free(T_DATA(ft_lstdisconnect(head->next)));
 	}
 	return ;
 }

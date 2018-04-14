@@ -40,7 +40,7 @@ void		ft_t_data_free(t_lst *head)
 	}
 	while (tmp != head)
 	{
-		free(PILE(ft_lst_disconnect(tmp)));
+		free(PILE(ft_lstdisconnect(tmp)));
 		tmp = tmp->next;
 	}
 	return ;

@@ -152,13 +152,6 @@ typedef unsigned long		ulong;
 //#endif
 
 
-typedef struct		s_list
-{
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}					t_list;
-
 
 void   ft_swap(ssize_t *a, ssize_t *b);
 
@@ -266,20 +259,6 @@ int					ft_strlen_c(const char *str, char a);
 int					ft_wstrlen(wchar_t *str);
 int					ft_wcharlen(wchar_t c);
 int					ft_nbrlen(long long nb, int n_base);
-
-/*
-**					LIST
-*/
-t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-t_list				*ft_lstnew(const void *content, size_t content_size);
-int					ft_bzero(void *s, size_t n);
-void				ft_lstadd(t_list **alst, t_list *new);
-void				ft_lstdel(t_list **alist, void (*del)(void *, size_t));
-void				ft_lstdelone(t_list **alst, void (*f)(void *, size_t));
-void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-/*
-**	AJOUTER DES LISTES
-*/
 
 /*
 **				

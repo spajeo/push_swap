@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lst_disconnect.c                                :+:      :+:    :+:   */
+/*   ft_lstdisconnect.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -21,7 +21,7 @@
 ** 1st parameter : node to disconnect
 */
 
-t_lst    *ft_lst_disconnect (t_lst *src)
+t_lst    *ft_lstdisconnect (t_lst *src)
 {
     src->prev->next = src->next;
     src->next->prev = src->prev;

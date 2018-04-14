@@ -13,12 +13,12 @@
 #include "libft.h"
 #include "liblst.h"
 
-t_list		*ft_lstnew(void const *data_content, size_t data_content_size)
+t_lst		*ft_lstnew(void const *data_content, size_t data_content_size)
 {
 	void	*new_content;
-	t_list	*new;
+	t_lst	*new;
 
-	if (!(new = (t_list *)malloc(sizeof(t_list))))
+	if (!(new = (t_lst *)malloc(sizeof(t_lst))))
 		return (NULL);
 	if (!(new_content = ft_memalloc(data_content_size)))
 		return (NULL);

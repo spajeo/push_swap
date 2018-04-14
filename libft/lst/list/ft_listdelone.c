@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   ft_listdelone.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -13,7 +13,7 @@
 #include "libft.h"
 #include "liblst.h"
 
-void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
+void	ft_listdelone(t_list **alst, void (*del)(void *, size_t))
 {
 	if (!*alst)
 		return ;
