@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_get_t_data_data.c                                 :+:      :+:    :+:   */
+/*   ft_get_tdata_data.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -22,7 +22,7 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-int		ft_get_t_data_data(t_lst *ptr)
+int		ft_get_tdata_data(t_lst *ptr)
 {
 	return (((t_data *)((char *)(ptr)
 							- ((char *)(&(((t_data *)0))->lst))))->data);

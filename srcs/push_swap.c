@@ -22,11 +22,11 @@ void ft_fix_right_place()
 	while (tmp  != &HEAD_LA)
 	{
 		if (PILE(tmp)->position == 0 &&
-			*ft_get_lst_from_val_position(&HEAD_LA, &ft_get_pile_data,
-				ft_get_int_abspos(&HEAD_LA, &ft_get_pile_data, PILE(tmp)->data) 
+			*ft_get_lst_from_val_position(&HEAD_LA, &ft_get_tpile_data,
+				ft_get_int_abspos(&HEAD_LA, &ft_get_tpile_data, PILE(tmp)->data)
 						== PILE(tmp)->data ))
 		{
-//			TESTINTINT("mark position", *ft_get_lst_from_val_position(&HEAD_LA, &ft_get_pile_data, ft_get_int_abspos(&HEAD_LA, &ft_get_pile_data, PILE(tmp)->data)), 	ft_get_int_abspos(&HEAD_LA, &ft_get_pile_data, PILE(tmp)->data) );
+//			TESTINTINT("mark position", *ft_get_lst_from_val_position(&HEAD_LA, &ft_get_tpile_data, ft_get_int_abspos(&HEAD_LA, &ft_get_tpile_data, PILE(tmp)->data)), 	ft_get_int_abspos(&HEAD_LA, &ft_get_tpile_data, PILE(tmp)->data) );
 			PILE(tmp)->position = 2;
 	ft_ps_print_stack_a_and_b();
 		}
@@ -75,17 +75,17 @@ void			ft_organise_around_pivot_b()
 	int		pivot;
 	int		nb = 0;
 
-	while (!(ft_is_there_inf_int(&HEAD_LA, &ft_get_pile_position, 1)))
+	while (!(ft_is_there_inf_int(&HEAD_LA, &ft_get_tpile_position, 1)))
 	{
 //	TESTSTR("pivot B","");
-		if (ft_is_lst_desc(&HEAD_LA, &ft_get_pile_data))
+		if (ft_is_lst_desc(&HEAD_LA, &ft_get_tpile_data))
 			return;
-/*		while (!(JUST_HEAD(HEAD_LB)) && !(ft_is_there_inf_int(&HEAD_LB, &ft_get_pile_position, 1)))
+/*		while (!(JUST_HEAD(HEAD_LB)) && !(ft_is_there_inf_int(&HEAD_LB, &ft_get_tpile_position, 1)))
 		{
 			TESTSTR("pivot B","REFILL");
 			ft_ps_print_stack_a_and_b();
-			ft_refill_b(ft_get_int_abspos(&HEAD_LB, &ft_get_pile_position, 0)); //trouver la limite// autre fonction
-			TESTINT("REFILL",ft_get_int_abspos(&HEAD_LB, &ft_get_pile_position, 0));
+			ft_refill_b(ft_get_int_abspos(&HEAD_LB, &ft_get_tpile_position, 0)); //trouver la limite// autre fonction
+			TESTINT("REFILL",ft_get_int_abspos(&HEAD_LB, &ft_get_tpile_position, 0));
 		}
 */
 		if (!(JUST_HEAD(HEAD_LB)))
@@ -98,7 +98,7 @@ void			ft_organise_around_pivot_b()
 			PILE(HEAD_LB.next)->position = 1;
 			ft_ps_pushswap_operation("pb");
 			ft_ps_pushswap_operation("ra");
-			while ((ft_is_there_inf_int(&HEAD_LB, &ft_get_pile_data, pivot)))
+			while ((ft_is_there_inf_int(&HEAD_LB, &ft_get_tpile_data, pivot)))
 			{
 				if (PILE(HEAD_LB.next)->data < pivot)
 				{
@@ -127,7 +127,7 @@ int			ft_organise_around_pivot_a()
 	int		pivot;
 	int		nb = 0;
 
-	if (!(ft_is_there_inf_int(&HEAD_LA, &ft_get_pile_position, 1)))
+	if (!(ft_is_there_inf_int(&HEAD_LA, &ft_get_tpile_position, 1)))
 	{
 		ft_refill_a(ft_lst_count(&HEAD_LB));
 //		ft_fix_right_place();
@@ -140,7 +140,7 @@ int			ft_organise_around_pivot_a()
 	PILE(HEAD_LA.next)->position = 1;
 	ft_ps_pushswap_operation("pa");
 	ft_ps_pushswap_operation("rb");
-	while ((ft_is_there_inf_int(&HEAD_LA, &ft_get_pile_data, pivot)))
+	while ((ft_is_there_inf_int(&HEAD_LA, &ft_get_tpile_data, pivot)))
 	{
 		if (PILE(HEAD_LA.next)->data < pivot)
 		{
@@ -159,7 +159,7 @@ int			ft_organise_around_pivot_a()
 		}
 	ft_ps_pushswap_operation("rrb");
 /*
-	if (!(ft_is_there_inf_int(&HEAD_LA, &ft_get_pile_position, 1)))
+	if (!(ft_is_there_inf_int(&HEAD_LA, &ft_get_tpile_position, 1)))
 	{
 		ft_refill_a(ft_lst_count(&HEAD_LB));
 		ft_fix_right_place();

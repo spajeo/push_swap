@@ -73,8 +73,35 @@ typedef struct		s_str
 }				t_str;
 
 /*
-**		GLOBALS	REFEREAL
+**	            Struct Memory Access
+**              GET VALUES FROM FUNCTIONS
 */
+
+int						*ft_get_tpile_data(t_lst *ptr);
+int						*ft_get_tpile_position(t_lst *ptr);
+int						ft_get_tdata_data(t_lst *ptr);
+char					*ft_get_tstr_str(t_lst *ptr);
+
+
+
+/*
+**	    CHECK ORDER COMPARE TO OTHER VALUES
+*/
+
+/*
+**		CHECK POSITION IN THE LST LINKED LIST
+**          next order
+*/
+
+/*
+**	    LST IS
+*/
+
+int						ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
+int						ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
+
+
+
 
 /*
 **		FT SORTING
@@ -93,9 +120,6 @@ void				ft_t_data_free(t_lst *lst_head);
 //void				ft_print_next_str(t_str *data_head);
 
 
-void	rot_head_next();
-void 	rot_head_prev();
-
 
 
 int						*ft_get_lst_from_val_position(t_lst *head, int*(*get_int)(t_lst *), size_t position);
@@ -110,9 +134,6 @@ int						*ft_get_lst_from_val_position(t_lst *head, int*(*get_int)(t_lst *), siz
 void                    ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *));
 int						ft_lst_count(t_lst *head);
 int     				ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
-
-int						ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
-int						ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
 int						ft_ps_next_t_data_issorted(t_lst *head_a, t_lst *head_b);
 void                    ft_print_next_str(t_lst *head);
 //void	ft_print_next_str(t_str *head_str);

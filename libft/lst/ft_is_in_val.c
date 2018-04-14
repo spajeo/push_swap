@@ -1,6 +1,6 @@
 #include "liblst.h"
 
-int			ft_is_double_data(t_data *ref)
+int			ft_is_in_val(t_data *ref)
 {
 //	t_data 	*comp;
 	(void)ref->lst;

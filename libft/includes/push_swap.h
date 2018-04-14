@@ -124,16 +124,6 @@ int                     ft_get_int_abspos(t_lst *head, int*(*get_int)(t_lst *), 
 
 
 
-
- /*
-**			Struct Memory Access
-*/
-
-int						*ft_get_pile_data(t_lst *ptr); 
-int						*ft_get_pile_position(t_lst *ptr); 
-int						ft_get_t_data_data(t_lst *ptr);
-char					*ft_get_str_str(t_lst *ptr);
-
 //int						ft_mv_inf_half();
 t_lst					*ft_get_lst_from_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
 

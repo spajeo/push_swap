@@ -1,11 +1,11 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_get_pile_position.c                             :+:      :+:    :+:   */
+/*   ft_get_tstr_str.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/01 18:29:46 by spajeo            #+#    #+#             */
+/*   Created: 2017/11/01 18:37:07 by spajeo            #+#    #+#             */
 /*   Updated: 2018/04/09 14:54:45 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -15,18 +15,16 @@
 #include "push_swap.h"
 
 /*
-** Access space in the struct memory
-** t_pile 
+** Access space in struct s_str aka t_str's memory
+** t_str 
 **{
-**			int data;
-** 	====>	int position;
+** ====>	int str;
 **			t_lst ptr;
 **}
 */
 
-
-int		*ft_get_pile_position(t_lst *ptr) 
+char		*ft_get_tstr_str(t_lst *ptr)
 {
-	return (&((t_pile *)((char *)(ptr)
-						- ((char *)(&(((t_pile *)0))->lst))))->position);
+	return (((t_str *)((char *)(ptr)
+					- ((char *)(&(((t_pile *)0))->lst))))->str);
 }

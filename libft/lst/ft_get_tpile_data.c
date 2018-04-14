@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_get_pile_data.c                                 :+:      :+:    :+:   */
+/*   ft_get_tpile_data.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -21,7 +21,7 @@
 **          aka {struct s_pile data} element in the memory
 */
 
-int		*ft_get_pile_data(t_lst *ptr) 
+int		*ft_get_tpile_data(t_lst *ptr)
 {
 //ft_putnbr(((t_pile *)((char *)(ptr)
   //                     - ((char *)(&(((t_pile *)0))->lst))))->data);

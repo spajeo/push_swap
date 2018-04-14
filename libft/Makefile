@@ -47,13 +47,13 @@ NBR := atoi atoi_exit count_words itoa itoa_base itoa_base_buff itoa_base_gbuff 
 NBR_SRC := $(addsuffix .c, $(addprefix $(NBR_DIR)ft_, $(NBR)))
 NBR_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(NBR)))
 
-LST := is_double_data_next lst_add_after lst_add_before lst_disconnect lst_empty lstmv_after \
+LST := is_in_val lst_add_after lst_add_before lst_disconnect lst_empty lstmv_after \
 		lstmv_before lstadd lstdel lstdelone lstiter lstmap lstnew \
 		is_lst_asc is_lst_desc \
-		get_pile_data  get_lst_from_int get_pile_position \
+		get_tpile_data  get_lst_from_int get_tpile_position \
 		lst_count lst_count_lim \
-		is_data_in get_t_data_data\
-		is_there_inf get_int_abspos  print_next_str get_t_data_position add_t_pile_next get_str_str
+		is_data_in get_tdata_data\
+		is_there_inf get_int_abspos  print_next_str get_lst_val_from_absposition add_t_pile_next get_str_str
 LST_SRC := $(addsuffix .c, $(addprefix $(LST_DIR)ft_, $(LST)))
 LST_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(LST)))
 
