@@ -37,41 +37,41 @@ PRINTF_DIR := ./ft_printf/
 PUSH_SWAP_DIR := ./push_swap/
 
 STR := strcat strcat_lim strcatcount strchr strclr strcmp strcpy strdel strdup strequ striter striteri \
-		strjoin strjoin_free strlcat strlen strlen_c strlen_c_len strlen_int strmap strmapi strncat \
-		strncatcount strncmp strncpy strnequ strnew strnstr strrchr strsplit strstr strsub strtrim strtrim_c
+            strjoin strjoin_free strlcat strlen strlen_c strlen_c_len strlen_int strmap strmapi strncat \
+            strncatcount strncmp strncpy strnequ strnew strnstr strrchr strsplit strstr strsub strtrim strtrim_c
 STR_SRC := $(addsuffix .c, $(addprefix $(STR_DIR)ft_, $(STR)))
 STR_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(STR)))
 
 NBR := atoi atoi_exit count_words itoa itoa_base itoa_base_buff itoa_base_gbuff \
-		itoa_ubase itoa_ubase_buff itoa_ubase_gbuff itostr_ubase swap
+            itoa_ubase itoa_ubase_buff itoa_ubase_gbuff itostr_ubase swap
 NBR_SRC := $(addsuffix .c, $(addprefix $(NBR_DIR)ft_, $(NBR)))
 NBR_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(NBR)))
 
 LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lstmv_after \
-		lstmv_before lstadd \
-		lstiter lstmap \
-		is_lst_asc is_lst_desc \
-		get_tpile_data  get_lst_from_int get_tpile_position \
-		lst_count lst_count_lim \
-		is_there_inf_int get_lst_from_val_position is_there_inf_ref tdata_free \
-		is_val_in get_tdata_data add_tstr_next \
-		is_there_inf get_int_abspos  print_next_str get_lst_val_from_absposition add_tpile_next get_tstr_str
+            lstmv_before lstadd \
+            lstiter lstmap \
+            is_lst_asc is_lst_desc \
+            get_tpile_data  get_lst_from_int get_tpile_position \
+            lst_count lst_count_lim \
+            is_ref_inf get_lst_from_val_position is_there_inf_ref tdata_free \
+            is_val_in get_tdata_data add_tstr_next \
+            is_first_inf get_int_abspos  print_next_str get_lst_val_from_absposition add_tpile_next get_tstr_str
  #listdel listdelone lstnew
 LST_SRC := $(addsuffix .c, $(addprefix $(LST_DIR)ft_, $(LST)))
 LST_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(LST)))
 
 PRINTF:=	buff_charstr buff_val ft_pr_buffnwstr ft_pr_buffwstr ft_pr_charcat ft_pr_itoa_ubase_gbuff \
-		ft_pr_memsetblim ft_pr_strcatcount ft_pr_strncatcount ft_printf initialisation \
-		parsing ptr_char ptr_flag ptr_nbr
+            ft_pr_memsetblim ft_pr_strcatcount ft_pr_strncatcount ft_printf initialisation \
+            parsing ptr_char ptr_flag ptr_nbr
 PRINTF_SRC := $(addsuffix .c, $(addprefix $(PRINTF_DIR), $(PRINTF)))
 PRINTF_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PRINTF)))
 
 LIB := buffnwstr buffwchar buffwstr bzero charcat charcat_lim charcatcount charcatcount_glim \
-		charchr charchronstr exec_parse free max memalloc memccpy memchr memcmp memcpy memdel \
-		memmove memset memsetblim min nbrlen print_array putchar putchar_fd putchardl \
-		putcharuni putendl putendl_fd putnbr \
-		putnbr_base putnbr_base_fd putnbr_fd putnbr_unsigned_base_fd putstr \
-		putstr_fd tolower toupper wcharlen wstrlen wstrlen_conv get_next_line
+            charchr charchronstr exec_parse free max memalloc memccpy memchr memcmp memcpy memdel \
+            memmove memset memsetblim min nbrlen print_array putchar putchar_fd putchardl \
+            putcharuni putendl putendl_fd putnbr \
+            putnbr_base putnbr_base_fd putnbr_fd putnbr_unsigned_base_fd putstr \
+            putstr_fd tolower toupper wcharlen wstrlen wstrlen_conv get_next_line
 LIB_SRC := $(addsuffix .c, $(addprefix $(LIB_DIR)ft_, $(LIB)))
 LIB_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(LIB)))
 
@@ -80,7 +80,7 @@ IS_SRC := $(addsuffix .c, $(addprefix $(IS_DIR)ft_, $(IS)))
 IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
 
 PUSH_SWAP:= ps_arg \
-			ps_free ft_ps_atoi_exit ft_mv_inf_half ft_ps_print_stack_a_and_b\
+			ps_free ft_ps_atoi_exit  ft_ps_print_stack_a_and_b\
 			ft_check_ps_flags ft_ps_next_t_data_issorted ps_refill ft_exec_ac_parse\
 			ft_init_ps_head ft_exec_parse_ps  ft_print_next_int\
 			singletons \

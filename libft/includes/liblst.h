@@ -36,7 +36,6 @@
 */
 # define OFFSETOF(st, lst)				((char *)(&(((st *)0)->lst)))
 
-
 /*
 ** Calculates the address of the structure thanks to the given address of
 ** the structure field. Because the offset is calculated by OFFSETOF, the
@@ -47,7 +46,6 @@
 ** 3rd parameter : name of the list within the structure
 */
 # define CONTAINEROF(ptr, st, lst)	((st *)((char *)(ptr) - OFFSETOF(st, lst)))
-
 
 #define T_DATA(it) CONTAINEROF(it, t_data, lst)
 #define T_STR(it) CONTAINEROF(it, t_str, lst)
@@ -79,7 +77,12 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-
+typedef struct      s_pile
+{
+	int     position;
+	int     data;
+	t_lst   lst;
+}	               t_pile;
 
 /*
 **	        Struct Memory Access
@@ -89,7 +92,6 @@ char		    	*ft_get_tstr_str(t_lst *ptr);
 int					*ft_get_tpile_data(t_lst *ptr);
 int					*ft_get_tpile_position(t_lst *ptr);
 int					ft_get_tdata_data(t_lst *ptr);
-
 /*
 **		    LIST
 */
@@ -102,18 +104,17 @@ void            	ft_lstinsert_after(t_lst *new, t_lst *dst);
 void            	ft_lstinsert_before(t_lst *new, t_lst *dst);
 void	            ft_lstmv_after(t_lst *src, t_lst *dst);
 void				ft_lstmv_before(t_lst *src, t_lst *dst);
-
 /*
 **	       COUNT
 */
 int					ft_lst_count(t_lst *head);
 int     			ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
-
 /*
 **	                CHECK ORDER COMPARE TO OTHER VALUES
 */
 int					*ft_get_lst_from_val_position(t_lst *head, int*(*get_int)(t_lst *), size_t position);
-
+t_lst				*ft_get_lst_from_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
+int                 ft_get_int_abspos(t_lst *head, int*(*get_int)(t_lst *), int val);
 /*
 **		            CHECK POSITION IN THE LST LINKED LIST
 **                      next order
@@ -127,17 +128,16 @@ int                 ft_is_val_in(t_lst *head, int data, int *(*get_struct_el)(t_
 int					ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
 int					ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
 
-int                 ft_is_there_inf(t_lst *head, int *(*get_int)(t_lst *));
-int                 ft_is_there_inf_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
+int                 ft_is_first_inf(t_lst *head, int *(*get_int)(t_lst *));
+int                 ft_is_ref_inf(t_lst *head, int *(*get_int)(t_lst *), int ref);
 int                 ft_is_there_inf_ref(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref);
-
 /*
 **	   CREATE/DELETE STRUCTURE
 */
-void				ft_tdata_free(t_lst *lst_head);
+t_pile              *ft_add_tpile_next(t_lst *head, const int nb);
+void				*ft_add_tstr_next(t_lst *head, char *str);
 t_data              *ft_add_tdata_next(t_lst *head, const int nb);
-t_lst	            *ft_add_tstr_next(t_lst *head, char *str);
-
+void				ft_tdata_free(t_lst *lst_head);
 /*
 **	        PRINT
 */

@@ -16,8 +16,10 @@
 #include "liblst.h"
 
 /*
-** Check if the first element is the higher in the list,
-** by comparing the first element in the list with the following ones.
+**  CHECK if the ELE from REF pnode is LOWER or EQUAL to
+** Check if the REF value is HIGHER or EQUAL to the values in the list
+** by comparing the REF value to the list's elements..
+**
 */
 
 

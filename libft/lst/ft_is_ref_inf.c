@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_there_inf_int.c                              :+:      :+:    :+:   */
+/*   ft_is_ref_inf.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -16,12 +16,12 @@
 #include "liblst.h"
 
 /*
-** Check if the REF value is HIGHER or EQUAL to the value in the list 
+** Check if the REF value is INFERIOR to the values in the list
 ** by comparing the REF value to the list's elements..
 */
 
 
-int   ft_is_there_inf_int(t_lst *head, int *(*get_int)(t_lst *), int ref)
+int   ft_is_ref_inf(t_lst *head, int *(*get_int)(t_lst *), int ref)
 {
 	t_lst *tmp;
 

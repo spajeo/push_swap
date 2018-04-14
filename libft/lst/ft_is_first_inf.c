@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_there_inf.c                                  :+:      :+:    :+:   */
+/*   ft_is_first_inf.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -21,7 +21,7 @@
 */
 
 
-int   ft_is_there_inf(t_lst *head, int *(*get_int)(t_lst *))
+int   ft_is_first_inf(t_lst *head, int *(*get_int)(t_lst *))
 {
 	t_lst *tmp;
 
