@@ -81,8 +81,7 @@ IS :=     is_white isalnum isalpha isascii isdigit islower isprint issign isspac
 IS_SRC := $(addsuffix .c, $(addprefix $(IS_DIR)ft_, $(IS)))
 IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
 
-PUSH_SWAP:= ps_arg \
-			ps_free ft_ps_atoi_exit  ft_ps_print_stack_a_and_b\
+PUSH_SWAP:= ps_free ft_ps_atoi_exit  ft_ps_print_stack_a_and_b\
 			ft_check_ps_flags ft_ps_next_t_data_issorted ps_refill \
 			ft_init_ps_head ft_exec_parse_ps  ft_print_next_int\
 			singletons \

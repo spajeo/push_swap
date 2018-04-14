@@ -30,7 +30,6 @@
 */
 /*
 #define PS__HEAD				swap_head
-#define HEAD_LA	    			swap_head.head_a
 #define HEAD_LB	    			(swap_head.head_b)
 #define HEAD_PS_MV				(swap_head.head_mv)
 #define FLAG__PS    			(swap_head.flag)
@@ -38,6 +37,7 @@
 //*
 #define PS__HEAD				(*ft_push_swap_head())
 #define HEAD_LA	    			(ft_push_swap_head()->head_a)
+//#define HEAD_LA	    			(ft_push_swap_head.head_a)
 #define HEAD_LB	    			(ft_push_swap_head()->head_b)
 #define HEAD_PS_MV				(ft_push_swap_head()->head_mv)
 #define FLAG__PS    			(ft_push_swap_head()->flag)

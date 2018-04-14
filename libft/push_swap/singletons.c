@@ -30,7 +30,7 @@ t_push_swap_head		*ft_push_swap_head(void)
 		ptr->nb_a = 0;
 		NODE_INIT(ptr->head_b);
 		ptr->nb_b = 0;
-//		ft_printf("  HEAD : %d\n\n\n", PS__HEAD->nb_a);
+		ft_printf("  HEAD : %d\n\n\n", PS__HEAD.nb_a);
 	}
 	return (ptr);
 }

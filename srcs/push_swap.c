@@ -7,18 +7,20 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-void ft_fix_right_place()
+void ft_fix_right_place(t_lst *head)
 {
 	t_lst *tmp;
 
-	tmp = HEAD_LA.next;
-	while (tmp  != &HEAD_LA)
+	tmp = head->next;
+	while (tmp  != head)
 	{
-		if (PILE(tmp)->position == 0 && ft_is_abspos_is_relpos(&HEAD_LA, &ft_get_tpile_data, tmp))
+		ft_printf("%d", *tmp);
+		if (PILE(tmp)->position == 0 && ft_is_abspos_is_relpos(head, &ft_get_tpile_data, tmp))
 		{
 			PILE(tmp)->position = 2;
 		}
 		tmp = tmp->next;
+		ft_printf("%d", PILE(tmp)->position);
 	}
 }
 
@@ -117,7 +119,7 @@ int			ft_organise_around_pivot_a()
 	if (!(ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_position, 1)))
 	{
 		ft_refill_a(ft_lst_count(&HEAD_LB));
-		ft_fix_right_place();
+//		ft_fix_right_place(&HEAD_LA);
 	}
 	while (PILE(HEAD_LA.next)->position == 1)
 	{
@@ -149,7 +151,7 @@ int			ft_organise_around_pivot_a()
 	if (!(ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_position, 1)))
 	{
 		ft_refill_a(ft_lst_count(&HEAD_LB));
-		ft_fix_right_place();
+//		ft_fix_right_place(&HEAD_LA);
 	}
 //*/
 	return (1);
@@ -166,17 +168,18 @@ int			main(int ac, char **av)
 */
 	{
 		ft_exec_ac_parse(&(ac),&(*(++av)), &ft_ps_convert_argv);
-		ft_fix_right_place();
+//		ft_fix_right_place(&HEAD_LA);
 	//	ft_ps_print_stack_a_and_b();
 		while (!(ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB))) {
-//			ft_organise_around_pivot_a();
+			ft_organise_around_pivot_a();
 			if (ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB))
 				break;
-//			ft_organise_around_pivot_b();
+			ft_organise_around_pivot_b();
 			ft_refill_a(ft_lst_count(&HEAD_LB));
+			ft_ps_print_stack_a_and_b();
 		}
 	}
 //	ft_refill_a(ft_lst_count(&HEAD_LB));
-	//ft_ps_print_stack_a_and_b();
+	ft_ps_print_stack_a_and_b();
 	return (0);
 }
