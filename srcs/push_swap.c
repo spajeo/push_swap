@@ -78,7 +78,7 @@ void			ft_organise_around_pivot_b()
 	while (!(ft_is_there_inf_int(&HEAD_LA, &ft_get_pile_position, 1)))
 	{
 //	TESTSTR("pivot B","");
-		if (ft_lst_is_max_min_sorted(&HEAD_LA, &ft_get_pile_data))
+		if (ft_is_lst_desc(&HEAD_LA, &ft_get_pile_data))
 			return;
 /*		while (!(JUST_HEAD(HEAD_LB)) && !(ft_is_there_inf_int(&HEAD_LB, &ft_get_pile_position, 1)))
 		{
@@ -184,7 +184,7 @@ int			main(int ac, char **av)
 					break;
 			ft_fix_right_place();
 			ft_organise_around_pivot_b();
-			//ft_refill_a(ft_lst_count(&HEAD_LB));
+			ft_refill_a(ft_lst_count(&HEAD_LB));
 	}
 	ft_refill_a(ft_lst_count(&HEAD_LB));
 	ft_ps_print_stack_a_and_b();

@@ -49,7 +49,7 @@ NBR_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(NBR)))
 
 LST := is_double_data_next lst_add_after lst_add_before lst_disconnect lst_empty lst_move_node_after \
 		lst_move_node_before lstadd lstdel lstdelone lstiter lstmap lstnew \
-		lst_is_min_max_sorted lst_is_max_min_sorted t_data_is_max_min_sorted \
+		is_lst_asc is_lst_desc t_data_is_max_min_sorted \
 		get_pile_data  get_lst_from_int get_pile_position  get_int_position \
 		lst_count lst_count_lim t_data_is_min_max_sorted \
 		is_data_in get_t_data_data\
@@ -76,13 +76,12 @@ IS :=     is_white isalnum isalpha isascii isdigit islower isprint issign isspac
 IS_SRC := $(addsuffix .c, $(addprefix $(IS_DIR)ft_, $(IS)))
 IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
 
-PUSH_SWAP:=\
-			ps_arg ft_add_t_str_next \
+PUSH_SWAP:= ps_arg ft_add_t_str_next \
 			ps_free ft_ps_atoi_exit ft_mv_inf_half ft_ps_print_stack_a_and_b\
 			ft_check_ps_flags ft_ps_next_t_data_issorted ps_refill ft_exec_ac_parse\
 			ft_init_ps_head ft_print_next_data ft_exec_parse_ps ft_init_t_data_head ft_print_next_int\
 			singletons ft_free_next_data \
-			 ft_ps_convert_argv ft_ps_pushswap_operation\
+			ft_ps_convert_argv ft_ps_pushswap_operation\
 			ft_ps_exec_p ft_ps_exec_s ft_ps_exec_rr ft_ps_exec_r \
 			ft_pushswap_opp ft_pushswap_ops ft_pushswap_oprr ft_pushswap_opr \
 			ft_is_there_inf_int ft_get_int_order ft_is_there_inf_ref ft_t_data_free

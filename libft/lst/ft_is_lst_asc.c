@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lst_is_min_max_sorted.c                         :+:      :+:    :+:   */
+/*   ft_is_lst_asc.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -13,8 +13,18 @@
 #include "libft.h"
 #include "liblst.h"
 #include "push_swap.h"
+/*
+**
+**
+** //ft_IS LST INT
+**  ASC
+**
+**
+**
+*/
 
-int		ft_lst_is_min_max_sorted(t_lst *head, int *(*get_int)(t_lst *))
+
+int		ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *))
 {
 	t_lst *tmp;
 

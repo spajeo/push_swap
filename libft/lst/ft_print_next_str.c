@@ -14,6 +14,16 @@
 #include "ft_printf.h"
 #include "push_swap.h"
 #include "liblst.h"
+/*
+**
+**
+** //ft_IS LST INT
+**
+**  NORM
+**
+**
+*/
+
 
 void	ft_print_next_str(t_lst *head)
 {

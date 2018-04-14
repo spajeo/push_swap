@@ -18,6 +18,16 @@
 /*
 **	Built for function with non-allocated head
 */
+/*
+**
+**
+** //ft_IS LST INT
+**
+**  NORM
+** GENERALISER
+**
+*/
+
 
 void		ft_t_data_free(t_lst *head)
 {

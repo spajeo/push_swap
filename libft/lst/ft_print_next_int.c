@@ -15,6 +15,16 @@
 #include "push_swap.h"
 #include "liblst.h"
 
+/*
+**
+**
+** //ft_IS LST INT
+**
+**
+**
+**
+*/
+
 //rendre la fonction plus flexible en mettant une fonction de lecture.
 
 void	ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *))

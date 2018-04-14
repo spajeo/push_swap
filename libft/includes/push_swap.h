@@ -112,8 +112,8 @@ void                    ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *))
 int						ft_lst_count(t_lst *head);
 int     				ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
 
-int						ft_lst_is_min_max_sorted(t_lst *head, int *(*get_int)(t_lst *));
-int						ft_lst_is_max_min_sorted(t_lst *head, int *(*get_int)(t_lst *));
+int						ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
+int						ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
 int						ft_ps_next_t_data_issorted(t_lst *head_a, t_lst *head_b);
 void                    ft_print_next_str(t_lst *head);
 
