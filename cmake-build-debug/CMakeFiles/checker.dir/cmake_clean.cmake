@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_opp.c.o"
   "CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_ops.c.o"
   "CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_oprr.c.o"
+  "CMakeFiles/checker.dir/libft/lst/ft_is_abspos_is_relpos.c.o"
   "checker.pdb"
   "checker"
 )

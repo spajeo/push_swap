@@ -197,17 +197,14 @@ char				*ft_strnstr(const char *s1, const char *s2, size_t size);
 /*
 **					appel de fonction
 */
-
 char				*ft_strmap(const char *s, char (*f)(char));
 char				*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 void				ft_exec_parse(int *i, char **str, void (*f)(const char *));
 
 
-
 /*
 **					STR CONVERTION
 */
-
 char				*ft_strsub(const char *s1, unsigned int start, size_t len);
 char				*ft_strtolower(char *str);
 char				*ft_strtoupper(char *str);
@@ -217,7 +214,6 @@ char				*ft_strtrim(const char *s);
 /*
 **					MATH
 */
-
 int					ft_min(int a, int b);
 int					ft_max(int a, int b);
 
@@ -225,7 +221,6 @@ int					ft_max(int a, int b);
 /*
 **					IS
 */
-
 int					ft_is_white(char c);
 int					ft_isupper(int c);
 int					ft_islower(int c);
@@ -273,7 +268,6 @@ void				*ft_memmove(void *dest, const void *src, size_t len);
 void				*ft_memset(void *b, int c, size_t len);
 int					ft_memsetblim(char *b, int c, size_t len);
 int					ft_free(void **ptr);
-
 char				*ft_charcat_lim(char *restrict s1,
 									char c, size_t buff_size);
 int					ft_strcatcount(char *restrict s1,

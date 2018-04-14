@@ -38,7 +38,8 @@ PUSH_SWAP_DIR := ./push_swap/
 
 STR := strcat strcat_lim strcatcount strchr strclr strcmp strcpy strdel strdup strequ striter striteri \
             strjoin strjoin_free strlcat strlen strlen_c strlen_c_len strlen_int strmap strmapi strncat \
-            strncatcount strncmp strncpy strnequ strnew strnstr strrchr strsplit strstr strsub strtrim strtrim_c
+            strncatcount strncmp strncpy strnequ strnew strnstr strrchr strsplit strstr strsub strtrim strtrim_c \
+            exec_ac_parse
 STR_SRC := $(addsuffix .c, $(addprefix $(STR_DIR)ft_, $(STR)))
 STR_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(STR)))
 
@@ -53,9 +54,10 @@ LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lst
             is_lst_asc is_lst_desc \
             get_tpile_data  get_lst_from_int get_tpile_position \
             lst_count lst_count_lim \
-            is_ref_inf getlst_fromval_relpos is_reflst_sup tdata_free \
+            is_ref_inf getval_fromabspos is_reflst_sup tdata_free \
             is_val_in get_tdata_data add_tstr_next \
-            is_first_inf get_int_abspos  print_next_str getval_fromlst_abspos add_tpile_next get_tstr_str
+            is_first_inf getabspos_fromval  print_next_str getval_fromlst_abspos getabspos_fromlst \
+            getrelpos_fromlstval add_tpile_next get_tstr_str
  #listdel listdelone lstnew
 LST_SRC := $(addsuffix .c, $(addprefix $(LST_DIR)ft_, $(LST)))
 LST_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(LST)))
@@ -81,7 +83,7 @@ IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
 
 PUSH_SWAP:= ps_arg \
 			ps_free ft_ps_atoi_exit  ft_ps_print_stack_a_and_b\
-			ft_check_ps_flags ft_ps_next_t_data_issorted ps_refill ft_exec_ac_parse\
+			ft_check_ps_flags ft_ps_next_t_data_issorted ps_refill \
 			ft_init_ps_head ft_exec_parse_ps  ft_print_next_int\
 			singletons \
 			ft_ps_convert_argv ft_ps_pushswap_operation\

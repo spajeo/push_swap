@@ -136,6 +136,33 @@ push_swap/fast:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
 .PHONY : push_swap/fast
 
+libft/lst/ft_is_abspos_is_relpos.o: libft/lst/ft_is_abspos_is_relpos.c.o
+
+.PHONY : libft/lst/ft_is_abspos_is_relpos.o
+
+# target to build an object file
+libft/lst/ft_is_abspos_is_relpos.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/lst/ft_is_abspos_is_relpos.c.o
+.PHONY : libft/lst/ft_is_abspos_is_relpos.c.o
+
+libft/lst/ft_is_abspos_is_relpos.i: libft/lst/ft_is_abspos_is_relpos.c.i
+
+.PHONY : libft/lst/ft_is_abspos_is_relpos.i
+
+# target to preprocess a source file
+libft/lst/ft_is_abspos_is_relpos.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/lst/ft_is_abspos_is_relpos.c.i
+.PHONY : libft/lst/ft_is_abspos_is_relpos.c.i
+
+libft/lst/ft_is_abspos_is_relpos.s: libft/lst/ft_is_abspos_is_relpos.c.s
+
+.PHONY : libft/lst/ft_is_abspos_is_relpos.s
+
+# target to generate assembly for a file
+libft/lst/ft_is_abspos_is_relpos.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/lst/ft_is_abspos_is_relpos.c.s
+.PHONY : libft/lst/ft_is_abspos_is_relpos.c.s
+
 libft/push_swap/ft_ps_convert_argv.o: libft/push_swap/ft_ps_convert_argv.c.o
 
 .PHONY : libft/push_swap/ft_ps_convert_argv.o
@@ -410,6 +437,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... checker"
 	@echo "... push_swap"
+	@echo "... libft/lst/ft_is_abspos_is_relpos.o"
+	@echo "... libft/lst/ft_is_abspos_is_relpos.i"
+	@echo "... libft/lst/ft_is_abspos_is_relpos.s"
 	@echo "... libft/push_swap/ft_ps_convert_argv.o"
 	@echo "... libft/push_swap/ft_ps_convert_argv.i"
 	@echo "... libft/push_swap/ft_ps_convert_argv.s"

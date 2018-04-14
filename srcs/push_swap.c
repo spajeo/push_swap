@@ -14,10 +14,7 @@ void ft_fix_right_place()
 	tmp = HEAD_LA.next;
 	while (tmp  != &HEAD_LA)
 	{
-		if (PILE(tmp)->position == 0
-		    && *ft_getlst_fromval_relpos(&HEAD_LA, &ft_get_tpile_data,
-		  ft_get_int_abspos
-		  (&HEAD_LA, &ft_get_tpile_data, PILE(tmp)->data) == PILE(tmp)->data))
+		if (PILE(tmp)->position == 0)//&& ft_is_abspos_is_relpos(0,0,0))
 		{
 			PILE(tmp)->position = 2;
 		}

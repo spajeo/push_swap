@@ -1,11 +1,11 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_get_int_abspos.c                                :+:      :+:    :+:   */
+/*   ft_getval_fromlst_abspos.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/03/15 14:49:34 by spajeo            #+#    #+#             */
+/*   Created: 2017/10/28 03:47:09 by spajeo            #+#    #+#             */
 /*   Updated: 2018/04/09 14:54:45 by spajeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -14,19 +14,40 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-int	ft_get_int_abspos(t_lst *head, int*(*get_int)(t_lst *), int val)
+
+/*
+**
+**
+** int	*ft_getval_fromabspos(t_lst *head, int*(*get_int)(t_lst *), size_t position)
+** OBTAINS THE NTH VALUE REGARDING THE VALUE NOT THE POSITION
+**
+** returns the **ADDRESS** of the value
+*/
+
+
+int	ft_getval_fromlst_abspos(t_lst *head, int *(* get_int)(t_lst *), size_t position)
 {
 	t_lst		*tmp;
-	size_t      pos;
+	t_lst		*test;
+	size_t      inferior;
 
-	pos = 0;
+	inferior = 0;
 	tmp = head->next;
-	while (tmp != head)
+	while (tmp != head) // head->prev
 	{
-		if (*get_int(tmp) ==  val)
-			return (pos);
-		++pos;
+		while (test != head)
+		{
+			if (*get_int(tmp) < *get_int(test))
+			{
+				++inferior;
+			}
+			test = test->next;
+		}
+		if (inferior == position)
+			return (*get_int(tmp));
+		inferior = 0;
+		test = head->next;
 		tmp = tmp->next;
 	}
-	return (-1);
+	return (0);
 }

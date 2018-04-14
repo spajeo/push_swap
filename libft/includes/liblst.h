@@ -114,13 +114,15 @@ int     			ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
 **	      RELATIVE POSITION
 **        CHECK ORDER COMPARE TO OTHER VALUES
 */
-int					*ft_getlst_fromval_relpos(t_lst *head, int*(*get_int)(t_lst *), size_t position);
+int					*ft_getval_fromabspos(t_lst *head, int*(*get_int)(t_lst *), size_t position);
+int                 ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref);
 /*
 **		  ABSOLUTE POSITION
 **        CHECK POSITION IN THE LST LINKED LIST with NEXT
 */
-int                 ft_get_int_abspos(t_lst *head, int*(*get_int)(t_lst *), int val);
-
+int                 ft_getabspos_fromlst(t_lst *head, t_lst *ref);
+int                 ft_getabspos_fromval(t_lst *head, int*(*get_int)(t_lst *), int val);
+int                 ft_getval_fromlst_abspos(t_lst *head, int *(* get_int)(t_lst *) , size_t position);
 /*
 **          IS LST
 */
@@ -134,6 +136,10 @@ int					ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
 int					ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
 int                 ft_is_ref_inf(t_lst *head, int *(*get_int)(t_lst *), int ref);
 int                 ft_is_reflst_sup(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref);
+/*
+**	      COMPARE ABS & REL POSITIONS
+*/
+int                 ft_is_abspos_is_relpos(t_lst *head, int*(*get_int)(t_lst *), t_lst *ref);
 /*
 **	   CREATE/DELETE STRUCTURE
 */
