@@ -18,7 +18,7 @@ int	ft_getabspos_fromlst(t_lst *head, t_lst *ref)
 		++count;
 		if (tmp == ref)
 		{
-			TESTINT("ABSOLUTE POSITION FROM LST", count);
+//			TESTINT("ABSOLUTE POSITION FROM LST", count);
 			return (count);
 		}
 		tmp = tmp->next;

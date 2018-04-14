@@ -17,7 +17,6 @@ int	ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref)
 
 	position = 0;
 	ref_val = *get_int(ref);
-	TESTINT("ref_val from get_getrelpos_fromlstval", ref_val);
 	tmp = head->next;
 	while(tmp != head)
 	{
@@ -27,5 +26,6 @@ int	ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref)
 		}
 		tmp = tmp->next;
 	}
+	//TESTINTR("RELATIVE POSITION", position);
 	return (position);
 }

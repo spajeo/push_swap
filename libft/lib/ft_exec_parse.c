@@ -16,7 +16,7 @@ void			ft_exec_parse(int *i, char **str, void (*f)(const char *))
 {
 	if (!i || !*i || !str || !*str || !**str || !f)
 		return  ;
-	while (*str)
+	while (*i)
 	{
 		f(*str);
 		++(str);

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_getval_fromlst_abspos.c                           :+:      :+:    :+:   */
+/*   ft_getval_fromabspos.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -25,7 +25,7 @@
 */
 
 
-int	ft_getval_fromlst_abspos(t_lst *head, int *(* get_int)(t_lst *), size_t position)
+int	ft_getval_fromabspos(t_lst *head, int *(* get_int)(t_lst *), size_t position)
 {
 	t_lst		*tmp;
 	t_lst		*test;

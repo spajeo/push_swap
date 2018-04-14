@@ -14,7 +14,7 @@ void ft_fix_right_place()
 	tmp = HEAD_LA.next;
 	while (tmp  != &HEAD_LA)
 	{
-		if (PILE(tmp)->position == 0)//&& ft_is_abspos_is_relpos(0,0,0))
+		if (PILE(tmp)->position == 0 && ft_is_abspos_is_relpos(&HEAD_LA, &ft_get_tpile_data, tmp))
 		{
 			PILE(tmp)->position = 2;
 		}
@@ -65,7 +65,6 @@ void			ft_organise_around_pivot_b()
 
 	while (!(ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_position, 1)))
 	{
-//	TESTSTR("pivot B","");
 		if (ft_is_lst_desc(&HEAD_LA, &ft_get_tpile_data))
 			return;
 /*		while (!(JUST_HEAD(HEAD_LB)) && !(ft_is_ref_inf(&HEAD_LB, &ft_get_tpile_position, 1)))
@@ -158,25 +157,26 @@ int			ft_organise_around_pivot_a()
 
 int			main(int ac, char **av)
 {
-	
+/*
 	if (ac == 1)
 	{
-		return(0);
+//		return(0);
 	}
-	else
+//	else
+*/
 	{
-		ft_exec_parse_ps((*(++av)), &ft_ps_convert_argv);
-//		ft_ps_print_stack_a_and_b();
+		ft_exec_ac_parse(&(ac),&(*(++av)), &ft_ps_convert_argv);
+		ft_fix_right_place();
+	//	ft_ps_print_stack_a_and_b();
 		while (!(ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB))) {
-			ft_organise_around_pivot_a();
+//			ft_organise_around_pivot_a();
 			if (ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB))
 				break;
-			ft_fix_right_place();
-			ft_organise_around_pivot_b();
+//			ft_organise_around_pivot_b();
 			ft_refill_a(ft_lst_count(&HEAD_LB));
 		}
 	}
-	ft_refill_a(ft_lst_count(&HEAD_LB));
-	ft_ps_print_stack_a_and_b();
+//	ft_refill_a(ft_lst_count(&HEAD_LB));
+	//ft_ps_print_stack_a_and_b();
 	return (0);
 }
