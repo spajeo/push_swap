@@ -53,9 +53,9 @@ LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lst
             is_lst_asc is_lst_desc \
             get_tpile_data  get_lst_from_int get_tpile_position \
             lst_count lst_count_lim \
-            is_ref_inf get_lst_from_val_position is_there_inf_ref tdata_free \
+            is_ref_inf getlst_fromval_relpos is_reflst_sup tdata_free \
             is_val_in get_tdata_data add_tstr_next \
-            is_first_inf get_int_abspos  print_next_str get_lst_val_from_absposition add_tpile_next get_tstr_str
+            is_first_inf get_int_abspos  print_next_str getval_fromlst_abspos add_tpile_next get_tstr_str
  #listdel listdelone lstnew
 LST_SRC := $(addsuffix .c, $(addprefix $(LST_DIR)ft_, $(LST)))
 LST_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(LST)))

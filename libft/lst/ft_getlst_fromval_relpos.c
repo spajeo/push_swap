@@ -18,7 +18,7 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-int	*ft_get_lst_from_val_position(t_lst *head, int*(*get_int)(t_lst *), size_t position)
+int	*ft_getlst_fromval_relpos(t_lst *head, int*(*get_int)(t_lst *), size_t position)
 {
 	t_lst		*tmp;
 	t_lst		*comp;

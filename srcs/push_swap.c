@@ -1,10 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/9 14:9:48 by spajeo            #+#    #+#             */
 /*   Updated: 2018/03/15 15:01:24 by spajeo           ###   ########.fr       */
 /*                                                                            */
@@ -21,14 +14,12 @@ void ft_fix_right_place()
 	tmp = HEAD_LA.next;
 	while (tmp  != &HEAD_LA)
 	{
-		if (PILE(tmp)->position == 0 &&
-			*ft_get_lst_from_val_position(&HEAD_LA, &ft_get_tpile_data,
-				ft_get_int_abspos(&HEAD_LA, &ft_get_tpile_data, PILE(tmp)->data)
-						== PILE(tmp)->data ))
+		if (PILE(tmp)->position == 0
+		    && *ft_getlst_fromval_relpos(&HEAD_LA, &ft_get_tpile_data,
+		  ft_get_int_abspos
+		  (&HEAD_LA, &ft_get_tpile_data, PILE(tmp)->data) == PILE(tmp)->data))
 		{
-//			TESTINTINT("mark position", *ft_get_lst_from_val_position(&HEAD_LA, &ft_get_tpile_data, ft_get_int_abspos(&HEAD_LA, &ft_get_tpile_data, PILE(tmp)->data)), 	ft_get_int_abspos(&HEAD_LA, &ft_get_tpile_data, PILE(tmp)->data) );
 			PILE(tmp)->position = 2;
-	ft_ps_print_stack_a_and_b();
 		}
 		tmp = tmp->next;
 	}
@@ -130,7 +121,7 @@ int			ft_organise_around_pivot_a()
 	if (!(ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_position, 1)))
 	{
 		ft_refill_a(ft_lst_count(&HEAD_LB));
-//		ft_fix_right_place();
+		ft_fix_right_place();
 	}
 	while (PILE(HEAD_LA.next)->position == 1)
 	{
@@ -158,33 +149,35 @@ int			ft_organise_around_pivot_a()
 			--nb;
 		}
 	ft_ps_pushswap_operation("rrb");
-/*
+//*
 	if (!(ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_position, 1)))
 	{
 		ft_refill_a(ft_lst_count(&HEAD_LB));
 		ft_fix_right_place();
 	}
-*/
+//*/
 	return (1);
 }
 
 int			main(int ac, char **av)
 {
+	
 	if (ac == 1)
-		return (0);
-	++av;
-	--ac;
-	NODE_INIT(HEAD_LA); NODE_INIT(HEAD_LB); NODE_INIT(HEAD_PS_MV);
-	ft_exec_parse_ps((*av), &ft_ps_convert_argv);
-	ft_ps_print_stack_a_and_b();
-	while (!(ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB)))
 	{
+		return(0);
+	}
+	else
+	{
+		ft_exec_parse_ps((*(++av)), &ft_ps_convert_argv);
+//		ft_ps_print_stack_a_and_b();
+		while (!(ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB))) {
 			ft_organise_around_pivot_a();
-				if (ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB))
-					break;
+			if (ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB))
+				break;
 			ft_fix_right_place();
 			ft_organise_around_pivot_b();
 			ft_refill_a(ft_lst_count(&HEAD_LB));
+		}
 	}
 	ft_refill_a(ft_lst_count(&HEAD_LB));
 	ft_ps_print_stack_a_and_b();

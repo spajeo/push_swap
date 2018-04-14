@@ -92,6 +92,7 @@ char		    	*ft_get_tstr_str(t_lst *ptr);
 int					*ft_get_tpile_data(t_lst *ptr);
 int					*ft_get_tpile_position(t_lst *ptr);
 int					ft_get_tdata_data(t_lst *ptr);
+t_lst				*ft_get_lst_from_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
 /*
 **		    LIST
 */
@@ -110,27 +111,29 @@ void				ft_lstmv_before(t_lst *src, t_lst *dst);
 int					ft_lst_count(t_lst *head);
 int     			ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
 /*
-**	                CHECK ORDER COMPARE TO OTHER VALUES
+**	      RELATIVE POSITION
+**        CHECK ORDER COMPARE TO OTHER VALUES
 */
-int					*ft_get_lst_from_val_position(t_lst *head, int*(*get_int)(t_lst *), size_t position);
-t_lst				*ft_get_lst_from_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
-int                 ft_get_int_abspos(t_lst *head, int*(*get_int)(t_lst *), int val);
+int					*ft_getlst_fromval_relpos(t_lst *head, int*(*get_int)(t_lst *), size_t position);
 /*
-**		            CHECK POSITION IN THE LST LINKED LIST
-**                      next order
+**		  ABSOLUTE POSITION
+**        CHECK POSITION IN THE LST LINKED LIST with NEXT
 */
+int                 ft_get_int_abspos(t_lst *head, int*(*get_int)(t_lst *), int val);
 
 /*
 **          IS LST
 */
 t_lst               *ft_is_lst_empty(t_lst *head);
 int                 ft_is_val_in(t_lst *head, int data, int *(*get_struct_el)(t_lst *));
+int                 ft_is_first_inf(t_lst *head, int *(*get_int)(t_lst *));
+/*
+**          IS ALGORITHM
+*/
 int					ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
 int					ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
-
-int                 ft_is_first_inf(t_lst *head, int *(*get_int)(t_lst *));
 int                 ft_is_ref_inf(t_lst *head, int *(*get_int)(t_lst *), int ref);
-int                 ft_is_there_inf_ref(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref);
+int                 ft_is_reflst_sup(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref);
 /*
 **	   CREATE/DELETE STRUCTURE
 */

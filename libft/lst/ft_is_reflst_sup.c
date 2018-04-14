@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_there_inf_ref.c                              :+:      :+:    :+:   */
+/*   ft_is_reflst_sup.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -16,14 +16,13 @@
 #include "liblst.h"
 
 /*
-**  CHECK if the ELE from REF pnode is LOWER or EQUAL to
-** Check if the REF value is HIGHER or EQUAL to the values in the list
+**  CHECK if the REF->INT is HIGHER to the list's values
 ** by comparing the REF value to the list's elements..
 **
 */
 
 
-int    ft_is_there_inf_ref(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref)
+int    ft_is_reflst_sup(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref)
 {
 	t_lst *tmp;
 
@@ -32,9 +31,9 @@ int    ft_is_there_inf_ref(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref)
 	{
 		if (*get_int(ref) > *get_int(tmp))
 		{
-			return (1);
+			return (0);
 		}
 		tmp = tmp->next;
 	}
-	return (0);
+	return (1);
 }

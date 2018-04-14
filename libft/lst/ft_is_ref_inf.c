@@ -16,7 +16,7 @@
 #include "liblst.h"
 
 /*
-** Check if the REF value is INFERIOR to the values in the list
+** Check if the REF value is INFERIOR to the list's values
 ** by comparing the REF value to the list's elements..
 */
 
@@ -32,9 +32,9 @@ int   ft_is_ref_inf(t_lst *head, int *(*get_int)(t_lst *), int ref)
 		{
 TESTINT("       ref", ref );
 TESTINT("inf to ref", *get_int(tmp) );
-			return (1);
+			return (0);
 		}
 		tmp = tmp->next;
 	}
-	return (0);
+	return (1);
 }

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_get_lst_val_from_absposition.c                           :+:      :+:    :+:   */
+/*   ft_getval_fromlst_abspos.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -18,14 +18,14 @@
 /*
 **
 **
-** int	*ft_get_lst_from_val_position(t_lst *head, int*(*get_int)(t_lst *), size_t position)
+** int	*ft_getlst_fromval_relpos(t_lst *head, int*(*get_int)(t_lst *), size_t position)
 ** OBTAINS THE NTH VALUE REGARDING THE VALUE NOT THE POSITION
 **
 ** returns the **ADDRESS** of the value
 */
 
 
-int	ft_get_lst_val_from_absposition(t_lst *head, int *(* get_int)(t_lst *) , size_t position)
+int	ft_getval_fromlst_abspos(t_lst *head, int *(* get_int)(t_lst *) , size_t position)
 {
 	t_lst		*tmp;
 	t_lst		*test;
