@@ -81,13 +81,13 @@ IS :=     is_white isalnum isalpha isascii isdigit islower isprint issign isspac
 IS_SRC := $(addsuffix .c, $(addprefix $(IS_DIR)ft_, $(IS)))
 IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
 
-PUSH_SWAP:= ps_free ft_ps_atoi_exit  ft_ps_print_stack_a_and_b\
-			ft_check_ps_flags ft_ps_next_t_data_issorted ps_refill \
+PUSH_SWAP:= ps_free ft_ps_atoi_exit  ft_ps_print\
+			ft_check_ps_flags ft_ps_is_sorted ps_refill \
 			ft_init_ps_head ft_exec_parse_ps  ft_print_next_int\
-			singletons \
-			ft_ps_convert_argv ft_ps_pushswap_operation\
+			ft_ps_head \
+			ft_ps_convert_argv ft_ps_operations\
 			ft_ps_exec_p ft_ps_exec_s ft_ps_exec_rr ft_ps_exec_r \
-			ft_pushswap_opp ft_pushswap_ops ft_pushswap_oprr ft_pushswap_opr
+			ft_ps_opp ft_ps_ops ft_ps_oprr ft_ps_opr
 
 PUSH_SWAP_SRC := $(addsuffix .c, $(addprefix $(PUSH_SWAP_DIR), $(PUSH_SWAP)))
 PUSH_SWAP_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PUSH_SWAP)))

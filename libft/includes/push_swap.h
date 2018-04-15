@@ -28,19 +28,12 @@
 /*
 **	Globales and Head Refs 
 */
-/*
-#define PS__HEAD				swap_head
-#define HEAD_LB	    			(swap_head.head_b)
-#define HEAD_PS_MV				(swap_head.head_mv)
-#define FLAG__PS    			(swap_head.flag)
-//*/
 //*
-#define PS__HEAD				(*ft_push_swap_head())
-#define HEAD_LA	    			(ft_push_swap_head()->head_a)
-//#define HEAD_LA	    			(ft_push_swap_head.head_a)
-#define HEAD_LB	    			(ft_push_swap_head()->head_b)
-#define HEAD_PS_MV				(ft_push_swap_head()->head_mv)
-#define FLAG__PS    			(ft_push_swap_head()->flag)
+#define PS__HEAD				(*ft_ps_head())
+#define HEAD_LA	    			(ft_ps_head()->head_a)
+#define HEAD_LB	    			(ft_ps_head()->head_b)
+#define HEAD_PS_MV				(ft_ps_head()->head_mv)
+#define FLAG__PS    			(ft_ps_head()->flag)
 //*/
 
  /*
@@ -54,7 +47,7 @@
 /*
 ** HEADS
 */
-typedef struct s_push_swap_head
+typedef struct s_ps_head
 {
 	t_lst		head_mv;
 	size_t		flag;
@@ -74,14 +67,14 @@ typedef struct s_push_swap_head
 
 	t_lst		head_b;
 	size_t		nb_b;
-}				t_push_swap_head;
+}				t_ps_head;
 
-t_push_swap_head		swap_head;
+t_ps_head		swap_head;
 
 /*
 **	SINGLETONS
 */
-t_push_swap_head		*ft_push_swap_head(void);
+t_ps_head		*ft_ps_head(void);
 
 /*
 **	FLAGS
@@ -109,15 +102,15 @@ int						ft_check_flag_push_swap(int *ac, char **av);
 /*
 **              CHECK
 */
-int						ft_ps_next_t_data_issorted(t_lst *head_a, t_lst *head_b);
+int						ft_ps_is_sorted(t_lst *head_a, t_lst *head_b);
 /*
 **              OPERATIONS
 */
-int                     ft_ps_pushswap_operation(char *src);
-int		                ft_pushswap_ops(char *src);
-int             		ft_pushswap_oprr(char *src);
-int		                ft_pushswap_opr(char *src);
-int		                ft_pushswap_opp(char *src);
+int                     ft_ps_operations(char *src);
+int		                ft_ps_ops(char *src);
+int             		ft_ps_oprr(char *src);
+int		                ft_ps_opr(char *src);
+int		                ft_ps_opp(char *src);
 int						ft_ps_exec_p(t_lst *lst_a, t_lst *lst_b);
 int						ft_ps_exec_s(t_lst *head);
 int						ft_ps_exec_r(t_lst *head);
@@ -132,7 +125,7 @@ void                    ft_refill_b_lim(int lim, int nb);
 /*
 **             OPTIONS
 */
-void                    ft_ps_print_stack_a_and_b();
+void                    ft_ps_print();
 void					ft_print_a_and_b();
 
 #endif

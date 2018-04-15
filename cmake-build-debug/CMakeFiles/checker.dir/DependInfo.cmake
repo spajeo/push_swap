@@ -9,9 +9,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_p.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_p.c.o"
   "/Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_r.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_r.c.o"
   "/Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_s.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/checker.dir/libft/push_swap/ft_ps_exec_s.c.o"
-  "/Users/spajeo/push_swap/libft/push_swap/ft_pushswap_opp.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_opp.c.o"
-  "/Users/spajeo/push_swap/libft/push_swap/ft_pushswap_oprr.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_oprr.c.o"
-  "/Users/spajeo/push_swap/libft/push_swap/ft_pushswap_ops.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/checker.dir/libft/push_swap/ft_pushswap_ops.c.o"
+  "/Users/spajeo/push_swap/libft/push_swap/ft_ps_opp.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/checker.dir/libft/push_swap/ft_ps_opp.c.o"
+  "/Users/spajeo/push_swap/libft/push_swap/ft_ps_oprr.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/checker.dir/libft/push_swap/ft_ps_oprr.c.o"
+  "/Users/spajeo/push_swap/libft/push_swap/ft_ps_ops.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/checker.dir/libft/push_swap/ft_ps_ops.c.o"
   "/Users/spajeo/push_swap/srcs/checker.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/checker.dir/srcs/checker.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

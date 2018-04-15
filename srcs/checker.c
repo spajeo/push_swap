@@ -18,7 +18,7 @@
 */
 
 /*
-void		ft_ps_print_stack_a_and_b(void)
+void		ft_ps_print(void)
 {
 	printf(" ----------------------- \n");
 	ft_print_nextdata(&HEAD_LA);
@@ -40,11 +40,11 @@ void		ft_check_instruct(void)
 	line = NULL;
 	while (get_next_line(0, &line) > 0)// && ft_strcmp("", line))
 	{
-		ft_ps_pushswap_operation(line);
+		ft_ps_operations(line);
 //		if ((FLAG__PS & PS__MOVE))
 //			ft_printf("\x1B[31m%12s\x1B[0m\n", line);
 		if ((FLAG__PS & PS__STEP))
-			ft_ps_print_stack_a_and_b();
+			ft_ps_print();
 //		free(line);
 	}
 //	if (line)
@@ -61,12 +61,12 @@ int			main(int ac, char **av)
 	--ac;
 	ft_exec_parse(&ac, av, &ft_ps_convert_argv);
 	ft_check_instruct();
-	if (ft_ps_next_t_data_issorted(&HEAD_LA, &HEAD_LB) && JUST_HEAD(HEAD_LB))
+	if (ft_ps_is_sorted(&HEAD_LA, &HEAD_LB) && JUST_HEAD(HEAD_LB))
 		ft_printf("\x1B[32mOK\n");
 	else
 		ft_printf("\x1B[31mKO\x1B[0m\n");
 	if ((FLAG__PS & PS__STEP))
-		ft_ps_print_stack_a_and_b();
+		ft_ps_print();
 	ft_free_checker_and_push_swap();
 	return (0);
 }

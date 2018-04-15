@@ -4,9 +4,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o"
   "CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o"
   "CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o"
-  "CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o"
-  "CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o"
-  "CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o"
+  "CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_opp.c.o"
+  "CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_ops.c.o"
+  "CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_oprr.c.o"
   "push_swap.pdb"
   "push_swap"
 )

@@ -149,15 +149,15 @@
 			<Option target="checker"/>
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/spajeo/push_swap/libft/push_swap/ft_pushswap_opp.c">
+		<Unit filename="/Users/spajeo/push_swap/libft/push_swap/ft_ps_opp.c">
 			<Option target="checker"/>
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/spajeo/push_swap/libft/push_swap/ft_pushswap_oprr.c">
+		<Unit filename="/Users/spajeo/push_swap/libft/push_swap/ft_ps_oprr.c">
 			<Option target="checker"/>
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/spajeo/push_swap/libft/push_swap/ft_pushswap_ops.c">
+		<Unit filename="/Users/spajeo/push_swap/libft/push_swap/ft_ps_ops.c">
 			<Option target="checker"/>
 			<Option target="push_swap"/>
 		</Unit>
