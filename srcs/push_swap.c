@@ -7,7 +7,7 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-void ft_fix_right_place(t_lst *head)
+void ft_flagis_abspos(t_lst *head)
 {
 	t_lst *tmp;
 
@@ -119,7 +119,7 @@ int			ft_organise_around_pivot_a()
 	if (!(ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_position, 1)))
 	{
 		ft_refill_a(ft_lst_count(&HEAD_LB));
-//		ft_fix_right_place(&HEAD_LA);
+//		ft_flagis_abspos(&HEAD_LA);
 	}
 	while (PILE(HEAD_LA.next)->position == 1)
 	{
@@ -151,7 +151,6 @@ int			ft_organise_around_pivot_a()
 	if (!(ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_position, 1)))
 	{
 		ft_refill_a(ft_lst_count(&HEAD_LB));
-//		ft_fix_right_place(&HEAD_LA);
 	}
 //*/
 	return (1);
@@ -159,18 +158,16 @@ int			ft_organise_around_pivot_a()
 
 int			main(int ac, char **av)
 {
-/*
 	if (ac == 1)
 	{
-//		return(0);
+		return(0);
 	}
-//	else
-*/
-	{
+	else
 		ft_exec_ac_parse(&(ac),&(*(++av)), &ft_ps_convert_argv);
-//		ft_fix_right_place(&HEAD_LA);
-	//	ft_ps_print();
-		while (!(ft_ps_is_sorted(&HEAD_LA, &HEAD_LB))) {
+		ft_flagis_abspos(&HEAD_LA);
+/*
+		ft_ps_print();
+           while (!(ft_ps_is_sorted(&HEAD_LA, &HEAD_LB))) {
 			ft_organise_around_pivot_a();
 			if (ft_ps_is_sorted(&HEAD_LA, &HEAD_LB))
 				break;
@@ -179,6 +176,7 @@ int			main(int ac, char **av)
 			ft_ps_print();
 		}
 	}
+ */
 //	ft_refill_a(ft_lst_count(&HEAD_LB));
 	ft_ps_print();
 	return (0);

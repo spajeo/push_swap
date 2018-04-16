@@ -33,29 +33,29 @@ CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o: ../libft/includes/lin
 CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o: ../libft/includes/push_swap.h
 CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o: ../libft/push_swap/ft_ps_exec_s.c
 
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o: ../libft/includes/ft_printf.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o: ../libft/includes/get_next_line.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o: ../libft/includes/libft.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o: ../libft/includes/liblst.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o: ../libft/includes/linux_compiler.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o: ../libft/includes/push_swap.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_opp.c.o: ../libft/push_swap/ft_pushswap_opp.c
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_opp.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_opp.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_opp.c.o: ../libft/includes/libft.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_opp.c.o: ../libft/includes/liblst.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_opp.c.o: ../libft/includes/linux_compiler.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_opp.c.o: ../libft/includes/push_swap.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_opp.c.o: ../libft/push_swap/ft_ps_opp.c
 
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o: ../libft/includes/ft_printf.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o: ../libft/includes/get_next_line.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o: ../libft/includes/libft.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o: ../libft/includes/liblst.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o: ../libft/includes/linux_compiler.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o: ../libft/includes/push_swap.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_oprr.c.o: ../libft/push_swap/ft_pushswap_oprr.c
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_oprr.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_oprr.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_oprr.c.o: ../libft/includes/libft.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_oprr.c.o: ../libft/includes/liblst.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_oprr.c.o: ../libft/includes/linux_compiler.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_oprr.c.o: ../libft/includes/push_swap.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_oprr.c.o: ../libft/push_swap/ft_ps_oprr.c
 
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o: ../libft/includes/ft_printf.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o: ../libft/includes/get_next_line.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o: ../libft/includes/libft.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o: ../libft/includes/liblst.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o: ../libft/includes/linux_compiler.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o: ../libft/includes/push_swap.h
-CMakeFiles/push_swap.dir/libft/push_swap/ft_pushswap_ops.c.o: ../libft/push_swap/ft_pushswap_ops.c
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_ops.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_ops.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_ops.c.o: ../libft/includes/libft.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_ops.c.o: ../libft/includes/liblst.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_ops.c.o: ../libft/includes/linux_compiler.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_ops.c.o: ../libft/includes/push_swap.h
+CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_ops.c.o: ../libft/push_swap/ft_ps_ops.c
 
 CMakeFiles/push_swap.dir/srcs/push_swap.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/push_swap.dir/srcs/push_swap.c.o: ../libft/includes/get_next_line.h

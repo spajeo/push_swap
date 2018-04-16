@@ -82,8 +82,8 @@ IS_SRC := $(addsuffix .c, $(addprefix $(IS_DIR)ft_, $(IS)))
 IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
 
 PUSH_SWAP:= ps_free ft_ps_atoi_exit  ft_ps_print\
-			ft_check_ps_flags ft_ps_is_sorted ps_refill \
-			ft_init_ps_head ft_exec_parse_ps  ft_print_next_int\
+			ft_ps_checkflags ft_ps_is_sorted ps_refill \
+			ft_exec_parse_ps  ft_print_next_int\
 			ft_ps_head \
 			ft_ps_convert_argv ft_ps_operations\
 			ft_ps_exec_p ft_ps_exec_s ft_ps_exec_rr ft_ps_exec_r \

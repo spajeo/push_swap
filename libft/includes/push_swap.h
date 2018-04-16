@@ -94,7 +94,7 @@ void					ft_free_checker_and_push_swap(void);
 /*
 **              CHECKER
 */
-int						ft_check_flag_push_swap(int *ac, char **av);
+int						ft_ps_checkflags(int *ac, char **av);
 /*
 **              ALGORITHM
 */

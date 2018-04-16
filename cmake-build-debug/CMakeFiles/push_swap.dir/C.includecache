@@ -92,19 +92,19 @@ liblst.h
 push_swap.h
 /Users/spajeo/push_swap/libft/push_swap/push_swap.h
 
-/Users/spajeo/push_swap/libft/push_swap/ft_pushswap_opp.c
+/Users/spajeo/push_swap/libft/push_swap/ft_ps_opp.c
 libft.h
 /Users/spajeo/push_swap/libft/push_swap/libft.h
 push_swap.h
 /Users/spajeo/push_swap/libft/push_swap/push_swap.h
 
-/Users/spajeo/push_swap/libft/push_swap/ft_pushswap_oprr.c
+/Users/spajeo/push_swap/libft/push_swap/ft_ps_oprr.c
 libft.h
 /Users/spajeo/push_swap/libft/push_swap/libft.h
 push_swap.h
 /Users/spajeo/push_swap/libft/push_swap/push_swap.h
 
-/Users/spajeo/push_swap/libft/push_swap/ft_pushswap_ops.c
+/Users/spajeo/push_swap/libft/push_swap/ft_ps_ops.c
 libft.h
 /Users/spajeo/push_swap/libft/push_swap/libft.h
 push_swap.h
