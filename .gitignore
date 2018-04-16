@@ -9,6 +9,7 @@
 *.gch
 *.pdf
 **_done
+.DS_STORE
 main.c
 test*
 checker
