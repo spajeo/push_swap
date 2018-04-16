@@ -18,8 +18,8 @@
 ** Access space in struct s_str aka t_str's memory
 ** t_str 
 **{
-** ====>	int str;
-**			t_lst ptr;
+** ====>	char *str;
+**			t_lst lst;
 **}
 */
 

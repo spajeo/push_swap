@@ -20,6 +20,16 @@
 ** Gives Acces {t_pile}
 **          aka {struct s_pile data} element in the memory
 */
+/*
+** Access space in struct s_pile aka t_str's memory
+** t_pile
+**
+**{
+** ====>	int         data;
+**			t_lst lst;
+**}
+*/
+
 
 int		*ft_get_tpile_data(t_lst *ptr)
 {
