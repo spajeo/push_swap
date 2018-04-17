@@ -136,6 +136,36 @@ push_swap/fast:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
 .PHONY : push_swap/fast
 
+libft/lst/ft_arerelpos_next.o: libft/lst/ft_arerelpos_next.c.o
+
+.PHONY : libft/lst/ft_arerelpos_next.o
+
+# target to build an object file
+libft/lst/ft_arerelpos_next.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/lst/ft_arerelpos_next.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/lst/ft_arerelpos_next.c.o
+.PHONY : libft/lst/ft_arerelpos_next.c.o
+
+libft/lst/ft_arerelpos_next.i: libft/lst/ft_arerelpos_next.c.i
+
+.PHONY : libft/lst/ft_arerelpos_next.i
+
+# target to preprocess a source file
+libft/lst/ft_arerelpos_next.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/lst/ft_arerelpos_next.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/lst/ft_arerelpos_next.c.i
+.PHONY : libft/lst/ft_arerelpos_next.c.i
+
+libft/lst/ft_arerelpos_next.s: libft/lst/ft_arerelpos_next.c.s
+
+.PHONY : libft/lst/ft_arerelpos_next.s
+
+# target to generate assembly for a file
+libft/lst/ft_arerelpos_next.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/lst/ft_arerelpos_next.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/lst/ft_arerelpos_next.c.s
+.PHONY : libft/lst/ft_arerelpos_next.c.s
+
 libft/lst/ft_is_abspos_is_relpos.o: libft/lst/ft_is_abspos_is_relpos.c.o
 
 .PHONY : libft/lst/ft_is_abspos_is_relpos.o
@@ -437,6 +467,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... checker"
 	@echo "... push_swap"
+	@echo "... libft/lst/ft_arerelpos_next.o"
+	@echo "... libft/lst/ft_arerelpos_next.i"
+	@echo "... libft/lst/ft_arerelpos_next.s"
 	@echo "... libft/lst/ft_is_abspos_is_relpos.o"
 	@echo "... libft/lst/ft_is_abspos_is_relpos.i"
 	@echo "... libft/lst/ft_is_abspos_is_relpos.s"

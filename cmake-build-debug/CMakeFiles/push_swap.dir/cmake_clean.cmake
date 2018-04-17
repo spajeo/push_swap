@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_opp.c.o"
   "CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_ops.c.o"
   "CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_oprr.c.o"
+  "CMakeFiles/push_swap.dir/libft/lst/ft_arerelpos_next.c.o"
   "push_swap.pdb"
   "push_swap"
 )

@@ -4,7 +4,7 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-void			ft_exec_parse_ps(char *str, void (*f)(const char *))
+void			ft_exec_parse_ac(char *str, void (*f)(const char *))
 {
 	int i;
 

@@ -62,6 +62,10 @@ libft.h
 libft.h
 ../libft/includes/libft.h
 
+/Users/spajeo/push_swap/libft/lst/ft_arerelpos_next.c
+liblst.h
+-
+
 /Users/spajeo/push_swap/libft/push_swap/ft_ps_convert_argv.c
 libft.h
 /Users/spajeo/push_swap/libft/push_swap/libft.h

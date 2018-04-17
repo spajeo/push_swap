@@ -15,6 +15,22 @@
 
 #include "libft.h"
 
+
+/*
+** -----------------------------------------------------------------------------
+*/
+/*
+** -----------------------------------------------------------------------------
+*/
+
+/*
+** ------------------------------FLAGS-----------------------------------------
+*/
+
+#define PSF_ABSPOS                  (unsigned long)0b01
+#define PSF_RELPOSNEXT              (unsigned long)0b10
+
+
 /*
 ** TEST
 */
@@ -86,8 +102,6 @@ t_ps_head		*ft_ps_head(void);
 **			     INIT/END
 */
 void					ft_init_ps_head();
-void      		      	ft_exec_ac_parse(int *i, char **str, void (*f)(const char *));
-void            		ft_exec_parse_ps(char *str, void (*f)(const char *));
 void					ft_ps_convert_argv(const char *s);
 void					ft_check_instruct(void);
 void					ft_free_checker_and_push_swap(void);

@@ -57,7 +57,8 @@ LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lst
             is_ref_inf getval_fromabspos is_reflst_sup tdata_free \
             is_val_in get_tdata_data add_tstr_next \
             is_first_inf getabspos_fromval  print_next_str getval_fromabspos getabspos_fromlst \
-            is_abspos_is_relpos getrelpos_fromlstval add_tpile_next get_tstr_str
+            is_abspos_is_relpos getrelpos_fromlstval add_tpile_next get_tstr_str \
+            arerelpos_next
  #listdel listdelone lstnew
 LST_SRC := $(addsuffix .c, $(addprefix $(LST_DIR)ft_, $(LST)))
 LST_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(LST)))
@@ -69,7 +70,7 @@ PRINTF_SRC := $(addsuffix .c, $(addprefix $(PRINTF_DIR), $(PRINTF)))
 PRINTF_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PRINTF)))
 
 LIB := buffnwstr buffwchar buffwstr bzero charcat charcat_lim charcatcount charcatcount_glim \
-            charchr charchronstr exec_parse free max memalloc memccpy memchr memcmp memcpy memdel \
+            charchr charchronstr exec_parse_str free max memalloc memccpy memchr memcmp memcpy memdel \
             memmove memset memsetblim min nbrlen print_array putchar putchar_fd putchardl \
             putcharuni putendl putendl_fd putnbr \
             putnbr_base putnbr_base_fd putnbr_fd putnbr_unsigned_base_fd putstr \
@@ -83,7 +84,7 @@ IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
 
 PUSH_SWAP:= ps_free ft_ps_atoi_exit  ft_ps_print\
 			ft_ps_checkflags ft_ps_is_sorted ps_refill \
-			ft_exec_parse_ps  ft_print_next_int\
+			ft_exec_parse_ac  ft_print_next_int\
 			ft_ps_head \
 			ft_ps_convert_argv ft_ps_operations\
 			ft_ps_exec_p ft_ps_exec_s ft_ps_exec_rr ft_ps_exec_r \

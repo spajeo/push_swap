@@ -115,6 +115,8 @@ int     			ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
 **        CHECK ORDER COMPARE TO OTHER VALUES
 */
 int                 ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref);
+int                 ft_arerelpos_next(t_lst *first, int *(* get_fint)(t_lst *),
+									  t_lst *second, int *(* get_sint)(t_lst *));
 /*
 **		  ABSOLUTE POSITION
 **        CHECK POSITION IN THE LST LINKED LIST with NEXT
