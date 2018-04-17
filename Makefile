@@ -42,7 +42,7 @@ $(CHECKER) : 	$(CH_OBJ) $(LIBFT_A)
 				@make  -C $(LIB_PATH)
 				@$(CC) -o checker $(CH_OBJ) $(FLAGS) -L $(LIB_PATH) -lft
 				@rm -f $(CH_OBJ)
-				@echo "\033[1;31m\ndone : checker\n\033[m\c"
+				@echo "\033[1;31mdone : checker\n\033[m\c"
 
 %.o: %.c #$(LIBFT_A)
 				@gcc -o $@ -c $< $(FLAGS) -I $(LIB_PATH)/includes

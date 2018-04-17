@@ -17,6 +17,7 @@ int ft_is_val_in(t_lst *head, int data, int *(*get_struct_el)(t_lst *))
 	data += data;
 
 	tmp = head->next;
+//
 	ft_putnbr(*get_struct_el(tmp));
 //*
 	while (tmp != head)

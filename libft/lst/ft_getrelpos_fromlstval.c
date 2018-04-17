@@ -26,6 +26,5 @@ int	ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref)
 		}
 		tmp = tmp->next;
 	}
-	//TESTINTR("RELATIVE POSITION", position);
 	return (position);
 }

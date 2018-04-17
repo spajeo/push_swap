@@ -24,7 +24,9 @@
 */
 
 /*
+** -----------------------------------------------------------------------------
 ** ------------------------------FLAGS-----------------------------------------
+** -----------------------------------------------------------------------------
 */
 
 #define PSF_ABSPOS                  (unsigned long)0b01
@@ -32,7 +34,9 @@
 
 
 /*
-** TEST
+** -----------------------------------------------------------------------------
+** ------------------------------TEST-----------------------------------------
+** -----------------------------------------------------------------------------
 */
 #define TESTSTR(str, it)  ft_printf("\x1B[35m%s__[%s]___\n\x1B[0m", str, it) 
 #define TESTINT(str, it)  ft_printf("\x1B[33m%s__[%d]___\n\x1B[0m", str, it) 
@@ -42,7 +46,7 @@
 #define TESTINTM(str, it) ft_printf("\x1B[35m%s__[%d}___\n\x1B[0m", str, it) 
 
 /*
-**	Globales and Head Refs 
+** -----------------------GLOBALES AND HEAD REFS------------------------------
 */
 //*
 #define PS__HEAD				(*ft_ps_head())
@@ -68,11 +72,11 @@ typedef struct s_ps_head
 	t_lst		head_mv;
 	size_t		flag;
 	
-	int			min_val;
-	int			first_quarter_val;
-	int			median_val;
-	int			third_quarter_val;
-	int			max_val;
+//	int			min_val;
+//	int			first_quarter_val;
+//	int			median_val;
+//	int			third_quarter_val;
+//	int			max_val;
 	size_t		bucket_values;
 
 	int			pivot;

@@ -10,11 +10,12 @@
 void ft_flag_pos(t_lst *head)
 {
 	t_lst *tmp;
-
+	
 	tmp = head->next;
 	while (tmp != head)
 	{
 		ft_printf("%d", *tmp);
+		TESTINTR("RELATIVE POSITION", PILE(tmp)->position);
 		if (!(PILE(tmp)->position & PSF_ABSPOS)
 		            && ft_is_abspos_is_relpos(head, &ft_get_tpile_data, tmp))
 		{
@@ -169,11 +170,21 @@ void			ft_organise_around_pivot_b()
 
 int			main(int ac, char **av)
 {
-	if (ac == 1)
-		return(0);
+	char *strr = 0;
+	char **strstr = &strr;
+	
+//	strstr = ft_strsplit(*av, ' ');
+//	ft_putstr(&strstr[0][1]);
+//	ft_putstr(&strstr[0][2]);
+//	ft_putstr(&strstr[0][2]);
+//	ft_putstr(&strstr[0][1]);
+	if (ac == 2)
+	{
+//		ft_exec_ac_parse(&(ac),&ft_strsplit(*(++av), ' '), &ft_ps_convert_argv);
+	}
 	else
 		ft_exec_ac_parse(&(ac),&(*(++av)), &ft_ps_convert_argv);
-	ft_flag_pos(&HEAD_LA);
+//	ft_flag_pos(&HEAD_LA);
 /*
 		ft_ps_print();
            while (!(ft_ps_is_sorted(&HEAD_LA, &HEAD_LB))) {
@@ -187,6 +198,6 @@ int			main(int ac, char **av)
 	}
  */
 //	ft_refill_a(ft_lst_count(&HEAD_LB));
-	ft_ps_print();
+//	ft_ps_print();
 	return (0);
 }
