@@ -4,12 +4,13 @@
 #include "push_swap.h"
 
 /*
+ *   ZERO indexing
 **
 */
 
 int	ft_getabspos_fromlst(t_lst *head, t_lst *ref)
 {
-	int count = 0;
+	int count = -1;
 	t_lst *tmp;
 	
 	tmp = head->next;

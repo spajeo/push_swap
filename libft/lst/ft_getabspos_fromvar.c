@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_getabspos_fromval.c                                :+:      :+:    :+:   */
+/*   ft_getabspos_fromvar.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spajeo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,11 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+
+
+/*
+ *     Return the absolute position of the struct
+ *     from a given variable
+ *     0 - indexing
+ */
+
 #include "libft.h"
 #include "liblst.h"
 #include "push_swap.h"
 
-int	ft_getabspos_fromval(t_lst *head, int*(*get_int)(t_lst *), int val)
+int	ft_getabspos_fromvar(t_lst *head, int*(*get_int)(t_lst *), int var)
 {
 	t_lst		*tmp;
 	size_t      pos;
@@ -23,7 +31,7 @@ int	ft_getabspos_fromval(t_lst *head, int*(*get_int)(t_lst *), int val)
 	tmp = head->next;
 	while (tmp != head)
 	{
-		if (*get_int(tmp) ==  val)
+		if (*get_int(tmp) ==  var)
 			return (pos);
 		++pos;
 		tmp = tmp->next;

@@ -122,7 +122,7 @@ int                 ft_arerelpos_next(t_lst *first, int *(* get_fint)(t_lst *),
 **        CHECK POSITION IN THE LST LINKED LIST with NEXT
 */
 int                 ft_getabspos_fromlst(t_lst *head, t_lst *ref);
-int                 ft_getabspos_fromval(t_lst *head, int*(*get_int)(t_lst *), int val);
+int                 ft_getabspos_fromvar(t_lst *head, int*(*get_int)(t_lst *), int var);
 //int					*ft_getval_fromabspos(t_lst *head, int*(*get_int)(t_lst *), size_t position);
 int                 ft_getval_fromabspos(t_lst *head, int *(* get_int)(t_lst *) , size_t position);
 /*

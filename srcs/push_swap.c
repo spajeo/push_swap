@@ -10,19 +10,16 @@
 void ft_flag_pos(t_lst *head)
 {
 	t_lst *tmp;
-	
+
 	tmp = head->next;
 	while (tmp != head)
 	{
-		ft_printf("%d", *tmp);
-		TESTINTR("RELATIVE POSITION", PILE(tmp)->position);
 		if (!(PILE(tmp)->position & PSF_ABSPOS)
 		            && ft_is_abspos_is_relpos(head, &ft_get_tpile_data, tmp))
 		{
 			PILE(tmp)->position |= PSF_ABSPOS;
 		}
 		tmp = tmp->next;
-		ft_printf("%d", PILE(tmp)->position);
 	}
 	tmp = head->next;
 	while (tmp != head->prev)
@@ -39,7 +36,7 @@ void ft_flag_pos(t_lst *head)
 /*
 ** Add a set for position
 */
-/*
+//*
 int ft_sorting()
 {
 	if (PILE(HEAD_LB.next)->data < PILE(HEAD_LB.next->next)->data &&
@@ -70,7 +67,7 @@ void		ft_lst_convert_all_val(t_lst *head, int *(* get_int)(t_lst *), int val)
 		tmp= tmp->next;	
 	}
 }
-*/
+//*/
 
 void			ft_organise_around_pivot_b()
 {
@@ -122,73 +119,64 @@ void			ft_organise_around_pivot_b()
 */
 	}
 }
-//
-//int			ft_organise_around_pivot_a()
-//{
-//	int		pivot;
-//	int		nb = 0;
-//
-//	if (!(ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_position, 1)))
-//	{
-//		ft_refill_a(ft_lst_count(&HEAD_LB));
-////		ft_flagis_abspos(&HEAD_LA);
-//	}
-//	while (PILE(HEAD_LA.next)->position == 1)
-//	{
-//		ft_ps_operations("pa");
-//	}
-//	pivot = PILE(HEAD_LA.next)->data;
-//	PILE(HEAD_LA.next)->position = 1;
-//	ft_ps_operations("pa");
-//	ft_ps_operations("rb");
-//	while ((ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_data, pivot)))
-//	{
-//		if (PILE(HEAD_LA.next)->data < pivot)
-//		{
-//			ft_ps_operations("pa");
-//		}
-//		else
-//		{
-//			ft_ps_operations("ra");
-//			++nb;
-//		}
-//	}
-//		while (nb != 0)
-//		{
-//			ft_ps_operations("rra");
-//			--nb;
-//		}
-//	ft_ps_operations("rrb");
-////*
-//	if (!(ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_position, 1)))
-//	{
-//		ft_refill_a(ft_lst_count(&HEAD_LB));
-//	}
-////*/
-//	return (1);
-//}
+
+int			ft_organise_around_pivot_a()
+{
+	int		pivot;
+	int		nb = 0;
+
+	if (!(ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_position, 1)))
+	{
+		ft_refill_a(ft_lst_count(&HEAD_LB));
+//		ft_flagis_abspos(&HEAD_LA);
+	}
+	while (PILE(HEAD_LA.next)->position == 1)
+	{
+		ft_ps_operations("pa");
+	}
+	pivot = PILE(HEAD_LA.next)->data;
+	PILE(HEAD_LA.next)->position = 1;
+	ft_ps_operations("pa");
+	ft_ps_operations("rb");
+	while ((ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_data, pivot)))
+	{
+		if (PILE(HEAD_LA.next)->data < pivot)
+		{
+			ft_ps_operations("pa");
+		}
+		else
+		{
+			ft_ps_operations("ra");
+			++nb;
+		}
+	}
+		while (nb != 0)
+		{
+			ft_ps_operations("rra");
+			--nb;
+		}
+	ft_ps_operations("rrb");
+	if (!(ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_position, 1)))
+	{
+		ft_refill_a(ft_lst_count(&HEAD_LB));
+	}
+	return (1);
+}
 
 int			main(int ac, char **av)
 {
-	char *strr = 0;
-	char **strstr = &strr;
-	
-//	strstr = ft_strsplit(*av, ' ');
-//	ft_putstr(&strstr[0][1]);
-//	ft_putstr(&strstr[0][2]);
-//	ft_putstr(&strstr[0][2]);
-//	ft_putstr(&strstr[0][1]);
 	if (ac == 2)
 	{
-//		ft_exec_ac_parse(&(ac),&ft_strsplit(*(++av), ' '), &ft_ps_convert_argv);
+		ft_exec_parse_str(*(++av), &ft_ps_convert_argv);
 	}
 	else
-		ft_exec_ac_parse(&(ac),&(*(++av)), &ft_ps_convert_argv);
-//	ft_flag_pos(&HEAD_LA);
-/*
+		ft_exec_parse_ac(&(ac),&(*(++av)), &ft_ps_convert_argv);
+		ft_flag_pos(&HEAD_LA);
+//*
 		ft_ps_print();
-           while (!(ft_ps_is_sorted(&HEAD_LA, &HEAD_LB))) {
-			ft_organise_around_pivot_a();
+	   while (!(ft_ps_is_sorted(&HEAD_LA, &HEAD_LB)))
+	   {
+//			ft_organise_around_pivot_a();
 			if (ft_ps_is_sorted(&HEAD_LA, &HEAD_LB))
 				break;
 			ft_organise_around_pivot_b();
@@ -196,8 +184,8 @@ int			main(int ac, char **av)
 			ft_ps_print();
 		}
 	}
- */
+// */
 //	ft_refill_a(ft_lst_count(&HEAD_LB));
-//	ft_ps_print();
+	ft_ps_print();
 	return (0);
 }

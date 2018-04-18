@@ -199,9 +199,9 @@ char				*ft_strnstr(const char *s1, const char *s2, size_t size);
 */
 char				*ft_strmap(const char *s, char (*f)(char));
 char				*ft_strmapi(const char *s, char (*f)(unsigned int, char));
-void				ft_exec_parse_str(int *i, char **str, void (*f)(const char *));
-void   		      	ft_exec_ac_parse(int *i, char **str, void (*f)(const char *));
-void           		ft_exec_parse_ac(char *str, void (*f)(const char *));
+void				ft_exec_parse_str(char *str, void (*f)(const char *));
+void				ft_exec_parse_strstr(char **str, void (*f)(const char *));
+void   		      	ft_exec_parse_ac(int *i, char **str, void (*f)(const char *));
 
 
 /*

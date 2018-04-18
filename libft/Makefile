@@ -56,7 +56,7 @@ LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lst
             lst_count lst_count_lim \
             is_ref_inf getval_fromabspos is_reflst_sup tdata_free \
             is_val_in get_tdata_data add_tstr_next \
-            is_first_inf getabspos_fromval  print_next_str getval_fromabspos getabspos_fromlst \
+            is_first_inf getabspos_fromvar  print_next_str getval_fromabspos getabspos_fromlst \
             is_abspos_is_relpos getrelpos_fromlstval add_tpile_next get_tstr_str \
             arerelpos_next
  #listdel listdelone lstnew

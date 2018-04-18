@@ -4,6 +4,7 @@
 
 void		ft_ps_convert_argv(const char *s)
 {
+	int val;
 	if (!ft_strcmp("-v", s))
 	{
 		FLAG__PS |= PS__STEP;
@@ -14,10 +15,11 @@ void		ft_ps_convert_argv(const char *s)
 	}
 	else if (ft_isdigit(*s) || ft_issign(*s))
 	{
-		if (!ft_is_val_in(&HEAD_LA,
-		                   ft_atoi_exit((const char *)s), &ft_get_tpile_data))
+		val = ft_atoi_exit((const char *)s);
+		if (!ft_is_val_in
+				(&HEAD_LA, val, &ft_get_tpile_data))
 		{
-			ft_add_tpile_next(&HEAD_LA, ft_atoi_exit((const char *)s));
+			ft_add_tpile_next(&HEAD_LA, val);
 		}
 		else
 		{

@@ -41,7 +41,7 @@ int ft_atoi_exit(const char *src)
 	tmp = tmp * sign;
 	if (tmp < INT_MIN || INT_MAX < tmp)
 		EXIT_FAIL("Error : not an int value");
-	if (ft_isspace(*src))
-		EXIT_FAIL("Error : not a digit");
+//	if (ft_isspace(*src))
+//		EXIT_FAIL("Error : not a digit");
 	return ((int)tmp);
 }
