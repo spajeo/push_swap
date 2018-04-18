@@ -1,7 +1,8 @@
 /*
 **      Takes  2D-strArray and appl
  *
- *  USE CASES : Parse
+ *  	Parse each second dimension and execute a transformation
+ *		USE CASES : parsing in `push swap`
 */
 
 
@@ -9,20 +10,17 @@
 
 #include "libft.h"
 
-void			ft_exec_parse_str(char **str, void (*f)(const char *))
+void			ft_exec_parse_strstr(char **str, void (*f)(const char *))
 {
-	int i;
-	
-	i = 0;
-	if (!str || !*str || !f)
+
+	if (!str || !*str || !**str || !f)
 	{
 		return ;
 	}
-	while (*(str + i))
+	while (*(str))
 	{
-//		if (!ft_isspace(*(str + i)) && (i == 0 || ft_isspace(*(str + i - 1))))
-		f((const char *)str + i);
-		++(i);
+		f(*(const char **)str);
+		++(str);
 	}
 	return;
 }

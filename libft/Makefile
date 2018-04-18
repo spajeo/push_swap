@@ -54,6 +54,7 @@ LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lst
             is_lst_asc is_lst_desc \
             get_tpile_data  get_lst_from_int get_tpile_position \
             lst_count lst_count_lim \
+            lst_convert_allvar \
             is_ref_inf getval_fromabspos is_reflst_sup tdata_free \
             is_val_in get_tdata_data add_tstr_next \
             is_first_inf getabspos_fromvar  print_next_str getval_fromabspos getabspos_fromlst \
@@ -70,7 +71,9 @@ PRINTF_SRC := $(addsuffix .c, $(addprefix $(PRINTF_DIR), $(PRINTF)))
 PRINTF_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PRINTF)))
 
 LIB := buffnwstr buffwchar buffwstr bzero charcat charcat_lim charcatcount charcatcount_glim \
-            charchr charchronstr exec_parse_str free max memalloc memccpy memchr memcmp memcpy memdel \
+            charchr charchronstr \
+            exec_parse_ac  exec_parse_str exec_parse_strstr \
+            free max memalloc memccpy memchr memcmp memcpy memdel \
             memmove memset memsetblim min nbrlen print_array putchar putchar_fd putchardl \
             putcharuni putendl putendl_fd putnbr \
             putnbr_base putnbr_base_fd putnbr_fd putnbr_unsigned_base_fd putstr \
@@ -82,9 +85,9 @@ IS :=     is_white isalnum isalpha isascii isdigit islower isprint issign isspac
 IS_SRC := $(addsuffix .c, $(addprefix $(IS_DIR)ft_, $(IS)))
 IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
 
-PUSH_SWAP:= ps_free ft_ps_atoi_exit  ft_ps_print\
+PUSH_SWAP:= ps_free ft_ps_print\
 			ft_ps_checkflags ft_ps_is_sorted ps_refill \
-			ft_exec_parse_ac  ft_print_next_int\
+			ft_print_next_int\
 			ft_ps_head \
 			ft_ps_convert_argv ft_ps_operations\
 			ft_ps_exec_p ft_ps_exec_s ft_ps_exec_rr ft_ps_exec_r \

@@ -56,17 +56,7 @@ int ft_sorting()
 	return (1);
 }
 
-void		ft_lst_convert_all_val(t_lst *head, int *(* get_int)(t_lst *), int val)
-{
-	t_lst *tmp;
 
-	tmp = head->next;
-	while (tmp != head)
-	{
-		*get_int(tmp) = val;
-		tmp= tmp->next;	
-	}
-}
 //*/
 
 void			ft_organise_around_pivot_b()
@@ -78,14 +68,13 @@ void			ft_organise_around_pivot_b()
 	{
 		if (ft_is_lst_desc(&HEAD_LA, &ft_get_tpile_data))
 			return;
-/*		while (!(JUST_HEAD(HEAD_LB)) && !(ft_is_ref_inf(&HEAD_LB, &ft_get_tpile_position, 1)))
+		while (!(JUST_HEAD(HEAD_LB)) && !(ft_is_ref_inf(&HEAD_LB, &ft_get_tpile_position, 1)))
 		{
 			TESTSTR("pivot B","REFILL");
 			ft_ps_print();
 			ft_refill_b(ft_get_int_abspos(&HEAD_LB, &ft_get_tpile_position, 0)); //trouver la limite// autre fonction
 			TESTINT("REFILL",ft_get_int_abspos(&HEAD_LB, &ft_get_tpile_position, 0));
 		}
-*/
 		if (!(JUST_HEAD(HEAD_LB)))
 		{
 			while (PILE(HEAD_LB.next)->position > 0)
@@ -166,24 +155,21 @@ int			ft_organise_around_pivot_a()
 int			main(int ac, char **av)
 {
 	if (ac == 2)
-	{
 		ft_exec_parse_str(*(++av), &ft_ps_convert_argv);
-	}
 	else
-		ft_exec_parse_ac(&(ac),&(*(++av)), &ft_ps_convert_argv);
+		ft_exec_parse_strstr(&(*(++av)), &ft_ps_convert_argv);
 	ft_flag_pos(&HEAD_LA);
-//*
-	ft_ps_print();
+/*
+ft_ps_print();
    while (!(ft_ps_is_sorted(&HEAD_LA, &HEAD_LB)))
    {
-//			ft_organise_around_pivot_a();
+		ft_organise_around_pivot_a();
 		if (ft_ps_is_sorted(&HEAD_LA, &HEAD_LB))
 			break;
 		ft_organise_around_pivot_b();
 		ft_refill_a(ft_lst_count(&HEAD_LB));
 		ft_ps_print();
 	}
-}
 // */
 //	ft_refill_a(ft_lst_count(&HEAD_LB));
 	ft_ps_print();
