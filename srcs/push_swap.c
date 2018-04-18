@@ -171,19 +171,19 @@ int			main(int ac, char **av)
 	}
 	else
 		ft_exec_parse_ac(&(ac),&(*(++av)), &ft_ps_convert_argv);
-		ft_flag_pos(&HEAD_LA);
+	ft_flag_pos(&HEAD_LA);
 //*
-		ft_ps_print();
-	   while (!(ft_ps_is_sorted(&HEAD_LA, &HEAD_LB)))
-	   {
+	ft_ps_print();
+   while (!(ft_ps_is_sorted(&HEAD_LA, &HEAD_LB)))
+   {
 //			ft_organise_around_pivot_a();
-			if (ft_ps_is_sorted(&HEAD_LA, &HEAD_LB))
-				break;
-			ft_organise_around_pivot_b();
-			ft_refill_a(ft_lst_count(&HEAD_LB));
-			ft_ps_print();
-		}
+		if (ft_ps_is_sorted(&HEAD_LA, &HEAD_LB))
+			break;
+		ft_organise_around_pivot_b();
+		ft_refill_a(ft_lst_count(&HEAD_LB));
+		ft_ps_print();
 	}
+}
 // */
 //	ft_refill_a(ft_lst_count(&HEAD_LB));
 	ft_ps_print();
