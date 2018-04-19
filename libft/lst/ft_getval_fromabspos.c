@@ -18,14 +18,14 @@
 /*
 **
 **
-** int	*ft_getval_fromabspos(t_lst *head, int*(*get_int)(t_lst *), size_t position)
-** OBTAINS THE NTH VALUE REGARDING THE VALUE NOT THE POSITION
+** int	*ft_getval_fromabspos(t_lst *head, int*(*get_int)(t_lst *), size_t pos)
+** OBTAINS THE NTH VALUE REGARDING THE VALUE NOT THE POS
 **
 ** returns the **ADDRESS** of the value
 */
 
 
-int	ft_getval_fromabspos(t_lst *head, int *(* get_int)(t_lst *), size_t position)
+int	ft_getval_fromabspos(t_lst *head, int *(* get_int)(t_lst *), size_t pos)
 {
 	t_lst		*tmp;
 	t_lst		*test;
@@ -43,7 +43,7 @@ int	ft_getval_fromabspos(t_lst *head, int *(* get_int)(t_lst *), size_t position
 			}
 			test = test->next;
 		}
-		if (inferior == position)
+		if (inferior == pos)
 			return (*get_int(tmp));
 		inferior = 0;
 		test = head->next;

@@ -18,7 +18,7 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-int	*ft_getrelpos_fromabspos(t_lst *head, int*(*get_int)(t_lst *), size_t position)
+int	*ft_getrelpos_fromabspos(t_lst *head, int*(*get_int)(t_lst *), size_t pos)
 	return (0);
 }
 

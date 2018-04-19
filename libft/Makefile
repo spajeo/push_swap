@@ -52,7 +52,7 @@ LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lst
             lstmv_before lstadd \
             lstiter lstmap \
             is_lst_asc is_lst_desc \
-            get_tpile_data  get_lst_from_int get_tpile_position \
+            get_tpile_data  get_lst_from_int get_tpile_pos \
             lst_count lst_count_lim \
             lst_convert_allvar \
             is_ref_inf getval_fromabspos is_reflst_sup tdata_free \

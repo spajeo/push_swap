@@ -79,7 +79,7 @@ typedef struct		s_list
 
 typedef struct      s_pile
 {
-	int     position;
+	int     pos;
 	int     data;
 	t_lst   lst;
 }	               t_pile;
@@ -90,7 +90,7 @@ typedef struct      s_pile
 */
 char		    	*ft_get_tstr_str(t_lst *ptr);
 int					*ft_get_tpile_data(t_lst *ptr);
-int					*ft_get_tpile_position(t_lst *ptr);
+int					*ft_get_tpile_pos(t_lst *ptr);
 int					ft_get_tdata_data(t_lst *ptr);
 t_lst				*ft_get_lst_from_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
 /*
@@ -123,8 +123,8 @@ int                 ft_arerelpos_next(t_lst *first, int *(* get_fint)(t_lst *),
 */
 int                 ft_getabspos_fromlst(t_lst *head, t_lst *ref);
 int                 ft_getabspos_fromvar(t_lst *head, int*(*get_int)(t_lst *), int var);
-//int					*ft_getval_fromabspos(t_lst *head, int*(*get_int)(t_lst *), size_t position);
-int                 ft_getval_fromabspos(t_lst *head, int *(* get_int)(t_lst *) , size_t position);
+//int					*ft_getval_fromabspos(t_lst *head, int*(*get_int)(t_lst *), size_t pos);
+int                 ft_getval_fromabspos(t_lst *head, int *(* get_int)(t_lst *) , size_t pos);
 /*
 **          IS LST
 */

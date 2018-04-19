@@ -13,18 +13,18 @@ int	ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref)
 {
 	t_lst		*tmp;
 	int		    ref_val;
-	size_t      position;
+	size_t      pos;
 
-	position = -1;
+	pos = -1;
 	ref_val = *get_int(ref);
 	tmp = head->next;
 	while(tmp != head)
 	{
 		if (*get_int(tmp) <= ref_val)
 		{
-			++position;
+			++pos;
 		}
 		tmp = tmp->next;
 	}
-	return (position);
+	return (pos);
 }
