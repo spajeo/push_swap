@@ -89,57 +89,57 @@ typedef struct      s_pile
 ** -------------------------------------GET-----------------------------------------
 **                              Struct Memory Access
 */
-char		    	*ft_get_tstr_str(t_lst *ptr);
-int					*ft_get_tpile_data(t_lst *ptr);
-int					*ft_get_tpile_pos(t_lst *ptr);
-int					*ft_get_tdata_data(t_lst *ptr);
-
-t_lst				*ft_get_lst_from_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
+char		*ft_get_tstr_str(t_lst *ptr);
+int			*ft_get_tpile_data(t_lst *ptr);
+int			*ft_get_tpile_pos(t_lst *ptr);
+int			*ft_get_tdata_data(t_lst *ptr);
+t_lst		*ft_get_lst_from_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
+t_lst       *ft_getlst_smallerval(t_lst *head, int *(*get_int)(t_lst *), int min_elem, int init);
 /*
 ** ------------------------------------ POSITION --------------------------------------
 *
 **                           ********** RELATIVE **************
 **                              ORDER COMPARE TO OTHER VALUES
 */
-int                 ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref);
-int                 ft_arerelpos_next(t_lst *first, int *(* get_fint)(t_lst *),
-                                                    t_lst *second, int *(* get_sint)(t_lst *));
-t_lst               *ft_getlst_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), size_t rel_pos);
-t_lst              	*ft_getlstmedian(t_lst *head, int *(* get_int)(t_lst *));
+int         ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref);
+int         ft_arerelpos_next(t_lst *first, int *(* get_fint)(t_lst *), t_lst *second, int *(* get_sint)(t_lst *));
+t_lst       *ft_getlst_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), size_t rel_pos);
+t_lst      	*ft_getlstmedian(t_lst *head, int *(* get_int)(t_lst *));
+
 /*
-**                          ************** ABSOLUTE ***********
-**                      CHECK POSITION IN THE LST LINKED LIST
-**                                       with NEXT
+**                        ************** ABSOLUTE ***********
+**                        CHECK POSITION IN THE LST LINKED LIST
+**                                      with NEXT
 */
-t_lst               *ft_getlst_fromabspos(t_lst *head, size_t rel_pos);
-t_lst               *ft_getlst_fromabspos(t_lst *head, size_t rel_pos);
-int                 ft_getabspos_fromlst(t_lst *head, t_lst *ref);
-int                 ft_getabspos_fromvar(t_lst *head, int*(*get_int)(t_lst *), int var);
-int                 ft_getval_fromabspos(t_lst *head, int *(* get_int)(t_lst *) , size_t pos);
+t_lst        *ft_getlst_fromabspos(t_lst *head, size_t rel_pos);
+t_lst        *ft_getlst_fromabspos(t_lst *head, size_t rel_pos);
+int          ft_getabspos_fromlst(t_lst *head, t_lst *ref);
+int          ft_getabspos_fromvar(t_lst *head, int*(*get_int)(t_lst *), int var);
+int          ft_getval_fromabspos(t_lst *head, int *(* get_int)(t_lst *) , size_t pos);
 /*
-**                     	      COMPARE ABS & REL POSITIONS
+**              	      COMPARE ABS & REL POSITIONS
 */
-int                 ft_is_abspos_is_relpos(t_lst *head, int*(*get_int)(t_lst *), t_lst *ref);
+int          ft_is_abspos_is_relpos(t_lst *head, int*(*get_int)(t_lst *), t_lst *ref);
 /*
 **
 */
-int					ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
-int					ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
-int                 ft_is_ref_inf(t_lst *head, int *(*get_int)(t_lst *), int ref);
-int                 ft_is_reflst_sup(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref);
+int			ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
+int			ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
+int         ft_is_ref_inf(t_lst *head, int *(*get_int)(t_lst *), int ref);
+int         ft_is_reflst_sup(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref);
 /*
 ** -------------------------------------LIST-----------------------------------------
 **
 */
-t_lst           	*ft_lstdisconnect (t_lst *src);
-t_lst				*ft_lstmap(t_lst *lst, t_lst *(*f)(t_lst *elem));
-t_lst				*ft_lstnew(const void *content, size_t content_size);
-void				ft_lstadd(t_lst **alst, t_lst *new);
-void				ft_lstiter(t_lst *lst, void (*f)(t_lst *elem));
-void            	ft_lstinsert_after(t_lst *new, t_lst *dst);
-void            	ft_lstinsert_before(t_lst *new, t_lst *dst);
-void	            ft_lstmv_after(t_lst *src, t_lst *dst);
-void				ft_lstmv_before(t_lst *src, t_lst *dst);
+t_lst   	*ft_lstdisconnect (t_lst *src);
+t_lst		*ft_lstmap(t_lst *lst, t_lst *(*f)(t_lst *elem));
+t_lst		*ft_lstnew(const void *content, size_t content_size);
+void		ft_lstadd(t_lst **alst, t_lst *new);
+void		ft_lstiter(t_lst *lst, void (*f)(t_lst *elem));
+void    	ft_lstinsert_after(t_lst *new, t_lst *dst);
+void    	ft_lstinsert_before(t_lst *new, t_lst *dst);
+void		ft_lstmv_after(t_lst *src, t_lst *dst);
+void		ft_lstmv_before(t_lst *src, t_lst *dst);
 /*
 ** -----------------------------------LEN/COUNT----------------------------------------
 **

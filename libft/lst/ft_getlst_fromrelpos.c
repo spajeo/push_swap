@@ -1,37 +1,29 @@
 
-
 /*
  *     Return the absolute position of the struct
  *     from a given variable
  *     0 - indexing
+ *
+ *     // fuck the idiotic norm that doesn t let me use 'DO WIHLE'
  */
 
-//int	ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref)
 #include "libft.h"
 #include "liblst.h"
 #include "push_swap.h"
 
-t_lst   *ft_getlst_fromrelpos(t_lst *head, int*(*get_int)(t_lst *),
-                                                    size_t rel_pos)
+t_lst   *ft_getlst_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), size_t rel_pos)
 {
-	size_t      rpos;
-	t_lst		*tmp;
-	t_lst		*tmp2;
+    int         min_val;
+    t_lst       *tmp;
 
-	rpos = rel_pos;
-	tmp = head->next;
-	while (rel_pos && tmp != head)
-	{
-		if (*get_int(tmp) == ft_getval_fromabspos(head,))
-			retun(tmp)
-		tmp = tmp->next;
-	}
-	return (-1);
+    min_val = 0;
+    tmp = ft_getlst_smallerval(head, &(*get_int), min_val,0);
+    while (rel_pos > 0)
+    {
+        min_val = *get_int(tmp);
+        tmp = ft_getlst_smallerval(head, (*get_int), min_val,0);
+        --rel_pos;
+    }
+    return (tmp);
 }
-//xt;
-//		while (tmp2 != head)
-//		{
-//			if (*get_int(tmp) <= val);
-				++rel_pos;
-//			tmp2 = tmp2->next;
-//		}
+
