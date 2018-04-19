@@ -20,7 +20,7 @@
 */
 
 
-int		ft_lst_count(t_lst *head)
+size_t		ft_lst_count(t_lst *head)
 {
 	t_lst *tmp;
 	size_t nbr_el;

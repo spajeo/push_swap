@@ -51,6 +51,7 @@ NBR_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(NBR)))
 LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lstmv_after \
             lstmv_before lstadd \
             lstiter lstmap \
+            getlstmedian \
             is_lst_asc is_lst_desc \
             get_tpile_data  get_lst_from_int get_tpile_pos \
             lst_count lst_count_lim \
