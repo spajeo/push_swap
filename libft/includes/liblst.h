@@ -85,14 +85,48 @@ typedef struct      s_pile
 }	               t_pile;
 
 /*
-**	        Struct Memory Access
-**          GET VALUES FROM FUNCTIONS
+** ---------------------------------------------------------------------------------
+** -------------------------------------GET-----------------------------------------
+**                              Struct Memory Access
 */
 char		    	*ft_get_tstr_str(t_lst *ptr);
 int					*ft_get_tpile_data(t_lst *ptr);
 int					*ft_get_tpile_pos(t_lst *ptr);
-int					ft_get_tdata_data(t_lst *ptr);
+int					*ft_get_tdata_data(t_lst *ptr);
+
 t_lst				*ft_get_lst_from_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
+/*
+** ------------------------------------ POSITION --------------------------------------
+*
+**                           ********** RELATIVE **************
+**                              ORDER COMPARE TO OTHER VALUES
+*/
+int                 ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref);
+int                 ft_arerelpos_next(t_lst *first, int *(* get_fint)(t_lst *),
+                                                    t_lst *second, int *(* get_sint)(t_lst *));
+t_lst               *ft_getlst_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), size_t rel_pos);
+t_lst              	*ft_getlstmedian(t_lst *head, int *(* get_int)(t_lst *));
+/*
+**                          ************** ABSOLUTE ***********
+**                      CHECK POSITION IN THE LST LINKED LIST
+**                                       with NEXT
+*/
+t_lst               *ft_getlst_fromabspos(t_lst *head, size_t rel_pos);
+t_lst               *ft_getlst_fromabspos(t_lst *head, size_t rel_pos);
+int                 ft_getabspos_fromlst(t_lst *head, t_lst *ref);
+int                 ft_getabspos_fromvar(t_lst *head, int*(*get_int)(t_lst *), int var);
+int                 ft_getval_fromabspos(t_lst *head, int *(* get_int)(t_lst *) , size_t pos);
+/*
+**                     	      COMPARE ABS & REL POSITIONS
+*/
+int                 ft_is_abspos_is_relpos(t_lst *head, int*(*get_int)(t_lst *), t_lst *ref);
+/*
+**
+*/
+int					ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
+int					ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
+int                 ft_is_ref_inf(t_lst *head, int *(*get_int)(t_lst *), int ref);
+int                 ft_is_reflst_sup(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref);
 /*
 ** -------------------------------------LIST-----------------------------------------
 **
@@ -113,36 +147,6 @@ void				ft_lstmv_before(t_lst *src, t_lst *dst);
 size_t             	ft_getlstlen(t_lst *head);
 size_t				ft_lst_count(t_lst *head);
 int     			ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
-/*
-** ------------------------------------ POSITION --------------------------------------
- *
-** ************************************ RELATIVE **************************************
-**                              ORDER COMPARE TO OTHER VALUES
-**
-*/
-int                 ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref);
-int                 ft_arerelpos_next(t_lst *first, int *(* get_fint)(t_lst *), t_lst *second, int *(* get_sint)(t_lst *));
-t_lst               *ft_getlst_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), size_t rel_pos);
-t_lst              	*ft_getlstmedian(t_lst *head, int *(* get_int)(t_lst *));
-/*
-** ************************************ ABSOLUTE **************************************
-**                      CHECK POSITION IN THE LST LINKED LIST with NEXT
-**
-*/
-int                 ft_getabspos_fromlst(t_lst *head, t_lst *ref);
-int                 ft_getabspos_fromvar(t_lst *head, int*(*get_int)(t_lst *), int var);
-int                 ft_getval_fromabspos(t_lst *head, int *(* get_int)(t_lst *) , size_t pos);
-/*
-**                     	      COMPARE ABS & REL POSITIONS
-*/
-int                 ft_is_abspos_is_relpos(t_lst *head, int*(*get_int)(t_lst *), t_lst *ref);
-/*
-**
-*/
-int					ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
-int					ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
-int                 ft_is_ref_inf(t_lst *head, int *(*get_int)(t_lst *), int ref);
-int                 ft_is_reflst_sup(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref);
 /*
 ** -------------------------------------- IS LST ---------------------------------------
 */

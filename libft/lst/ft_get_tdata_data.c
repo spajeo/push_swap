@@ -22,8 +22,8 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-int		ft_get_tdata_data(t_lst *ptr)
+int		*ft_get_tdata_data(t_lst *ptr)
 {
-	return (((t_data *)((char *)(ptr)
+	return (&((t_data *)((char *)(ptr)
 							- ((char *)(&(((t_data *)0))->lst))))->data);
 }
