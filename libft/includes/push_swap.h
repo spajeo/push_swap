@@ -29,9 +29,9 @@
 ** -----------------------------------------------------------------------------
 */
 
-#define FPS_ABSPOS                  (unsigned long)0b01
+#define FPS_ABSPOS                  0b01
 #define FPS_RELPOSNEXT              (unsigned long)0b10
-
+#define FPS_ABS                  1
 
 /*
 ** -----------------------------------------------------------------------------

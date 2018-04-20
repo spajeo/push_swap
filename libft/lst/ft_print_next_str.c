@@ -32,7 +32,8 @@ void	ft_print_next_str(t_lst *head, char *(*get_str)(t_lst *))
 	tmp = head->next;
 	while (tmp != head)
 	{
-		ft_printf("%s\n", *get_str(tmp));
+		ft_putendl((const char *)get_str(tmp));
+//		ft_printf("%s\n", *get_str(tmp));  // leak ???
 		tmp = tmp->next;
 	}
 	return ;

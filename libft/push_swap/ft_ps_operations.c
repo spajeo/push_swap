@@ -12,7 +12,7 @@ int				ft_ps_operations(char *src)
 	{
 		ft_ps_opp(src);
 	}
-	else if (ft_strlen(src) == 3)
+	else if (*(src + 1) == 'r')
 	{
 		ft_ps_oprr(src);
 	}
