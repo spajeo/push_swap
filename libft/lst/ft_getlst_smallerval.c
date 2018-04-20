@@ -24,11 +24,11 @@ t_lst       *ft_getlst_smallerval(t_lst *head, int *(*get_int)(t_lst *), int min
     tmp = head->next;
     ret = head->next;
 
-    while (init == 0 && ret != head)
+    while (init != 0 && ret != head)
     {
-        if (*get_int(ret) > min_elem)
+        if (*get_int(ret) < min_elem)
         {
-            ft_printf("LST_SMALLER VAL %d", *get_int(ret));
+            ft_printf("LST_SMALLER VAL %d\n", *get_int(ret));
             break;
         }
  
