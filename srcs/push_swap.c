@@ -13,18 +13,20 @@ void ft_ps_order_3b()
 
 // Descending Order
 	
-	
 	int len = ft_getlstlen(&HEAD_LB);
 	if (!ft_is_lst_asc(&HEAD_LB, &ft_get_tpile_data) && len > 2)
 	{
-		if (*ft_get_tpile_pos(HEAD_LB->next) < *ft_get_tpile_pos(HEAD_LB->prev)) //pour 21 et autres
+		if (*ft_get_tpile_pos(HEAD_LB.next) < *ft_get_tpile_pos(HEAD_LB.prev)) //pour 21 et autres
 			ft_ps_opr("sb");
-		if (*ft_get_tpile_pos(HEAD_LB->next) > *ft_get_tpile_pos(HEAD_LB->next->next))
+		if (*ft_get_tpile_pos(HEAD_LB.next) > *ft_get_tpile_pos(HEAD_LB.next->next))
 			ft_ps_opr("rb");
-		if (*ft_get_tpile_pos(HEAD_LB->next) > *ft_get_tpile_pos(HEAD_LB->next->next))
+		if (*ft_get_tpile_pos(HEAD_LB.next) > *ft_get_tpile_pos(HEAD_LB.next->next))
 			ft_ps_opr("rrb");
 	}
 	ft_lst_convert_allvar(&HEAD_LB, &ft_get_tpile_pos, 2); //flag
+	ft_refill_a(len);
+	while (len--)
+		ft_ps_opr("ra");
 }
 
 void ft_ps_order_3a()
@@ -33,17 +35,17 @@ void ft_ps_order_3a()
 	int len = ft_getlstlen(&HEAD_LA);
 	if (!ft_is_lst_asc(&HEAD_LA, &ft_get_tpile_data) && len > 2)
 	{
-		if (*ft_get_tpile_pos(HEAD_LA->next) > *ft_get_tpile_pos(HEAD_LA->prev)) //pour 21 et autres
+		if (*ft_get_tpile_pos(HEAD_LA.next) > *ft_get_tpile_pos(HEAD_LA.prev)) //pour 21 et autres
 			ft_ps_opr("sa");
-		if (*ft_get_tpile_pos(HEAD_LA->next) < *ft_get_tpile_pos(HEAD_LA->next->next))
+		if (*ft_get_tpile_pos(HEAD_LA.next) < *ft_get_tpile_pos(HEAD_LA.next->next))
 			ft_ps_opr("ra");
-		if (*ft_get_tpile_pos(HEAD_LA->next) < *ft_get_tpile_pos(HEAD_LA->next->next))
+		if (*ft_get_tpile_pos(HEAD_LA.next) < *ft_get_tpile_pos(HEAD_LA.next->next))
 			ft_ps_opr("rra");
 	}
 	ft_lst_convert_allvar(&HEAD_LA, &ft_get_tpile_pos, 2); //flag
-//	ft_refill_b(len);
-//	while (len--)
-//		ft_ps_opr("rb");
+	ft_refill_b(len);
+	while (len--)
+		ft_ps_opr("rb");
 }
 
 void ft_ps_push_ab_pivot(int val)
@@ -73,7 +75,7 @@ void ft_ps_getmedian_ab()
 		ft_ps_print();
 		ft_ps_push_ab_pivot(med);
 		ft_ps_print();
-		ft_ps_order_3(&HEAD_LA);
+		ft_ps_order_3a();
 	}
 }
 
