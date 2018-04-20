@@ -12,20 +12,20 @@
 ////	tmp = head->next;
 ////	while (tmp != head)
 ////	{
-////		if (!(PILE(tmp)->pos & PSF_ABSPOS)
+////		if (!(PILE(tmp)->pos & FPS_ABSPOS)
 ////		            && ft_is_abspos_is_relpos(head, &ft_get_tpile_data, tmp))
 ////		{
-////			PILE(tmp)->pos |= PSF_ABSPOS;
+////			PILE(tmp)->pos |= FPS_ABSPOS;
 ////		}
 ////		tmp = tmp->next;
 ////	}
 ////	tmp = head->next;
 ////	while (tmp != head->prev)
 ////	{
-////		if (!(PILE(tmp)->pos & PSF_RELPOSNEXT)
+////		if (!(PILE(tmp)->pos & FPS_RELPOSNEXT)
 ////		    && ft_arerelpos_next(tmp, &ft_get_tpile_data, tmp->next, &ft_get_tpile_data))
 ////		{
-////			PILE(tmp)->pos |= PSF_RELPOSNEXT;
+////			PILE(tmp)->pos |= FPS_RELPOSNEXT;
 //		}
 //		tmp = tmp->next;
 //	}

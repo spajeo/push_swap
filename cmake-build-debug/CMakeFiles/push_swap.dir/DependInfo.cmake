@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/Scarlett/push_swap/libft/lst/ft_arerelpos_next.c" "/Users/Scarlett/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/lst/ft_arerelpos_next.c.o"
-  "/Users/Scarlett/push_swap/libft/push_swap/ft_ps_convert_argv.c" "/Users/Scarlett/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o"
-  "/Users/Scarlett/push_swap/libft/push_swap/ft_ps_exec_p.c" "/Users/Scarlett/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o"
-  "/Users/Scarlett/push_swap/libft/push_swap/ft_ps_exec_r.c" "/Users/Scarlett/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o"
-  "/Users/Scarlett/push_swap/libft/push_swap/ft_ps_exec_s.c" "/Users/Scarlett/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o"
-  "/Users/Scarlett/push_swap/libft/push_swap/ft_ps_opp.c" "/Users/Scarlett/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_opp.c.o"
-  "/Users/Scarlett/push_swap/libft/push_swap/ft_ps_oprr.c" "/Users/Scarlett/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_oprr.c.o"
-  "/Users/Scarlett/push_swap/libft/push_swap/ft_ps_ops.c" "/Users/Scarlett/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_ops.c.o"
-  "/Users/Scarlett/push_swap/srcs/push_swap.c" "/Users/Scarlett/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/srcs/push_swap.c.o"
+  "/Users/spajeo/push_swap/libft/lst/ft_arerelpos_next.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/lst/ft_arerelpos_next.c.o"
+  "/Users/spajeo/push_swap/libft/push_swap/ft_ps_convert_argv.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o"
+  "/Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_p.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_p.c.o"
+  "/Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_r.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_r.c.o"
+  "/Users/spajeo/push_swap/libft/push_swap/ft_ps_exec_s.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_exec_s.c.o"
+  "/Users/spajeo/push_swap/libft/push_swap/ft_ps_opp.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_opp.c.o"
+  "/Users/spajeo/push_swap/libft/push_swap/ft_ps_oprr.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_oprr.c.o"
+  "/Users/spajeo/push_swap/libft/push_swap/ft_ps_ops.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_ops.c.o"
+  "/Users/spajeo/push_swap/srcs/push_swap.c" "/Users/spajeo/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/srcs/push_swap.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

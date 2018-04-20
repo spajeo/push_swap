@@ -105,7 +105,7 @@ int         ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_ls
 int         ft_arerelpos_next(t_lst *first, int *(* get_fint)(t_lst *), t_lst *second, int *(* get_sint)(t_lst *));
 t_lst       *ft_getlst_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), size_t rel_pos);
 t_lst      	*ft_getlstmedian(t_lst *head, int *(* get_int)(t_lst *));
-
+int         ft_getval_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), size_t rel_pos);
 /*
 **                        ************** ABSOLUTE ***********
 **                        CHECK POSITION IN THE LST LINKED LIST
@@ -165,5 +165,9 @@ void				ft_tdata_free(t_lst *lst_head);
 */
 void               ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *));
 void               ft_print_next_str(t_lst *head, char *(*get_str)(t_lst *));
-
+/*
+** -------------------------------------- CONVERT ---------------------------------------
+*/
+void		ft_lst_convert_allvar(t_lst *head, int *(* get_int)(t_lst *), int var);
+void		ft_lst_flag_allvar(t_lst *head, int *(* get_int)(t_lst *), int var);
 #endif

@@ -49,16 +49,17 @@ NBR_SRC := $(addsuffix .c, $(addprefix $(NBR_DIR)ft_, $(NBR)))
 NBR_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(NBR)))
 
 LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lstmv_after \
-            lstmv_before lstadd \
+            lstmv_before lstadd getlstlen\
             lstiter lstmap \
             getlstmedian getlst_smallerval\
-            getlst_fromrelpos getlst_fromabspos\
+            getlst_fromrelpos getlst_fromabspos getval_fromrelpos\
             is_lst_asc is_lst_desc \
             get_tpile_data  get_lst_from_int get_tpile_pos \
             lst_count lst_count_lim \
             lst_convert_allvar \
             is_ref_inf getval_fromabspos is_reflst_sup tdata_free \
             is_val_in get_tdata_data add_tstr_next \
+            lst_convert_allvar \
             is_first_inf getabspos_fromvar  print_next_str getval_fromabspos getabspos_fromlst \
             is_abspos_is_relpos getrelpos_fromlstval add_tpile_next get_tstr_str \
             arerelpos_next
