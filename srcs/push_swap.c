@@ -9,7 +9,7 @@
 
 void ft_ps_order_3a() // Descending Order
 {
-	if (!ft_is_lst_desc(&HEAD_LA, &ft_get_tpile_data) && ft_getlstlen(&HEAD_LA) > 2)
+	if (ft_getlstlen(&HEAD_LA) == 3)
 	{
 		if (P_DATA(HA_A_) > P_DATA(HA_C_) && P_DATA(HA_A_) < P_DATA(HA_B_))
 			ft_ps_operations("sa");
@@ -60,7 +60,7 @@ void ft_ps_push_ab_pivot(int val)
 void ft_ps_getmedian_ab()
 {
 	int med;
-	while(ft_getlstlen(&HEAD_LA) > 4)
+	while(ft_getlstlen(&HEAD_LA) >= 3)
 	{
 //		*ft_get_tpile_pos(tmp) |= FPS_ABSPOS; // wrong instruction
 		med = *ft_get_tpile_data(ft_getlstmedian(&HEAD_LA, ft_get_tpile_data));
@@ -71,11 +71,11 @@ void ft_ps_getmedian_ab()
 		if (ft_getlstlen(&HEAD_LA) < 4 && (!ft_is_lst_desc(&HEAD_LA, &ft_get_tpile_data)))
 		{
 			ft_ps_order_3a();
-			
 		}
 	}
 		ft_ps_print();
 }
+
 
 
 int			main(int ac, char **av)

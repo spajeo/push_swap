@@ -60,7 +60,7 @@
 #define HA_C_     HEAD_LA.prev
 //*/
 
- /*
+/*
 ** from ==  &new->lst
 */
 
