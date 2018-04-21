@@ -62,7 +62,8 @@ LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lst
             lst_convert_allvar \
             is_first_inf getabspos_fromvar  print_next_str getval_fromabspos getabspos_fromlst \
             is_abspos_is_relpos getrelpos_fromlstval add_tpile_next get_tstr_str \
-            arerelpos_next
+            arerelpos_next \
+            lst_swap
  #listdel listdelone lstnew
 LST_SRC := $(addsuffix .c, $(addprefix $(LST_DIR)ft_, $(LST)))
 LST_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(LST)))

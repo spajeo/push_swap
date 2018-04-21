@@ -31,19 +31,19 @@
 
 #define FPS_ABSPOS                  0b01
 #define FPS_RELPOSNEXT              (unsigned long)0b10
-#define FPS_ABS                  1
+#define FPS_ABS                     1
 
 /*
 ** -----------------------------------------------------------------------------
 ** ------------------------------TEST-----------------------------------------
 ** -----------------------------------------------------------------------------
 */
-#define TESTSTR(str, it)  ft_printf("\x1B[35m%s__[%s]___\n\x1B[0m", str, it) 
-#define TESTINT(str, it)  ft_printf("\x1B[33m%s__[%d]___\n\x1B[0m", str, it) 
-#define TESTINTR(str, it) ft_printf("\x1B[31m%s__[%d}___\n\x1B[0m", str, it) 
-#define TESTINTG(str, it) ft_printf("\x1B[32m%s__[%d}___\n\x1B[0m", str, it) 
-#define TESTINTB(str, it) ft_printf("\x1B[34m%s__[%d}___\n\x1B[0m", str, it) 
-#define TESTINTM(str, it) ft_printf("\x1B[35m%s__[%d}___\n\x1B[0m", str, it) 
+#define TESTSTR(str, it)  ft_printf("\x1B[35m%s__[%s]___\n\x1B[0m", str, it)
+#define TESTINT(str, it)  ft_printf("\x1B[33m%45s__[%d]___\n\x1B[0m", str, it)
+#define TESTINTR(str, it) ft_printf("\x1B[31m%45s__[%d}___\n\x1B[0m", str, it)
+#define TESTINTG(str, it) ft_printf("\x1B[32m%45s__[%d}___\n\x1B[0m", str, it)
+#define TESTINTB(str, it) ft_printf("\x1B[34m%45s__[%d}___\n\x1B[0m", str, it)
+#define TESTINTM(str, it) ft_printf("\x1B[35m%45s__[%d}___\n\x1B[0m", str, it)
 
 /*
 ** -----------------------GLOBALES AND HEAD REFS------------------------------
@@ -54,13 +54,18 @@
 #define HEAD_LB	    			(ft_ps_head()->head_b)
 #define HEAD_PS_MV				(ft_ps_head()->head_mv)
 #define FLAG__PS    			(ft_ps_head()->flag)
+
+#define HA_A_     HEAD_LA.next
+#define HA_B_     HEAD_LA.next->next
+#define HA_C_     HEAD_LA.prev
 //*/
 
  /*
 ** from ==  &new->lst
 */
 
-#define PILE(it) CONTAINEROF(it, t_pile, lst)
+#define PILE(it)    CONTAINEROF(it, t_pile, lst)
+#define P_DATA(it)  PILE(it)->data
 #define PIVOT		PS__HEAD.pivot
 #define PIVOT_POS	PS__HEAD.pivot_pos
 
@@ -71,12 +76,6 @@ typedef struct s_ps_head
 {
 	t_lst		head_mv;
 	size_t		flag;
-	
-//	int			min_val;
-//	int			first_quarter_val;
-//	int			median_val;
-//	int			third_quarter_val;
-//	int			max_val;
 	size_t		bucket_values;
 
 	int			pivot;

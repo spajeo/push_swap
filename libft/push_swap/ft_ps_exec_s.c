@@ -8,12 +8,11 @@ int inline	ft_ps_exec_s(t_lst *head)
 {
 	if (JUST_HEAD_P(head))
 		return (0);
-	else if (head->next == head->prev)
-		return (0);
-	else
+//	else if (head->next == head->prev)
+//		return (0);
+	else if (head->next != head->prev)
 	{
-		ft_swap((ssize_t *)&PILE(head->next)->data,
-		        (ssize_t *)&PILE(head->next->next)->data);
+		ft_lstmv_after(head->next, head->next->next);
 	}
 	return (1);
 }

@@ -97,8 +97,9 @@ t_lst		*ft_get_lst_from_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
 t_lst       *ft_getlst_smallerval(t_lst *head, int *(*get_int)(t_lst *), int min_elem, int init);
 /*
 ** ------------------------------------ POSITION --------------------------------------
-*
-**                           ********** RELATIVE **************
+*/
+void     ft_lst_swap(t_lst *lst);
+/*                           ********** RELATIVE **************
 **                              ORDER COMPARE TO OTHER VALUES
 */
 int         ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref);

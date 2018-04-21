@@ -26,11 +26,11 @@ t_ps_head		*ft_ps_head(void)
 		(ptr = (t_ps_head *)malloc(sizeof(t_ps_head)));
 		ft_bzero(ptr, sizeof(t_ps_head));
 		NODE_INIT(ptr->head_mv);
-//		ptr->flag = 0;
+		ptr->flag = 0;
 		NODE_INIT(ptr->head_a);
-//		ptr->nb_a = 0;
+		ptr->nb_a = 0;
 		NODE_INIT(ptr->head_b);
-//		ptr->nb_b = 0;
+		ptr->nb_b = 0;
 //		ft_printf("  HEAD : %d\n\n\n", PS__HEAD.nb_a);
 	}
 	return (ptr);
