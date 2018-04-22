@@ -73,7 +73,7 @@ void ft_ps_getmedian_ab()
 		{
 			ft_ps_order_3a();
 			ft_refill_b(len);
-		}t a
+		}
 	}
 //		ft_ps_print();
 }
