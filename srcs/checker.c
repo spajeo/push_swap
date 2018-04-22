@@ -10,25 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
-
-/*
-** Check the instruction given by the push_swap program
-** and execute them
-*/
-
-/*
-void		ft_ps_print(void)
-{
-	printf(" ----------------------- \n");
-	ft_print_nextdata(&HEAD_LA);
-	printf("________________________\n");
-	ft_print_nextdata(&HEAD_LB);
-	printf(" ----------------------- \n");
-}
-//*/
-
-
 #include "libft.h"
 #include "liblst.h"
 #include "push_swap.h"
