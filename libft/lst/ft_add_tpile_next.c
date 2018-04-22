@@ -13,5 +13,6 @@ t_pile                  *ft_add_tpile_next(t_lst *head, const int nb)
 	ft_lstinsert_before(&new->lst, head);
 	new->data = nb;
 	new->pos = 0;
+	new->median = 0;
 	return (new);
 }

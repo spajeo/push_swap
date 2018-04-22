@@ -81,6 +81,7 @@ typedef struct      s_pile
 {
 	int     pos;
 	int     data;
+	int     median;
 	t_lst   lst;
 }	               t_pile;
 

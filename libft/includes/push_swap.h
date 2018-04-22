@@ -48,7 +48,6 @@
 /*
 ** -----------------------GLOBALES AND HEAD REFS------------------------------
 */
-//*
 #define PS__HEAD				(*ft_ps_head())
 #define HEAD_LA	    			(ft_ps_head()->head_a)
 #define HEAD_LB	    			(ft_ps_head()->head_b)
@@ -58,7 +57,10 @@
 #define HA_A_     HEAD_LA.next
 #define HA_B_     HEAD_LA.next->next
 #define HA_C_     HEAD_LA.prev
-//*/
+
+#define HB_A_     HEAD_LB.next
+#define HB_B_     HEAD_LB.next->next
+#define HB_C_     HEAD_LB.prev
 
 /*
 ** from ==  &new->lst
@@ -66,8 +68,9 @@
 
 #define PILE(it)    CONTAINEROF(it, t_pile, lst)
 #define P_DATA(it)  PILE(it)->data
-#define PIVOT		PS__HEAD.pivot
-#define PIVOT_POS	PS__HEAD.pivot_pos
+#define P_POS(it)   PILE(it)->pos
+//#define PIVOT		PS__HEAD.pivot
+//#define PIVOT_POS	PS__HEAD.pivot_pos
 
 /*
 ** HEADS
@@ -76,10 +79,11 @@ typedef struct s_ps_head
 {
 	t_lst		head_mv;
 	size_t		flag;
-	size_t		bucket_values;
+//	size_t		bucket_values;
+////
+////	int			pivot;
+//	int			pivot_pos;
 
-	int			pivot;
-	int			pivot_pos;
 
 	t_lst		head_a;
 	size_t		nb_a;

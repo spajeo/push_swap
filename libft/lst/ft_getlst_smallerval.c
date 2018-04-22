@@ -29,7 +29,7 @@ t_lst       *ft_getlst_smallerval(t_lst *head, int *(*get_int)(t_lst *), int min
         if (*get_int(ret) > min_elem)
         {
             tmp = ret;
-            ft_printf("LST_SMALLER VAL_______ %d\n", *get_int(ret));
+//            ft_printf("LST_SMALLER VAL_______ %d\n", *get_int(ret));
             break;
         }
         ret = ret->next;

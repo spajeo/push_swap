@@ -10,10 +10,10 @@ int		ft_ps_opr(char *src)
 	done = 0;
 	if (!ft_strcmp(src, "ra"))
 	{
-		 		ft_ps_print();
+//		 		ft_ps_print();
 		if (ft_ps_exec_r(&HEAD_LA))
 			ft_add_tstr_next(&HEAD_PS_MV, src);
-		ft_ps_print();
+//		ft_ps_print();
 		return (1);
 	}
 	else if (!ft_strcmp(src, "rb"))
