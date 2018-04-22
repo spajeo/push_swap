@@ -42,7 +42,7 @@ void ft_refill_a(int nb)
 	while (nb != 0)
 	{
 		ft_ps_operations("pb");
-		ft_ps_operations("ra");
+//		ft_ps_operations("ra");
 		--nb;		
 	}
 }

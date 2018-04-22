@@ -62,6 +62,8 @@
 #define HB_B_     HEAD_LB.next->next
 #define HB_C_     HEAD_LB.prev
 
+#define _PA_      1
+#define _PB_      2
 /*
 ** from ==  &new->lst
 */
@@ -79,17 +81,12 @@ typedef struct s_ps_head
 {
 	t_lst		head_mv;
 	size_t		flag;
-//	size_t		bucket_values;
-////
-////	int			pivot;
-//	int			pivot_pos;
-
 
 	t_lst		head_a;
-	size_t		nb_a;
+	size_t		pr_a;
 
 	t_lst		head_b;
-	size_t		nb_b;
+	size_t		pr_b;
 }				t_ps_head;
 
 t_ps_head		swap_head;
@@ -120,6 +117,8 @@ int						ft_ps_checkflags(int *ac, char **av);
 **              ALGORITHM
 */
 
+void ft_ps_order_3a();
+void ft_ps_order_3b();
 /*
 **              CHECK
 */

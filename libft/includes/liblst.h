@@ -126,7 +126,9 @@ int          ft_is_abspos_is_relpos(t_lst *head, int*(*get_int)(t_lst *), t_lst 
 **
 */
 int			ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
+int		    ft_is_lst_asclim(t_lst *head, int *(*get_int)(t_lst *), size_t lim);
 int			ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *));
+int		    ft_is_lst_desclim(t_lst *head, int *(*get_int)(t_lst *), size_t lim);
 int         ft_is_ref_inf(t_lst *head, int *(*get_int)(t_lst *), int ref);
 int         ft_is_reflst_sup(t_lst *head, int *(*get_int)(t_lst *), t_lst *ref);
 /*

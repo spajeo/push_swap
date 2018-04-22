@@ -95,7 +95,7 @@ PUSH_SWAP:= ps_free ft_ps_print\
 			ft_ps_head \
 			ft_ps_convert_argv ft_ps_operations\
 			ft_ps_exec_p ft_ps_exec_s ft_ps_exec_rr ft_ps_exec_r \
-			ft_ps_opp ft_ps_ops ft_ps_oprr ft_ps_opr
+			ft_ps_opp ft_ps_ops ft_ps_oprr ft_ps_opr  ft_ps_order3
 
 PUSH_SWAP_SRC := $(addsuffix .c, $(addprefix $(PUSH_SWAP_DIR), $(PUSH_SWAP)))
 PUSH_SWAP_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR), $(PUSH_SWAP)))

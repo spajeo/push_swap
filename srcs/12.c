@@ -57,7 +57,7 @@
 //		while (!(JUST_HEAD(HEAD_LB)) && !(ft_is_ref_inf(&HEAD_LB, &ft_get_tpile_pos, 1)))
 //		{
 //			TESTSTR("pivot B","REFILL");
-//			ft_ps_print();
+
 //			ft_refill_b(ft_getabspos_fromvar(&HEAD_LB, &ft_get_tpile_pos, 0)); //trouver la limite// autre fonction
 //		}
 //		if (!(JUST_HEAD(HEAD_LB)))
