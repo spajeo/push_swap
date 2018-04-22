@@ -3,11 +3,13 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-void ft_ps_push_pivot_ab(t_lst *head_a, int pivot)
+int ft_ps_push_pivot_ab(t_lst *head_a, int pivot)
 {
 	int len = ft_getlstlen(head_a);
 	int data;
+	int count;
 	
+	count = 0;
 	while(len)
 	{
 		data = *ft_get_tpile_data(head_a->next);
@@ -16,11 +18,12 @@ void ft_ps_push_pivot_ab(t_lst *head_a, int pivot)
 			P_POS(head_a->next) = 1;
 			ft_ps_operations("pa");
 			ft_ps_operations("rb");
-//			ft_ps_print();
+			++count;
 		}
 		else if (data <= pivot)
 		{
 			ft_ps_operations("pa");
+			++count;
 		}
 		else
 			ft_ps_operations("ra");
@@ -28,65 +31,81 @@ void ft_ps_push_pivot_ab(t_lst *head_a, int pivot)
 		--len;
 	}
 	ft_ps_operations("rrb");
+	return(count);
+	
 }
-void ft_ps_push_pivot_ba(t_lst *head_a, int pivot)
+int ft_ps_push_pivot_ba(t_lst *head_a, int pivot)
 {
 	int len = ft_getlstlen(head_a);
 	int data;
+	int count;
 	
+	count = 0;
 	while(len)
 	{
 		data = *ft_get_tpile_data(head_a->next);
 		if (data == pivot)
 		{
 			P_POS(head_a->next) = 1;
-			ft_ps_operations("pa");
-			ft_ps_operations("rb");
+			ft_ps_operations("pb");
+			ft_ps_operations("ra");
+			++count;
 //			ft_ps_print();
 		}
-		else if (data <= pivot)
+		else if (data >= pivot)
 		{
-			ft_ps_operations("pa");
+			ft_ps_operations("pb");
+			++count;
 		}
 		else
-			ft_ps_operations("ra");
+			ft_ps_operations("rb");
 		
 		--len;
 	}
-	ft_ps_operations("rrb");
+	ft_ps_operations("rra");
+	return(count);
 }
 
-void ft_ps_getmedian(int pile, size_t tdepth)
+void ft_ps_getmedian(int pile, size_t depth)
 {
 	int med;
-	int len;
-
+	
+//	med = 0;
 	if (pile == _PA_ && depth <= 3)
 	{
-		if (!ft_is_lst_desclim(&HEAD_LA, &ft_get_tpile_data, tdepth))
+		if (!ft_is_lst_desclim(&HEAD_LA, &ft_get_tpile_data, depth))
 			ft_ps_order_3a();
 		ft_ps_print();
 		return;
 	}
 	else if (pile == _PB_ && depth <= 3)
 	{
-		if (!ft_is_lst_asclim(&HEAD_LA, &ft_get_tpile_data, tdepth))
+		if (!ft_is_lst_asclim(&HEAD_LA, &ft_get_tpile_data, depth))
 			ft_ps_order_3b();
 		ft_ps_print();
 		return;
 	}
 	else
 	{
-		len = ft_getlstlen(&HEAD_LA);
-		med = *ft_get_tpile_data(ft_getlst_fromrelpos(&HEAD_LA, ft_get_tpile_data, len/2));
 		if (pile == _PA_)
-			ft_ps_push_pivot_ab(&HEAD_LA, med);
+		{
+			med = *ft_get_tpile_data(ft_getlst_fromrelpos
+					                         (&HEAD_LA, ft_get_tpile_data, ft_getlstlen(&HEAD_LA)));
+			depth = ft_ps_push_pivot_ab(&HEAD_LA, med);
+			ft_ps_getmedian(_PA_, ft_getlstlen(&HEAD_LA));
+			ft_ps_getmedian(_PB_, depth);
+			
+		}
 		else if (pile == _PB_)
-			ft_ps_push_pivot_ba(&HEAD_LB, med);
-		ft_ps_getmedian(_PA_, 3);
-		ft_ps_getmedian(_PB_, 3);
+		{
+			med = *ft_get_tpile_data(ft_getlst_fromrelpos
+					                         (&HEAD_LB, ft_get_tpile_data, ft_getlstlen(&HEAD_LB)));
+			depth = ft_ps_push_pivot_ba(&HEAD_LB, med);
+			ft_ps_getmedian(_PA_, depth);
+			ft_ps_getmedian(_PB_, ft_getlstlen(&HEAD_LB));
+		}
 	}
-	ft_ps_print();
+//	ft_ps_print();
 }
 
 int			main(int ac, char **av)
@@ -95,7 +114,7 @@ int			main(int ac, char **av)
 		ft_exec_parse_str(*(++av), &ft_ps_convert_argv);
 	else
 		ft_exec_parse_strstr(&(*(++av)), &ft_ps_convert_argv);
-//	ft_ps_getmedian(_PA_);
-	ft_ps_print();
+	ft_ps_getmedian(_PA_, ft_getlstlen(&HEAD_LA));
+//	ft_ps_print();
 	return (0);
 }
