@@ -32,15 +32,8 @@ void ft_refill_b(int nb)
 	while (nb != 0)
 	{
 		ft_ps_operations("pa");
-//		if (P_POS(HEAD_LB.next) == 1 && PILE(HEAD_LB.next)->median != 2)
-		ft_ps_operations("rb");
 		--nb;
 	}
-//	while (P_POS(HEAD_LB.next) == 1
-//	       && PILE(HEAD_LB.next)->median != 2)
-//	{
-//		ft_ps_operations("rb");
-//	}
 }
 
 void ft_refill_a(int nb)
