@@ -16,8 +16,11 @@ size_t   	ft_getlstlen(t_lst *head)
 
 	len = 0;
 	tmp = head->next;
+	if (tmp == head)
+		return(0);
 	while(tmp != head)
 	{
+        TESTINTR("depth", tmp);
 		++len;
 		tmp = tmp->next;
 	}

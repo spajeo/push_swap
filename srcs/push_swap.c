@@ -23,6 +23,7 @@ int ft_ps_push_pivot_ab(t_lst *head_a, int len, int pivot)
 		}
 		--len;
 	}
+    ft_ps_print();
 //	ft_ps_operations("ra");
 	return(count);
 	
