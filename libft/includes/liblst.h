@@ -105,9 +105,9 @@ void     ft_lst_swap(t_lst *lst);
 */
 int         ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref);
 int         ft_arerelpos_next(t_lst *first, int *(* get_fint)(t_lst *), t_lst *second, int *(* get_sint)(t_lst *));
-t_lst       *ft_getlst_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), size_t rel_pos);
+t_lst       *ft_getlst_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), int rel_pos);
 t_lst      	*ft_getlstmedian(t_lst *head, int *(* get_int)(t_lst *));
-int         ft_getval_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), size_t rel_pos);
+int         ft_getval_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), int rel_pos);
 /*
 **                        ************** ABSOLUTE ***********
 **                        CHECK POSITION IN THE LST LINKED LIST

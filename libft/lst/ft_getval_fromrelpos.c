@@ -11,7 +11,7 @@
 #include "push_swap.h"
 
 int   ft_getval_fromrelpos(t_lst *head, int*(*get_int)(t_lst *),
-                                                    size_t rel_pos)
+                                                    int rel_pos)
 
 {
 	t_lst *tmp;

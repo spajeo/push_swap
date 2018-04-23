@@ -12,7 +12,8 @@
 t_lst   	*ft_getlstmedian(t_lst *head, int *(* get_int)(t_lst *))
 {
 	size_t      len;
-
+	
+	len =  ft_getlstlen(head);
 	if (len > 1)
 		len =  ft_getlstlen(head) / 2;
 	return (ft_getlst_fromrelpos(head, get_int, len)); // A TESTER

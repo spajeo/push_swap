@@ -3,12 +3,10 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-void ft_ps_order_3b()
-{
+void ft_ps_order_3b() {
 	if (P_DATA(HB_A_) > P_DATA(HB_C_) && P_DATA(HB_A_) < P_DATA(HB_B_))
 		ft_ps_operations("sb");
-	if (P_DATA(HB_A_) > P_DATA(HB_C_) && P_DATA(HB_A_) > P_DATA(HB_B_))
-	{
+	if (P_DATA(HB_A_) > P_DATA(HB_C_) && P_DATA(HB_A_) > P_DATA(HB_B_)) {
 		ft_ps_operations("rb");
 		ft_ps_operations("sb");
 		ft_ps_operations("rrb");
@@ -16,6 +14,7 @@ void ft_ps_order_3b()
 //		if (ft_is_lst_asc(&HEAD_LA, &ft_get_tpile_data)) //pour 21 et autres
 //		{
 //			ft_ps_operations("sb");
+}
 
 void ft_ps_order_3a()
 {

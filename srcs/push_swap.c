@@ -93,8 +93,8 @@ int			main(int ac, char **av)
 		ft_exec_parse_str(*(++av), &ft_ps_convert_argv);
 	else
 		ft_exec_parse_strstr(&(*(++av)), &ft_ps_convert_argv);
-	ft_ps_print();
+//	ft_ps_print();
 	ft_ps_getmedian(_PA_, ft_getlstlen(&HEAD_LA));
-	ft_ps_print();
+//	ft_ps_print();
 	return (0);
 }
