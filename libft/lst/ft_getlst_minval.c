@@ -14,7 +14,7 @@
  *                  IF INIT IS NULL => smaller_element is ignored
  */
 
-t_lst       *ft_getlst_smallestval(t_lst *head, int *(*get_int)(t_lst *))
+t_lst       *ft_getlst_minval(t_lst *head, int *(*get_int)(t_lst *))
 {
     t_lst		*tmp;
     t_lst		*ret;

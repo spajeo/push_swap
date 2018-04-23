@@ -17,12 +17,12 @@ t_lst   *ft_getlst_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), int rel_pos)
 	
 	if (!head || (head->next == head))
 		return (0);
-	tmp = ft_getlst_smallestval(head, &(*get_int));
+	tmp = ft_getlst_minval(head, &(*get_int));
 	min_val = *get_int(tmp);
 	--rel_pos;
 	while (rel_pos > 0)
     {
-        tmp = ft_getlst_smallesval_above(head, &(*get_int), min_val);
+        tmp = ft_getlst_minval_above(head, &(*get_int), min_val);
         --rel_pos;
     }
     return (tmp);

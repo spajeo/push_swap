@@ -51,7 +51,7 @@ NBR_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(NBR)))
 LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lstmv_after \
             lstmv_before lstadd getlstlen\
             lstiter lstmap \
-            getlstmedian getlst_smallerval_above\
+            getlstmedian getlst_minval_above\
             getlst_fromrelpos getlst_fromabspos getval_fromrelpos\
             is_lst_asc islst_desc \
             is_lst_asclim islst_desclim \
@@ -63,7 +63,7 @@ LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lst
             lst_convert_allvar \
             is_first_inf getabspos_fromvar  print_next_str getval_fromabspos getabspos_fromlst \
             is_abspos_is_relpos getrelpos_fromlstval add_tpile_next get_tstr_str \
-            arerelpos_next  getlst_smallestval\
+            arerelpos_next  getlst_minval\
             lst_swap
  #listdel listdelone lstnew
 LST_SRC := $(addsuffix .c, $(addprefix $(LST_DIR)ft_, $(LST)))
