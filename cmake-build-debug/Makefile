@@ -166,6 +166,36 @@ libft/lst/ft_arerelpos_next.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/lst/ft_arerelpos_next.c.s
 .PHONY : libft/lst/ft_arerelpos_next.c.s
 
+libft/lst/ft_getlst_maxval.o: libft/lst/ft_getlst_maxval.c.o
+
+.PHONY : libft/lst/ft_getlst_maxval.o
+
+# target to build an object file
+libft/lst/ft_getlst_maxval.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/lst/ft_getlst_maxval.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/lst/ft_getlst_maxval.c.o
+.PHONY : libft/lst/ft_getlst_maxval.c.o
+
+libft/lst/ft_getlst_maxval.i: libft/lst/ft_getlst_maxval.c.i
+
+.PHONY : libft/lst/ft_getlst_maxval.i
+
+# target to preprocess a source file
+libft/lst/ft_getlst_maxval.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/lst/ft_getlst_maxval.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/lst/ft_getlst_maxval.c.i
+.PHONY : libft/lst/ft_getlst_maxval.c.i
+
+libft/lst/ft_getlst_maxval.s: libft/lst/ft_getlst_maxval.c.s
+
+.PHONY : libft/lst/ft_getlst_maxval.s
+
+# target to generate assembly for a file
+libft/lst/ft_getlst_maxval.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/libft/lst/ft_getlst_maxval.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/lst/ft_getlst_maxval.c.s
+.PHONY : libft/lst/ft_getlst_maxval.c.s
+
 libft/lst/ft_is_abspos_is_relpos.o: libft/lst/ft_is_abspos_is_relpos.c.o
 
 .PHONY : libft/lst/ft_is_abspos_is_relpos.o
@@ -497,6 +527,9 @@ help:
 	@echo "... libft/lst/ft_arerelpos_next.o"
 	@echo "... libft/lst/ft_arerelpos_next.i"
 	@echo "... libft/lst/ft_arerelpos_next.s"
+	@echo "... libft/lst/ft_getlst_maxval.o"
+	@echo "... libft/lst/ft_getlst_maxval.i"
+	@echo "... libft/lst/ft_getlst_maxval.s"
 	@echo "... libft/lst/ft_is_abspos_is_relpos.o"
 	@echo "... libft/lst/ft_is_abspos_is_relpos.i"
 	@echo "... libft/lst/ft_is_abspos_is_relpos.s"

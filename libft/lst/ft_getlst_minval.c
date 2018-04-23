@@ -1,8 +1,8 @@
 
 /*
- *     Return the absolute position of the struct
- *     from a given variable
- *     0 - indexing
+ *
+ *
+ *
  */
 
 

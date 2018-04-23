@@ -134,6 +134,10 @@
 			<Option target="checker"/>
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/spajeo/push_swap/libft/lst/ft_getlst_maxval.c">
+			<Option target="checker"/>
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/spajeo/push_swap/libft/lst/ft_is_abspos_is_relpos.c">
 			<Option target="checker"/>
 		</Unit>

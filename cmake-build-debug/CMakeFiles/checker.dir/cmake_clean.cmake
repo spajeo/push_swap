@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/checker.dir/libft/lst/ft_is_abspos_is_relpos.c.o"
   "CMakeFiles/checker.dir/libft/lst/ft_arerelpos_next.c.o"
   "CMakeFiles/checker.dir/srcs/12.c.o"
+  "CMakeFiles/checker.dir/libft/lst/ft_getlst_maxval.c.o"
   "checker.pdb"
   "checker"
 )

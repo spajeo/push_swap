@@ -25,31 +25,14 @@ t_lst       *ft_getlst_minval_above(t_lst *head, int *(*get_int)(t_lst *), int m
         return (0);
 
     tmp = head->next;
-    ret = head->next;
-//    while (ret != head)
-//    {
-//        if (*get_int(ret) > min_elem)
-//        {
-//            tmp = ret;
-//            TESTINTM("LST_SMALLER VAL_______ \n", *get_int(ret));
-//            min = *get_int(ret);
-//            break;
-//        }
-//        ret = ret->next;
-//    }
-//    if (ret == head)
-//        ret = ret->prev;
+    ret = ft_getlst_maxval(head, &(*get_int));
     while (tmp != head->prev) // head
     {
         if (min_elem < *get_int(tmp) && *get_int(tmp) < *get_int(ret))
         {
             ret = tmp;
             min = P_DATA(ret);
-//            if (*get_int(tmp) > min_elem)
-//            {
-    
-                TESTINTR("LST_SMALLER VAL_______ \n", *get_int(ret));
-//            }
+			TESTINTR("LST_SMALLER VAL_______ \n", *get_int(ret));
         }
         tmp = tmp->next;
     }
