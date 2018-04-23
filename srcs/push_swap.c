@@ -3,9 +3,9 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-int ft_ps_push_pivot_ab(t_lst *head_a, int pivot)
+int ft_ps_push_pivot_ab(t_lst *head_a, int len, int pivot)
 {
-	int len = ft_getlstlen(head_a);
+//	int len = ft_getlstlen(head_a);
 	int data;
 	int count;
 	
@@ -17,25 +17,28 @@ int ft_ps_push_pivot_ab(t_lst *head_a, int pivot)
 		{
 			ft_ps_operations("pa");
 			ft_ps_operations("rb");
-			++count;
+//			++count;
 		}
 		else if (data < pivot)
 		{
 			ft_ps_operations("pa");
-			++count;
+//			++count;
 		}
 		else
+		{
 			ft_ps_operations("ra");
-
+			++count;
+		}
 		--len;
 	}
+	TESTSTR("count", count);
 	ft_ps_operations("rrb");
 	return(count);
 	
 }
-int ft_ps_push_pivot_ba(t_lst *head_a, int pivot)
+int ft_ps_push_pivot_ba(t_lst *head_a,int len, int pivot)
 {
-	int len = ft_getlstlen(head_a);
+//	int len = ft_getlstlen(head_a);
 	int count;
 	int data;
 	
@@ -58,6 +61,7 @@ int ft_ps_push_pivot_ba(t_lst *head_a, int pivot)
 			ft_ps_operations("rb");
 		--len;
 	}
+	TESTSTR("count", count);
 	ft_ps_operations("rra");
 	return(count);
 }
@@ -66,21 +70,26 @@ void ft_ps_getmedian(int pile, size_t depth)
 {
 	int med;
 	int push;
-	
-	if (depth <= 3)
+
+	if (ft_ps_is_sorted(&HEAD_LA, &HEAD_LB))
+		exit(1);
+	else if (depth <= 3)
 			ft_ps_order(pile, depth);
 	else if (pile == _PA_)
 	{
-		med = ft_getval_fromrelpos(&HEAD_LA, ft_get_tpile_data, depth/2);
-		push = ft_ps_push_pivot_ab(&HEAD_LA, med);
+		med = ft_getval_fromrelpos_btwabspos(&HEAD_LA, 0, depth, ft_get_tpile_data, depth/2);
+//		med = *ft_get_tpile_data(ft_getlstmedian(&HEAD_LA, ft_get_tpile_data));
+		push = ft_ps_push_pivot_ab(&HEAD_LA, depth, med);
+		TESTSTR("depth - push", depth - push);
 		ft_ps_getmedian(_PA_,depth - push);
 		ft_ps_getmedian(_PB_, push);
 		
 	}
 	else if (pile == _PB_)
 	{
-		med = ft_getval_fromrelpos (&HEAD_LB, ft_get_tpile_data, depth/2);
-		push = ft_ps_push_pivot_ba(&HEAD_LB, med);
+		med = ft_getval_fromrelpos_btwabspos(&HEAD_LB, 0, depth, ft_get_tpile_data, depth/2);
+		push = ft_ps_push_pivot_ba(&HEAD_LB, depth, med);
+		TESTSTR("depth - push", depth - push);
 		ft_ps_getmedian(_PB_, depth - push);
 		ft_ps_getmedian(_PA_, push);
 	}
@@ -95,6 +104,6 @@ int			main(int ac, char **av)
 		ft_exec_parse_strstr(&(*(++av)), &ft_ps_convert_argv);
 //	ft_ps_print();
 	ft_ps_getmedian(_PA_, ft_getlstlen(&HEAD_LA));
-//	ft_ps_print();
+	ft_ps_print();
 	return (0);
 }

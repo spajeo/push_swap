@@ -11,7 +11,7 @@
  *	 TO FINISH
  */
 
-t_lst *ft_is_lst_empty(t_lst *head){
+t_lst *ft_islst_empty(t_lst *head){
 
 	return(head);
 

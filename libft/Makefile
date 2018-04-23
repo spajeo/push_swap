@@ -48,13 +48,14 @@ NBR := atoi atoi_exit count_words itoa itoa_base itoa_base_buff itoa_base_gbuff 
 NBR_SRC := $(addsuffix .c, $(addprefix $(NBR_DIR)ft_, $(NBR)))
 NBR_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(NBR)))
 
-LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lstmv_after \
+LST := is_val_in lstinsert_after lstinsert_before lstdisconnect islst_empty lstmv_after \
             lstmv_before lstadd getlstlen\
-            lstiter lstmap \
+            lstiter lstmap getval_fromrelpos_btwabspos\
             getlstmedian getlst_minval_above\
-            getlst_fromrelpos getlst_fromabspos getval_fromrelpos\
-            is_lst_asc islst_desc \
-            is_lst_asclim islst_desclim \
+            getlst_fromrelpos getlst_fromabspos getval_fromrelpos \
+            getval_fromrelpos_btwtlst getlst_fromrelpos_btwtlst getlst_minval_above_btwtlst \
+            islst_asc islst_desc \
+            islst_asclim islst_desclim \
             get_tpile_data  get_lst_from_int get_tpile_pos \
             lst_count lst_count_lim \
             lst_convert_allvar \
@@ -63,7 +64,7 @@ LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lst
             lst_convert_allvar \
             is_first_inf getabspos_fromvar  print_next_str getval_fromabspos getabspos_fromlst \
             is_abspos_is_relpos getrelpos_fromlstval add_tpile_next get_tstr_str \
-            arerelpos_next  getlst_minval\
+            arerelpos_next  getlst_minval getlst_maxval\
             lst_swap
  #listdel listdelone lstnew
 LST_SRC := $(addsuffix .c, $(addprefix $(LST_DIR)ft_, $(LST)))

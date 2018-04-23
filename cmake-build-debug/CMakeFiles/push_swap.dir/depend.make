@@ -8,6 +8,14 @@ CMakeFiles/push_swap.dir/libft/lst/ft_arerelpos_next.c.o: ../libft/includes/libl
 CMakeFiles/push_swap.dir/libft/lst/ft_arerelpos_next.c.o: ../libft/includes/linux_compiler.h
 CMakeFiles/push_swap.dir/libft/lst/ft_arerelpos_next.c.o: ../libft/lst/ft_arerelpos_next.c
 
+CMakeFiles/push_swap.dir/libft/lst/ft_getlst_maxval.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/push_swap.dir/libft/lst/ft_getlst_maxval.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/push_swap.dir/libft/lst/ft_getlst_maxval.c.o: ../libft/includes/libft.h
+CMakeFiles/push_swap.dir/libft/lst/ft_getlst_maxval.c.o: ../libft/includes/liblst.h
+CMakeFiles/push_swap.dir/libft/lst/ft_getlst_maxval.c.o: ../libft/includes/linux_compiler.h
+CMakeFiles/push_swap.dir/libft/lst/ft_getlst_maxval.c.o: ../libft/includes/push_swap.h
+CMakeFiles/push_swap.dir/libft/lst/ft_getlst_maxval.c.o: ../libft/lst/ft_getlst_maxval.c
+
 CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o: ../libft/includes/get_next_line.h
 CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_convert_argv.c.o: ../libft/includes/libft.h

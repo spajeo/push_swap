@@ -66,6 +66,14 @@ libft.h
 liblst.h
 -
 
+/Users/spajeo/push_swap/libft/lst/ft_getlst_maxval.c
+libft.h
+/Users/spajeo/push_swap/libft/lst/libft.h
+liblst.h
+/Users/spajeo/push_swap/libft/lst/liblst.h
+push_swap.h
+/Users/spajeo/push_swap/libft/lst/push_swap.h
+
 /Users/spajeo/push_swap/libft/push_swap/ft_ps_convert_argv.c
 libft.h
 /Users/spajeo/push_swap/libft/push_swap/libft.h

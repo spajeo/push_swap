@@ -110,6 +110,15 @@ int         ft_arerelpos_next(t_lst *first, int *(* get_fint)(t_lst *), t_lst *s
 t_lst       *ft_getlst_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), int rel_pos);
 t_lst      	*ft_getlstmedian(t_lst *head, int *(* get_int)(t_lst *));
 int         ft_getval_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), int rel_pos);
+
+t_lst       *ft_getlst_fromrelpos_btwtlst(t_lst *head,
+                       t_lst *start, t_lst *end, int*(*get_int)(t_lst *), int rel_pos);
+int         ft_getval_fromrelpos_btwtlst(t_lst *head,
+                     t_lst *start, t_lst *end , int*(*get_int)(t_lst *), int rel_pos);
+t_lst       *ft_getlst_minval_above_btwtlst(t_lst *head,
+                     t_lst *start, t_lst *end, int *(*get_int)(t_lst *), int min_elem);
+int         ft_getval_fromrelpos_btwabspos(t_lst *head, size_t start, size_t end,
+                                     int*(*get_int)(t_lst *), int rel_pos);
 /*
 **                        ************** ABSOLUTE ***********
 **                        CHECK POSITION IN THE LST LINKED LIST
@@ -127,8 +136,8 @@ int          ft_is_abspos_is_relpos(t_lst *head, int*(*get_int)(t_lst *), t_lst 
 /*
 **
 */
-int			ft_is_lst_asc(t_lst *head, int *(*get_int)(t_lst *));
-int		    ft_is_lst_asclim(t_lst *head, int *(*get_int)(t_lst *), size_t lim);
+int			ft_islst_asc(t_lst *head, int *(*get_int)(t_lst *));
+int		    ft_islst_asclim(t_lst *head, int *(*get_int)(t_lst *), size_t lim);
 int			ft_islst_desc(t_lst *head, int *(*get_int)(t_lst *));
 int		    ft_islst_desclim(t_lst *head, int *(*get_int)(t_lst *), size_t lim);
 int         ft_is_ref_inf(t_lst *head, int *(*get_int)(t_lst *), int ref);
@@ -156,7 +165,7 @@ int     			ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
 /*
 ** -------------------------------------- IS LST ---------------------------------------
 */
-t_lst               *ft_is_lst_empty(t_lst *head);
+t_lst               *ft_islst_empty(t_lst *head);
 int                 ft_is_val_in(t_lst *head, int data, int *(*get_struct_el)(t_lst *));
 int                 ft_is_first_inf(t_lst *head, int *(*get_int)(t_lst *));
 /*
