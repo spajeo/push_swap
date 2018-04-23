@@ -18,6 +18,7 @@ t_lst       *ft_getlst_smallerval(t_lst *head, int *(*get_int)(t_lst *), int min
 {
     t_lst		*tmp;
     t_lst		*ret;
+    int min ;
 
     if (!head || head->next == head) // MACRO pour indiquer que tete pas init
         return (0);
@@ -30,6 +31,7 @@ t_lst       *ft_getlst_smallerval(t_lst *head, int *(*get_int)(t_lst *), int min
         {
             tmp = ret;
 //            ft_printf("LST_SMALLER VAL_______ %d\n", *get_int(ret));
+            min = *get_int(ret);
             break;
         }
         ret = ret->next;
@@ -38,7 +40,8 @@ t_lst       *ft_getlst_smallerval(t_lst *head, int *(*get_int)(t_lst *), int min
     {
         if (*get_int(ret) > *get_int(tmp) && (init == 0 || *get_int(tmp) > min_elem))
             ret = tmp;
-	    ft_printf("LST_SMALLER VAL_______ %d\n", *get_int(ret));
+	    min = *get_int(ret);
+        ft_printf("LST_SMALLER VAL_______ %d\n", *get_int(ret));
         tmp = tmp->next;
     }
     return (ret);

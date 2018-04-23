@@ -18,7 +18,7 @@ t_lst   *ft_getlst_fromrelpos(t_lst *head, int*(*get_int)(t_lst *), size_t rel_p
 	if (!head || (head->next == head))
 		return (0);
     min_val = *get_int(ft_getlst_smallerval(head, &(*get_int), 0,0));
-   min_val = 0;
+    min_val = 0;
    
     while (rel_pos > 0)
     {
