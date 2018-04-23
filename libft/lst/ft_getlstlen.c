@@ -21,5 +21,6 @@ size_t   	ft_getlstlen(t_lst *head)
 		++len;
 		tmp = tmp->next;
 	}
+	TESTINTR("depth", len);
 	return (len);
 }

@@ -57,6 +57,8 @@ void ft_ps_getmedian(int pile, size_t depth)
 	int push;
 	
 	TESTINTB("depth", depth);
+	
+	
 //	if (ft_ps_is_sorted(&HEAD_LA, &HEAD_LB))
 //		exit(1);
 	if (depth <= 3)
@@ -67,13 +69,13 @@ void ft_ps_getmedian(int pile, size_t depth)
 	{
 		med = ft_getval_fromrelpos_btwabspos(&HEAD_LA, 0, depth /*+ 1*/, ft_get_tpile_data, depth/2);
 		push = ft_ps_push_pivot_ab(&HEAD_LA, depth, med);
-		TESTINT("med", med);
-		TESTINT("depth - push PA", depth - push);
-		ft_ps_print();
+//		TESTINT("med", med);
+//		TESTINT("depth - push PA", depth - push);
+//		ft_ps_print();
 		ft_ps_getmedian(_PA_,depth - push);
-		TESTINTR("push PB appel de B avec A", push);
 		ft_ps_getmedian(_PB_, push);
-		
+//		TESTINTR("push PB appel de B avec A", push);
+	
 	}
 	else if (pile == _PB_)
 	{
@@ -97,6 +99,7 @@ int			main(int ac, char **av)
 	else
 		ft_exec_parse_strstr(&(*(++av)), &ft_ps_convert_argv);
 //	ft_ps_print();
+	TESTINTR("depth", ft_getlstlen(&HEAD_LA));
 	ft_ps_getmedian(_PA_, ft_getlstlen(&HEAD_LA));
 //	ft_ps_getmedian(_PB_, ft_getlstlen(&HEAD_LB));
 	ft_ps_print();
