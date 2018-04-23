@@ -12,15 +12,14 @@ int ft_ps_push_pivot_ab(t_lst *head_a, int pivot)
 	count = 0;
 	while(len)
 	{
-		data = *ft_get_tpile_data(head_a->next);
+		data = P_DATA(head_a->next);
 		if (data == pivot)
 		{
-			P_POS(head_a->next) = 1;
 			ft_ps_operations("pa");
 			ft_ps_operations("rb");
 			++count;
 		}
-		else if (data <= pivot)
+		else if (data < pivot)
 		{
 			ft_ps_operations("pa");
 			++count;
@@ -37,22 +36,21 @@ int ft_ps_push_pivot_ab(t_lst *head_a, int pivot)
 int ft_ps_push_pivot_ba(t_lst *head_a, int pivot)
 {
 	int len = ft_getlstlen(head_a);
-	int data;
 	int count;
+	int data;
 	
 	count = 0;
 	while(len)
 	{
-		data = *ft_get_tpile_data(head_a->next);
+		data = P_DATA(head_a->next);
 		if (data == pivot)
 		{
-			P_POS(head_a->next) = 1;
+			
 			ft_ps_operations("pb");
 			ft_ps_operations("ra");
 			++count;
-//			ft_ps_print();
 		}
-		else if (data >= pivot)
+		else if (P_DATA(head_a->next) > pivot)
 		{
 			ft_ps_operations("pb");
 			++count;
@@ -69,43 +67,26 @@ int ft_ps_push_pivot_ba(t_lst *head_a, int pivot)
 void ft_ps_getmedian(int pile, size_t depth)
 {
 	int med;
+	int push;
 	
-//	med = 0;
-	if (pile == _PA_ && depth <= 3)
+	if (depth <= 3)
+			ft_ps_order(pile, depth);
+	else if (pile == _PA_)
 	{
-		if (!ft_is_lst_desclim(&HEAD_LA, &ft_get_tpile_data, depth))
-			ft_ps_order_3a();
-		ft_ps_print();
-		return;
+		med = ft_getval_fromrelpos(&HEAD_LA, ft_get_tpile_data, ft_getlstlen(&HEAD_LA)/2 - 1);
+		push = ft_ps_push_pivot_ab(&HEAD_LA, med);
+		ft_ps_getmedian(_PA_,depth - push);
+		ft_ps_getmedian(_PB_, push);
+		
 	}
-	else if (pile == _PB_ && depth <= 3)
+	else if (pile == _PB_)
 	{
-		if (!ft_is_lst_asclim(&HEAD_LA, &ft_get_tpile_data, depth))
-			ft_ps_order_3b();
-		ft_ps_print();
-		return;
+		med = ft_getval_fromrelpos (&HEAD_LB, ft_get_tpile_data, ft_getlstlen(&HEAD_LB)/2 - 1);
+		push = ft_ps_push_pivot_ba(&HEAD_LB, med);
+		ft_ps_getmedian(_PB_, depth - push);
+		ft_ps_getmedian(_PA_, push);
 	}
-	else
-	{
-		if (pile == _PA_)
-		{
-			med = *ft_get_tpile_data(ft_getlst_fromrelpos
-					                         (&HEAD_LA, ft_get_tpile_data, ft_getlstlen(&HEAD_LA)));
-			depth = ft_ps_push_pivot_ab(&HEAD_LA, med);
-			ft_ps_getmedian(_PA_, ft_getlstlen(&HEAD_LA));
-			ft_ps_getmedian(_PB_, depth);
-			
-		}
-		else if (pile == _PB_)
-		{
-			med = *ft_get_tpile_data(ft_getlst_fromrelpos
-					                         (&HEAD_LB, ft_get_tpile_data, ft_getlstlen(&HEAD_LB)));
-			depth = ft_ps_push_pivot_ba(&HEAD_LB, med);
-			ft_ps_getmedian(_PA_, depth);
-			ft_ps_getmedian(_PB_, ft_getlstlen(&HEAD_LB));
-		}
-	}
-//	ft_ps_print();
+	return;
 }
 
 int			main(int ac, char **av)
@@ -114,7 +95,8 @@ int			main(int ac, char **av)
 		ft_exec_parse_str(*(++av), &ft_ps_convert_argv);
 	else
 		ft_exec_parse_strstr(&(*(++av)), &ft_ps_convert_argv);
+//	ft_ps_order_3a();
+	ft_ps_print();
 	ft_ps_getmedian(_PA_, ft_getlstlen(&HEAD_LA));
-//	ft_ps_print();
 	return (0);
 }

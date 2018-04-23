@@ -30,6 +30,8 @@ PS_OBJ      :=	$(SRC_PATH)push_swap.o
 
 FLAGS    	:= -Wall -Wextra -Werror -g -Og -O3 -Ofast
 
+SANITIZE    := -g3 -fsanitize=address
+
 all 		: $(PUSH_SWAP) $(CHECKER)
 
 $(PUSH_SWAP) : 	$(PS_OBJ) $(LIBFT_A)

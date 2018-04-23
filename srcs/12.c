@@ -52,7 +52,7 @@
 //
 //	while (!(ft_is_ref_inf(&HEAD_LA, &ft_get_tpile_pos, 1)))
 //	{
-//		if (ft_is_lst_desc(&HEAD_LA, &ft_get_tpile_data))
+//		if (ft_islst_desc(&HEAD_LA, &ft_get_tpile_data))
 //			return;
 //		while (!(JUST_HEAD(HEAD_LB)) && !(ft_is_ref_inf(&HEAD_LB, &ft_get_tpile_pos, 1)))
 //		{

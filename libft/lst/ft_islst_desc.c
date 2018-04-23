@@ -16,7 +16,7 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-int		ft_is_lst_desc(t_lst *head, int *(*get_int)(t_lst *))
+int		ft_islst_desc(t_lst *head, int *(*get_int)(t_lst *))
 {
 	t_lst *tmp;
 

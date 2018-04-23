@@ -34,12 +34,11 @@ t_lst       *ft_getlst_smallerval(t_lst *head, int *(*get_int)(t_lst *), int min
         }
         ret = ret->next;
     }
-    
-    
     while (tmp != head)
     {
         if (*get_int(ret) > *get_int(tmp) && (init == 0 || *get_int(tmp) > min_elem))
             ret = tmp;
+	    ft_printf("LST_SMALLER VAL_______ %d\n", *get_int(ret));
         tmp = tmp->next;
     }
     return (ret);

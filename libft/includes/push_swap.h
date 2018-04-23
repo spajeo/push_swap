@@ -38,6 +38,7 @@
 ** ------------------------------TEST-----------------------------------------
 ** -----------------------------------------------------------------------------
 */
+
 #define TESTSTR(str, it)  ft_printf("\x1B[35m%s__[%s]___\n\x1B[0m", str, it)
 #define TESTINT(str, it)  ft_printf("\x1B[33m%45s__[%d]___\n\x1B[0m", str, it)
 #define TESTINTR(str, it) ft_printf("\x1B[31m%45s__[%d}___\n\x1B[0m", str, it)
@@ -56,14 +57,14 @@
 
 #define HA_A_     HEAD_LA.next
 #define HA_B_     HEAD_LA.next->next
-#define HA_C_     HEAD_LA.prev
+#define HA_C_     HEAD_LA.next->next->next
 
 #define HB_A_     HEAD_LB.next
 #define HB_B_     HEAD_LB.next->next
-#define HB_C_     HEAD_LB.prev
+#define HB_C_     HEAD_LB.next->next->next
 
-#define _PA_      1
-#define _PB_      2
+#define _PA_      (1)
+#define _PB_      (2)
 /*
 ** from ==  &new->lst
 */
@@ -117,8 +118,9 @@ int						ft_ps_checkflags(int *ac, char **av);
 **              ALGORITHM
 */
 
-void ft_ps_order_3a();
-void ft_ps_order_3b();
+void                    ft_ps_order(int pile, int depth);
+void                    ft_ps_order_3a();
+void                    ft_ps_order_3b();
 /*
 **              CHECK
 */

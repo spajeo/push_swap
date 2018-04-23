@@ -3,52 +3,74 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-void ft_ps_order_3a()
-{
-	if (ft_getlstlen(&HEAD_LA) == 2)
-		ft_ps_operations("sb");
-	else
-	{
-		if (P_DATA(HB_A_) > P_DATA(HB_C_) && P_DATA(HB_A_) < P_DATA(HB_B_))
-			ft_ps_operations("sb");
-		if (P_DATA(HB_A_) > P_DATA(HB_C_) && P_DATA(HB_A_) > P_DATA(HB_B_))
-		{
-			ft_ps_operations("sb");
-//			ft_ps_operations("rb");
-		}
-		if (ft_is_lst_asc(&HEAD_LA, &ft_get_tpile_data)) //pour 21 et autres
-		{
-			ft_ps_operations("sb");
-//			ft_ps_operations("rrb");
-		}
-//		if (P_DATA(HB_A_) < P_DATA(HB_B_) && P_DATA(HB_B_) > P_DATA(HB_C_))
-//			ft_ps_operations("rb");
-//		if (P_DATA(HB_A_) < P_DATA(HB_C_))
-//			ft_ps_operations("rrb");
-	}
-}
 void ft_ps_order_3b()
 {
-	if (ft_getlstlen(&HEAD_LB) == 3)
+	if (P_DATA(HB_A_) > P_DATA(HB_C_) && P_DATA(HB_A_) < P_DATA(HB_B_))
+		ft_ps_operations("sb");
+	if (P_DATA(HB_A_) > P_DATA(HB_C_) && P_DATA(HB_A_) > P_DATA(HB_B_))
 	{
-		if (P_DATA(HA_A_) < P_DATA(HA_C_) && P_DATA(HA_A_) > P_DATA(HA_B_))
-			ft_ps_operations("sa");
-		if (P_DATA(HA_A_) < P_DATA(HA_C_) && P_DATA(HA_A_) < P_DATA(HA_B_))
-		{
-			ft_ps_operations("sa");
-//			ft_ps_operations("ra");
-		}
-		if (ft_is_lst_desc(&HEAD_LA, &ft_get_tpile_data)) //pour 21 et autres
-		{
-			ft_ps_operations("sa");
-//			ft_ps_operations("rra");
-		}
-//		if (P_DATA(HA_A_) > P_DATA(HA_B_) && P_DATA(HA_B_) < P_DATA(HA_C_))
-//			ft_ps_operations("ra");
-//		if (P_DATA(HA_A_) > P_DATA(HA_C_))
-//			ft_ps_operations("rra");
+		ft_ps_operations("rb");
+		ft_ps_operations("sb");
+		ft_ps_operations("rrb");
 	}
-	else if (!ft_is_lst_desc(&HEAD_LA, &ft_get_tpile_data))
+//		if (ft_is_lst_asc(&HEAD_LA, &ft_get_tpile_data)) //pour 21 et autres
+//		{
+//			ft_ps_operations("sb");
+
+void ft_ps_order_3a()
+{
+	if (P_DATA(HA_A_) > P_DATA(HA_B_) && P_DATA(HA_B_) < P_DATA(HA_C_)
+	                                    && P_DATA(HA_A_) < P_DATA(HA_C_))
 		ft_ps_operations("sa");
-	ft_lst_convert_allvar(&HEAD_LA, ft_get_tpile_pos, 1);
+	else if (ft_islst_desclim(&HEAD_LA, &ft_get_tpile_data, 3))
+	{
+		ft_ps_operations("sa");
+		ft_ps_operations("ra");
+		ft_ps_operations("sa");
+		ft_ps_operations("rra");
+		ft_ps_operations("sa");
+	}
+	else if (P_DATA(HA_A_) < P_DATA(HA_B_) && P_DATA(HA_A_) < P_DATA(HA_C_))
+	{ // 1 3 2
+		ft_ps_operations("ra");
+		ft_ps_operations("sa");
+		ft_ps_operations("rra");
+	}
+	else if (P_DATA(HA_A_) < P_DATA(HA_B_) && P_DATA(HA_B_) > P_DATA(HA_C_))
+	{ // 2 3 1
+		ft_ps_operations("ra");
+		ft_ps_operations("sa");
+		ft_ps_operations("rra");
+		ft_ps_operations("sa");
+	}
+	else if (P_DATA(HA_A_) > P_DATA(HA_B_) && P_DATA(HA_B_) < P_DATA(HA_C_)
+	         && P_DATA(HA_A_) > P_DATA(HA_C_)) //3 1 2
+	{
+		ft_ps_operations("sa");
+		ft_ps_operations("ra");
+		ft_ps_operations("sa");
+		ft_ps_operations("rra");
+	}
+}
+void ft_ps_order(int pile, int depth)
+{
+	if (depth == 2)
+	{
+		if (pile == _PA_ && P_DATA(HA_A_) < P_DATA(HA_B_))
+			ft_ps_operations("sa");
+		if (pile == _PB_ && P_DATA(HB_A_) > P_DATA(HB_B_))
+			ft_ps_operations("sb");
+	}
+	else
+	{
+		if (pile == _PB_ &&
+		        !ft_islst_desclim
+				        (&HEAD_LA, &ft_get_tpile_data, depth))
+			ft_ps_order_3a();
+		else if (pile == _PA_ &&
+				!ft_is_lst_asclim
+						(&HEAD_LB, &ft_get_tpile_data, depth))
+			ft_ps_order_3b();
+	}
+	return;
 }

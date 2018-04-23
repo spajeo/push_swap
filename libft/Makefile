@@ -53,8 +53,8 @@ LST := is_val_in lstinsert_after lstinsert_before lstdisconnect is_lst_empty lst
             lstiter lstmap \
             getlstmedian getlst_smallerval\
             getlst_fromrelpos getlst_fromabspos getval_fromrelpos\
-            is_lst_asc is_lst_desc \
-            is_lst_asclim is_lst_desclim \
+            is_lst_asc islst_desc \
+            is_lst_asclim islst_desclim \
             get_tpile_data  get_lst_from_int get_tpile_pos \
             lst_count lst_count_lim \
             lst_convert_allvar \
@@ -109,6 +109,8 @@ SRC := $(PUSH_SWAP_SRC) $(STR_SRC) $(NBR_SRC) $(LST_SRC) $(LIB_SRC) $(IS_SRC) $(
 #***************************************************************************************************************#
 
 FLAGS	:= -Wall -Wextra -Werror -g -Og -O3 -Ofast
+
+SANITIZE    := -g3 -fsanitize=address
 
 all : $(NAME)
 

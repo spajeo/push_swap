@@ -12,6 +12,15 @@
 
 int   ft_getval_fromrelpos(t_lst *head, int*(*get_int)(t_lst *),
                                                     size_t rel_pos)
+
 {
-		return(*get_int(ft_getlst_fromrelpos(head, &(* get_int), rel_pos)));
+	t_lst *tmp;
+
+	if (!get_int)
+		return (0);
+	tmp = ft_getlst_fromrelpos(head, (get_int), rel_pos);
+	if (tmp == 0)
+		return (0);
+	int val = *get_int(tmp);
+	return(val);
 }

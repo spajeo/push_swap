@@ -33,8 +33,6 @@
 
 int		*ft_get_tpile_data(t_lst *ptr)
 {
-//ft_putnbr(((t_pile *)((char *)(ptr)
-  //                     - ((char *)(&(((t_pile *)0))->lst))))->data);
 	return (&((t_pile *)((char *)(ptr)
 						- ((char *)(&(((t_pile *)0))->lst))))->data);
 }
