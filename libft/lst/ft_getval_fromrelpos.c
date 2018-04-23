@@ -15,7 +15,9 @@ int   ft_getval_fromrelpos(t_lst *head, int*(*get_int)(t_lst *),
 
 {
 	t_lst *tmp;
-
+	
+	if (!head || (head->next == head))
+		return (0);
 	if (!get_int)
 		return (0);
 	tmp = ft_getlst_fromrelpos(head, (get_int), rel_pos);

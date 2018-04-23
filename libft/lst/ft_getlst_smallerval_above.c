@@ -11,10 +11,11 @@
 #include "push_swap.h"
 
 /*
- *                  IF INIT IS NULL => smaller_element is ignored
+ *
  */
 
-t_lst       *ft_getlst_smallerval(t_lst *head, int *(*get_int)(t_lst *), int min_elem, int init)
+
+t_lst       *ft_getlst_smallerval_above(t_lst *head, int *(*get_int)(t_lst *), int min_elem)
 {
     t_lst		*tmp;
     t_lst		*ret;
@@ -25,7 +26,7 @@ t_lst       *ft_getlst_smallerval(t_lst *head, int *(*get_int)(t_lst *), int min
 
     tmp = head->next;
     ret = head->next;
-    while (init == 1 && ret != head)
+    while (ret != head)
     {
         if (*get_int(ret) > min_elem)
         {
@@ -40,12 +41,16 @@ t_lst       *ft_getlst_smallerval(t_lst *head, int *(*get_int)(t_lst *), int min
         ret = ret->prev;
     while (tmp != head->prev) // head
     {
-        if (*get_int(ret) > *get_int(tmp) && )
+        if (*get_int(ret) > *get_int(tmp))
+        {
             ret = tmp;
-	    min = P_DATA(ret);
-	    if (init == 0 || *get_int(tmp) > min_elem)
-//	    min = *get_int(ret);
-        TESTINTR("LST_SMALLER VAL_______ \n", *get_int(ret));
+            min = P_DATA(ret);
+            if (*get_int(tmp) > min_elem)
+            {
+    
+                TESTINTR("LST_SMALLER VAL_______ \n", *get_int(ret));
+            }
+        }
         tmp = tmp->next;
     }
     return (ret);
