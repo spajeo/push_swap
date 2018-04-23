@@ -96,7 +96,7 @@ int			*ft_get_tpile_pos(t_lst *ptr);
 int			*ft_get_tdata_data(t_lst *ptr);
 t_lst		*ft_get_lst_from_int(t_lst *head, int *(*get_int)(t_lst *), int ref);
 t_lst       *ft_getlst_smallestval(t_lst *head, int *(*get_int)(t_lst *));
-t_lst       *ft_getlst_smallerval_above(t_lst *head, int *(*get_int)(t_lst *), int min_elem);
+t_lst       *ft_getlst_smallesval_above(t_lst *head, int *(*get_int)(t_lst *), int min_elem);
 /*
 ** ------------------------------------ POSITION --------------------------------------
 */

@@ -15,7 +15,7 @@
  */
 
 
-t_lst       *ft_getlst_smallerval_above(t_lst *head, int *(*get_int)(t_lst *), int min_elem)
+t_lst       *ft_getlst_smallesval_above(t_lst *head, int *(*get_int)(t_lst *), int min_elem)
 {
     t_lst		*tmp;
     t_lst		*ret;
