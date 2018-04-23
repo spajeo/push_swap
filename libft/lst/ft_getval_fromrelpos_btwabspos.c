@@ -28,13 +28,10 @@ int   ft_getval_fromrelpos_btwabspos(t_lst *head, size_t start, size_t end,
 		return (0);
 	if (!head || (head->next == head))
 		return (0);
-	if (!lststart || (lststart->next == lststart))
-		return (0);
-	if (!lstend || (lstend->prev == lstend))
-		return (0);
 	if (!get_int)
 		return (0);
-
+	
+//	TESTINT("P_DATA(lststart)", P_DATA(lststart));
 	tmp = ft_getlst_fromrelpos_btwtlst(head, lststart, lstend, (get_int), rel_pos);
 	if (tmp == 0)
 		return (0);

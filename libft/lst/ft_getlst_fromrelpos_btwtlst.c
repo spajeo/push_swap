@@ -17,15 +17,14 @@ t_lst   *ft_getlst_fromrelpos_btwtlst(t_lst *head, t_lst *start, t_lst *end,
     t_lst       *tmp;
 
     // securite pour verifier pas de head in btw avec les abspositions;
-	
-	if (!start || (start->next == start))
-		return (0);
-	if (!end || (end->prev == end))
-		return (0);
+ 
+//	if (ft_getabspos_fromlst(head, start) > ft_getlst_fromabspos(head, end))
+//		return 0;
 	if (!head || (head->next == head))
 		return (0);
 	tmp = ft_getlst_minval(head, &(*get_int));
 	--rel_pos;
+	min_val = *get_int(tmp);
 	while (rel_pos > 0)
     {
         tmp = ft_getlst_minval_above_btwtlst(head, start, end,

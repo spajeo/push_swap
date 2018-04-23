@@ -15,6 +15,10 @@ t_lst   *ft_getlst_fromabspos(t_lst *head, size_t rel_pos)
 	t_lst		*tmp;
 
 	tmp = head->next;
+	if (tmp == head)
+		return 0;
+	if (rel_pos == 0)
+		return ((tmp));
 	while (rel_pos && tmp != head)
 	{
 		--rel_pos;
