@@ -14,7 +14,7 @@ void        ft_ps_print(void)
 //    ft_print_next_int(&HEAD_LA, &ft_get_tpile_pos);
 //    ft_printf("__________PB______________\n");
 //    ft_print_next_int(&HEAD_LB, &ft_get_tpile_pos);
-    ft_printf(" ----------------------- \n");
+//    ft_printf(" ----------------------- \n");
     TESTINTG("NB_MV",ft_lst_count(&HEAD_PS_MV));
 }
 

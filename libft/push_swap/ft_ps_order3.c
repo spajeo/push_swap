@@ -6,47 +6,36 @@
 
 void ft_ps_order_3b()
 {
-	TESTINTB("HB_A_", P_DATA(HB_A_));
-	TESTINTB("HB_B_", P_DATA(HB_B_));
-	TESTINTB("HB_C_", P_DATA(HB_C_));
-	if (P_DATA(HB_A_) < P_DATA(HB_B_) && P_DATA(HB_B_) < P_DATA(HB_C_)
-	    && P_DATA(HB_A_) > P_DATA(HB_C_))
+	if (P_DATA(HB_A_) > P_DATA(HB_B_) && P_DATA(HB_B_) < P_DATA(HB_C_)
+	    && P_DATA(HB_A_) < P_DATA(HB_C_))
 	{
-		ft_ps_print();
-		TESTINTR("desc A 1", 312);
+		ft_ps_operations("rb");
+		ft_ps_operations("sb");
+		ft_ps_operations("rrb");
 		ft_ps_operations("sb");
 	}
 	else if (ft_islst_asclim(&HEAD_LB, &ft_get_tpile_data, 3))
-	{// 1 2 3
-		ft_ps_print();
-		TESTINTR("desc A 2", 123);
+	{// 1 2 3 //!
 		ft_ps_operations("sb");
 		ft_ps_operations("rb");
 		ft_ps_operations("sb");
 		ft_ps_operations("rrb");
 		ft_ps_operations("sb");
 	}
-	else if (P_DATA(HB_A_) > P_DATA(HB_B_) && P_DATA(HB_A_) > P_DATA(HB_C_))
-	{ // 1 3 2
-		TESTINTR("desc A 3", 132);
+	else if (P_DATA(HB_A_) < P_DATA(HB_B_) && P_DATA(HB_A_) < P_DATA(HB_C_))
+	{ // 1 3 2 // !
+		ft_ps_operations("sb");
 		ft_ps_operations("rb");
 		ft_ps_operations("sb");
 		ft_ps_operations("rrb");
 	}
-	else if (P_DATA(HB_A_) > P_DATA(HB_B_) && P_DATA(HB_B_) < P_DATA(HB_C_))
-	{ // 2 3 1
-		TESTINTR("desc A 4", 231);
-		ft_ps_operations("rb");
-		ft_ps_operations("sb");
-		ft_ps_operations("rrb");
+	else if (P_DATA(HB_A_) < P_DATA(HB_B_) && P_DATA(HB_B_) > P_DATA(HB_C_))
+	{ // 2 3 1 //
 		ft_ps_operations("sb");
 	}
-	else if (P_DATA(HB_A_) < P_DATA(HB_B_) && P_DATA(HB_B_) > P_DATA(HB_C_)
-	         && P_DATA(HB_A_) > P_DATA(HB_C_)) //3 1 2
+	else if (P_DATA(HB_A_) > P_DATA(HB_B_) && P_DATA(HB_B_) < P_DATA(HB_C_)
+	         && P_DATA(HB_A_) > P_DATA(HB_C_)) //3 1 2 // !
 	{
-		ft_ps_print();
-		TESTINTR("desc A 5", 312);
-		ft_ps_operations("sb");
 		ft_ps_operations("rb");
 		ft_ps_operations("sb");
 		ft_ps_operations("rrb");
@@ -55,15 +44,11 @@ void ft_ps_order_3b()
 
 void ft_ps_order_3a()
 { //1 2 3
-	TESTINTG("HA_A_", P_DATA(HA_A_));
-	TESTINTG("HA_B_", P_DATA(HA_B_));
-	TESTINTG("HA_C_", P_DATA(HA_C_));
 	if (P_DATA(HA_A_) > P_DATA(HA_B_) && P_DATA(HA_B_) < P_DATA(HA_C_)
 	                                    && P_DATA(HA_A_) < P_DATA(HA_C_))
 		ft_ps_operations("sa");
 	else if (ft_islst_desclim(&HEAD_LA, &ft_get_tpile_data, 3))
 	{ // 3 2 1
-		TESTINTR("desc", 2);
 		ft_ps_operations("sa");
 		ft_ps_operations("ra");
 		ft_ps_operations("sa");
@@ -94,36 +79,33 @@ void ft_ps_order_3a()
 }
 void ft_ps_order(int pile, int depth)
 {
-	if (depth == 2)
+	if (pile == _PA_)
 	{
-
-		if (pile == _PA_ && P_DATA(HA_A_) > P_DATA(HA_B_))
-		{
+		if (depth == 2 && P_DATA(HA_A_) > P_DATA(HA_B_))
 			ft_ps_operations("sa");
-			TESTINTR("SWAP HA", ft_getlstlen(&HEAD_LA));
-			TESTINTR("SWAP HB", ft_getlstlen(&HEAD_LB));
-			TESTSTR("_______", "__________");
-
-		}
-
-		if (pile == _PB_ && P_DATA(HB_A_) < P_DATA(HB_B_))
+		if (depth == 3 && pile == _PA_ && !ft_islst_asclim
+				(&HEAD_LA, &ft_get_tpile_data, depth))
+			ft_ps_order_3a();
+		if (ft_islst_desc(&HEAD_LB, ft_get_tpile_data))
 		{
-			TESTINTG("SWAP HA", ft_getlstlen(&HEAD_LA));
-			TESTINTG("SWAP HB", ft_getlstlen(&HEAD_LB));
-			TESTSTR("_______", "__________");
-			ft_ps_operations("sb");
+			TESTINTB("push pa", depth);
+			while (depth--)
+				ft_ps_operations("pa");
 		}
 	}
-	else {
-		if (pile == _PA_ && !ft_islst_asclim
-				(&HEAD_LA, &ft_get_tpile_data, depth)) {
-			ft_ps_order_3a();
-//			exit(1);
-			
-		} else if (pile == _PB_ && !ft_islst_desclim
-				(&HEAD_LB, &ft_get_tpile_data, depth)) {
+	if (pile == _PB_ )
+	{
+		if (depth == 2 && P_DATA(HB_A_) < P_DATA(HB_B_))
+		{
+			ft_ps_operations("sb");
+		}
+		else if (pile == _PB_ && !ft_islst_desclim
+				(&HEAD_LB, &ft_get_tpile_data, depth))
 			ft_ps_order_3b();
-//			exit(1);
+		if (ft_islst_asc(&HEAD_LA, ft_get_tpile_data))
+		{
+			while (depth--)
+				ft_ps_operations("pb");
 		}
 	}
 	return;

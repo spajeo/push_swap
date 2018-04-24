@@ -159,9 +159,10 @@ void		ft_lstmv_before(t_lst *src, t_lst *dst);
 ** -----------------------------------LEN/COUNT----------------------------------------
 **
 */
-size_t             	ft_getlstlen(t_lst *head);
-size_t				ft_lst_count(t_lst *head);
-int     			ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
+size_t      ft_getlstlen(t_lst *head);
+size_t   	ft_getlstlen_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
+size_t		ft_lst_count(t_lst *head);
+int     	ft_lst_count_lim(t_lst *head, int *(*get_int)(t_lst *), int lim);
 /*
 ** -------------------------------------- IS LST ---------------------------------------
 */

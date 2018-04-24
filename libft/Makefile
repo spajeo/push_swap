@@ -58,7 +58,7 @@ LST := is_val_in lstinsert_after lstinsert_before lstdisconnect islst_empty lstm
             islst_asclim islst_desclim \
             get_tpile_data  get_lst_from_int get_tpile_pos \
             lst_count lst_count_lim \
-            lst_convert_allvar \
+            lst_convert_allvar getlstlen_lim \
             is_ref_inf getval_fromabspos is_reflst_sup tdata_free \
             is_val_in get_tdata_data add_tstr_next \
             lst_convert_allvar \
