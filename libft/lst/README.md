@@ -2,21 +2,21 @@
 
 Extreme modularity of the librairy. No re-coding everytime you have to manipulate a new structure for preset structure.
 
-# How to use it
+### How to use it
 
 
 
-# How to improve the dataset
+### How to improve the dataset
 
 
 
-# How to add a new Structure
+### How to add a new Structure
 
 
 
-# Technical Explaination
+### Technical Explaination
 
 
-# Lexic
+### Lexic
 
 * `get`: as in ft_**get**XXXXXX indicates the returned values  
