@@ -1,6 +1,6 @@
-# Advantages
+## Advantages
 
-Extreme modularity of the librairy. No more extra coding everytime you have to manipulate a ne
+Extreme modularity of the librairy. No re-coding everytime you have to manipulate a new structure for preset structure.
 
 # How to use it
 
@@ -18,3 +18,5 @@ Extreme modularity of the librairy. No more extra coding everytime you have to m
 
 
 # Lexic
+
+* `get`: as in ft_**get**XXXXXX indicates the returned values  
