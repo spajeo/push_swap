@@ -19,4 +19,14 @@ Extreme modularity of the librairy. No re-coding everytime you have to manipulat
 
 ### Lexic
 
-* `get`: as in ft_**get**XXXXXX indicates the returned values  
+* `get`: as in ft_**get**xxxxxxxxx.c. The following value indicates the **returned** values.  
+* `from`: as in ft_getxxx_**from**xxxxx.c. The following value indicates the **variable**.
+* `relpos`: as **relative position** indicates the position of the variable in the list *if the list were ordered*.
+* `abspos`: as  **rabsolute position** indicates the position of the variable in the list.
+* `is` : returns boolean
+* `are` : returns boolean about the whole list status
+* `ft_lstxxx`: as in ft_lst_swap get only lst as variables
+
+eg .
+ft_getval_fromabspos.c
+ft_is_val_in.c
