@@ -6,12 +6,13 @@ Extreme modularity of the librairy. No re-coding everytime you have to manipulat
 
 
 
-### How to improve the dataset
 
 
 
-### How to add a new Structure
 
+### Create a new Structure
+
+Develop a new get_ function wich will provide you with 
 
 
 ### Technical Explaination
@@ -30,3 +31,6 @@ Extreme modularity of the librairy. No re-coding everytime you have to manipulat
 eg .
 ft_getval_fromabspos.c
 ft_is_val_in.c
+
+
+## Next Step
