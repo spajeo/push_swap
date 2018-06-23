@@ -92,21 +92,17 @@ Now on you can manipulate the content of the structure.
   
 * __`is`__ : as in ft_isinformation.c returns boolean indicating whether a value is **information**
 * __`are`__ : returns boolean about the whole list status
-* __`btw`__ :
+* __`btw`__ : between
+* __`asc`__ : ascending
+* __`desc`__ : descending
 * __`ft_lstxxx`__: as in ft_lst_swap get only lst as variables
 
 #### e.g.
   * __`ft_getabspos_fromlst.c`__  is going to return the position of a node in the list from its lst value
-
-
-
-int		ft_islst_asc(t_lst *head, int *(*get_int)(t_lst *))
-int     ft_is_abspos_is_relpos(t_lst *head, int*(*get_int)(t_lst *), t_lst *ref)
-int	ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref)
-int     ft_arerelpos_next(t_lst *first, int *(* get_fint)(t_lst *),
-                          t_lst *second, int *(* get_sint)(t_lst *))
-
-
+* __`ft_islst_asc`__ wherether or not in a list of nodes a specific variable in the structure is in ascending order
+* __`ft_is_abspos_is_relpos`__ if a node has its absolute position and relative position align
+* __`ft_getrelpos_fromlstval`__ returns the relative position of a specific variable from a structure in a list
+* __`ft_arerelpos_next`__ check if the relative position of a first structures' values is inferior to a second structures's value
 
 ## Technical Explaination
 
