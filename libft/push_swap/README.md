@@ -168,7 +168,7 @@ VALUES A > VALUES B
 VALUES A > VALUES B
 ```
 ###		**STEP 7**
-* Sorting *
+*Sorting  and PB*
 
 ```
 	  PILE A	  PILE B
@@ -192,7 +192,7 @@ VALUES A > VALUES B
 
 
 ###		**STEP 8**
-* Sorting *
+*Sorting and PA *
 
 
 ```
