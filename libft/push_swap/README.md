@@ -44,7 +44,7 @@ for 24 elements
 
 
 ```
-		 A					 B
+		 PILE A			 PILE B
 	__________ 	__________
 	|        | 	|        |
 	|        | 	|        |
