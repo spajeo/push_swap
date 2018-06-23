@@ -49,7 +49,7 @@ for 24 elements
 	 ° ° ° °  ordered values 
 	 _______
             
-               piles/subpile's depth
+	          piles/subpile's depth
             
 	________
 ```
