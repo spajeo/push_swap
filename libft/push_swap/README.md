@@ -109,7 +109,7 @@ VALUES A > VALUES B
 VALUES A > VALUES B
 ```
 
-###		**STEP 2*
+###		**STEP 4**
 
 ```
 	  PILE A	  PILE B
@@ -129,7 +129,7 @@ VALUES A > VALUES B
 VALUES A > VALUES B
 ```
 
-###		**STEP 2*
+###		**STEP 5**
 
 ```
 	  PILE A	  PILE B
