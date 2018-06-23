@@ -1,6 +1,6 @@
 * [includes](https://github.com/spajeo/push_swap/tree/master/libft/includes)  	
 
-* [ft_printf](https://github.com/spajeo/push_swap/tree/master/libft/ft_printf)  
+[ft_printf](https://github.com/spajeo/push_swap/tree/master/libft/ft_printf)  
 	prints formats %s, %S, %c, %C, %d, %D, %i, %B(binary), %b, %X, %x, %p, %U, %u, %O, %o.
 	
 * [is](https://github.com/spajeo/push_swap/tree/master/libft/is)        	
