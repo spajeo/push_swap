@@ -1,5 +1,22 @@
 ## Push Swap
 
+
+
+> ARG="4 67 3 87 23";./push_swap $ARG | ./checker $ARG
+
+> ./push_swap --clean 2 6 3 5 7 1 4 | ./checker 2 6 3 5 7 1 4
+
+> ./push_swap -x 2 6 3 5 && ./checker -x  2 6 3 5
+
+> ./push_swap --clean -x 2 6 3 5 && ./checker -x  2 6 3 5
+
+#### Generate randon list from -100 to 100
+
+```
+ruby -e "puts (-100..100).to_a.shuffle.join(' ')"
+```
+
+
 ## Algorithm
 
 
