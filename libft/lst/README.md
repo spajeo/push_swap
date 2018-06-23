@@ -9,7 +9,7 @@
 
 ## How to use it
 
-### **to move a node**
+### **Move a node**
 
 Use the `ft_lst`xxxx : 
 * `ft_lst_swap.c`
@@ -24,9 +24,12 @@ Use the `ft_lst`xxxx :
 * `ft_lstmv_before.c` 
 * `ft_lst_count.c`
 
-### **to manipulate or read a value from a node**
-1. **use a get function to reach the value** 
-
+### **Manipulate or read a value from a node**
+1. **use a get function to reach the value through its lst address** 
+	ft_get_lst_from_int.c, ft_get_tdata_data.c, 
+ft_get_tpile_data.c
+ft_get_tpile_pos.c
+ft_get_tstr_str.c
 
 
 
