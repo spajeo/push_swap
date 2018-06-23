@@ -37,7 +37,7 @@ int ft_ps_push_pivot_ba(t_lst *head_a,int len, int pivot)
 
 	rot = 0;
 	count = 0;
-	while(len) // tester
+	while(len)
 	{
 		if (P_DATA(head_a->next) >= pivot) {
 			ft_ps_operations("pb");
