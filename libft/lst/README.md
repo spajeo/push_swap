@@ -99,10 +99,15 @@ Now on you can manipulate the content of the structure.
 
 #### e.g.
   * __`ft_getabspos_fromlst.c`__  is going to return the position of a node in the list from its lst value
-* __`ft_islst_asc`__ wherether or not in a list of nodes a specific variable in the structure is in ascending order
+* __`ft_islst_asc`__ whether or not in a list of nodes a specific variable in the structure is in ascending order
 * __`ft_is_abspos_is_relpos`__ if a node has its absolute position and relative position align
 * __`ft_getrelpos_fromlstval`__ returns the relative position of a specific variable from a structure in a list
-* __`ft_arerelpos_next`__ check if the relative position of a first structures' values is inferior to a second structures's value
+* __`ft_arerelpos_next`__ checks if the relative position of a first structures' values is inferior to a second structures's value
+* __`ft_lst_convert_allvar`__ attributes a value the the whole structures's variables in the list
+* __`ft_getlst_fromrelpos`__ returns the t_lst lst from a requested relative position
+
+
+
 
 ## Technical Explaination
 
