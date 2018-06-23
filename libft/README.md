@@ -12,11 +12,11 @@
 [lst](https://github.com/spajeo/push_swap/tree/master/libft/lst)         	
   manipulate the list in a modular way.
 
-[nbr](https://github.com/spajeo/push_swap/tree/master/libft/nbr)  	   
+[nbr](https://github.com/spajeo/push_swap/tree/master/libft/nbr)       	   
   manipulate numeral values and convert them from or to str.
 
 [push_swap](https://github.com/spajeo/push_swap/tree/master/libft/push_swap)      	
 
-[str](https://github.com/spajeo/push_swap/tree/master/libft/str)  	    
+[str](https://github.com/spajeo/push_swap/tree/master/libft/str)  	       
 	manipulates `str`.
 
