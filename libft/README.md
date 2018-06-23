@@ -16,7 +16,7 @@
 
 ### [is](https://github.com/spajeo/push_swap/tree/master/libft/is)        
              	 
-	returns **booleans**, informs if the values format passed on corresponds to the function's name.
+	returns booleans, informs if the values format passed on corresponds to the function's name.
       
 ### [lib](https://github.com/spajeo/push_swap/tree/master/libft/lib)  __42 projects__   	   
     
