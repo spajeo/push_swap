@@ -10,7 +10,9 @@ The function is **recursive**.
 	*	from [B] pushes the elements >  the median on [A]
 * Leaves only contain 3 or less values and are ordered. Afterward the function returns.
 
-### eg. for 24 elements
+### e.g. 
+
+for 24 elements
 
 ```
                                  [A]                    (n) step n 
