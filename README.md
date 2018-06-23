@@ -7,7 +7,14 @@ http://a.michelizza.free.fr/pmwiki.php?n=TutoOS.Linkedlist
 - Sorting methods
 	- [*stack-based algorithms*](http://liacs.leidenuniv.nl/~rijnjnvan/ds2013/assets/opdrachten/opdracht1-stacksorting.pdf)
 
-# push_swap
+Projects :
+
+* Printf
+* Push Swap
+* Get Next Line
+* Libft
+* Fillit
+
 42_exercice
 
 Authorized functions:
