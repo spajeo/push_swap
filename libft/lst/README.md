@@ -9,7 +9,8 @@
 
 ## How to use it
 
-1 . to move a node
+1. to move a node
+
 Use the `ft_lst`xxxx : 
 * `ft_lst_swap.c`
 * `ft_ps_order_3a` 
@@ -42,17 +43,17 @@ Sources :
 
 ### Lexic
 
-* `relpos`: as **relative position** indicates the position of the variable in the list *if the list were ordered*.
-* `abspos`: as  **rabsolute position** indicates the position of the variable in the list.
+* __`relpos`__: as **relative position** indicates the position of the variable in the list *if the list were ordered*.
+* __`abspos`__: as  **rabsolute position** indicates the position of the variable in the list.
 
-* `get`: as in __`ft_get`xxxxxxxxx.c__. The following value indicates the **returned** values.  
-* `from`: as in `ft_getxxx_`**`from`**xxxxx.c. The following value indicates the **variable**.
+* __`get`__: as in __`ft_get`xxxxxxxxx.c__. The following value indicates the **returned** values.  
+* __`from`__: as in `ft_getxxx_`**`from`**xxxxx.c. The following value indicates the **variable**.
   * **e.g.** __`ft_getabspos_fromlst.c`__  is going to return the position of a node in the list from its lst value
   
-* `is` : as in ft_isinformation.c returns boolean indicating whether a value is **information**
-* `are` : returns boolean about the whole list status
-* `btw` :
-* `ft_lstxxx`: as in ft_lst_swap get only lst as variables
+* __`is`__ : as in ft_isinformation.c returns boolean indicating whether a value is **information**
+* __`are`__ : returns boolean about the whole list status
+* __`btw`__ :
+* __`ft_lstxxx`__: as in ft_lst_swap get only lst as variables
 
 ###### e.g.
 ft_getval_fromabspos.c
