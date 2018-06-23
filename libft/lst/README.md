@@ -33,7 +33,7 @@ Use the `ft_lst`xxxx :
 * `ft_get_tstr_str.c`
 
 #### e.g.
-1.1. e.g.
+	1. e.g.
  
 	ft_get_tst_str.c
 eads str from the structure t_str
