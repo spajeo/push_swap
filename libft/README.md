@@ -24,9 +24,9 @@
 
 ### [nbr](https://github.com/spajeo/push_swap/tree/master/libft/nbr)       	   
 
-	`manipulates` numeral values and `converts` them from or to str.
+	manipulates numeral values and `converts` them from or to str.
 
 ### [str](https://github.com/spajeo/push_swap/tree/master/libft/str)  	       
 
-	manipulates `str`.
+	manipulates str.
 
