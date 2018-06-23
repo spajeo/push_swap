@@ -31,7 +31,9 @@ Use the `ft_lst`xxxx :
 * `ft_get_tpile_data.c`
 * `ft_get_tpile_pos.c`
 * `ft_get_tstr_str.c`
-
+e.g. 
+	ft_get_tst_str.c
+reads str from the structure t_str
 
 
 ### Create a new Structure
