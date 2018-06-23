@@ -51,7 +51,10 @@ int		*ft_get_tpile_data(t_lst *ptr)
 ```
 
 
-2. **Go through or modify a list** 
+2. **Go through or modify a list**
+
+Use the main function and pass as a variable the needed `ft_get` function to point at the needed value in the structure
+ 
 	1. e.g. find the max value is a list of `t_data` nodes.
 
 ```
