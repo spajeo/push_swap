@@ -2,7 +2,7 @@
 
 ## Libraries
 
-#### [lst](https://github.com/spajeo/push_swap/tree/master/libft/lst)   __personal project__   	   
+### [lst](https://github.com/spajeo/push_swap/tree/master/libft/lst)   __personal project__   	   
              	
   	manipulates the list in a modular way.
 
