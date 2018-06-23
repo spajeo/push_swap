@@ -88,7 +88,7 @@ void ft_ps_order(int pile, int depth)
 			ft_ps_order_3a();
 		if (ft_islst_desc(&HEAD_LB, ft_get_tpile_data))
 		{
-			TESTINTB("push pa", depth);
+			//TESTINTB("push pa", depth);
 			while (depth--)
 				ft_ps_operations("pa");
 		}

@@ -181,7 +181,7 @@ void		ft_tdata_free(t_lst *lst_head);
  **	        PRINT
  */
 void        ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *));
-//void      ft_print_next_str(t_lst *head, char *(**get_str)(t_lst *));
+void      ft_print_next_str(t_lst *head, char *(**get_str)(t_lst *));
 /*
  ** -------------------------------------- CONVERT ---------------------------------------
  */

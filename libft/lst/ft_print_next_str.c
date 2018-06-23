@@ -17,24 +17,21 @@
 /*
 **
 **
-** //ft_IS LST INT
 **
-**  NORM
 **
 **
 */
 
-
 void	ft_print_next_str(t_lst *head, char *(*get_str)(t_lst *))
 {
 	t_lst *tmp;
-//int data;
 	tmp = head->next;
+	char * data;
+
 	while (tmp != head)
 	{
-//		data = *get_str(tmp);
-//		data = data*1;
-//		ft_putendl((const char *)get_str(tmp));
+		data = get_str(tmp);
+		ft_putendl((const char *)get_str(tmp));
 //		ft_printf("%s\n", *get_str(tmp));
 		printf("%s\n", get_str(tmp));
 		tmp = tmp->next;
