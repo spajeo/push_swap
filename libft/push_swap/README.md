@@ -47,6 +47,11 @@ for 24 elements
 ```
 	 * * * *  unordered values 
 	 ° ° ° °  ordered values 
+	 _______
+            
+               piles/subpile's depth
+            
+	________
 ```
 
 
