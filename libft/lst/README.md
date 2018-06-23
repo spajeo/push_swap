@@ -35,7 +35,7 @@ Use the `ft_lst`xxxx :
 #### e.g. `ft_get_tpile_data.c`
 get the var `data` from the structure `t_data`
 
-```
+```C
  t_pile
 {
  ====>	int         data;
@@ -43,7 +43,7 @@ get the var `data` from the structure `t_data`
 }
 ```
 
-```
+```C
 int		*ft_get_tpile_data(t_lst *ptr)
 {
 	return (&((t_pile *)((char *)(ptr) - ((char *)(&(((t_pile *)0))->lst))))->data);
@@ -65,7 +65,7 @@ max_val = ft_getlst_maxval(head->t_lst, get_tpile_data)
 
 Develop a new `get_` function wich will provide you with 
 
-```
+```C
  STRUCTURE
 {
 		type        VARIABLE;
@@ -73,7 +73,7 @@ Develop a new `get_` function wich will provide you with
 }
 ```
 
-```
+```C
 int		*ft_get_STRUCTURE_VARIABLE(t_lst *ptr)
 {
 	return (&((STRUCTURE *)((char *)(ptr) - ((char *)(&(((STRUCTURE *)0))->lst))))->VARIABLE);
