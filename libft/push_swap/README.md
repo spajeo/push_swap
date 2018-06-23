@@ -47,7 +47,11 @@ for 24 elements
 ```
 	 * * * *  unordered values 
 ```
+
+
 		**INITIAL POSITION**
+
+
 
 ```
 	  PILE A	  PILE B
