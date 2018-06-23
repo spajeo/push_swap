@@ -46,8 +46,7 @@ typedef struct      s_str
 ```
 char		*ft_get_tstr_str(t_lst *ptr)
 {
-	return (((t_str *)((char *)(ptr)
-					- ((char *)(&(((t_pile *)0))->lst))))->str);
+	return (((t_str *)((char *)(ptr) - ((char *)(&(((t_pile *)0))->lst))))->str);
 }
 ```
 
