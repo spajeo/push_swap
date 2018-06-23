@@ -49,7 +49,7 @@ for 24 elements
 ```
 
 
-		**INITIAL POSITION**
+####		**INITIAL POSITION**
 
 
 
@@ -67,7 +67,7 @@ for 24 elements
 	
 ```
 
-		**STEP 1**
+###		**STEP 1**
 
 ```
 	  PILE A	  PILE B
