@@ -32,10 +32,8 @@ Use the `ft_lst`xxxx :
 * `ft_get_tpile_pos.c`
 * `ft_get_tstr_str.c`
 
-	1. e.g.
- 
-ft_get_tst_str.c
-eads str from the structure t_str
+	1. e.g. `ft_get_tst_str.c`
+get the var `str` from the structure `t_str`
 
 ```
 typedef struct      s_str
@@ -43,6 +41,13 @@ typedef struct      s_str
      char    *str;
      t_lst   lst;
                t_str;
+}
+```
+```
+char		*ft_get_tstr_str(t_lst *ptr)
+{
+	return (((t_str *)((char *)(ptr)
+					- ((char *)(&(((t_pile *)0))->lst))))->str);
 }
 ```
 
