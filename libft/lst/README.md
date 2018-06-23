@@ -30,7 +30,7 @@ Sources :
 
 * `get`: as in ft_**get**xxxxxxxxx.c. The following value indicates the **returned** values.  
 * `from`: as in ft_getxxx_**from**xxxxx.c. The following value indicates the **variable**.
-  * *e.g. ft_getabspos_fromlst.c  is going to return the position of a node in the list* 
+  * *e.g. ft_getabspos_fromlst.c  is going to return the position of a node in the list from its lst value* 
 * `relpos`: as **relative position** indicates the position of the variable in the list *if the list were ordered*.
 * `abspos`: as  **rabsolute position** indicates the position of the variable in the list.
 * `is` : returns boolean
