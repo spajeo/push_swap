@@ -3,19 +3,23 @@
 
 [![Build Status](https://travis-ci.com/spajeo/push_swap.svg?token=oVcxernG54jM76XzQesq&branch=master)](https://travis-ci.com/spajeo/push_swap)
 
-Projects :
+## Projects
 
-* Printf
-* Push Swap
-* Get Next Line
-* Libft
-* Fillit
+### [lst](https://github.com/spajeo/push_swap/tree/master/libft/lst)   __personal project__   	   
+             	
+  	manipulates the list in a modular way.
 
-42_exercice
+### [ft_printf](https://github.com/spajeo/push_swap/tree/master/libft/ft_printf) __42 projects__   	   
+  
+  Reproduce the original function. 132% speed from the original
+	prints formats %s, %S, %c, %C, %d, %D, %i, %B(binary), %b, %X, %x, %p, %U, %u, %O, %o.      
 
-Authorized functions:
+### [push_swap](https://github.com/spajeo/push_swap/tree/master/libft/push_swap)	__42 projects__           	   
+             	
+### [get next line](https://github.com/spajeo/push_swap/tree/master/libft/is)        
+             	 
 
-write
-malloc
-free
-exit
+### [fillit](https://github.com/spajeo/push_swap/tree/master/libft/str)  	       
+
+
+
