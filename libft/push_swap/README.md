@@ -8,7 +8,7 @@ The function is **recursive**.
 * Node splits the unordered elements left on the top of the pile in halfs in each piles. 
 	*	from [A] pushes the elements <= the median on [B]
 	*	from [B] pushes the elements >  the median on [A]
-* Leaves only contain 3 or less values and are ordered. Afterward the function returns.
+* Leaves only contain 3 or less values and are ordered. If on pile [B], values are re-pushed in pile [A]. Afterward the function returns.
 
 ### e.g. 
 
@@ -117,9 +117,26 @@ VALUES A > VALUES B
 	           	| * * * * | 
 	           	| * * * * | 
 	           	| * * * * |
-				|_________|
+			|_________|
 	           	| * * * * | 
 	           	| * * * * | 
+	___________	| * * * * | 
+	| ° ° ° ° |	| * * * * | 
+	| ° ° ° ° |	| * * * * | 
+	| ° ° ° ° |	| * * * * | 
+	__________ 	__________ 
+
+VALUES A > VALUES B
+```
+
+###		**STEP 2*
+
+```
+	  PILE A	  PILE B
+	___________	___________
+	| ° ° ° ° |	| * * * * | 
+	| ° ° ° ° |	| * * * * | 
+	| ° ° ° ° |	| * * * * | 
 	___________	| * * * * | 
 	| ° ° ° ° |	| * * * * | 
 	| ° ° ° ° |	| * * * * | 
