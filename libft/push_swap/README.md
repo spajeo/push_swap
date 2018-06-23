@@ -119,6 +119,7 @@ VALUES A > VALUES B
 	__________ 	__________ 
 
 VALUES A > VALUES B
+```
 
 ###		**STEP 3**
 *Sorting*
