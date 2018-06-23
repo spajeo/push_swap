@@ -1,8 +1,19 @@
-* [ft_printf]()	
-* [includes]()
-* [is]()
-* [lib]()
-* [lst]()
-* [nbr]()
-* [push_swap]()
-* [str]()
+* [includes](https://github.com/spajeo/push_swap/tree/master/libft/includes)  	
+
+* [ft_printf](https://github.com/spajeo/push_swap/tree/master/libft/ft_printf)  
+	prints formats %s, %S, %c, %C, %d, %D, %i, %B(binary), %b, %X, %x, %p, %U, %u, %O, %o
+	
+* [is](https://github.com/spajeo/push_swap/tree/master/libft/is)  	
+	is used to 
+
+* [lib](https://github.com/spajeo/push_swap/tree/master/libft/lib)  	
+
+* [lst](https://github.com/spajeo/push_swap/tree/master/libft/lst)  	
+
+* [nbr](https://github.com/spajeo/push_swap/tree/master/libft/nbr)  	
+
+* [push_swap](https://github.com/spajeo/push_swap/tree/master/libft/push_swap)  	
+
+* [str](https://github.com/spajeo/push_swap/tree/master/libft/str)  	
+
+
