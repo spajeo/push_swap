@@ -45,13 +45,13 @@ for 24 elements
 
 
 ```
-	 * * * *  unordered values 
-	 ° ° ° °  ordered values 
+	 * * * *   unordered values 
+	 ° ° ° °   ordered values 
 	 _______
-            
-	          piles/subpile's depth
-            
-	________
+	|       |    
+	|       | piles/subpile's depth
+	|       |     
+	 ______ 
 ```
 
 
