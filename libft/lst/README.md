@@ -25,7 +25,7 @@ Use the `ft_lst`xxxx :
 * `ft_lst_count.c`
 
 ### **to manipulate or read a value from a node**
-	1. **use a get function to reach the value** 
+1. **use a get function to reach the value** 
 
 
 
@@ -33,13 +33,6 @@ Use the `ft_lst`xxxx :
 ### Create a new Structure
 
 Develop a new `get_` function wich will provide you with 
-
-
-### Technical Explaination
-
-Sources :
-- [article fr](http://a.michelizza.free.fr/pmwiki.php?n=TutoOS.Linkedlist)
-- [Torvalds github](https://github.com/torvalds/linux/blob/master/include/linux/list.h)
 
 ### Lexic
 
@@ -59,5 +52,12 @@ Sources :
 ft_getval_fromabspos.c
 ft_is_val_in.c
 
+
+
+## Technical Explaination
+
+Sources :
+- [article fr](http://a.michelizza.free.fr/pmwiki.php?n=TutoOS.Linkedlist)
+- [Torvalds github](https://github.com/torvalds/linux/blob/master/include/linux/list.h)
 
 ## Next Step
