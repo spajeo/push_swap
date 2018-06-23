@@ -45,7 +45,7 @@ Sources :
 * `relpos`: as **relative position** indicates the position of the variable in the list *if the list were ordered*.
 * `abspos`: as  **rabsolute position** indicates the position of the variable in the list.
 
-* `get`: as in __`ft_get`__xxxxxxxxx.c. The following value indicates the **returned** values.  
+* `get`: as in __`ft_get`xxxxxxxxx.c__. The following value indicates the **returned** values.  
 * `from`: as in `ft_getxxx_`**`from`**xxxxx.c. The following value indicates the **variable**.
   * **e.g.** __`ft_getabspos_fromlst.c`__  is going to return the position of a node in the list from its lst value
   
