@@ -32,23 +32,24 @@ Use the `ft_lst`xxxx :
 * `ft_get_tpile_pos.c`
 * `ft_get_tstr_str.c`
 
-	1. e.g. `ft_get_tst_str.c`
-get the var `str` from the structure `t_str`
+	1. e.g. `ft_get_tpile_data.c`
+get the var `data` from the structure `t_data`
 
 ```
-typedef struct      s_str
+ t_pile
 {
-     char    *str;
-     t_lst   lst;
-               t_str;
+ ====>	int         data;
+		t_lst		lst;
 }
 ```
+
 ```
-char		*ft_get_tstr_str(t_lst *ptr)
+int		*ft_get_tpile_data(t_lst *ptr)
 {
-	return (((t_str *)((char *)(ptr) - ((char *)(&(((t_pile *)0))->lst))))->str);
+	return (&((t_pile *)((char *)(ptr) - ((char *)(&(((t_pile *)0))->lst))))->data);
 }
 ```
+	1. `t_lst       *ft_getlst_maxval(t_lst *head, int *(*get_int)(t_lst *))`
 
 
 ### Create a new Structure
