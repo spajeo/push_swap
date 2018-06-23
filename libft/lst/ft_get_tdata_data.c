@@ -11,11 +11,13 @@
 /* ************************************************************************** */
 
 /*
+** Access space in struct s_pile aka t_str's memory
+** t_data
 **
-**
-**
-**
-**
+**{
+** ====>	int         data;
+**			t_lst lst;
+**}
 */
 
 #include "libft.h"
@@ -24,6 +26,6 @@
 
 int		*ft_get_tdata_data(t_lst *ptr)
 {
-	return (&((t_data *)((char *)(ptr)
-							- ((char *)(&(((t_data *)0))->lst))))->data);
+	return (&((t_data *)((char *)(ptr) 
+			     - ((char *)(&(((t_data *)0))->lst))))->data);
 }
