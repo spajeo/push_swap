@@ -9,7 +9,7 @@
 [lib](https://github.com/spajeo/push_swap/tree/master/libft/lib)     
   	
 
-[lst](https://github.com/spajeo/push_swap/tree/master/libft/lst)            	
+[lst](https://github.com/spajeo/push_swap/tree/master/libft/lst)         	
   manipulate the list in a modular way.
 
 [nbr](https://github.com/spajeo/push_swap/tree/master/libft/nbr)       	   
