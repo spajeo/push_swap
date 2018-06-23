@@ -55,7 +55,7 @@ int		*ft_get_tpile_data(t_lst *ptr)
 	1. e.g. find the max value is a list of `t_data` nodes.
 
 ```
-t_lst    *ft_getlst_maxval(t_lst *head, int *(*get_int)(t_lst *))
+max_val = ft_getlst_maxval(head->t_lst, get_tpile_data)
 
 ```
 
