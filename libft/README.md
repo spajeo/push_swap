@@ -8,11 +8,11 @@
 
 ### [ft_printf](https://github.com/spajeo/push_swap/tree/master/libft/ft_printf) __42 projects__   	   
              	
-	`prints` formats %s, %S, %c, %C, %d, %D, %i, %B(binary), %b, %X, %x, %p, %U, %u, %O, %o.      
+	prints formats %s, %S, %c, %C, %d, %D, %i, %B(binary), %b, %X, %x, %p, %U, %u, %O, %o.      
 
 ### [push_swap](https://github.com/spajeo/push_swap/tree/master/libft/push_swap)	__42 projects__           	   
              	
-	orders values using 3 virtual piles `rotation`, `swap` and `push` commands.    
+	orders values using 3 virtual piles rotation, swap and push commands.    
 
 ### [is](https://github.com/spajeo/push_swap/tree/master/libft/is)     
              	
@@ -23,9 +23,10 @@
   	classical libraries
 
 ### [nbr](https://github.com/spajeo/push_swap/tree/master/libft/nbr)       	   
+
 	`manipulates` numeral values and `converts` them from or to str.
 
-
 ### [str](https://github.com/spajeo/push_swap/tree/master/libft/str)  	       
+
 	manipulates `str`.
 
