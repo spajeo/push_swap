@@ -14,7 +14,7 @@ __personal project__
 __42 projects__   	   
 ```
   Reproduce the original function. 132% speed from the original 
-  prints formats %s, %S, %c, %C, %d, %D, %i, %B(binary), %b, %X, %x, %p, %U, %u, %O, %o.      
+  Prints formats %s, %S, %c, %C, %d, %D, %i, %B(binary), %b, %X, %x, %p, %U, %u, %O, %o.      
 ```
 ### [push_swap](https://github.com/spajeo/push_swap/tree/master/libft/push_swap)	
 __42 projects__           	   
