@@ -26,10 +26,11 @@ Use the `ft_lst`xxxx :
 
 ### **Manipulate or read a value from a node**
 1. **use a get function to reach the value through its lst address** 
-	ft_get_lst_from_int.c, ft_get_tdata_data.c, 
-ft_get_tpile_data.c
-ft_get_tpile_pos.c
-ft_get_tstr_str.c
+* `ft_get_lst_from_int.c`
+* `ft_get_tdata_data.c` 
+* `ft_get_tpile_data.c`
+* `ft_get_tpile_pos.c`
+* `ft_get_tstr_str.c`
 
 
 
