@@ -3,14 +3,12 @@
 /*
 **
 **  MAX MIN
-** //ft_IS LST INT
+** COMMENT !
 **
 **
 **
 **
 */
-
-
 
 #include "libft.h"
 #include "liblst.h"
@@ -21,17 +19,14 @@ int		ft_islst_desclim(t_lst *head, int *(*get_int)(t_lst *), size_t lim)
 	t_lst *tmp;
 
 	tmp = head->next;
-	if (head != tmp || head->prev != tmp)
-	TESTINTB("tmp", *get_int(tmp));
-	TESTINTB("tmp->next", *get_int(tmp->next));
+	if (head == tmp || head->prev == tmp)
+        return (0);
 	while (tmp != head->prev && lim > 1)
 	{
 		if (*get_int(tmp) < *get_int(tmp->next))
 			return (0);
 		tmp = tmp->next;
 		--lim;
-		TESTINTB("tmp", *get_int(tmp));
-		TESTINTB("tmp->next", *get_int(tmp->next));
 	}
 	return (1);
 }

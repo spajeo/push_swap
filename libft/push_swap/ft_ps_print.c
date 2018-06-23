@@ -5,16 +5,12 @@
 
 void        ft_ps_print(void)
 {
-//    ft_print_next_str(&HEAD_PS_MV, ft_get_tstr_str);
-    ft_printf(" ----------LA------------- \n");
-    ft_print_next_int(&HEAD_LA, &ft_get_tpile_data);
-    ft_printf("__________LB______________\n");
-    ft_print_next_int(&HEAD_LB, &ft_get_tpile_data);
-//    ft_printf("__________PA______________\n");
-//    ft_print_next_int(&HEAD_LA, &ft_get_tpile_pos);
-//    ft_printf("__________PB______________\n");
-//    ft_print_next_int(&HEAD_LB, &ft_get_tpile_pos);
+    printf("%s\n", ft_get_tstr_str(HEAD_PS_MV.next));
+//    ft_print_next_str(&HEAD_PS_MV, (&ft_get_tstr_str));
+//    ft_printf(" ----------LA------------- \n");
+//    ft_print_next_int(&HEAD_LA, &ft_get_tpile_data);
+//    ft_printf("__________LB______________\n");
+//    ft_print_next_int(&HEAD_LB, &ft_get_tpile_data);
 //    ft_printf(" ----------------------- \n");
     TESTINTG("NB_MV",ft_lst_count(&HEAD_PS_MV));
 }
-

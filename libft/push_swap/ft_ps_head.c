@@ -24,7 +24,7 @@ t_ps_head		*ft_ps_head(void)
 	if (ptr == NULL)
 	{
 		(ptr = (t_ps_head *)malloc(sizeof(t_ps_head)));
-		ft_bzero(ptr, sizeof(t_ps_head));
+//		ft_bzero(ptr, sizeof(t_ps_head));
 		NODE_INIT(ptr->head_mv);
 		NODE_INIT(ptr->head_a);
 		NODE_INIT(ptr->head_b);
