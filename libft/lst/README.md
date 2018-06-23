@@ -23,13 +23,14 @@ Develop a new get_ function wich will provide you with
 ### Technical Explaination
 
 Sources :
-* [article fr](http://a.michelizza.free.fr/pmwiki.php?n=TutoOS.Linkedlist)
+- [article fr](http://a.michelizza.free.fr/pmwiki.php?n=TutoOS.Linkedlist)
 - [Torvalds github](https://github.com/torvalds/linux/blob/master/include/linux/list.h)
 
 ### Lexic
 
 * `get`: as in ft_**get**xxxxxxxxx.c. The following value indicates the **returned** values.  
 * `from`: as in ft_getxxx_**from**xxxxx.c. The following value indicates the **variable**.
+  e.g. ft_getval_fromabspos.c
 * `relpos`: as **relative position** indicates the position of the variable in the list *if the list were ordered*.
 * `abspos`: as  **rabsolute position** indicates the position of the variable in the list.
 * `is` : returns boolean
