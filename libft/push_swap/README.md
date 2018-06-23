@@ -45,8 +45,10 @@ for 24 elements
 
 ```
 	 * * * * 
+```
 
-	  PILE A		  PILE B
+```
+	  PILE A	  PILE B
 	__________ 	___________
 	|        | 	|         |
 	|        | 	|         |
