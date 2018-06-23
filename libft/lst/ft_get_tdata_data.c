@@ -15,8 +15,8 @@
 ** t_data
 **
 **{
-** ====>	int         data;
-**			t_lst lst;
+** ====>	int         	data;
+**		t_lst		lst;
 **}
 */
 
