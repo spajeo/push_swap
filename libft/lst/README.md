@@ -1,3 +1,5 @@
+![http://a.michelizza.free.fr/uploads/TutoOS/list_linux.png]
+
 ## Advantages
 
 Extreme modularity of the librairy. No re-coding everytime you have to manipulate a new structure for preset structure.
@@ -17,6 +19,7 @@ Develop a new get_ function wich will provide you with
 
 ### Technical Explaination
 
+http://a.michelizza.free.fr/pmwiki.php?n=TutoOS.Linkedlist
 
 ### Lexic
 
@@ -28,7 +31,7 @@ Develop a new get_ function wich will provide you with
 * `are` : returns boolean about the whole list status
 * `ft_lstxxx`: as in ft_lst_swap get only lst as variables
 
-eg .
+e.g.
 ft_getval_fromabspos.c
 ft_is_val_in.c
 
