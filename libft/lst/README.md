@@ -28,12 +28,14 @@ Sources :
 
 ### Lexic
 
-* `get`: as in ft_**get**xxxxxxxxx.c. The following value indicates the **returned** values.  
-* `from`: as in ft_getxxx_**from**xxxxx.c. The following value indicates the **variable**.
-  * *e.g. ft_getabspos_fromlst.c  is going to return the position of a node in the list from its lst value* 
 * `relpos`: as **relative position** indicates the position of the variable in the list *if the list were ordered*.
 * `abspos`: as  **rabsolute position** indicates the position of the variable in the list.
-* `is` : returns boolean
+
+* `get`: as in ft_**get**xxxxxxxxx.c. The following value indicates the **returned** values.  
+* `from`: as in ft_getxxx_**from**xxxxx.c. The following value indicates the **variable**.
+  * **e.g.** __ft_getabspos_fromlst.c__  is going to return the position of a node in the list from its lst value
+  
+* `is` : as in ft_isinformation.c returns boolean indicating whether a value is **information**
 * `are` : returns boolean about the whole list status
 * `btw` :
 * `ft_lstxxx`: as in ft_lst_swap get only lst as variables
