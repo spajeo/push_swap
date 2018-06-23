@@ -14,6 +14,7 @@ The function is **recursive**.
 
 for 24 elements
 
+###### Path
 ```
                                  [A]                    (n) step n 
                                  / \                    [x] pile x  
@@ -48,6 +49,7 @@ for 24 elements
 ```
 
 ```
+		**INITIAL POSITION**
 	  PILE A	  PILE B
 	__________ 
 	| * * * * | 
@@ -59,4 +61,16 @@ for 24 elements
 	| * * * * | 
 	__________ 	__________ 
 	
+
+		**STEP 1**
+	  PILE A	  PILE B
+	__________ 
+	| * * * * | 
+	| * * * * | 
+	| * * * * | 
+	| * * * * | 
+	| * * * * | 
+	| * * * * | 
+	| * * * * | 
+	__________ 	__________ 
 ```
