@@ -50,7 +50,6 @@ for 24 elements
 		**INITIAL POSITION**
 
 ```
-```
 	  PILE A	  PILE B
 	__________ 
 	| * * * * | 
