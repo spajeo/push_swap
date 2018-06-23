@@ -106,7 +106,7 @@ VALUES A > VALUES B
 	| * * * * |	| * * * * | 
 	__________ 	__________ 
 
-VALUES A < VALUES B
+VALUES A > VALUES B
 ```
 
 ###		**STEP 2*
@@ -126,5 +126,5 @@ VALUES A < VALUES B
 	| ° ° ° ° |	| * * * * | 
 	__________ 	__________ 
 
-VALUES A < VALUES B
+VALUES A > VALUES B
 ```
