@@ -46,7 +46,7 @@ for 12 elements
 
 ```
 	 * * * *  unordered values 
-	 ° ° ° °  unordered values 
+	 ° ° ° °  ordered values 
 ```
 
 
@@ -86,10 +86,10 @@ for 12 elements
 	| * * * * |	| * * * * | 
 	__________ 	__________ 
 
-VALUES A < VALUES B
+VALUES A > VALUES B
 ```
 
-###		**STEP 3*
+###		**STEP 3**
 
 ```
 	  PILE A	  PILE B
@@ -97,7 +97,7 @@ VALUES A < VALUES B
 	           	| * * * * | 
 	           	| * * * * | 
 	           	| * * * * |
-				|_________|
+			|_________|
 	           	| * * * * | 
 	           	| * * * * | 
 	___________	| * * * * | 
