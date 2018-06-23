@@ -47,7 +47,7 @@ Sources :
 
 * `get`: as in `ft_get`xxxxxxxxx.c. The following value indicates the **returned** values.  
 * `from`: as in ft_getxxx_**from**xxxxx.c. The following value indicates the **variable**.
-  * **e.g.** __ft_getabspos_fromlst.c__  is going to return the position of a node in the list from its lst value
+  * **e.g.** __`ft_getabspos_fromlst.c`__  is going to return the position of a node in the list from its lst value
   
 * `is` : as in ft_isinformation.c returns boolean indicating whether a value is **information**
 * `are` : returns boolean about the whole list status
