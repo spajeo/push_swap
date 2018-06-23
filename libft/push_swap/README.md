@@ -3,16 +3,23 @@
 ## Algorithm
 
 
+The function is **recursive**.
+
+* Node splits the unordered elements left on the top of the pile in halfs in each piles. 
+	*	from [A] pushes the elements <= the median on [B]
+	*	from [B] pushes the elements >  the median on [A]
+* Leaves only contain 3 or less values and are ordered. Afterward the function returns.
+
 ```
-                                 [A]
-                                 / \
-                                /   \
+                                 [A]                    (n) step n 
+                                 / \                    [x] pile x  
+                                /   \                  
                                /     \
                               /       \
                              /         \
-                            /           \
+                           (1)         (8)
                            /             \
-                         (1)             (8)
+                          /               \
                          /                 \
                         /                   \
                        /                     \
@@ -26,7 +33,10 @@
                / \         / \         / \         / \    
              (3) (4)     (6) (7)    (11) (12)   (13) (14)  
              /     \     /     \     /     \     /     \    
-           [A]     [B] [A]     [B] [A]     [B] [A]     [B]    -> len <= 4
+           [A]     [B] [A]     [B] [A]     [B] [A]     [B]   <== each pile ==> [len <= 4]
             
             
 ```
+
+
+
