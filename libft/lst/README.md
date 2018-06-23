@@ -7,12 +7,12 @@
 * One head to connect differents lists and hold extra informations
 * Different structures in the same list
 
-### How to use it
+## How to use it
 
-##### to move a node
+### to move a node
 		Use the ft_lstxxxx : 
 			*ft_lst_swap.c	ft_ps_order_3a ft_lstadd.c	ft_lstdisconnect.c ft_lstinsert_after.c	ft_lstinsert_before.c ft_lstiter.c ft_lstmap.c	ft_lstmv_after.c ft_lstmv_before.c ft_lst_count.c*
-##### to manipulate or read a value from a node
+### to manipulate or read a value from a node
 	Use 
 
 
