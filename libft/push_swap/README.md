@@ -176,10 +176,7 @@ VALUES A > VALUES B
 
 ###		**STEP 4**
 
-
-###		**STEP 4**
-
-*Sortingi B*
+*Sorting B*
  
 ```
 	  PILE A	  PILE B
