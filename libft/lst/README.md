@@ -9,7 +9,7 @@
 
 ## How to use it
 
-### to move a node
+1. to move a node
 Use the ft_lstxxxx : 
 * ft_lst_swap.c,
 * ft_ps_order_3a ft_lstadd.c, 
@@ -21,8 +21,9 @@ Use the ft_lstxxxx :
 * ft_lstmv_after.c, 
 * ft_lstmv_before.c, 
 * ft_lst_count.c
-### to manipulate or read a value from a node
-	Use 
+
+1. to manipulate or read a value from a node
+
 
 
 
