@@ -168,6 +168,7 @@ VALUES A > VALUES B
 	| ° ° ° ° |	| * * * * | 
 	| ° ° ° ° |	| * * * * | 
 	 _________ 	 _________ 
+VALUES A > VALUES B
 ```
 
 *PA*
