@@ -23,8 +23,8 @@ Develop a new get_ function wich will provide you with
 ### Technical Explaination
 
 Sources :
-* [http://a.michelizza.free.fr/pmwiki.php?n=TutoOS.Linkedlist] (article fr)
-- [*Torvalds github*](https://github.com/torvalds/linux/blob/master/include/linux/list.h)
+* [article fr] (http://a.michelizza.free.fr/pmwiki.php?n=TutoOS.Linkedlist)
+- [Torvalds github](https://github.com/torvalds/linux/blob/master/include/linux/list.h)
 
 ### Lexic
 
