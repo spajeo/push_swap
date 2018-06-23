@@ -2,9 +2,9 @@
 
 ## Libraries
 
-[ft_printf](https://github.com/spajeo/push_swap/tree/master/libft/ft_printf)  
-	_42 projects_ prints formats %s, %S, %c, %C, %d, %D, %i, %B(binary), %b, %X, %x, %p, %U, %u, %O, %o.
-[push_swap](https://github.com/spajeo/push_swap/tree/master/libft/push_swap)         	
+[ft_printf](https://github.com/spajeo/push_swap/tree/master/libft/ft_printf)     
+	_42 projects_ prints formats %s, %S, %c, %C, %d, %D, %i, %B(binary), %b, %X, %x, %p, %U, %u, %O, %o.   
+[push_swap](https://github.com/spajeo/push_swap/tree/master/libft/push_swap)     	
 	_42 projects_	
 [is](https://github.com/spajeo/push_swap/tree/master/libft/is)     
   returns `booleans`, informs if the values format passed on corresponds to the function's name.
