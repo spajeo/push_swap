@@ -14,10 +14,10 @@
              	
 	orders values using 3 virtual piles rotation, swap and push commands.    
 
-### [is](https://github.com/spajeo/push_swap/tree/master/libft/is)     
-             	
+### [is](https://github.com/spajeo/push_swap/tree/master/libft/is)        
+             	 
   returns booleans, informs if the values format passed on corresponds to the function's name.
-
+      
 ### [lib](https://github.com/spajeo/push_swap/tree/master/libft/lib)  __42 projects__   	   
     
   	classical libraries
