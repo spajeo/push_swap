@@ -50,6 +50,7 @@ for 24 elements
 
 ```
 		**INITIAL POSITION**
+```
 	  PILE A	  PILE B
 	__________ 
 	| * * * * | 
@@ -61,8 +62,11 @@ for 24 elements
 	| * * * * | 
 	__________ 	__________ 
 	
+```
 
 		**STEP 1**
+
+```
 	  PILE A	  PILE B
 	__________ 
 	| * * * * | 
