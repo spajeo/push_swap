@@ -13,7 +13,7 @@
 Use the `ft_lst`xxxx : 
 * `ft_lst_swap.c`,
 * `ft_ps_order_3a` 
- * `ft_lstadd.c``, 
+ * `ft_lstadd.c`, 
 * `ft_lstdisconnect.c`, 
 * `ft_lstinsert_after.c`, 
 * `ft_lstinsert_before.c`, 
@@ -31,7 +31,7 @@ Use the `ft_lst`xxxx :
 
 ### Create a new Structure
 
-Develop a new get_ function wich will provide you with 
+Develop a new `get_` function wich will provide you with 
 
 
 ### Technical Explaination
@@ -45,7 +45,7 @@ Sources :
 * `relpos`: as **relative position** indicates the position of the variable in the list *if the list were ordered*.
 * `abspos`: as  **rabsolute position** indicates the position of the variable in the list.
 
-* `get`: as in ft_**get**xxxxxxxxx.c. The following value indicates the **returned** values.  
+* `get`: as in `ft_**get**`xxxxxxxxx.c. The following value indicates the **returned** values.  
 * `from`: as in ft_getxxx_**from**xxxxx.c. The following value indicates the **variable**.
   * **e.g.** __ft_getabspos_fromlst.c__  is going to return the position of a node in the list from its lst value
   
