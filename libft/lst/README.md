@@ -24,7 +24,7 @@ Use the `ft_lst`xxxx :
 * `ft_lstmv_before.c` 
 * `ft_lst_count.c`
 
-### **Manipulate or read a value from a node**
+### **Read or manipulate a value from a node**
 1. **use a get function to reach the value through its lst address** 
 * `ft_get_lst_from_int.c`
 * `ft_get_tdata_data.c` 
@@ -51,14 +51,34 @@ int		*ft_get_tpile_data(t_lst *ptr)
 ```
 
 
-	2. use `ft_getlst_maxval(t_lst *head, int *(*get_int)(t_lst *))`  extract the max value from a var from a list
+2. **Go through or modify a list** 
+	1. e.g. find the max value is a list of `t_data` nodes.
 
-`t_lst    *ft_getlst_maxval(t_lst *head, int *(*get_int)(t_lst *))`
+```
+t_lst    *ft_getlst_maxval(t_lst *head, int *(*get_int)(t_lst *))
 
+```
 
 ### Create a new Structure
 
 Develop a new `get_` function wich will provide you with 
+
+```
+ STRUCTURE
+{
+		type        VARIABLE;
+		t_lst		lst;
+}
+```
+
+```
+int		*ft_get_STRUCTURE_VARIABLE(t_lst *ptr)
+{
+	return (&((STRUCTURE *)((char *)(ptr) - ((char *)(&(((STRUCTURE *)0))->lst))))->VARIABLE);
+}
+```
+Now on you can manipulate the content of the structure.
+
 
 ### Lexic
 
