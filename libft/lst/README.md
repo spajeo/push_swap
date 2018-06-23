@@ -89,16 +89,22 @@ Now on you can manipulate the content of the structure.
 
 * __`get`__: as in __`ft_get`xxxxxxxxx.c__. The following value indicates the **returned** values.  
 * __`from`__: as in `ft_getxxx_`**`from`**xxxxx.c. The following value indicates the **variable**.
-  * **e.g.** __`ft_getabspos_fromlst.c`__  is going to return the position of a node in the list from its lst value
   
 * __`is`__ : as in ft_isinformation.c returns boolean indicating whether a value is **information**
 * __`are`__ : returns boolean about the whole list status
 * __`btw`__ :
 * __`ft_lstxxx`__: as in ft_lst_swap get only lst as variables
 
-###### e.g.
-ft_getval_fromabspos.c
-ft_is_val_in.c
+#### e.g.
+  * __`ft_getabspos_fromlst.c`__  is going to return the position of a node in the list from its lst value
+
+
+
+int		ft_islst_asc(t_lst *head, int *(*get_int)(t_lst *))
+int     ft_is_abspos_is_relpos(t_lst *head, int*(*get_int)(t_lst *), t_lst *ref)
+int	ft_getrelpos_fromlstval(t_lst *head, int *(* get_int)(t_lst *), t_lst *ref)
+int     ft_arerelpos_next(t_lst *first, int *(* get_fint)(t_lst *),
+                          t_lst *second, int *(* get_sint)(t_lst *))
 
 
 
