@@ -9,7 +9,17 @@
 
 ### How to use it
 
-
+##### to move a node
+ Use the ft_lstxxxx.(ft_lst_swap.c	ft_ps_order_3a	2 months ago
+ft_lstadd.c	lib
+ft_lstdisconnect.c	lib lst reorder	2 months ago
+ft_lstinsert_after.c	lib lst reorder	2 months ago
+ft_lstinsert_before.c	lib lst reorder	2 months ago
+ft_lstiter.c	lib lst reorder	2 months ago
+ft_lstmap.c	lib lst reorder	2 months ago
+ft_lstmv_after.c	lib lst reorder	2 months ago
+ft_lstmv_before.c)
+##### to manipulate or read a value from a node
 
 
 
