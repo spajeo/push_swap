@@ -49,7 +49,11 @@ int		*ft_get_tpile_data(t_lst *ptr)
 	return (&((t_pile *)((char *)(ptr) - ((char *)(&(((t_pile *)0))->lst))))->data);
 }
 ```
-	1. `t_lst       *ft_getlst_maxval(t_lst *head, int *(*get_int)(t_lst *))`
+
+
+	2. use `ft_getlst_maxval(t_lst *head, int *(*get_int)(t_lst *))`  extract the max value from a var from a list
+
+`t_lst    *ft_getlst_maxval(t_lst *head, int *(*get_int)(t_lst *))`
 
 
 ### Create a new Structure
