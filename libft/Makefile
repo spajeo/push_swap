@@ -62,7 +62,8 @@ LST := is_val_in lstinsert_after lstinsert_before lstdisconnect islst_empty lstm
             is_ref_inf getval_fromabspos is_reflst_sup tdata_free \
             is_val_in get_tdata_data add_tstr_next \
             lst_convert_allvar \
-            is_first_inf getabspos_fromvar  print_next_str getval_fromabspos getabspos_fromlst \
+            is_first_inf getabspos_fromvar \
+            print_next_tstr_str print_next_str getval_fromabspos getabspos_fromlst \
             is_abspos_is_relpos getrelpos_fromlstval add_tpile_next get_tstr_str \
             arerelpos_next  getlst_minval getlst_maxval\
             lst_swap
@@ -94,7 +95,7 @@ IS_OBJ := $(addsuffix .o, $(addprefix $(OBJ_DIR)ft_, $(IS)))
 PUSH_SWAP:= ps_free ft_ps_print\
 			ft_ps_checkflags ft_ps_is_sorted ps_refill \
 			ft_print_next_int\
-			ft_ps_head \
+			ft_ps_head ft_ps_convert_mv\
 			ft_ps_convert_argv ft_ps_operations\
 			ft_ps_exec_p ft_ps_exec_s ft_ps_exec_rr ft_ps_exec_r \
 			ft_ps_opp ft_ps_ops ft_ps_oprr ft_ps_opr  ft_ps_order3

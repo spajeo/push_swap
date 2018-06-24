@@ -20,7 +20,7 @@ void ft_refill_a_lim(int lim, int nb)
 
 	while (nb != 0 && lim != 0)
 	{
-		ft_ps_operations("pb");
+		ft_ps_operations("pa");
 		--nb;		
 		--lim;		
 	}
@@ -31,7 +31,7 @@ void ft_refill_b(int nb)
 
 	while (nb != 0)
 	{
-		ft_ps_operations("pa");
+		ft_ps_operations("pb");
 		--nb;
 	}
 }
@@ -41,7 +41,7 @@ void ft_refill_a(int nb)
 
 	while (nb != 0)
 	{
-		ft_ps_operations("pb");
+		ft_ps_operations("pa");
 //		ft_ps_operations("ra");
 		--nb;		
 	}
@@ -52,7 +52,7 @@ void ft_refill_b_lim(int lim, int nb)
 
 	while (nb != 0 && lim != 0)
 	{
-		ft_ps_operations("pa");
+		ft_ps_operations("pb");
 		--nb;		
 		--lim;		
 	}

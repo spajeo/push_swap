@@ -90,7 +90,7 @@ void ft_ps_order(int pile, int depth)
 		{
 			//TESTINTB("push pa", depth);
 			while (depth--)
-				ft_ps_operations("pa");
+				ft_ps_operations("pb");
 		}
 	}
 	if (pile == _PB_ )
@@ -105,7 +105,7 @@ void ft_ps_order(int pile, int depth)
 		if (ft_islst_asc(&HEAD_LA, ft_get_tpile_data))
 		{
 			while (depth--)
-				ft_ps_operations("pb");
+				ft_ps_operations("pa");
 		}
 	}
 	return;

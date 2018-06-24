@@ -16,6 +16,7 @@ int	ft_putstr(const char *s)
 {
 	int len;
 
-	write(1, s, (len = ft_strlen(s)));
+	len = ft_strlen(s);
+	write(1, s, len);
 	return (len);
 }

@@ -19,9 +19,9 @@ int		ft_islst_asc(t_lst *head, int *(*get_int)(t_lst *))
 	t_lst *tmp;
 
 	tmp = head->next;
-	while (tmp != head->prev)
+	while (tmp != head)
 	{
-		if (*get_int(tmp) > *get_int(tmp->next))
+		if (*get_int(tmp->prev) > *get_int(tmp))
 			return (0);
 		tmp = tmp->next;
 	}

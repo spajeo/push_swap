@@ -121,6 +121,7 @@ int						ft_ps_checkflags(int *ac, char **av);
 void                    ft_ps_order(int pile, int depth);
 void                    ft_ps_order_3a();
 void                    ft_ps_order_3b();
+int						ft_ps_convert_mv(t_lst *lst_head);
 /*
 **              CHECK
 */
