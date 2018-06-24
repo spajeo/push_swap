@@ -1,7 +1,7 @@
 # Push Swap
 
 * [Commands](#Commands)
-* [Algorithm](#Algorithm)
+* [Algorithm](#algorithm)
 * [Instructions](#Instructions)
 * [Shortening Moves](#Shortening)
 
