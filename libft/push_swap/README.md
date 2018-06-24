@@ -1,14 +1,16 @@
-## Push Swap
+# Push Swap
 
 
+
+## Commands
 
 > ARG="4 67 3 87 23";./push_swap $ARG | ./checker $ARG
 
-> ./push_swap --clean 2 6 3 5 7 1 4 | ./checker 2 6 3 5 7 1 4
+> ./push_swap -v 2 6 3 5 7 1 4 | ./checker 2 6 3 5 7 1 4
 
 > ./push_swap -x 2 6 3 5 && ./checker -x  2 6 3 5
 
-> ./push_swap --clean -x 2 6 3 5 && ./checker -x  2 6 3 5
+> ./push_swap -v -x 2 6 3 5 && ./checker -x  2 6 3 5
 
 #### Generate randon list from -100 to 100
 
@@ -323,4 +325,9 @@ VALUES A > VALUES B
 
 VALUES A > VALUES B
 ```
+
+
+### Tricks to shorten the number of moves.
+
+1. While dividing the pile, stop moving up the values if the ones left are going to stay in the pile
 
