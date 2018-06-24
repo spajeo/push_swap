@@ -10,7 +10,8 @@ int ft_ps_push_pivot_ab(t_lst *head_a, int len, int pivot)
 
 	rot = 0;
 	count = 0;
-	while(len)
+//	while(len && !(ft_islst_asc(&HEAD_LA, ft_get_tpile_data)))
+    while(len)
 	{
 		if (P_DATA(head_a->next) <= pivot)
 		{
@@ -23,6 +24,8 @@ int ft_ps_push_pivot_ab(t_lst *head_a, int len, int pivot)
 			++rot;
 		}
 		--len;
+		if (ft_islst_asc(&HEAD_LA, ft_get_tpile_data))
+		    break;
 	}
 	while (rot--)
         ft_ps_operations("rra");
@@ -37,6 +40,7 @@ int ft_ps_push_pivot_ba(t_lst *head_a,int len, int pivot)
 
 	rot = 0;
 	count = 0;
+//	while(len && !(ft_islst_desc(&HEAD_LB, ft_get_tpile_data)))
 	while(len)
 	{
 		if (P_DATA(head_a->next) >= pivot) {
@@ -49,6 +53,8 @@ int ft_ps_push_pivot_ba(t_lst *head_a,int len, int pivot)
 			++rot;
 		}
 		--len;
+//		if (ft_islst_desc(&HEAD_LB, ft_get_tpile_data))
+//			break;
 	}
 	while (rot--)
 		ft_ps_operations("rrb");
@@ -90,5 +96,6 @@ int			main(int ac, char **av)
 		ft_exec_parse_strstr(&(*(++av)), &ft_ps_convert_argv);
 	ft_ps_getmedian(_PA_, ft_getlstlen(&HEAD_LA));
 	ft_ps_print();
+	printf("%s", ft_strdup("ra"));
 	return (0);
 }

@@ -62,71 +62,71 @@ libft.h
 libft.h
 ../libft/includes/libft.h
 
-/Users/Scarlett/push_swap/libft/lst/ft_arerelpos_next.c
+/Users/Scarlett/42Projects/push_swap/libft/lst/ft_arerelpos_next.c
 liblst.h
 -
 
-/Users/Scarlett/push_swap/libft/lst/ft_getlst_maxval.c
+/Users/Scarlett/42Projects/push_swap/libft/lst/ft_getlst_maxval.c
 libft.h
-/Users/Scarlett/push_swap/libft/lst/libft.h
+/Users/Scarlett/42Projects/push_swap/libft/lst/libft.h
 liblst.h
-/Users/Scarlett/push_swap/libft/lst/liblst.h
+/Users/Scarlett/42Projects/push_swap/libft/lst/liblst.h
 push_swap.h
-/Users/Scarlett/push_swap/libft/lst/push_swap.h
+/Users/Scarlett/42Projects/push_swap/libft/lst/push_swap.h
 
-/Users/Scarlett/push_swap/libft/push_swap/ft_ps_convert_argv.c
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/ft_ps_convert_argv.c
 libft.h
-/Users/Scarlett/push_swap/libft/push_swap/libft.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/libft.h
 push_swap.h
-/Users/Scarlett/push_swap/libft/push_swap/push_swap.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/push_swap.h
 liblst.h
-/Users/Scarlett/push_swap/libft/push_swap/liblst.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/liblst.h
 
-/Users/Scarlett/push_swap/libft/push_swap/ft_ps_exec_p.c
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/ft_ps_exec_p.c
 libft.h
-/Users/Scarlett/push_swap/libft/push_swap/libft.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/libft.h
 liblst.h
-/Users/Scarlett/push_swap/libft/push_swap/liblst.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/liblst.h
 push_swap.h
-/Users/Scarlett/push_swap/libft/push_swap/push_swap.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/push_swap.h
 
-/Users/Scarlett/push_swap/libft/push_swap/ft_ps_exec_r.c
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/ft_ps_exec_r.c
 libft.h
-/Users/Scarlett/push_swap/libft/push_swap/libft.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/libft.h
 push_swap.h
-/Users/Scarlett/push_swap/libft/push_swap/push_swap.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/push_swap.h
 
-/Users/Scarlett/push_swap/libft/push_swap/ft_ps_exec_s.c
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/ft_ps_exec_s.c
 libft.h
-/Users/Scarlett/push_swap/libft/push_swap/libft.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/libft.h
 liblst.h
-/Users/Scarlett/push_swap/libft/push_swap/liblst.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/liblst.h
 push_swap.h
-/Users/Scarlett/push_swap/libft/push_swap/push_swap.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/push_swap.h
 
-/Users/Scarlett/push_swap/libft/push_swap/ft_ps_opp.c
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/ft_ps_opp.c
 libft.h
-/Users/Scarlett/push_swap/libft/push_swap/libft.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/libft.h
 push_swap.h
-/Users/Scarlett/push_swap/libft/push_swap/push_swap.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/push_swap.h
 
-/Users/Scarlett/push_swap/libft/push_swap/ft_ps_oprr.c
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/ft_ps_oprr.c
 libft.h
-/Users/Scarlett/push_swap/libft/push_swap/libft.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/libft.h
 push_swap.h
-/Users/Scarlett/push_swap/libft/push_swap/push_swap.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/push_swap.h
 
-/Users/Scarlett/push_swap/libft/push_swap/ft_ps_ops.c
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/ft_ps_ops.c
 libft.h
-/Users/Scarlett/push_swap/libft/push_swap/libft.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/libft.h
 push_swap.h
-/Users/Scarlett/push_swap/libft/push_swap/push_swap.h
+/Users/Scarlett/42Projects/push_swap/libft/push_swap/push_swap.h
 
-/Users/Scarlett/push_swap/srcs/push_swap.c
+/Users/Scarlett/42Projects/push_swap/srcs/push_swap.c
 libft.h
-/Users/Scarlett/push_swap/srcs/libft.h
+/Users/Scarlett/42Projects/push_swap/srcs/libft.h
 liblst.h
-/Users/Scarlett/push_swap/srcs/liblst.h
+/Users/Scarlett/42Projects/push_swap/srcs/liblst.h
 push_swap.h
-/Users/Scarlett/push_swap/srcs/push_swap.h
+/Users/Scarlett/42Projects/push_swap/srcs/push_swap.h
 

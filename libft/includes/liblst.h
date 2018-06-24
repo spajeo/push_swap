@@ -174,14 +174,14 @@ int         ft_is_first_inf(t_lst *head, int *(*get_int)(t_lst *));
  ** ------------------------------------ CREATE/DELETE ----------------------------------
  */
 t_pile      *ft_add_tpile_next(t_lst *head, const int nb);
-void		*ft_add_tstr_next(t_lst *head, char *str);
+void		*ft_add_tstr_next(t_lst *head, char **str);
 t_data      *ft_add_tdata_next(t_lst *head, const int nb);
 void		ft_tdata_free(t_lst *lst_head);
 /*
  **	        PRINT
  */
 void        ft_print_next_int(t_lst *head, int *(*get_int)(t_lst *));
-void      ft_print_next_str(t_lst *head, char *(**get_str)(t_lst *));
+void		ft_print_next_str(t_lst *head, char *(*get_str)(t_lst *));
 /*
  ** -------------------------------------- CONVERT ---------------------------------------
  */

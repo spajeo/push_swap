@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Scarlett/push_swap
+CMAKE_SOURCE_DIR = /Users/Scarlett/42Projects/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Scarlett/push_swap/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/Scarlett/42Projects/push_swap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Scarlett/push_swap/cmake-build-debug/CMakeFiles /Users/Scarlett/push_swap/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Scarlett/42Projects/push_swap/cmake-build-debug/CMakeFiles /Users/Scarlett/42Projects/push_swap/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Scarlett/push_swap/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Scarlett/42Projects/push_swap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -433,33 +433,6 @@ libft/push_swap/ft_ps_ops.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/push_swap/ft_ps_ops.c.s
 .PHONY : libft/push_swap/ft_ps_ops.c.s
 
-srcs/12.o: srcs/12.c.o
-
-.PHONY : srcs/12.o
-
-# target to build an object file
-srcs/12.c.o:
-	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/srcs/12.c.o
-.PHONY : srcs/12.c.o
-
-srcs/12.i: srcs/12.c.i
-
-.PHONY : srcs/12.i
-
-# target to preprocess a source file
-srcs/12.c.i:
-	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/srcs/12.c.i
-.PHONY : srcs/12.c.i
-
-srcs/12.s: srcs/12.c.s
-
-.PHONY : srcs/12.s
-
-# target to generate assembly for a file
-srcs/12.c.s:
-	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/srcs/12.c.s
-.PHONY : srcs/12.c.s
-
 srcs/checker.o: srcs/checker.c.o
 
 .PHONY : srcs/checker.o
@@ -554,9 +527,6 @@ help:
 	@echo "... libft/push_swap/ft_ps_ops.o"
 	@echo "... libft/push_swap/ft_ps_ops.i"
 	@echo "... libft/push_swap/ft_ps_ops.s"
-	@echo "... srcs/12.o"
-	@echo "... srcs/12.i"
-	@echo "... srcs/12.s"
 	@echo "... srcs/checker.o"
 	@echo "... srcs/checker.i"
 	@echo "... srcs/checker.s"

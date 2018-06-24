@@ -27,13 +27,15 @@ void	ft_print_next_str(t_lst *head, char *(*get_str)(t_lst *))
 	t_lst *tmp;
 	tmp = head->next;
 	char * data;
+//	char ** databis;	
 
 	while (tmp != head)
 	{
 		data = get_str(tmp);
-		ft_putendl((const char *)get_str(tmp));
+//		databis = *get_str(tmp);
+//		ft_putendl((const char *)get_str(tmp));
 //		ft_printf("%s\n", *get_str(tmp));
-		printf("%s\n", get_str(tmp));
+//		printf("%s\n", *data);
 		tmp = tmp->next;
 	}
 	return ;
