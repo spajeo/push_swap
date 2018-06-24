@@ -7,7 +7,7 @@
 
 ## Commands
 
-> ARG="4 67 3 87 23";./push_swap $ARG | ./checker $ARG
+> ARG=`ruby -e "puts (-10..5).to_a.shuffle.join(' ')"`;./push_swap $ARG | ./checker $ARG
 
 > ./push_swap -v 2 6 3 5 7 1 4 | ./checker 2 6 3 5 7 1 4
 
