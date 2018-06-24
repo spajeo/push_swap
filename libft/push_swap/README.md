@@ -3,7 +3,7 @@
 * [Commands](#commands)
 * [Algorithm](#algorithm)
 * [Instructions](#instructions)
-* [Shortening Moves](#shorteningmoves)
+* [Shortening Moves](#shortening-moves)
 
 ## Commands
 
