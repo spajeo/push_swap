@@ -1,9 +1,9 @@
 # Push Swap
 
-* [Commands](#Commands)
+* [Commands](#commands)
 * [Algorithm](#algorithm)
-* [Instructions](#Instructions)
-* [Shortening Moves](#Shortening)
+* [Instructions](#instructions)
+* [Shortening Moves](#shortening)
 
 ## Commands
 
