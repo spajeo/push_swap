@@ -16,25 +16,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="953c7fa6-a821-4336-99c8-2321b4331222" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/libft/lst/ft_print_next_tstr_str.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/push_swap/ft_ps_convert_mv.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list of values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/push_swap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/includes/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/includes/libft.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/includes/liblst.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/includes/liblst.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/includes/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/includes/push_swap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lib/ft_putstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/lib/ft_putstr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lst/ft_add_tstr_next.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/lst/ft_add_tstr_next.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/lst/ft_islst_asc.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/lst/ft_islst_asc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lst/ft_islst_desc.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/lst/ft_islst_desc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/lst/ft_print_next_str.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/lst/ft_print_next_str.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_ps_opp.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_ps_opp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_ps_order3.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_ps_order3.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/push_swap/ft_ps_print.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ft_ps_print.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/push_swap/ps_refill.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/push_swap/ps_refill.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/str/ft_strdup.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/str/ft_strdup.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/push_swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/push_swap.c" afterDir="false" />
     </list>
@@ -112,17 +99,53 @@
           <file leaf-file-name="push_swap.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/srcs/push_swap.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+                <state relative-caret-position="443">
+                  <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ft_islst_asc.c" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ps_refill.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libft/push_swap/ps_refill.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="push_swap.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libft/includes/push_swap.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="314">
+                  <caret line="143" column="26" selection-start-line="143" selection-start-column="26" selection-end-line="143" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="list of values" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/list of values">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ft_print_next_int.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libft/lst/ft_print_next_int.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="465">
+                  <caret line="34" selection-start-line="34" selection-end-line="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ft_islst_asc.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/libft/lst/ft_islst_asc.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+                <state relative-caret-position="255">
+                  <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
                 </state>
               </provider>
             </entry>
@@ -131,7 +154,7 @@
             <entry file="file://$PROJECT_DIR$/libft/lst/ft_islst_desc.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="375">
-                  <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+                  <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -142,8 +165,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>push_swap_head</find>
-      <find>ps_next_t_data_issorted</find>
       <find>init_ps_head</find>
       <find>ps_print</find>
       <find>ps_print_stack_a_and_b</find>
@@ -172,6 +193,8 @@
       <find>ft_print_next_tstr_str</find>
       <find>(tmp-&gt;next)</find>
       <find>&quot;paa&quot;</find>
+      <find>fill</find>
+      <find>filli</find>
     </findStrings>
     <replaceStrings>
       <replace>tdata</replace>
@@ -216,8 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/libft/lst/ft_is_reflst_sup.c" />
-        <option value="$PROJECT_DIR$/libft/lst/ft_is_asbpos_is_relpos.c" />
         <option value="$PROJECT_DIR$/libft/lst/ft_get_int_abspos.c" />
         <option value="$PROJECT_DIR$/libft/lst/ft_getval_abspos.c" />
         <option value="$PROJECT_DIR$/libft/lst/ft_getlst_fromval_relpos.c" />
@@ -260,13 +281,15 @@
         <option value="$PROJECT_DIR$/libft/includes/liblst.h" />
         <option value="$PROJECT_DIR$/libft/lst/ft_print_next_str.c" />
         <option value="$PROJECT_DIR$/libft/lst/ft_print_next_tstr_str.c" />
-        <option value="$PROJECT_DIR$/libft/includes/push_swap.h" />
         <option value="$PROJECT_DIR$/libft/Makefile" />
         <option value="$PROJECT_DIR$/libft/push_swap/ft_ps_convert_mv.c" />
         <option value="$PROJECT_DIR$/libft/push_swap/ft_ps_print.c" />
-        <option value="$PROJECT_DIR$/srcs/push_swap.c" />
         <option value="$PROJECT_DIR$/libft/lst/ft_islst_desc.c" />
         <option value="$PROJECT_DIR$/libft/lst/ft_islst_asc.c" />
+        <option value="$PROJECT_DIR$/srcs/push_swap.c" />
+        <option value="$PROJECT_DIR$/libft/push_swap/ps_refill.c" />
+        <option value="$PROJECT_DIR$/libft/includes/push_swap.h" />
+        <option value="$PROJECT_DIR$/list of values" />
       </list>
     </option>
   </component>
@@ -392,7 +415,7 @@
     </configuration>
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap" RUN_TARGET_NAME="push_swap" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="checker" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="0 4 7 2 3 5" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap" TARGET_NAME="checker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap" RUN_TARGET_NAME="push_swap" />
-    <configuration name="push_swap" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="7, 2, 6" PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap" TARGET_NAME="push_swap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap" RUN_TARGET_NAME="push_swap" />
+    <configuration name="push_swap" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;4 67 3 87 23&quot;" PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap" TARGET_NAME="push_swap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap" RUN_TARGET_NAME="push_swap" />
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <node-interpreter value="project" />
       <envs />
@@ -438,7 +461,7 @@
       <workItem from="1524519967514" duration="20401000" />
       <workItem from="1529786976042" duration="299000" />
       <workItem from="1529787324959" duration="3492000" />
-      <workItem from="1529826306788" duration="10396000" />
+      <workItem from="1529826306788" duration="12695000" />
     </task>
     <task id="LOCAL-00001" summary="Cmake">
       <created>1523362999301</created>
@@ -451,7 +474,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111813000" />
+    <option name="totallyTimeSpent" value="114112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,7 +496,7 @@
       <window_info anchor="bottom" id="Event Log" internal_type="SLIDING" order="11" sideWeight="0.5025601" side_tool="true" type="SLIDING" weight="0.42783883" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925072" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32983872" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32865733" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32865733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49743995" weight="0.38376755" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -604,21 +627,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_ps_atoi_exit.c" />
-    <entry file="file://$PROJECT_DIR$/libft/is/ft_isdigit.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libft/is/ft_isspace.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libft/lst/ft_is_val_in.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -870,13 +878,6 @@
     <entry file="file://$PROJECT_DIR$/libft/push_swap/ft_ps_ops.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/libft/includes/push_swap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="123" column="27" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libft/lib/ft_memset.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -922,6 +923,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/libft/lst/ft_islst_desc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/libft/lst/ft_add_tstr_next.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -932,24 +940,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/push_swap.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libft/lst/ft_islst_desc.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libft/lst/ft_islst_asc.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="255">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/lst/ft_print_next_int.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/push_swap.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/push_swap/ps_refill.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/includes/push_swap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="143" column="26" selection-start-line="143" selection-start-column="26" selection-end-line="143" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list of values">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
         </state>
       </provider>
     </entry>

@@ -15,7 +15,7 @@
 #include "liblst.h"
 #include "push_swap.h"
 
-void ft_refill_a_lim(int lim, int nb)
+void ft_ps_refill_b_lim(int lim, int nb)
 {
 
 	while (nb != 0 && lim != 0)
@@ -26,7 +26,7 @@ void ft_refill_a_lim(int lim, int nb)
 	}
 }
 
-void ft_refill_b(int nb)
+void ft_ps_refill_a(int nb)
 {
 
 	while (nb != 0)
@@ -36,7 +36,7 @@ void ft_refill_b(int nb)
 	}
 }
 
-void ft_refill_a(int nb)
+void ft_ps_refill_b(int nb)
 {
 
 	while (nb != 0)
@@ -47,7 +47,7 @@ void ft_refill_a(int nb)
 	}
 }
 
-void ft_refill_b_lim(int lim, int nb)
+void ft_ps_refill_a_lim(int lim, int nb)
 {
 
 	while (nb != 0 && lim != 0)
@@ -58,3 +58,11 @@ void ft_refill_b_lim(int lim, int nb)
 	}
 }
 
+void ft_ps_refill()
+{
+
+	while (ft_lst_count(&HEAD_LB) > 0)
+	{
+		ft_ps_operations("pa");
+	}
+}

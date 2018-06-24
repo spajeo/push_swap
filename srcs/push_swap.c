@@ -30,7 +30,6 @@ int ft_ps_push_pivot_ab(t_lst *head_a, int len, int pivot)
 	while (rot--)
         ft_ps_operations("rra");
 
-    ft_ps_print();
 	return(count);
 }
 
@@ -86,6 +85,7 @@ void ft_ps_getmedian(int pile, size_t depth)
 		ft_ps_getmedian(_PA_, push);
 		ft_ps_getmedian(_PB_, depth - push);
 	}
+    ft_ps_print();
 	return;
 }
 
@@ -98,6 +98,8 @@ int			main(int ac, char **av)
 	ft_ps_getmedian(_PA_, ft_getlstlen(&HEAD_LA));
 //    ft_print_next_tstr_str(&HEAD_PS_MV);
     ft_ps_convert_mv(&HEAD_PS_MV);
+    ft_ps_refill();
+    ft_ps_print();
 //    if (check the options)
 //    	ft_ps_print();
 	return (0);

@@ -141,10 +141,11 @@ int						ft_ps_exec_rr(t_lst *head);
 /*
 **			   PS_REFILL
 */
-void                    ft_refill_a_lim(int lim, int nb);
-void                    ft_refill_b(int nb);
-void                    ft_refill_a(int nb);
-void                    ft_refill_b_lim(int lim, int nb);
+void                    ft_ps_refill_a_lim(int lim, int nb);
+void                    ft_ps_refill_b(int nb);
+void                    ft_ps_refill_a(int nb);
+void                    ft_ps_refill_b_lim(int lim, int nb);
+void                    ft_ps_refill();
 /*
 **             OPTIONS
 */
