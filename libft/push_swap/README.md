@@ -2,7 +2,7 @@
 
 * [Commands](#Commands)
 * [Algorithm](#Algorithm)
-* [Tricks to shorten the number of moves](#Tricks to shorten the number of moves)
+* [Tricks to shorten the number of moves](#(Tricks to shorten the number of moves))
 
 ## Commands
 
