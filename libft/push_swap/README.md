@@ -3,7 +3,7 @@
 * [Commands](#Commands)
 * [Algorithm](#Algorithm)
 * [Instructions](#Instructions)
-* [Shortening Moves](#Shortening Moves)
+* [Shortening Moves](#Shortening)
 
 ## Commands
 
@@ -330,7 +330,7 @@ VALUES A > VALUES B
 ```
 
 
-## Shortening Moves
+## Shortening
 
 1. While dividing the pile, stop moving up the values if the ones left are going to stay in the pile
 
