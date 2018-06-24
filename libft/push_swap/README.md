@@ -329,7 +329,7 @@ VALUES A > VALUES B
 ```
 
 
-### Tricks to shorten the number of moves.
+### Tricks to shorten the number of moves
 
 1. While dividing the pile, stop moving up the values if the ones left are going to stay in the pile
 
