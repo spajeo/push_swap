@@ -1,9 +1,9 @@
 /*
- *     Return the absolute position of the struct
- *     from a given variable
- *     0 - indexing
+ *	returns the value from a node between 2 nodes at the n and m postion.
  *
- *     // fuck the idiotic norm that doesn t let me use 'DO WIHLE'
+ *
+ *  	0 - indexing
+ *
  */
 
 #include "libft.h"
@@ -17,11 +17,15 @@ int   ft_getval_fromrelpos_btwabspos(t_lst *head, size_t start, size_t end,
 	t_lst *tmp;
 	t_lst *lstend;
 	t_lst *lststart;
-	// securite pour verifier pas de head in btw avec les abspositions;
+
 	if (start > end)
 		return 0;
-	lststart = ft_getlst_fromabspos(head, start);
-	lstend = ft_getlst_fromabspos(head, end);
+	if ((size_t)rel_pos >= (end - start))
+		return 0;
+	if (!(lststart = ft_getlst_fromabspos(head, start)))
+	    return 0;
+	if (!(lstend = ft_getlst_fromabspos(head, end)))
+        return 0;
 	if (!lststart || (lststart->next == lststart))
 		return (0);
 	if (!lstend || (lstend->prev == lstend))
@@ -31,7 +35,11 @@ int   ft_getval_fromrelpos_btwabspos(t_lst *head, size_t start, size_t end,
 	if (!get_int)
 		return (0);
 	
-//	TESTINT("P_DATA(lststart)", P_DATA(lststart));
+//	TESTINT("val of abs position P_DATA(lststart)", P_DATA(lststart));
+	TESTINT("abs position P_DATA(lststart)", (start));
+//	TESTINT("abs pos values      P_DATA(lstend)", P_DATA(lstend));
+	TESTINT("abs position P_DATA(lstend)", (end));
+	ft_ps_print();
 	tmp = ft_getlst_fromrelpos_btwtlst(head, lststart, lstend, (get_int), rel_pos);
 	if (tmp == 0)
 		return (0);

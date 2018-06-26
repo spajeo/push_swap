@@ -6,6 +6,7 @@
 
 void ft_ps_order_3b()
 {
+	TESTSTR("ordering", "piles B");
 	if (P_DATA(HB_A_) > P_DATA(HB_B_) && P_DATA(HB_B_) < P_DATA(HB_C_)
 	    && P_DATA(HB_A_) < P_DATA(HB_C_))
 	{
@@ -44,6 +45,7 @@ void ft_ps_order_3b()
 
 void ft_ps_order_3a()
 {
+	TESTSTR("ordering", "_____A_____");
 	if (P_DATA(HA_A_) > P_DATA(HA_B_) && P_DATA(HA_B_) < P_DATA(HA_C_)
 	                                    && P_DATA(HA_A_) < P_DATA(HA_C_))
 		ft_ps_operations("sa");
@@ -79,6 +81,7 @@ void ft_ps_order_3a()
 }
 void ft_ps_order(int pile, int depth)
 {
+	TESTINTM("ordering", depth);
 	if (pile == _PA_)
 	{
 		if (depth == 2 && P_DATA(HA_A_) > P_DATA(HA_B_))

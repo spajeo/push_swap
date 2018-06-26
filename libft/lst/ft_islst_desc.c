@@ -19,11 +19,8 @@
 int		ft_islst_desc(t_lst *head, int *(*get_int)(t_lst *))
 {
 	t_lst *tmp;
-
-	// head security
-	// head->next != head
-	// head->next->next != head
-
+	if (head == head->next || head == head->next->next)
+		return (1);
 	tmp = head->next;
 	while (tmp != head->prev)
 	{
